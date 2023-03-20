@@ -1,0 +1,27 @@
+{
+  "name": "dielcom",
+  "version": "1.0.0",
+  "description": "Electronic components distributor",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js dev=true",
+    "start": "node server.js dev=false",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krastbiz/dielcom.git"
+  },
+  "author": "Alexander Turchin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krastbiz/dielcom/issues"
+  },
+  "homepage": "https://github.com/krastbiz/dielcom#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "styled-components": "^5.3.9"
+  }
+}
