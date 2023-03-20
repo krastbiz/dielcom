@@ -1,18 +1,13 @@
 import styled from "styled-components"
+import Home from "../components/HomePage/Home"
 import { Container } from "../components/ui/layouts/Container"
 
 const HomePage = () => {
     return (
         <>
-            <div>This is homepage</div>
-            <ContainerStyled></ContainerStyled>
+            <Home />
         </>
     )
 }
-
-const ContainerStyled = styled(Container)`
-    height: 30px;
-    background: red;
-`
 
 export default HomePage
