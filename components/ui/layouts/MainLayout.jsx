@@ -7,7 +7,7 @@ export const MainLayout = ({ children }) => {
         <>
             <AppHeader />
             <main>{children}</main>
-            <AppFooter />
+            {/* <AppFooter /> */}
         </>
     )
 }
