@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
 import styled from "styled-components"
+import { theme } from "../../../lib/theme"
 import { NavLink } from "./NavLink"
 
 const NAV_ITEMS = [
@@ -10,17 +11,18 @@ const NAV_ITEMS = [
     { href: '/contacts', text: 'Контакты' },
 ]
 
-export const Navigation = ({ ...extraProps }) => {
+export const Navigation = ({ isFooterNavigation, ...extraProps }) => {
 
     const nextRouter = useRouter()
     const currentUrl = nextRouter.asPath
 
     const isLinkActive = (linkUrl) => linkUrl === currentUrl 
+    const linkActiveColor = isFooterNavigation ? 'white' : theme.colors.primary
 
     return (
         <NavigationWrapper {...extraProps}>
             {NAV_ITEMS.map(navItem => (
-                <NavLinkStyled isActive={isLinkActive(navItem.href)} key={navItem.href + navItem.text} href={navItem.href}>{navItem.text}</NavLinkStyled>
+                <NavLinkStyled activeColor={linkActiveColor} isActive={isLinkActive(navItem.href)} key={navItem.href + navItem.text} href={navItem.href}>{navItem.text}</NavLinkStyled>
             ))}
         </NavigationWrapper>
     )

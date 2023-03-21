@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { Container } from "../ui/layouts/Container"
 import { Link } from "../ui/Link"
+import { Navigation } from "./Navigation/Navigation"
+import { NavLinkWrapper } from "./Navigation/NavLink"
 
 const CONTACTS = [
     {
@@ -8,7 +10,7 @@ const CONTACTS = [
         text: '195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»'
     },
     {
-        image: { url: '/static/icons/address.svg', alt: 'Иконка Адреса'},
+        image: { url: '/static/icons/phone.svg', alt: 'Иконка Адреса'},
         text: '+7 (812) 339-45-97',
         href: 'tel:+78123394597'
     },
@@ -17,19 +19,20 @@ const CONTACTS = [
 export const AppFooter = () => {
     return (
         <AppFooterWrapper>
-            <Container>
+            <FooterContentContainer>
                 <FooterLogoWrapper>
                     <img src="/static/icons/logo-footer.svg" alt="Логотип сайта" />
                 </FooterLogoWrapper>
 
                 {/* Navigation */}
+                <NavigationStyled isFooterNavigation/>
 
                 <ContactsWrapper>
                     {CONTACTS.map(contact => (
                         <ContactItem key={contact.href + contact.text} image={contact.image} text={contact.text} href={contact.href}/>
                     ))}
                 </ContactsWrapper>
-            </Container>
+            </FooterContentContainer>
 
             <Container>© ООО «Диэлком-ЭК» 2021 spb@dielcom.ru</Container>
         </AppFooterWrapper>
@@ -42,13 +45,52 @@ const ContactItem = ({ image, text, href }) => (
         {href ? <Link href={href}>{text}</Link> : text}
     </ContactItemWrapper>
 )
+const ContactItemWrapper = styled.div`
+    display: flex;
+    img {
+        width: 17px;
+        height: 17px;
+        display: block;
+        margin-right: 20px;
+    }
 
-const ContactItemWrapper = styled.div``
+    :first-child {
+        flex: 1;
+        margin-right: 40px;
+    }
+`
+
+const FooterContentContainer = styled(Container)`
+    margin-bottom: 75px;
+    justify-content: space-between;;
+`
 
 const AppFooterWrapper = styled.div`
+    padding: 95px 0 55px;
     background: ${({ theme }) => theme.colors.primary};
     color: white;
 `
-const FooterLogoWrapper = styled.div``
 
-const ContactsWrapper = styled.div``
+const NavigationStyled = styled(Navigation)`
+    flex-wrap: wrap;
+
+    ${NavLinkWrapper} {
+        width: 50%;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    ${NavLinkWrapper} + ${NavLinkWrapper} {
+        margin-left: 0;
+    }
+`
+
+const FooterLogoWrapper = styled.div`
+    margin-right: 100px;
+`
+
+const ContactsWrapper = styled.div`
+    display: flex;
+`
