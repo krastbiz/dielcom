@@ -37,7 +37,6 @@ const PhoneLinkWrapper = styled.div`
 `
 
 const ContainerStyled = styled(Container)`
-    display: flex;
     align-items: center;
 `
 

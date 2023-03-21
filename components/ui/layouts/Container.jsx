@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { breakpoint, screenWidth } from "../../../lib/theme";
 
 const Container = styled.div`
+    display: flex;
     width: ${screenWidth.desktopLarge};
     margin: 0 auto;
 
