@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoint } from "../../lib/theme"
 import { Container } from "../ui/layouts/Container"
 import { Link } from "../ui/Link"
 import { Navigation } from "./Navigation/Navigation"
@@ -34,7 +35,7 @@ export const AppFooter = () => {
                 </ContactsWrapper>
             </FooterContentContainer>
 
-            <Container>© ООО «Диэлком-ЭК» 2021 spb@dielcom.ru</Container>
+            <CopyrightContainer>© ООО «Диэлком-ЭК» 2021 spb@dielcom.ru</CopyrightContainer>
         </AppFooterWrapper>
     )
 }
@@ -58,11 +59,29 @@ const ContactItemWrapper = styled.div`
         flex: 1;
         margin-right: 40px;
     }
+
+    ${breakpoint.desktop`
+        :first-child {
+            margin-right: 20px;
+        }
+    `}
 `
 
 const FooterContentContainer = styled(Container)`
     margin-bottom: 75px;
-    justify-content: space-between;;
+    justify-content: space-between;
+
+    ${breakpoint.laptop`
+        flex-direction: column;
+        justify-content: unset;
+    `}
+`
+
+const CopyrightContainer = styled(Container)`
+        ${breakpoint.laptop`
+            font-weight: 300;
+            font-size: 14px;
+        `}
 `
 
 const AppFooterWrapper = styled.div`
@@ -85,12 +104,41 @@ const NavigationStyled = styled(Navigation)`
     ${NavLinkWrapper} + ${NavLinkWrapper} {
         margin-left: 0;
     }
+
+    ${breakpoint.laptop`
+        margin-bottom: 20px;
+    `}
 `
 
 const FooterLogoWrapper = styled.div`
     margin-right: 100px;
+
+    ${breakpoint.desktopLarge`
+        margin-right: 60px;
+    `}
+
+    ${breakpoint.desktop`
+        margin-right: 20px;
+    `}
+
+    ${breakpoint.laptop`
+        margin-right: 0;
+        margin-bottom: 30px;
+    `}
 `
 
 const ContactsWrapper = styled.div`
     display: flex;
+
+    ${breakpoint.laptop`
+        font-weight: 300;
+        font-size: 14px;
+    `}
+
+    ${breakpoint.mobile`
+        flex-direction: column;
+        ${ContactItemWrapper} + ${ContactItemWrapper} {
+            margin-top: 20px;
+        }
+    `}
 `
