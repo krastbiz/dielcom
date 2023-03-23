@@ -18,8 +18,8 @@ export const NewsSection = ({ newsArray }) => {
                 </TitleWrapper>
 
                 <NewsCardsWrapper>
-                    {newsSlicedArray.map(news => (
-                        <NewsCard key={news.id + news.companyId} news={news}/>
+                    {newsSlicedArray.map((news, idx) => (
+                        <NewsCard key={news.id + news.companyId + idx} news={news}/>
                     ))}
                 </NewsCardsWrapper>
             </Container>

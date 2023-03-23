@@ -1,3 +1,4 @@
+import { useState } from "react"
 import styled from "styled-components"
 import { NEWS_ARRAY } from "../../mock-data"
 import { ContactsSection } from "../Common/Fragments/ContactsSection"
@@ -10,6 +11,12 @@ import { H1, H2 } from "../ui/Typography"
 
 
 const Home = () => {
+
+    const [activeServiceTab, setActiveServiceTab] = useState(0)
+    const isActiveServiceTab = (tabName) => {
+        const index = serviceTabs.map(tab => tab.tabName).indexOf(tabName)
+        return activeServiceTab == index
+    }
 
     const newsArray = NEWS_ARRAY
 
@@ -34,6 +41,17 @@ const Home = () => {
             image: { url: '/static/icons/advantage-5.svg', alt: 'Изображение преимущества'},
             description: 'Надежности, настойчивости и постоянном совершенствовании',
         },
+    ]
+
+    const serviceTabs = [
+        {
+            tabName: 'УСЛУГИ ПОЛНОГО ЦИКЛА ПРОИЗВОДСТВА ЭЛЕКТРОНИКИ',
+            tabContent: 'Услуги полного цикла контрактного производства, включая комплексное решение задач, связанных с производством электроники. Развивая идеи заказчика, опытные специалисты Диэлком-ЭК готовы провести полную подготовку изделия к серийному производству.',
+        },
+        {
+            tabName: 'ПОСТАВКА КОМПОНЕНТОВ ПОД РАЗРАБОТКУ',
+            tabContent: 'Наша компания сотрудничает с крупнейшими мировыми интернет-магазинами электронных компонентов - такими как: Digi-Key, Farnell, Mouser, Newark и десятком других – за счет этого у нас есть возможность поставлять компоненты под разработку – поштучно, а не нормоупаковками. Доставка продукции до нашего склада в Санкт-Петербурге составляет 2-3 недели, однако при необходимости мы можем обеспечить доставку за одну неделю.',
+        }
     ]
 
     return (
@@ -71,14 +89,35 @@ const Home = () => {
                 </DelivertSectionContainer>
             </DeliverySection>
 
+            <ServiceSection>
+                <Container>
+                    <H2>Услуги</H2>
+                    <ServiceTabsAndContentWrapper>
+                        <ServiceTabs>
+                            {serviceTabs.map(tab => (
+                                <ServiceTab key={tab.tabName} active={isActiveServiceTab(tab.tabName)} onClick={() => setActiveServiceTab(serviceTabs.indexOf(tab))}>{tab.tabName}</ServiceTab>
+                            ))}
+                        </ServiceTabs>
+
+                        <ServiceContentTabs>
+                            {serviceTabs.map(tab => (
+                                <ServiceContentTabItem key={tab.tabName} active={isActiveServiceTab(tab.tabName)}>
+                                    {tab.tabContent}
+                                </ServiceContentTabItem>
+                            ))}
+                        </ServiceContentTabs>
+                    </ServiceTabsAndContentWrapper>
+                </Container>
+            </ServiceSection>
+
             <AdvantagesSection>
                 <Container>
 
                     <AdvantagesSectionTitle>Мы строим нашу работу, базируясь на:</AdvantagesSectionTitle>
 
                     <AdvantagesItemsWrapper>
-                        {advantages.map(({ image, description }) => (
-                            <AdvantageItem>
+                        {advantages.map(({ image, description }, idx) => (
+                            <AdvantageItem key={image.url + idx}>
                                 <AdvantageImageWrapper>
                                     <img src={image.url} alt={image.alt} />
                                 </AdvantageImageWrapper>
@@ -95,6 +134,26 @@ const Home = () => {
                 </Container>
             </AdvantagesSection>
 
+            <FeaturesSection>
+                <Container>
+                    <FeaturesSectionTitle>СОТРУДНИЧАЯ С ДИЭЛКОМ-ЭК НАШИ ЗАКАЗЧИКИ-ПАРТНЕРЫ ПОЛУЧАЮТ:</FeaturesSectionTitle>
+                            
+                    <FeaturesList>
+                        <FeaturesListItem>индивидуальный гибкий подход к каждому клиенту</FeaturesListItem>
+                        <FeaturesListItem>оригинальные качественные компоненты</FeaturesListItem>
+                        <FeaturesListItem>доступ к товарам на разных рынках</FeaturesListItem>
+                        <FeaturesListItem>официальные каналы поставки</FeaturesListItem>
+                        <FeaturesListItem>сроки поставки от 7 дней</FeaturesListItem>
+                        <FeaturesListItem>новые знания о рынке и продукте</FeaturesListItem>
+                        <FeaturesListItem>своевременную и оперативную информацию</FeaturesListItem>
+                        <FeaturesListItem>бесплатные образцы</FeaturesListItem>
+                        <FeaturesListItem>сопровождение проектов</FeaturesListItem>
+                        <FeaturesListItem>высокую надежность поставок</FeaturesListItem>
+                        <FeaturesListItem>гарантию на поставленные компоненты</FeaturesListItem>
+                    </FeaturesList>
+
+                </Container>
+            </FeaturesSection>
 
             <ConctactsSectionStyled />
         </MainLayout>
@@ -150,6 +209,76 @@ const DeliveryDescription = styled.p`
     color: ${({ theme }) => theme.colors.main};
 `
 
+const ServiceSection = styled.section`
+    background: ${({ theme }) => theme.colors.background};
+
+    ${Container} {
+        flex-direction: column;
+    }
+`
+
+const ServiceTabsAndContentWrapper = styled.div`
+    display: flex;
+`
+
+const ServiceTabs = styled.ul`
+    margin-right: 100px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    min-width: 470px;
+    
+`
+
+const ServiceTab = styled.li`
+    position: relative;
+    padding-left: 120px;
+    display: block;
+    margin-bottom: 40px;
+    color: ${({ theme, active }) => active ? theme.colors.primary : theme.colors.disabled};
+
+    ::before {
+        ${({ active }) => active ? 'content: "";' : ''}
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: ${({ theme }) => theme.colors.primary};
+        top: 13.5px;
+        left: 0;
+    }
+`
+const ServiceContentTabs = styled.ul`
+    list-style: none;
+`
+const ServiceContentTabItem = styled.li`
+    display: ${({ active }) => active ? 'block' : 'none'};
+
+    position: relative;
+    padding-left: 120px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: ${({ theme }) => theme.colors.main};
+
+    ::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: ${({ theme }) => theme.colors.primary};
+        top: 13.5px;
+        left: 0;
+    }
+`
+
+
+
+
+
+
 const AdvantagesSection = styled.section`
     padding: 115px 0 130px;
     background: radial-gradient(56.19% 168.11% at 28.98% -60.9%, ${({ theme }) => theme.colors.active} 0%, ${({ theme }) => theme.colors.primary} 100%);
@@ -196,6 +325,41 @@ const AdvantageDescription = styled.div`
     line-height: 1.56;
     color: white;
 `
+
+
+const FeaturesSection = styled.section`
+    padding: 160px 0 120px;
+    ${Container} {
+        flex-direction: column;
+    }
+`
+const FeaturesSectionTitle = styled(H2)`
+    margin-bottom: 85px;
+`
+const FeaturesList = styled.ul`
+    column-count: 2;
+`
+const FeaturesListItem = styled.li`
+    position: relative;
+    padding-left: 40px;
+    display: block;
+    font-size: 18px;
+    line-height: 40px;
+    color: ${({ theme }) => theme.colors.main};
+
+    ::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        background: ${({ theme }) => theme.colors.active};
+        border-radius: 100%;
+        margin-top: -4px;
+    }
+`
+
 
 
 
