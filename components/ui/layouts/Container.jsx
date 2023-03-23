@@ -12,6 +12,8 @@ const Container = styled.div`
         max-width: ${screenWidth.desktop};
     `}
     ${breakpoint.desktop`
+        padding-right: 20px;
+        padding-left: 20px;
         max-width: ${screenWidth.laptop};
     `}
     ${breakpoint.laptop`

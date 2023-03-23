@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styled from "styled-components"
+import { breakpoint } from "../../lib/theme"
 import { NEWS_ARRAY } from "../../mock-data"
 import { ContactsSection } from "../Common/Fragments/ContactsSection"
 import { MainSection } from "../Common/Fragments/MainSection"
@@ -163,6 +164,7 @@ const Home = () => {
 const H1Styled = styled(H1)`
     max-width: 400px;
     margin-bottom: 35px;
+    font-size: 36px;
 `
 
 const MainSectionContainer = styled(Container)`
@@ -170,6 +172,13 @@ const MainSectionContainer = styled(Container)`
     flex-direction: column;
     background-image: url(/static/images/homepage-bg.jpeg);
     background-size: cover;
+
+    ${breakpoint.tablet`
+        padding: unset;
+        padding: 0 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    `}
 `
 
 
@@ -182,7 +191,11 @@ const ConctactsSectionStyled = styled(ContactsSection)`
 `
 
 const DeliverySection = styled.section`
-    background: ${({ theme }) => theme.colors.background}
+    background: ${({ theme }) => theme.colors.background};
+
+    ${breakpoint.laptop`
+        background: white;
+    `}
 `
 
 const DelivertSectionContainer = styled(Container)`
@@ -191,6 +204,11 @@ const DelivertSectionContainer = styled(Container)`
     padding-left: 120px;
     padding-right: 120px;
     background: white;
+
+    ${breakpoint.laptop`
+        flex-wrap: wrap;
+        padding: 20px;
+    `}
 `
 
 const DeliveryWrapper = styled.div`
@@ -199,6 +217,23 @@ const DeliveryWrapper = styled.div`
     :first-child {
         padding-right: 40px;
     }
+
+    img {
+        width: 100%;
+    }
+
+    ${breakpoint.laptop`
+        width: 100%;
+
+        :first-child {
+            order: 2;
+            padding-right: 0;
+        }
+
+        :last-child {
+            order: 1;
+        }
+    `}
 `
 
 const DeliveryDescription = styled.p`
@@ -207,6 +242,10 @@ const DeliveryDescription = styled.p`
     font-size: 14px;
     line-height: 24px;
     color: ${({ theme }) => theme.colors.main};
+
+    ${breakpoint.laptop`
+        text-align: justify;
+    `}
 `
 
 const ServiceSection = styled.section`
@@ -219,6 +258,10 @@ const ServiceSection = styled.section`
 
 const ServiceTabsAndContentWrapper = styled.div`
     display: flex;
+
+    ${breakpoint.laptop`
+        flex-direction: column;
+    `}
 `
 
 const ServiceTabs = styled.ul`
@@ -230,6 +273,13 @@ const ServiceTabs = styled.ul`
     text-transform: uppercase;
     min-width: 470px;
     
+    ${breakpoint.desktop`
+        margin-right: 0;
+    `}
+
+    ${breakpoint.laptop`
+        min-width: unset;
+    `}
 `
 
 const ServiceTab = styled.li`
@@ -298,16 +348,31 @@ const AdvantagesSection = styled.section`
     ${Container} {
         flex-direction: column;
     }
+
+    ${breakpoint.laptop`
+        padding: 20px;
+    `}
 `
 
 const AdvantagesItemsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
+
+    ${breakpoint.desktop`
+        flex-wrap: wrap;
+        justify-content: center;
+    `}
 `
 const AdvantagesSectionTitle = styled(H2)`
     padding-left: 120px;
     margin-bottom: 85px;
     color: white;
+
+    ${breakpoint.laptop`
+        padding-left: 0;
+        margin-bottom: 35px;
+        text-align: center;
+    `}
 `
 const AdvantageItem = styled.div`
     margin-right: 30px;
@@ -316,14 +381,43 @@ const AdvantageItem = styled.div`
     :last-child {
         margin-right: 0;
     }
+
+    ${breakpoint.desktop`
+        margin-right: 0;
+        width: 30%;
+    `}
+
+    ${breakpoint.laptop`
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    `}
 `
 const AdvantageImageWrapper = styled.div`
     margin-bottom: 55px;
+
+    ${breakpoint.laptop`
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: 70px;
+        img {
+            width: 100%
+        }
+    `}
 `
 const AdvantageDescription = styled.div`
     font-size: 18px;
     line-height: 1.56;
     color: white;
+
+    ${breakpoint.laptop`
+        text-align: left;
+    `}
 `
 
 
@@ -335,9 +429,17 @@ const FeaturesSection = styled.section`
 `
 const FeaturesSectionTitle = styled(H2)`
     margin-bottom: 85px;
+
+    ${breakpoint.tablet`
+        margin-bottom: 35px;
+    `}
 `
 const FeaturesList = styled.ul`
     column-count: 2;
+
+    ${breakpoint.tablet`
+        column-count: 1;
+    `}
 `
 const FeaturesListItem = styled.li`
     position: relative;
@@ -358,6 +460,10 @@ const FeaturesListItem = styled.li`
         border-radius: 100%;
         margin-top: -4px;
     }
+
+    ${breakpoint.tablet`
+        font-size: 16px;
+    `}
 `
 
 

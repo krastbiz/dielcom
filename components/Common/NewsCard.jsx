@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoint } from "../../lib/theme"
 import { getNewsDetailPageUrl } from "../../lib/utils/routeHelper"
 import { Link } from "../ui/Link"
 
@@ -21,8 +22,8 @@ export const NewsCard = ({ news }) => {
     )
 }
 
-const NewsCardWrapper = styled.div`
-    width: 370px;
+export const NewsCardWrapper = styled.div`
+    width: auto;
 
     margin-right: 30px;
 
@@ -52,4 +53,8 @@ const ImageWrapper = styled.div`
     img {
         width: 100%;
     }
+
+    ${breakpoint.desktop`
+        height: 190px;
+    `}
 `
