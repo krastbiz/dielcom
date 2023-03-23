@@ -13,6 +13,29 @@ const Home = () => {
 
     const newsArray = NEWS_ARRAY
 
+    const advantages = [
+        {
+            image: { url: '/static/icons/advantage-1.svg', alt: 'Изображение преимущества'},
+            description: 'Предоставлении лучшего сервиса нашим клиентам',
+        },
+        {
+            image: { url: '/static/icons/advantage-2.svg', alt: 'Изображение преимущества'},
+            description: 'Уникальных технических решениях наших партнеров',
+        },
+        {
+            image: { url: '/static/icons/advantage-3.svg', alt: 'Изображение преимущества'},
+            description: 'Грамотной технической поддержке силами наших инженеров',
+        },
+        {
+            image: { url: '/static/icons/advantage-4.svg', alt: 'Изображение преимущества'},
+            description: 'Построении открытых партнерских отношений с клиентами и поставщиками',
+        },
+        {
+            image: { url: '/static/icons/advantage-5.svg', alt: 'Изображение преимущества'},
+            description: 'Надежности, настойчивости и постоянном совершенствовании',
+        },
+    ]
+
     return (
         <MainLayout>
             <MainSection>
@@ -47,6 +70,31 @@ const Home = () => {
                     </DeliveryWrapper>
                 </DelivertSectionContainer>
             </DeliverySection>
+
+            <AdvantagesSection>
+                <Container>
+
+                    <AdvantagesSectionTitle>Мы строим нашу работу, базируясь на:</AdvantagesSectionTitle>
+
+                    <AdvantagesItemsWrapper>
+                        {advantages.map(({ image, description }) => (
+                            <AdvantageItem>
+                                <AdvantageImageWrapper>
+                                    <img src={image.url} alt={image.alt} />
+                                </AdvantageImageWrapper>
+
+                                <AdvantageDescription>
+                                    {description}
+                                </AdvantageDescription>
+
+                            </AdvantageItem>
+                        ))}
+
+                    </AdvantagesItemsWrapper>
+
+                </Container>
+            </AdvantagesSection>
+
 
             <ConctactsSectionStyled />
         </MainLayout>
@@ -101,6 +149,56 @@ const DeliveryDescription = styled.p`
     line-height: 24px;
     color: ${({ theme }) => theme.colors.main};
 `
+
+const AdvantagesSection = styled.section`
+    padding: 115px 0 130px;
+    background: radial-gradient(56.19% 168.11% at 28.98% -60.9%, ${({ theme }) => theme.colors.active} 0%, ${({ theme }) => theme.colors.primary} 100%);
+    position: relative;
+
+    ::before {
+        content: "";
+        background-image: url(/static/images/advantages-bg.png);
+        mix-blend-mode: multiply;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    ${Container} {
+        flex-direction: column;
+    }
+`
+
+const AdvantagesItemsWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
+const AdvantagesSectionTitle = styled(H2)`
+    padding-left: 120px;
+    margin-bottom: 85px;
+    color: white;
+`
+const AdvantageItem = styled.div`
+    margin-right: 30px;
+    text-align: center;
+
+    :last-child {
+        margin-right: 0;
+    }
+`
+const AdvantageImageWrapper = styled.div`
+    margin-bottom: 55px;
+`
+const AdvantageDescription = styled.div`
+    font-size: 18px;
+    line-height: 1.56;
+    color: white;
+`
+
+
+
 
 
 export default Home
