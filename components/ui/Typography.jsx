@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoint } from "../../lib/theme";
 
 export const H1 = styled.h1`
     padding: 0;
@@ -8,6 +9,10 @@ export const H1 = styled.h1`
     color: #FFFFFF;
     margin: 0 0 15px;
     font-weight: normal;
+
+    ${breakpoint.tablet`
+        font-size: 36px;
+    `}
 `
 
 export const H2 = styled.h2`
