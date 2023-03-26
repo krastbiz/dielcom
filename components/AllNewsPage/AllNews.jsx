@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import { useEffect } from "react"
 import styled from "styled-components"
 import { breakpoint } from "../../lib/theme"
+import { useScrollRestoration } from "../../lib/utils/hooks/useScrollResoration"
 import { AllNewsFilter } from "../../lib/utils/newsHelper"
 import { getAllNewsPage, getCompanyNewsPage } from "../../lib/utils/routeHelper"
 import { DefaultMainContent, MainSection } from "../Common/Fragments/MainSection"
@@ -22,14 +23,8 @@ const AllNews = ({ companies, filteredNews }) => {
         name: company.name,
     }))
     const filters = [AllNewsFilter, ...companyFilters]
-    
-    useEffect(() => {
-        const hasScrollHistory = sessionStorage.getItem(`__next_scroll_${window.history.state.idx}`);
-        console.log('hasScrollHistory: ', hasScrollHistory)
-        if (hasScrollHistory) {
-            // do your restore logic here
-        }
-    }, []);
+
+    useScrollRestoration()
 
     const getIsFilterActive = (companyIdFromQuery, companyId) => {
         if (!companyIdFromQuery && !companyId) return true
