@@ -1,4 +1,5 @@
-import Catalog from "../components/CatalogPage/Catalog"
+import Catalog from "../../components/CatalogPage/Catalog"
+
 
 const CatalogPage = () => {
     return (

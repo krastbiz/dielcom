@@ -171,3 +171,60 @@ export const NEWS_ARRAY = [
         description: 'Пришел новый товар!',
     },
 ]
+
+export const BRANDS_ARRAY = [
+    {
+        imageUrl: '/static/images/world-brands/brand-1.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-2.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-3.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-4.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-5.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-6.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-7.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-8.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-9.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-10.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-11.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-12.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-13.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-14.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-15.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-16.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-17.png',
+    },
+    {
+        imageUrl: '/static/images/world-brands/brand-18.png',
+    },
+]
