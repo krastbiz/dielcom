@@ -49,6 +49,7 @@ const ImageWrapper = styled.div`
     display: flex;
     align-items: center;
     height: 270px;
+    background: ${({ theme }) => theme.colors.background};
 
     img {
         width: 100%;
@@ -56,5 +57,12 @@ const ImageWrapper = styled.div`
 
     ${breakpoint.desktop`
         height: 190px;
+    `}
+
+    ${breakpoint.tablet`
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
     `}
 `

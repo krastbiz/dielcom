@@ -1,3 +1,4 @@
+import React from "react"
 import styled from "styled-components"
 import { getHomePageUrl } from "../../lib/utils/routeHelper"
 import { Link } from "../ui/Link"
@@ -17,13 +18,13 @@ export const Breadcrumbs = ({ breadcrumbs }) => {
                 const showDelimeter = crumbs.length - 1 !== index
 
                 return (
-                    <>
+                    <React.Fragment key={index}>
                         <Breadcrumb>
                             <Link href={crumb.href}>{crumb.text}</Link>
                         </Breadcrumb>
         
                         {showDelimeter && <BreadcrumbDelimeter>/</BreadcrumbDelimeter>} 
-                    </>
+                    </React.Fragment>
                 )
             })}
         </BreadcrumbsWrapper>
