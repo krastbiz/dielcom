@@ -1,7 +1,6 @@
 import { useState } from "react"
 import styled from "styled-components"
 import { breakpoint } from "../../lib/theme"
-import { NEWS_ARRAY } from "../../mock-data"
 import { ContactsSection } from "../Common/Fragments/ContactsSection"
 import { MainSection } from "../Common/Fragments/MainSection"
 import { NewsSection } from "../Common/Fragments/NewsSection"
@@ -11,7 +10,7 @@ import { MainLayout } from "../ui/layouts/MainLayout"
 import { H1, H2 } from "../ui/Typography"
 
 
-const Home = () => {
+const Home = ({ featuredNews }) => {
 
     const [activeServiceTab, setActiveServiceTab] = useState(0)
     const isActiveServiceTab = (tabName) => {
@@ -19,7 +18,7 @@ const Home = () => {
         return activeServiceTab == index
     }
 
-    const newsArray = NEWS_ARRAY
+    const newsArray = featuredNews
 
     const advantages = [
         {

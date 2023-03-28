@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { getCatalogPageUrl, getCompanyPageUrl } from "../../lib/utils/routeHelper"
-import { BRANDS_ARRAY, COMPANY_ARRAY } from "../../mock-data"
 import { DefaultMainContent, MainSection } from "../Common/Fragments/MainSection"
 import { Container } from "../ui/layouts/Container"
 import { MainLayout } from "../ui/layouts/MainLayout"
@@ -8,7 +7,7 @@ import { H1, H2 } from "../ui/Typography"
 import { Link } from "../ui/Link"
 import { breakpoint } from "../../lib/theme"
 
-const Catalog = () => {
+const Catalog = ({ companies, brands }) => {
     return (
         <MainLayout>
             <MainSection
@@ -26,7 +25,7 @@ const Catalog = () => {
                     <H2>Дистрибьюция</H2>
 
                     <CatalogItemsWrapper>
-                        {COMPANY_ARRAY.map(company => (
+                        {companies.map(company => (
                             <CatalogItem key={company.id}>
                                 <Link href={getCompanyPageUrl(company.id)}>
                                     <CatalogItemLogoWrapper>
@@ -42,7 +41,7 @@ const Catalog = () => {
                     <H2>Мировые бренды</H2>
 
                     <CatalogItemsWrapper>
-                        {BRANDS_ARRAY.map(brand => (
+                        {brands.map(brand => (
                             <CatalogItem key={brand.imageUrl}>
                                 <CatalogItemLogoWrapper>
                                     <img src={brand.imageUrl} alt={`Логотип бренда`}/>
