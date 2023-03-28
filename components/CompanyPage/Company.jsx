@@ -49,7 +49,7 @@ const Company = ({ company }) => {
 
                         <CompanyProductsWrapper>
                             {company.products.map(product => (
-                                <CompanyProduct>
+                                <CompanyProduct key={product.imageUrl}>
                                     <CompanyProductImageWrapper>
                                         <img src={product.imageUrl} alt="Изображение продукта кампании"/>
                                     </CompanyProductImageWrapper>

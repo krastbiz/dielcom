@@ -70,7 +70,7 @@ const AllNews = ({ companies, filteredNews }) => {
 
                     <AllNewsCardsWrapper>
                         {filteredNews.map(news => (
-                            <NewsCard news={news} />
+                            <NewsCard key={news.id} news={news} />
                         ))}
                     </AllNewsCardsWrapper>
                 </Container>
