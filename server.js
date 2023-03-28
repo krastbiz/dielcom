@@ -1,8 +1,10 @@
 const express = require('express')
 const next = require('next')
+const dotenv = require('dotenv')
+dotenv.config()
 
-const HOSTNAME = 'localhost'
-const PORT = 3000
+const HOSTNAME = process.env.SITE_BASE_URL
+const PORT = process.env.PORT
 const devArgStr = process.argv.slice(-1)[0]
 const isDevMode = devArgStr.split('=')[1] === 'true'
 
