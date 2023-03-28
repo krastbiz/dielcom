@@ -27,7 +27,7 @@ const Catalog = () => {
 
                     <CatalogItemsWrapper>
                         {COMPANY_ARRAY.map(company => (
-                            <CatalogItem>
+                            <CatalogItem key={company.id}>
                                 <Link href={getCompanyPageUrl(company.id)}>
                                     <CatalogItemLogoWrapper>
                                         <img src={company.logo} alt={`Логотип компании ${company.name}`}/>
@@ -43,7 +43,7 @@ const Catalog = () => {
 
                     <CatalogItemsWrapper>
                         {BRANDS_ARRAY.map(brand => (
-                            <CatalogItem>
+                            <CatalogItem key={brand.imageUrl}>
                                 <CatalogItemLogoWrapper>
                                     <img src={brand.imageUrl} alt={`Логотип бренда`}/>
                                 </CatalogItemLogoWrapper>
