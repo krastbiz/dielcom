@@ -44,7 +44,7 @@ const BurgerButtonStyled = styled(BurgerButton)`
     margin-left: auto;
 `
 
-const AppHeaderWrapper = styled.div`
+const AppHeaderWrapper = styled.header`
     height: ${HEADER_HEIGHT};
     display: flex;
     align-items: center;
