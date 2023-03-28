@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styled from "styled-components"
+import { sendContactForm } from "../../lib/api"
 import { Button } from "../ui/buttons/Button"
 import { ContactFloatButton } from "../ui/buttons/ContactFloatButton"
 import { H2 } from "../ui/Typography"
@@ -7,10 +8,13 @@ import { H2 } from "../ui/Typography"
 export const ContactDialog = () => {
 
     const [contactFormVisible, setContactFormVisible] = useState(false)
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
 
     const onFormSubmit = (e) => {
-        console.log(e)
         e.preventDefault()
+
+        sendContactForm({ email, message })
     }
 
     return (
@@ -20,8 +24,21 @@ export const ContactDialog = () => {
                 <ContactFormWrapper>
                     <ContactFormTitle>Связаться с нами</ContactFormTitle>
                     <ContactForm onSubmit={onFormSubmit}>
-                        <input type="email" placeholder="Ваш email"/>
-                        <textarea rows={10} cols={10} placeholder="Ваше вообщение"/>
+                        <input
+                            name="email"
+                            type="email"
+                            placeholder="Ваш email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            />
+                        <textarea
+                            name="message"
+                            rows={10}
+                            cols={10}
+                            placeholder="Ваше вообщение"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            />
 
                         <Button primary type="submit">Отправить</Button>
                     </ContactForm>
