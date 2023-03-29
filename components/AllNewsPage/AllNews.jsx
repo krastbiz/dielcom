@@ -1,5 +1,4 @@
 import { useRouter } from "next/router"
-import { useEffect } from "react"
 import styled from "styled-components"
 import { breakpoint } from "../../lib/theme"
 import { useScrollRestoration } from "../../lib/utils/hooks/useScrollResoration"
@@ -15,6 +14,7 @@ import { H1 } from "../ui/Typography"
 
 
 const AllNews = ({ companies, filteredNews }) => {
+    console.log('filteredNews: ', filteredNews)
 
     const { query } = useRouter()
     const currentCompanyId = query.companyId
@@ -69,8 +69,8 @@ const AllNews = ({ companies, filteredNews }) => {
                     </AllNewsFiltersWrapper>
 
                     <AllNewsCardsWrapper>
-                        {filteredNews.map(news => (
-                            <NewsCard key={news.id} news={news} />
+                        {filteredNews.map((news, index) => (
+                            <NewsCard key={news.id+news.companyId+index} news={news} />
                         ))}
                     </AllNewsCardsWrapper>
                 </Container>
