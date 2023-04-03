@@ -35,7 +35,14 @@ const Company = ({ company }) => {
 
                         <CompanyTextWrapper>
                             <CompanyName>{company.name}</CompanyName>
-                            <CompanyDescription>{company.description || 'Описание компании Описание компании Описание компании Описание компании Описание компании Описание компании Описание компании Описание компании '}</CompanyDescription>
+                            {company.description.map((item) => <CompanyDescription key={item}>{item || 'Описание компании'}</CompanyDescription>)}
+                            {company.services && 
+                            company.services.map((item) => 
+                                <CompanyServices key={item}>
+                                    <CompanyServicestTitle>{item[0]}</CompanyServicestTitle>
+                                    {item.map((service, index) => index > 0 && <CompanyServicesItem  key={service}>{service}</CompanyServicesItem>)}
+                                </CompanyServices>
+                            )}
                         </CompanyTextWrapper>
 
                     </CompanyContentWrapper>
@@ -45,7 +52,7 @@ const Company = ({ company }) => {
             {displayCompanyProducts && (
                 <CompanyProductsSection>
                     <Container>
-                        <H2>ОСНОВНАЯ ПРОДУКЦИЯ:</H2>
+                        <CompanyProductsTitle>ОСНОВНАЯ ПРОДУКЦИЯ:</CompanyProductsTitle>
 
                         <CompanyProductsWrapper>
                             {company.products.map(product => (
@@ -89,9 +96,24 @@ const CompanyContentWrapper = styled.div`
     ${breakpoint.laptop`
         width: 100%;
     `}
+    
+    ${breakpoint.mobile`
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`}
 `
 const CompanyLogoWrapper = styled.div`
     margin-right: 50px;
+    & img {
+        max-width: 200px;
+    }
+
+    ${breakpoint.mobile`
+    margin-right: 0px;
+    max-width: 40%;
+    margin-bottom: 20px;
+`}
 `
 
 const CompanyTextWrapper = styled.div`
@@ -100,11 +122,46 @@ const CompanyTextWrapper = styled.div`
 const CompanyName = styled(H2)`
     margin: 0;
     margin-bottom: 20px;
+    ${breakpoint.mobile`
+    display: flex;
+    justify-content: center;
+`}
 `
-const CompanyDescription = styled.p``
+const CompanyDescription = styled.p`
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 20px;
+`
+
+const CompanyServices = styled.ul`
+    margin-top: 20px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+`
+const CompanyServicestTitle = styled.span`
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+`
+
+const CompanyServicesItem = styled.li`
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-top: 10px;
+
+    &:before {
+        content: "•";
+        color: #023059;
+        margin-right: 10px;
+    }
+    
+`
 
 const CompanyProductsSection = styled.section`
-    padding-top: 100px;
     padding-bottom: 100px;
     ${Container} {
         flex-direction: column;
@@ -115,9 +172,16 @@ const CompanyProductsSection = styled.section`
         padding-bottom: 30px;
     `}
 `
+const CompanyProductsTitle =styled(H2)`
+${breakpoint.mobile`
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+`}
+`
 const CompanyProductsWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 
     ${breakpoint.laptop`
@@ -139,11 +203,28 @@ const CompanyProductImageWrapper = styled.div`
 
     img {
         width: 100%;
+        height: 180px;
     }
+    ${breakpoint.laptop`
+    img {
+        height: 140px;
+    };
+    `}
+    ${breakpoint.mobile`
+    display: flex;
+    justify-content: center;
+    img {
+        max-width: 200px;
+        height: auto;
+    }
+`}
 `
 const CompanyProductName = styled.div`
     font-weight: bold;
     font-size: 18px;
     line-height: 1.33;
     color: ${({ theme }) => theme.colors.main};
+    display: flex;
+    justify-content: center;
+    }
 `

@@ -77,8 +77,8 @@ const ContractProduction = () => {
 export default ContractProduction
 
 const CPMainContentWrapper = styled.div`
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
 
     ${breakpoint.tablet`
@@ -99,7 +99,7 @@ const CPMainContentTextWrapper = styled.div`
 const CPMainContentTitle = styled(H1)``
 const CPMainContentDescription = styled.p`
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 24px;
     text-align: justify;
     color: white;
 `
@@ -148,6 +148,7 @@ const CPInfoList = styled.ul`
 `
 const CPInfoListItem = styled.li`
     position: relative;
+    margin-bottom: 10px;
 
     ::before {
         content: "";

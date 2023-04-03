@@ -23,7 +23,7 @@ export const DefaultMainContent = ({ children }) => {
 }
 
 const DefaultMainContentWrapper = styled.div`
-    padding: 100px 0 120px 120px;
+    padding: 30px 0 30px 120px;
 
     ${breakpoint.tablet`
         padding: 30px 0;

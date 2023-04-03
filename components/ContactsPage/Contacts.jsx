@@ -21,5 +21,5 @@ export const Contacts = () => {
 }
 
 const ContactsSectionStyled = styled(ContactsSection)`
-    margin-top: 100px;
+    margin-top: 40px;
 `

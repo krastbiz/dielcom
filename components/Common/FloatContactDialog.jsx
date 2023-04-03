@@ -51,7 +51,7 @@ export const FloatContactDialog = () => {
                                     required
                                     rows={10}
                                     cols={10}
-                                    placeholder="Ваше вообщение*"
+                                    placeholder="Ваше сообщение*"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     />
@@ -114,6 +114,9 @@ const ContactForm = styled.form`
     textarea {
         max-height: 70px;
         max-width: 100%;
+        &::placeholder {
+            padding-top: 10px;
+        }
     }
 `
 

@@ -54,7 +54,7 @@ const AppHeaderWrapper = styled.header`
     background: white;
 `
 const AppLogoWrapper = styled.div`
-    margin-right: 100px;
+    margin-right: 60px;
 
     ${breakpoint.desktop`
         margin-right: 30px;

@@ -16,7 +16,7 @@ const Catalog = ({ companies, brands }) => {
             >
                 <DefaultMainContent>
                     <H1>ЛИНЕЙКА ПОСТАВОК</H1>
-                    <MainSectionSubtitle>Бренды официально представленные компанией Диэлком-ЭК</MainSectionSubtitle>
+                    <MainSectionSubtitle>Бренды, официально представленные компанией Диэлком-ЭК</MainSectionSubtitle>
                 </DefaultMainContent>
             </MainSection>
 

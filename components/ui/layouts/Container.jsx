@@ -23,11 +23,13 @@ const Container = styled.div`
         padding-right: 10px;
         padding-left: 10px;
         width: 100%;
+
     `}
     ${breakpoint.mobile`
         padding-right: 10px;
         padding-left: 10px;
         width: 100%;
+        flex-direction: column;
     `} 
 `
 export { Container }
