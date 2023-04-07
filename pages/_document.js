@@ -29,6 +29,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap&amp;subset=cyrillic" rel="stylesheet" />
+          <link rel="shortcut icon" href="/logo.ico" />
         </Head>
         <body>
           <Main />

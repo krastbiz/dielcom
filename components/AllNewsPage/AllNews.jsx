@@ -14,7 +14,6 @@ import { H1 } from "../ui/Typography"
 
 
 const AllNews = ({ companies, filteredNews }) => {
-    console.log('filteredNews: ', filteredNews)
 
     const { query } = useRouter()
     const currentCompanyId = query.companyId

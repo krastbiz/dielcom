@@ -63,6 +63,9 @@ const AppLogoWrapper = styled.div`
 
 const ContainerStyled = styled(Container)`
     align-items: center;
+    ${breakpoint.mobile`
+    flex-direction: row;
+ `}
 `
 
 const NavigationStyled = styled(Navigation)`

@@ -120,6 +120,10 @@ const CatalogItemLogoWrapper = styled.div`
     height: 130px;
     border: 1px solid ${({ theme }) => theme.colors.primary};
     border-radius: 3px;
+    &:hover {
+        border: none;
+        box-shadow: 0px 0px 21px 5px rgba(34, 60, 80, 0.2);
+    } 
 
     img {
         max-height: 50px;
