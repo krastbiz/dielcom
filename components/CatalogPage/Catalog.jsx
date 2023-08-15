@@ -38,7 +38,7 @@ const Catalog = ({ companies, brands }) => {
 
                     </CatalogItemsWrapper>
 
-                    <H2>Мировые бренды</H2>
+                    {/* <H2>Мировые бренды</H2>
 
                     <CatalogItemsWrapper>
                         {brands.map(brand => (
@@ -49,7 +49,7 @@ const Catalog = ({ companies, brands }) => {
                             </CatalogItem>
                         ))}
 
-                    </CatalogItemsWrapper>
+                    </CatalogItemsWrapper> */}
                 </Container>
             </DistributionSection>
         </MainLayout>
