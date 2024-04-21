@@ -18,18 +18,18 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
         e.preventDefault()
         if (name && tel) {
             sendContactForm({ name, tel }).then(() => {
-                setIsFormVisible(false)
                 setFormSubmitted(true)
                 resetForm()
+                setIsFormVisible(false)
             })
         }
     }
 
     return (
         <ContactFormWrapper isVisible={isVisible}>
-            <ContactFormTitle>{formSubmitted ? 'Запрос отправлен!' : 'Зазазать звонок'}</ContactFormTitle>
+            <ContactFormTitle>{formSubmitted ? 'Запрос отправлен!' : 'Заказать звонок'}</ContactFormTitle>
             {formSubmitted ? (
-                <ContactFormSuccessMessage>Мы приняли вашу заявку! Спасибо, что связались с нами!</ContactFormSuccessMessage>
+                <ContactFormSuccessMessage>Спасибо, что связались с нами!</ContactFormSuccessMessage>
             ) : (
                 <ContactForm onSubmit={onFormSubmit}>
                     <input
@@ -60,8 +60,9 @@ const ContactFormWrapper = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.background};
     background: white;
     text-align: center;
-    position: sticky;
-    top: 100px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
 `
 
 const ContactForm = styled.form`
