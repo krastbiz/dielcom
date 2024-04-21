@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { sendContactForm } from "../../../lib/api"
 import { Button } from "../../ui/buttons/Button"
 
-export const ContactFormHeader = () => {
+export const ContactFormHeader = ({ isVisible }) => {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [formSubmitted, setFormSubmitted] = useState(false)
@@ -25,7 +25,7 @@ export const ContactFormHeader = () => {
     }
 
     return (
-        <ContactFormWrapper isVisible={!formSubmitted}>
+        <ContactFormWrapper isVisible={isVisible && !formSubmitted}>
             <ContactFormTitle>{formSubmitted ? 'Запрос отправлен!' : 'Зазазать звонок'}</ContactFormTitle>
             {formSubmitted ? (
                 <ContactFormSuccessMessage>Мы приняли вашу заявку! Спасибо, что связались с нами!</ContactFormSuccessMessage>
@@ -59,6 +59,8 @@ const ContactFormWrapper = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.background};
     background: white;
     text-align: center;
+    position: sticky;
+    top: 50px;
 `
 
 const ContactForm = styled.form`
