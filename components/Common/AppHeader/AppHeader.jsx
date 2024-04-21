@@ -7,7 +7,7 @@ import { Container } from "../../ui/layouts/Container"
 import { MobileMenu } from "./MobileMenu"
 import { Navigation } from "../Navigation/Navigation"
 import { NavLinkWrapper } from "../Navigation/NavLink"
-import { HeaderPhone } from "./HeaderPhone"
+import { HeaderContacts } from "./HeaderContacts"
 
 const HEADER_HEIGHT = '70px'
 
@@ -27,7 +27,7 @@ export const AppHeader = () => {
                         <img src="/static/icons/logo.svg" alt="Логотип сайта" href={'/'} />
                     </AppLogoWrapper>
 
-                    <HeaderPhone hideOnMobile />
+                    <HeaderContacts hideOnMobile />
 
                     <NavigationStyled />
 

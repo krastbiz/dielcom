@@ -2,19 +2,19 @@ import styled from "styled-components"
 import { breakpoint } from "../../../lib/theme"
 import { Navigation } from "../Navigation/Navigation"
 import { NavLinkWrapper } from "../Navigation/NavLink"
-import { HeaderPhone } from "./HeaderPhone"
+import { HeaderContacts } from "./HeaderContacts"
 
 export const MobileMenu = ({ headerHeight }) => {
     return (
         <MobileMenuWrapper headerHeight={headerHeight}>
-            <HeaderPhoneStyled />
+            <HeaderContacsStyled />
 
             <NavigationStyled />
         </MobileMenuWrapper>
     )
 }
 
-const HeaderPhoneStyled = styled(HeaderPhone)`
+const HeaderContacsStyled = styled(HeaderContacts)`
     display: none;
     ${breakpoint.mobile`
         display: block;
