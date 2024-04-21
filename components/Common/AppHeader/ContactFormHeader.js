@@ -3,9 +3,9 @@ import styled from "styled-components"
 import { sendContactForm } from "../../../lib/api"
 import { Button } from "../../ui/buttons/Button"
 
-export const ContactFormHeader = ({ isVisible }) => {
+export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
     const [name, setName] = useState('')
-    const [phone, setPhone] = useState('')
+    const [tel, setTel] = useState('')
     const [formSubmitted, setFormSubmitted] = useState(false)
 
     const resetForm = () => {
@@ -18,6 +18,7 @@ export const ContactFormHeader = ({ isVisible }) => {
         e.preventDefault()
         if (name && phone) {
             sendContactForm({ name, phone }).then(() => {
+                setIsFormVisible(false)
                 setFormSubmitted(true)
                 resetForm()
             })
@@ -25,7 +26,7 @@ export const ContactFormHeader = ({ isVisible }) => {
     }
 
     return (
-        <ContactFormWrapper isVisible={isVisible && !formSubmitted}>
+        <ContactFormWrapper isVisible={isVisible}>
             <ContactFormTitle>{formSubmitted ? 'Запрос отправлен!' : 'Зазазать звонок'}</ContactFormTitle>
             {formSubmitted ? (
                 <ContactFormSuccessMessage>Мы приняли вашу заявку! Спасибо, что связались с нами!</ContactFormSuccessMessage>
@@ -42,8 +43,8 @@ export const ContactFormHeader = ({ isVisible }) => {
                         required
                         type="tel"
                         placeholder="Ваш телефон*"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
+                        value={tel}
+                        onChange={(e) => setTel(e.target.value)}
                     />
                     <Button primary type="submit">Отправить</Button>
                 </ContactForm>
