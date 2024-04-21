@@ -16,8 +16,8 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
-        if (name && phone) {
-            sendContactForm({ name, phone }).then(() => {
+        if (name && tel) {
+            sendContactForm({ name, tel }).then(() => {
                 setIsFormVisible(false)
                 setFormSubmitted(true)
                 resetForm()

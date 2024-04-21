@@ -43,6 +43,7 @@ const HeaderContactMe = styled.div`
     color: #1E4294;
     font-size: 12px;
     user-select: none;
+    text-align: center;
     &:hover {
       color: #5B76CF;
     }

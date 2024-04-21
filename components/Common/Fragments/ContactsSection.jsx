@@ -24,7 +24,7 @@ export const ContactsSection = ({ ...extraProps }) => {
                     </ContactInfoItem>
 
                     <ContactInfoItem>
-                        <ContactInfoTitle icon={'/static/icons/email.svg'}>Телефон:</ContactInfoTitle>
+                        <ContactInfoTitle icon={'/static/icons/email.svg'}>Электронная почта:</ContactInfoTitle>
                         <ContactInfoContent><Link href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</Link></ContactInfoContent>
                     </ContactInfoItem>
                 </ContactsInfoWrapper>
