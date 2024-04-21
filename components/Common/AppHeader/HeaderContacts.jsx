@@ -1,17 +1,28 @@
+import { useState } from "react"
 import styled from "styled-components"
-import { Link } from "../../ui/Link"
+import { ContactFormHeader } from "./ContactFormHeader"
 import { hideOnMobileMixin } from "../../ui/mixins"
 
 export const HeaderContacts = ({ ...extraProps }) => {
+    const [isFormVisible, setIsFormVisible] = useState(false)
+
+    const toggleFormVisibility = () => {
+        setIsFormVisible(prevState => !prevState)
+    }
+
     return (
-        <PhoneLinkWrapper {...extraProps}>
-            <Link href='tel:+78123394597'>+7 (812) 339-45-97</Link>
-            <Link href='mailto:spb@dielcom.ru'>spb@dielcom.ru</Link>
-        </PhoneLinkWrapper>
+        <HeaderContactsWrapper {...extraProps}>
+            <HeaderPhoneWrapper>
+                <a href='mailto:spb@dielcom.ru'>spb@dielcom.ru</a>
+                <HeaderContactMe onClick={toggleFormVisibility}>Заказать звонок</HeaderContactMe>
+                <ContactFormHeader isVisible={isFormVisible} />
+            </HeaderPhoneWrapper>
+            <a href='tel:+78123394597'>+7 (812) 339-45-97</a>
+        </HeaderContactsWrapper>
     )
 }
 
-const PhoneLinkWrapper = styled.div`
+const HeaderContactsWrapper = styled.div`
     font-weight: bold;
     color: ${({ theme }) => theme.colors.primary};
     display: flex;
@@ -19,4 +30,17 @@ const PhoneLinkWrapper = styled.div`
     gap: 15px;
 
     ${({ hideOnMobile }) => hideOnMobile && hideOnMobileMixin}
+`
+
+const HeaderPhoneWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+`
+
+const HeaderContactMe = styled.div`
+    color: #080460;
+    &:hover {
+      color: #5B76CF;
+    }
 `
