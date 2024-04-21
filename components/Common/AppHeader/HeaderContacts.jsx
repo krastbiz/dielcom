@@ -12,17 +12,18 @@ export const HeaderContacts = ({ ...extraProps }) => {
 
     return (
         <HeaderContactsWrapper {...extraProps}>
+            <a href='mailto:spb@dielcom.ru'>spb@dielcom.ru</a>
             <HeaderPhoneWrapper>
-                <a href='mailto:spb@dielcom.ru'>spb@dielcom.ru</a>
+                <a href='tel:+78123394597'>+7 (812) 339-45-97</a>
                 <HeaderContactMe onClick={toggleFormVisibility}>Заказать звонок</HeaderContactMe>
                 <ContactFormHeader isVisible={isFormVisible} />
             </HeaderPhoneWrapper>
-            <a href='tel:+78123394597'>+7 (812) 339-45-97</a>
         </HeaderContactsWrapper>
     )
 }
 
 const HeaderContactsWrapper = styled.div`
+    position: relative;
     font-weight: bold;
     color: ${({ theme }) => theme.colors.primary};
     display: flex;
