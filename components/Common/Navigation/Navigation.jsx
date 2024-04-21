@@ -33,6 +33,6 @@ const NavigationWrapper = styled.div`
     display: flex;
     
     ${NavLinkStyled} + ${NavLinkStyled} {
-        margin-left: 130px;
+        margin-left: 110px;
     }
 `

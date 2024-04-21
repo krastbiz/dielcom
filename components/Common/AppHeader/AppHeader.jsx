@@ -79,7 +79,7 @@ const NavigationStyled = styled(Navigation)`
 
     ${breakpoint.desktop`
         ${NavLinkWrapper} + ${NavLinkWrapper} {
-            margin-left: 30px;
+            margin-left: 20px;
         }
     `}
 
