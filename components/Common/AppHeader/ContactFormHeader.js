@@ -60,7 +60,7 @@ const ContactFormWrapper = styled.div`
     background: white;
     text-align: center;
     position: sticky;
-    top: 50px;
+    top: 150px;
 `
 
 const ContactForm = styled.form`
