@@ -19,8 +19,10 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
         if (name && tel) {
             sendContactForm({ name, tel }).then(() => {
                 setFormSubmitted(true)
-                resetForm()
-                setIsFormVisible(false)
+                setTimeout(() => {
+                    resetForm()
+                    setIsFormVisible(false)
+                }, 1000)
             })
         }
     }
