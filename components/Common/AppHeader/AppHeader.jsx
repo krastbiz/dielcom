@@ -24,7 +24,7 @@ export const AppHeader = () => {
             <AppHeaderWrapper>
                 <ContainerStyled>
                     <AppLogoWrapper>
-                        <img src="/static/icons/logo.svg" alt="Логотип сайта" />
+                        <img src="/static/icons/logo.svg" alt="Логотип сайта" href={'/'} />
                     </AppLogoWrapper>
 
                     <HeaderPhone hideOnMobile />

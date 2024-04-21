@@ -10,6 +10,7 @@ export const FloatContactDialog = () => {
 
     const [contactFormVisible, setContactFormVisible] = useState(false)
     const [email, setEmail] = useState('')
+    const [tel, setTel] = useState('')
     const [message, setMessage] = useState('')
     const [emailWasSent, setEmailWasSent] = useState(false)
 
@@ -25,7 +26,7 @@ export const FloatContactDialog = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
-        sendContactForm({ email, message }).then(() => {
+        sendContactForm({ email, message, tel }).then(() => {
             setEmailWasSent(true)
         })
     }
@@ -45,6 +46,13 @@ export const FloatContactDialog = () => {
                                     placeholder="Ваш email*"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
+                                    />
+                                <input
+                                    name="tel"
+                                    type="tel"
+                                    placeholder="Ваш телефон"
+                                    value={tel}
+                                    onChange={(e) => setTel(e.target.value)}
                                     />
                                 <textarea
                                     name="message"

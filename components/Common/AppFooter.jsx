@@ -22,7 +22,7 @@ export const AppFooter = () => {
         <AppFooterWrapper>
             <FooterContentContainer>
                 <FooterLogoWrapper>
-                    <img src="/static/icons/logo-footer.svg" alt="Логотип сайта" />
+                    <img src="/static/icons/logo-footer.svg" alt="Логотип сайта" href={'/'} />
                 </FooterLogoWrapper>
 
                 {/* Navigation */}
