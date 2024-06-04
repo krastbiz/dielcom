@@ -5,6 +5,7 @@ import { breakpoint } from "../../lib/theme"
 import { Button } from "../ui/buttons/Button"
 import { ContactButton } from "../ui/buttons/ContactButton"
 import { H2 } from "../ui/Typography"
+import { StyledLink } from "../ui/Link"
 
 export const FloatContactDialog = () => {
 
@@ -67,6 +68,8 @@ export const FloatContactDialog = () => {
                                 <Button primary type="submit">Отправить</Button>
                             </ContactForm>
                         )}
+                        <ContactFormDescription>Нажимая кнопку "Отправить", Вы даете согласие на 
+                            <StyledLink href={'/policy'}> обработку персональных данных</StyledLink></ContactFormDescription>
                 </ContactFormWrapper>
             )}
 
@@ -138,4 +141,13 @@ const ContactFormSuccessMessage = styled.p`
     padding-top: 20px;
     justify-content: center;
     height: 180px;
+`
+
+const ContactFormDescription = styled.p`
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+    color: ${({ theme }) => theme.colors.main};
+    text-align: start;
 `

@@ -2,6 +2,7 @@ import { useState } from "react"
 import styled from "styled-components"
 import { sendContactForm } from "../../../lib/api"
 import { Button } from "../../ui/buttons/Button"
+import { StyledLink} from "../../ui/Link"
 
 export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
     const [name, setName] = useState('')
@@ -49,6 +50,8 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
                         onChange={(e) => setTel(e.target.value)}
                     />
                     <Button primary type="submit">Отправить</Button>
+                    <ContactFormDescription>Нажимая кнопку "Отправить", Вы даете согласие на 
+                            <StyledLink href={'/policy'}> обработку персональных данных</StyledLink></ContactFormDescription>
                 </ContactForm>
             )}
         </ContactFormWrapper>
@@ -84,4 +87,13 @@ const ContactFormTitle = styled.h2`
 
 const ContactFormSuccessMessage = styled.p`
     padding-top: 20px;
+`
+
+const ContactFormDescription = styled.p`
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+    color: ${({ theme }) => theme.colors.main};
+    text-align: start;
 `

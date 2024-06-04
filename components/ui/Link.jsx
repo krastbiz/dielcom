@@ -1,4 +1,5 @@
 import NextLink from "next/link"
+import styled from "styled-components"
 
 export const Link = ({ href, target, children }) => {
     if (
@@ -11,3 +12,8 @@ export const Link = ({ href, target, children }) => {
         <NextLink href={href} target={target}>{children}</NextLink>
     )
 }
+
+export const StyledLink = styled(NextLink)`
+font-style: italic;
+text-decoration: underline;
+`;
