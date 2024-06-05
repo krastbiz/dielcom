@@ -1,19 +1,16 @@
-import styled from "styled-components"
-import { getCatalogPageUrl, getCompanyPageUrl } from "../../lib/utils/routeHelper"
-import { DefaultMainContent, MainSection } from "../Common/Fragments/MainSection"
-import { Container } from "../ui/layouts/Container"
-import { MainLayout } from "../ui/layouts/MainLayout"
-import { H1, H2 } from "../ui/Typography"
-import { Link } from "../ui/Link"
-import { breakpoint } from "../../lib/theme"
+import styled from 'styled-components'
+import { getCatalogPageUrl, getCompanyPageUrl } from '../../lib/utils/routeHelper'
+import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
+import { Container } from '../ui/layouts/Container'
+import { MainLayout } from '../ui/layouts/MainLayout'
+import { H1, H2 } from '../ui/Typography'
+import { Link } from '../ui/Link'
+import { breakpoint } from '../../lib/theme'
 
 const Catalog = ({ companies, brands }) => {
     return (
         <MainLayout>
-            <MainSection
-                showBreadcrumb
-                breadcrumbs={[ { href: getCatalogPageUrl(), text: 'Поставщики' }]}
-            >
+            <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Поставщики' }]}>
                 <DefaultMainContent>
                     <H1>ЛИНЕЙКА ПОСТАВОК</H1>
                     <MainSectionSubtitle>Бренды, официально представленные компанией Диэлком-ЭК</MainSectionSubtitle>
@@ -25,17 +22,16 @@ const Catalog = ({ companies, brands }) => {
                     <H2>Дистрибьюция</H2>
 
                     <CatalogItemsWrapper>
-                        {companies.map(company => (
+                        {companies.map((company) => (
                             <CatalogItem key={company.id}>
                                 <Link href={getCompanyPageUrl(company.id)}>
                                     <CatalogItemLogoWrapper>
-                                        <img src={company.logo} alt={`Логотип компании ${company.name}`}/>
+                                        <img src={company.logo} alt={`Логотип компании ${company.name}`} />
                                     </CatalogItemLogoWrapper>
                                     <CatalogItemTitle>{company.title}</CatalogItemTitle>
                                 </Link>
                             </CatalogItem>
                         ))}
-
                     </CatalogItemsWrapper>
 
                     {/* <H2>Мировые бренды</H2>
@@ -108,7 +104,6 @@ const CatalogItem = styled.div`
             color: ${({ theme }) => theme.colors.active};
         }
     }
-    
 `
 
 const CatalogItemLogoWrapper = styled.div`
@@ -123,7 +118,7 @@ const CatalogItemLogoWrapper = styled.div`
     &:hover {
         border: none;
         box-shadow: 0px 0px 21px 5px rgba(34, 60, 80, 0.2);
-    } 
+    }
 
     img {
         max-height: 50px;

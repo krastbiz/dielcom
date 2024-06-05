@@ -1,7 +1,7 @@
-import Head from "next/head"
-import { Contacts } from "../components/ContactsPage/Contacts"
-import { getContactsPageUrl } from "../lib/utils/routeHelper"
-import { getPageMetadata, getPageCanonical } from "../lib/utils/pageHelper"
+import Head from 'next/head'
+import { Contacts } from '../components/ContactsPage/Contacts'
+import { getContactsPageUrl } from '../lib/utils/routeHelper'
+import { getPageMetadata, getPageCanonical } from '../lib/utils/pageHelper'
 
 const ContactsPage = () => {
     const pageTitle = 'Электронные компоненты'
@@ -11,7 +11,7 @@ const ContactsPage = () => {
     return (
         <>
             <Head>
-                {getPageMetadata(pageTitle, pageDescription )}
+                {getPageMetadata(pageTitle, pageDescription)}
                 {getPageCanonical(pageRelativeUrl)}
             </Head>
             <Contacts />

@@ -1,23 +1,20 @@
-import { useRouter } from "next/router"
-import styled from "styled-components"
-import { breakpoint } from "../../lib/theme"
-import { useScrollRestoration } from "../../lib/utils/hooks/useScrollResoration"
-import { AllNewsFilter } from "../../lib/utils/newsHelper"
-import { getAllNewsPage, getCompanyNewsPage } from "../../lib/utils/routeHelper"
-import { DefaultMainContent, MainSection } from "../Common/Fragments/MainSection"
-import { NewsCard, NewsCardWrapper } from "../Common/NewsCard"
-import { ChipButton } from "../ui/buttons/ChipButton"
-import { Container } from "../ui/layouts/Container"
-import { MainLayout } from "../ui/layouts/MainLayout"
-import { H1 } from "../ui/Typography"
-
-
+import { useRouter } from 'next/router'
+import styled from 'styled-components'
+import { breakpoint } from '../../lib/theme'
+import { useScrollRestoration } from '../../lib/utils/hooks/useScrollResoration'
+import { AllNewsFilter } from '../../lib/utils/newsHelper'
+import { getAllNewsPage, getCompanyNewsPage } from '../../lib/utils/routeHelper'
+import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
+import { NewsCard, NewsCardWrapper } from '../Common/NewsCard'
+import { ChipButton } from '../ui/buttons/ChipButton'
+import { Container } from '../ui/layouts/Container'
+import { MainLayout } from '../ui/layouts/MainLayout'
+import { H1 } from '../ui/Typography'
 
 const AllNews = ({ companies, filteredNews }) => {
-
     const { query } = useRouter()
     const currentCompanyId = query.companyId
-    const companyFilters = companies.map(company => ({
+    const companyFilters = companies.map((company) => ({
         id: company.id,
         name: company.name,
     }))
@@ -34,7 +31,7 @@ const AllNews = ({ companies, filteredNews }) => {
     const getBreadcrumbs = () => {
         const breadcrumbs = [{ href: getAllNewsPage(), text: 'Новости' }]
         if (currentCompanyId) {
-            const currentCompany = companies.find(company => company.id == currentCompanyId)
+            const currentCompany = companies.find((company) => company.id == currentCompanyId)
 
             breadcrumbs.push({
                 href: getCompanyNewsPage(currentCompanyId),
@@ -42,16 +39,12 @@ const AllNews = ({ companies, filteredNews }) => {
             })
         }
 
-
         return breadcrumbs
     }
 
     return (
         <MainLayout>
-            <MainSection
-                showBreadcrumb
-                breadcrumbs={getBreadcrumbs()}
-            >
+            <MainSection showBreadcrumb breadcrumbs={getBreadcrumbs()}>
                 <DefaultMainContent>
                     <H1>Новости рынка электронных компонентов</H1>
                 </DefaultMainContent>
@@ -61,15 +54,20 @@ const AllNews = ({ companies, filteredNews }) => {
                 <Container>
                     <AllNewsFiltersWrapper>
                         <>
-                        {filters.map((company, idx) => (
-                            <ChipButton key={company.id + idx} text={company.name} href={getCompanyNewsPage(company.id)} isActive={getIsFilterActive(currentCompanyId, company.id)}/>
-                        ))}
+                            {filters.map((company, idx) => (
+                                <ChipButton
+                                    key={company.id + idx}
+                                    text={company.name}
+                                    href={getCompanyNewsPage(company.id)}
+                                    isActive={getIsFilterActive(currentCompanyId, company.id)}
+                                />
+                            ))}
                         </>
                     </AllNewsFiltersWrapper>
 
                     <AllNewsCardsWrapper>
                         {filteredNews.map((news, index) => (
-                            <NewsCard key={news.id+news.companyId+index} news={news} />
+                            <NewsCard key={news.id + news.companyId + index} news={news} />
                         ))}
                     </AllNewsCardsWrapper>
                 </Container>
@@ -97,7 +95,7 @@ const AllNewsFiltersWrapper = styled.div`
 
 const AllNewsCardsWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     justify-content: center;
 
@@ -116,5 +114,4 @@ const AllNewsCardsWrapper = styled.div`
     ${breakpoint.mobile`
         grid-template-columns: repeat(1,1fr);
     `}
-
 `

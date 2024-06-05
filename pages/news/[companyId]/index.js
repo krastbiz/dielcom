@@ -1,4 +1,4 @@
-import AllNewsPage, { getServerSideProps } from "../index";
+import AllNewsPage, { getServerSideProps } from '../index'
 
 export default AllNewsPage
 export { getServerSideProps }

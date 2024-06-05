@@ -1,8 +1,8 @@
-import { useState } from "react"
-import styled from "styled-components"
-import { sendContactForm } from "../../../lib/api"
-import { Button } from "../../ui/buttons/Button"
-import { StyledLink} from "../../ui/Link"
+import { useState } from 'react'
+import styled from 'styled-components'
+import { sendContactForm } from '../../../lib/api'
+import { Button } from '../../ui/buttons/Button'
+import { StyledLink } from '../../ui/Link'
 
 export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
     const [name, setName] = useState('')
@@ -49,9 +49,13 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
                         value={tel}
                         onChange={(e) => setTel(e.target.value)}
                     />
-                    <Button primary type="submit">Отправить</Button>
-                    <ContactFormDescription>Нажимая кнопку "Отправить", Вы даете согласие на 
-                            <StyledLink href={'/policy'}> обработку персональных данных</StyledLink></ContactFormDescription>
+                    <Button primary type="submit">
+                        Отправить
+                    </Button>
+                    <ContactFormDescription>
+                        Нажимая кнопку "Отправить", Вы даете согласие на
+                        <StyledLink href={'/policy'}> обработку персональных данных</StyledLink>
+                    </ContactFormDescription>
                 </ContactForm>
             )}
         </ContactFormWrapper>
@@ -59,7 +63,7 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
 }
 
 const ContactFormWrapper = styled.div`
-    display: ${({ isVisible }) => isVisible ? 'block' : 'none'};
+    display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
     padding: 20px;
     width: 300px;
     border: 1px solid ${({ theme }) => theme.colors.background};

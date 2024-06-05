@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Button = styled.button`
     font-size: 12px;
@@ -11,6 +11,6 @@ export const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
-    background: ${({ theme, primary }) => primary ? theme.colors.active : 'white'};
-    color: ${({ theme, primary }) => primary ? 'white' : theme.colors.main};
+    background: ${({ theme, primary }) => (primary ? theme.colors.active : 'white')};
+    color: ${({ theme, primary }) => (primary ? 'white' : theme.colors.main)};
 `

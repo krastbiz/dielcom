@@ -1,11 +1,11 @@
-import styled from "styled-components"
-import { breakpoint } from "../../lib/theme"
-import { getContractProductionPageUrl } from "../../lib/utils/routeHelper"
-import { ContactsSection } from "../Common/Fragments/ContactsSection"
-import { MainSection } from "../Common/Fragments/MainSection"
-import { Container } from "../ui/layouts/Container"
-import { MainLayout } from "../ui/layouts/MainLayout"
-import { H1, H2 } from "../ui/Typography"
+import styled from 'styled-components'
+import { breakpoint } from '../../lib/theme'
+import { getContractProductionPageUrl } from '../../lib/utils/routeHelper'
+import { ContactsSection } from '../Common/Fragments/ContactsSection'
+import { MainSection } from '../Common/Fragments/MainSection'
+import { Container } from '../ui/layouts/Container'
+import { MainLayout } from '../ui/layouts/MainLayout'
+import { H1, H2 } from '../ui/Typography'
 
 const ContractProduction = () => {
     return (
@@ -14,37 +14,42 @@ const ContractProduction = () => {
                 <MainSection
                     showBreadcrumb
                     breadcrumbs={[{ href: getContractProductionPageUrl(), text: 'Контрактное производство' }]}
-                    >
-                    
+                >
                     <Container>
                         <CPMainContentWrapper>
-
                             <CPMainContentTextWrapper>
-                                <CPMainContentTitle>
-                                    КОНТРАКТНОЕ ПРОИЗВОДСТВО
-                                </CPMainContentTitle>
+                                <CPMainContentTitle>КОНТРАКТНОЕ ПРОИЗВОДСТВО</CPMainContentTitle>
                                 <CPMainContentDescription>
-                                    ООО «ДиЭлКом» предлагает комплексное решения по контрактному производству – от поставок компонентов и печатных плат до производства готовых изделий. Ключевыми преимуществами являются налаженные каналы поставки электронных компонентов, проверенные поставщики ПП и высокая квалификация наших сотрудников. Опыт выполнения проектов различной степени сложности и конкурентные цены на компоненты позволяют нам предлагать решения по проектам контрактного производства.
+                                    ООО «ДиЭлКом» предлагает комплексное решения по контрактному производству – от
+                                    поставок компонентов и печатных плат до производства готовых изделий. Ключевыми
+                                    преимуществами являются налаженные каналы поставки электронных компонентов,
+                                    проверенные поставщики ПП и высокая квалификация наших сотрудников. Опыт выполнения
+                                    проектов различной степени сложности и конкурентные цены на компоненты позволяют нам
+                                    предлагать решения по проектам контрактного производства.
                                 </CPMainContentDescription>
                             </CPMainContentTextWrapper>
 
                             <CPMainContentImageWrapper>
-                                <img src="/static/images/contract-production-page-main.jpeg" alt="Изображение платы"/>
+                                <img src="/static/images/contract-production-page-main.jpeg" alt="Изображение платы" />
                             </CPMainContentImageWrapper>
                         </CPMainContentWrapper>
                     </Container>
-
                 </MainSection>
 
                 <CPInfoSection>
                     <Container>
-
                         <CPInfoListTitle>Печатные платы любого уровня сложности</CPInfoListTitle>
                         <CPInfoList>
-                            <CPInfoListItem>Изготовление односторонних, двухсторонних и многослойных (до 40 слоёв) плат</CPInfoListItem>
+                            <CPInfoListItem>
+                                Изготовление односторонних, двухсторонних и многослойных (до 40 слоёв) плат
+                            </CPInfoListItem>
                             <CPInfoListItem>Изготовление плат для ВЧ/СВЧ применений</CPInfoListItem>
-                            <CPInfoListItem>Изготовление печатных плат по свинцовой, бессвинцовой и смешанной технологии</CPInfoListItem>
-                            <CPInfoListItem>изготовление опытных образцов печатных плат от 5 рабочих дней</CPInfoListItem>
+                            <CPInfoListItem>
+                                Изготовление печатных плат по свинцовой, бессвинцовой и смешанной технологии
+                            </CPInfoListItem>
+                            <CPInfoListItem>
+                                изготовление опытных образцов печатных плат от 5 рабочих дней
+                            </CPInfoListItem>
                         </CPInfoList>
 
                         <CPInfoListTitle>Монтаж печатных плат</CPInfoListTitle>
@@ -64,7 +69,6 @@ const ContractProduction = () => {
                             <CPInfoListItem>Рентген-контроль</CPInfoListItem>
                             <CPInfoListItem>Контроль качества отмывки</CPInfoListItem>
                         </CPInfoList>
-
                     </Container>
                 </CPInfoSection>
 
@@ -144,14 +148,13 @@ const CPInfoList = styled.ul`
     ${breakpoint.mobile`
         width: 90%;
     `}
-
 `
 const CPInfoListItem = styled.li`
     position: relative;
     margin-bottom: 10px;
 
     ::before {
-        content: "";
+        content: '';
         background-color: ${({ theme }) => theme.colors.primary};
         border-radius: 100%;
         height: 10px;

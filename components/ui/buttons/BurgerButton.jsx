@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const BurgerButton = ({ isActive, onClick, ...extraProps }) => {
     return (
@@ -17,14 +17,12 @@ const BurgerLine = styled.div`
     width: 100%;
     border-radius: 3px;
     transition: 0.2s ease all;
-    
 `
 
 const BurgerButtonWrapper = styled.div`
     height: 23px;
     width: 23px;
     position: relative;
-
 
     ${BurgerLine}:nth-child(1) {
         top: 0;
@@ -41,7 +39,9 @@ const BurgerButtonWrapper = styled.div`
         width: 12px;
     }
 
-    ${({ isActive }) => isActive && `
+    ${({ isActive }) =>
+        isActive &&
+        `
 
         ${BurgerLine}:nth-child(1), ${BurgerLine}:nth-child(3) {
             width: 100%;

@@ -1,18 +1,17 @@
-import { useState } from "react"
-import styled from "styled-components"
-import { breakpoint } from "../../../lib/theme"
-import { useDeviceCheck } from "../../../lib/utils/hooks/useDeviceCheck"
-import { BurgerButton } from "../../ui/buttons/BurgerButton"
-import { Container } from "../../ui/layouts/Container"
-import { MobileMenu } from "./MobileMenu"
-import { Navigation } from "../Navigation/Navigation"
-import { NavLinkWrapper } from "../Navigation/NavLink"
-import { HeaderContacts } from "./HeaderContacts"
+import { useState } from 'react'
+import styled from 'styled-components'
+import { breakpoint } from '../../../lib/theme'
+import { useDeviceCheck } from '../../../lib/utils/hooks/useDeviceCheck'
+import { BurgerButton } from '../../ui/buttons/BurgerButton'
+import { Container } from '../../ui/layouts/Container'
+import { MobileMenu } from './MobileMenu'
+import { Navigation } from '../Navigation/Navigation'
+import { NavLinkWrapper } from '../Navigation/NavLink'
+import { HeaderContacts } from './HeaderContacts'
 
 const HEADER_HEIGHT = '70px'
 
 export const AppHeader = () => {
-
     const [isMobileMenuActive, setIsMobileMenuActive] = useState(false)
 
     const { isLaptop, isMobile, isTablet } = useDeviceCheck()
@@ -33,13 +32,17 @@ export const AppHeader = () => {
 
                     <NavigationStyled />
 
-                    {isLaptopOrMobileOrTablet && <BurgerButtonStyled isActive={isMobileMenuActive} onClick={() => setIsMobileMenuActive((prev) => !prev)}/> }
+                    {isLaptopOrMobileOrTablet && (
+                        <BurgerButtonStyled
+                            isActive={isMobileMenuActive}
+                            onClick={() => setIsMobileMenuActive((prev) => !prev)}
+                        />
+                    )}
                 </ContainerStyled>
-
             </AppHeaderWrapper>
-            {showMobileMenu && <MobileMenu headerHeight={HEADER_HEIGHT}/>}
+            {showMobileMenu && <MobileMenu headerHeight={HEADER_HEIGHT} />}
         </>
-    )   
+    )
 }
 
 const BurgerButtonStyled = styled(BurgerButton)`

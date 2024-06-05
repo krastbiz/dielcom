@@ -1,19 +1,19 @@
-import styled from "styled-components"
-import { breakpoint } from "../../lib/theme"
-import { Container } from "../ui/layouts/Container"
-import { Link } from "../ui/Link"
-import { Navigation } from "./Navigation/Navigation"
-import { NavLinkWrapper } from "./Navigation/NavLink"
+import styled from 'styled-components'
+import { breakpoint } from '../../lib/theme'
+import { Container } from '../ui/layouts/Container'
+import { Link } from '../ui/Link'
+import { Navigation } from './Navigation/Navigation'
+import { NavLinkWrapper } from './Navigation/NavLink'
 
 const CONTACTS = [
     {
-        image: { url: '/static/icons/address.svg', alt: 'Иконка Адреса'},
-        text: '195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»'
+        image: { url: '/static/icons/address.svg', alt: 'Иконка Адреса' },
+        text: '195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»',
     },
     {
-        image: { url: '/static/icons/phone.svg', alt: 'Иконка Адреса'},
+        image: { url: '/static/icons/phone.svg', alt: 'Иконка Адреса' },
         text: '+7 (812) 339-45-97',
-        href: 'tel:+78123394597'
+        href: 'tel:+78123394597',
     },
 ]
 
@@ -28,11 +28,16 @@ export const AppFooter = () => {
                 </FooterLogoWrapper>
 
                 {/* Navigation */}
-                <NavigationStyled isFooterNavigation/>
+                <NavigationStyled isFooterNavigation />
 
                 <ContactsWrapper>
-                    {CONTACTS.map(contact => (
-                        <ContactItem key={contact.href + contact.text} image={contact.image} text={contact.text} href={contact.href}/>
+                    {CONTACTS.map((contact) => (
+                        <ContactItem
+                            key={contact.href + contact.text}
+                            image={contact.image}
+                            text={contact.text}
+                            href={contact.href}
+                        />
                     ))}
                 </ContactsWrapper>
             </FooterContentContainer>
@@ -44,7 +49,7 @@ export const AppFooter = () => {
 
 const ContactItem = ({ image, text, href }) => (
     <ContactItemWrapper>
-        <img src={image.url} alt={image.alt}/>
+        <img src={image.url} alt={image.alt} />
         {href ? <Link href={href}>{text}</Link> : text}
     </ContactItemWrapper>
 )
@@ -80,7 +85,7 @@ const FooterContentContainer = styled(Container)`
 `
 
 const CopyrightContainer = styled(Container)`
-        ${breakpoint.laptop`
+    ${breakpoint.laptop`
             font-weight: 300;
             font-size: 14px;
         `}

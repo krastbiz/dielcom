@@ -1,14 +1,10 @@
-import styled from "styled-components"
-import { breakpoint } from "../../../lib/theme"
+import styled from 'styled-components'
+import { breakpoint } from '../../../lib/theme'
 
 export const ContactButton = ({ onClick, isActive }) => {
     return (
         <ContactFloatButtonWrapper onClick={onClick}>
-            {isActive ? (
-                <CloseDiv></CloseDiv>
-            ) : (
-                <img src="/static/icons/phone.svg" alt="Изображение почты"/>
-            )}
+            {isActive ? <CloseDiv></CloseDiv> : <img src="/static/icons/phone.svg" alt="Изображение почты" />}
         </ContactFloatButtonWrapper>
     )
 }
@@ -43,8 +39,9 @@ const CloseDiv = styled.div`
     height: 100%;
     width: 100%;
 
-    ::before, ::after {
-        content: "";
+    ::before,
+    ::after {
+        content: '';
         position: absolute;
         left: 50%;
         top: 50%;

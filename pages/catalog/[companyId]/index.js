@@ -1,8 +1,8 @@
-import Head from "next/head"
-import Company from "../../../components/CompanyPage/Company"
-import { COMPANY_ARRAY } from "../../../mock-data"
-import { getCompanyPageUrl } from "../../../lib/utils/routeHelper"
-import { getPageMetadata, getPageCanonical } from "../../../lib/utils/pageHelper"
+import Head from 'next/head'
+import Company from '../../../components/CompanyPage/Company'
+import { COMPANY_ARRAY } from '../../../mock-data'
+import { getCompanyPageUrl } from '../../../lib/utils/routeHelper'
+import { getPageMetadata, getPageCanonical } from '../../../lib/utils/pageHelper'
 
 const CompanyPage = ({ company }) => {
     const pageTitle = `Электронные компоненты компании ${company.name}`
@@ -12,7 +12,7 @@ const CompanyPage = ({ company }) => {
     return (
         <>
             <Head>
-                {getPageMetadata(pageTitle, pageDescription )}
+                {getPageMetadata(pageTitle, pageDescription)}
                 {getPageCanonical(pageRelativeUrl)}
             </Head>
             <Company company={company} />
@@ -23,11 +23,11 @@ const CompanyPage = ({ company }) => {
 export const getServerSideProps = ({ query }) => {
     const { companyId } = query
 
-    const company = COMPANY_ARRAY.find(comp => comp.id === companyId)
+    const company = COMPANY_ARRAY.find((comp) => comp.id === companyId)
     return {
         props: {
-            company: company
-        }
+            company: company,
+        },
     }
 }
 

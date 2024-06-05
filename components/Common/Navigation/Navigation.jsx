@@ -1,7 +1,7 @@
-import { useRouter } from "next/router"
-import styled from "styled-components"
-import { theme } from "../../../lib/theme"
-import { NavLink } from "./NavLink"
+import { useRouter } from 'next/router'
+import styled from 'styled-components'
+import { theme } from '../../../lib/theme'
+import { NavLink } from './NavLink'
 
 const NAV_ITEMS = [
     { href: '/', text: 'Главная' },
@@ -12,17 +12,23 @@ const NAV_ITEMS = [
 ]
 
 export const Navigation = ({ isFooterNavigation, ...extraProps }) => {
-
     const nextRouter = useRouter()
     const currentUrl = nextRouter.asPath
 
-    const isLinkActive = (linkUrl) => linkUrl === currentUrl 
+    const isLinkActive = (linkUrl) => linkUrl === currentUrl
     const linkActiveColor = isFooterNavigation ? 'white' : theme.colors.primary
 
     return (
         <NavigationWrapper {...extraProps}>
-            {NAV_ITEMS.map(navItem => (
-                <NavLinkStyled activeColor={linkActiveColor} isActive={isLinkActive(navItem.href)} key={navItem.href + navItem.text} href={navItem.href}>{navItem.text}</NavLinkStyled>
+            {NAV_ITEMS.map((navItem) => (
+                <NavLinkStyled
+                    activeColor={linkActiveColor}
+                    isActive={isLinkActive(navItem.href)}
+                    key={navItem.href + navItem.text}
+                    href={navItem.href}
+                >
+                    {navItem.text}
+                </NavLinkStyled>
             ))}
         </NavigationWrapper>
     )
@@ -31,7 +37,7 @@ const NavLinkStyled = styled(NavLink)``
 
 const NavigationWrapper = styled.div`
     display: flex;
-    
+
     ${NavLinkStyled} + ${NavLinkStyled} {
         margin-left: 110px;
     }

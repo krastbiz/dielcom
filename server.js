@@ -19,7 +19,7 @@ app.prepare().then(() => {
     })
 
     const serverListening = server.listen(PORT, (error) => {
-        if (error) console.error("[Server] ERROR: ", error)
+        if (error) console.error('[Server] ERROR: ', error)
 
         console.log('=================================')
         console.log('[Server] App is running!')

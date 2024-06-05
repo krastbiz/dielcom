@@ -1,15 +1,14 @@
-import { useRouter } from "next/router"
-import styled from "styled-components"
-import { breakpoint } from "../../lib/theme"
-import { getAllNewsPage, getCompanyNewsPage, getNewsDetailPageUrl } from "../../lib/utils/routeHelper"
-import { DefaultMainContent, MainSection } from "../Common/Fragments/MainSection"
-import { NewsSection } from "../Common/Fragments/NewsSection"
-import { Container } from "../ui/layouts/Container"
-import { MainLayout } from "../ui/layouts/MainLayout"
-import { H1, H2 } from "../ui/Typography"
+import { useRouter } from 'next/router'
+import styled from 'styled-components'
+import { breakpoint } from '../../lib/theme'
+import { getAllNewsPage, getCompanyNewsPage, getNewsDetailPageUrl } from '../../lib/utils/routeHelper'
+import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
+import { NewsSection } from '../Common/Fragments/NewsSection'
+import { Container } from '../ui/layouts/Container'
+import { MainLayout } from '../ui/layouts/MainLayout'
+import { H1, H2 } from '../ui/Typography'
 
 const NewsDetail = ({ company, newsDetail, featuredNewsArray }) => {
-
     const { query } = useRouter()
     const { companyId, newsId } = query
 
@@ -25,10 +24,7 @@ const NewsDetail = ({ company, newsDetail, featuredNewsArray }) => {
 
     return (
         <MainLayout>
-            <MainSection
-                showBreadcrumb
-                breadcrumbs={getBreadcrumbs()}
-            >
+            <MainSection showBreadcrumb breadcrumbs={getBreadcrumbs()}>
                 <DefaultMainContent>
                     <H1>Новости компании {company.name}</H1>
                 </DefaultMainContent>
@@ -40,13 +36,11 @@ const NewsDetail = ({ company, newsDetail, featuredNewsArray }) => {
                     <NewsDetailImageWrapper>
                         <img src={newsDetail.imageUrl} alt="Изображение новости" />
                     </NewsDetailImageWrapper>
-                    <NewsDetailContent>
-                        {newsDetail.description}
-                    </NewsDetailContent>
+                    <NewsDetailContent>{newsDetail.description}</NewsDetailContent>
                 </Container>
             </NewsDetailSection>
 
-            <NewsSection newsArray={featuredNewsArray}/>
+            <NewsSection newsArray={featuredNewsArray} />
         </MainLayout>
     )
 }

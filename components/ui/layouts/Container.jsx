@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { breakpoint, screenWidth } from "../../../lib/theme";
+import styled from 'styled-components'
+import { breakpoint, screenWidth } from '../../../lib/theme'
 
 const Container = styled.div`
     padding-right: 40px;
@@ -30,6 +30,6 @@ const Container = styled.div`
         padding-left: 10px;
         width: 100%;
         flex-direction: column;
-    `} 
+    `}
 `
 export { Container }

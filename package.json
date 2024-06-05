@@ -1,32 +1,47 @@
 {
-  "name": "dielcom",
-  "version": "1.0.0",
-  "description": "Electronic components distributor",
-  "main": "server.js",
-  "scripts": {
-    "dev": "node server.js dev=true",
-    "start": "node server.js dev=false",
-    "build": "next build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/krastbiz/dielcom.git"
-  },
-  "author": "Alexander Turchin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/krastbiz/dielcom/issues"
-  },
-  "homepage": "https://github.com/krastbiz/dielcom#readme",
-  "dependencies": {
-    "@pbe/react-yandex-maps": "^1.2.2",
-    "axios": "^1.3.4",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "next": "^13.2.4",
-    "nodemailer": "^6.9.1",
-    "react": "^18.2.0",
-    "react-responsive": "^9.0.2",
-    "styled-components": "^5.3.9"
-  }
+    "name": "dielcom",
+    "version": "1.0.0",
+    "description": "Electronic components distributor",
+    "main": "server.js",
+    "scripts": {
+        "dev": "node server.js dev=true",
+        "start": "node server.js dev=false",
+        "build": "next build",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/krastbiz/dielcom.git"
+    },
+    "author": "Alexander Turchin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/krastbiz/dielcom/issues"
+    },
+    "homepage": "https://github.com/krastbiz/dielcom#readme",
+    "dependencies": {
+        "@pbe/react-yandex-maps": "^1.2.2",
+        "axios": "^1.3.4",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "next": "^13.2.4",
+        "nodemailer": "^6.9.1",
+        "react": "^18.2.0",
+        "react-responsive": "^9.0.2",
+        "styled-components": "^5.3.9"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^7.12.0",
+        "@typescript-eslint/parser": "^7.12.0",
+        "eslint": "^8.57.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-react": "^7.34.2",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "prettier": "^3.3.1"
+    }
 }

@@ -1,13 +1,12 @@
-import styled from "styled-components"
-import { breakpoint } from "../../lib/theme"
-import { getCatalogPageUrl, getCompanyPageUrl } from "../../lib/utils/routeHelper"
-import { DefaultMainContent, MainSection } from "../Common/Fragments/MainSection"
-import { Container } from "../ui/layouts/Container"
-import { MainLayout } from "../ui/layouts/MainLayout"
-import { H1, H2 } from "../ui/Typography"
+import styled from 'styled-components'
+import { breakpoint } from '../../lib/theme'
+import { getCatalogPageUrl, getCompanyPageUrl } from '../../lib/utils/routeHelper'
+import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
+import { Container } from '../ui/layouts/Container'
+import { MainLayout } from '../ui/layouts/MainLayout'
+import { H1, H2 } from '../ui/Typography'
 
 const Company = ({ company }) => {
-
     const displayCompanyProducts = company.products.length > 0
 
     return (
@@ -26,25 +25,29 @@ const Company = ({ company }) => {
 
             <CompanyInfoSection>
                 <Container>
-                    
                     <CompanyContentWrapper>
-                        
                         <CompanyLogoWrapper>
-                            <img src={company.logo} alt="Логотип кампании"/>
+                            <img src={company.logo} alt="Логотип кампании" />
                         </CompanyLogoWrapper>
 
                         <CompanyTextWrapper>
                             <CompanyName>{company.name}</CompanyName>
-                            {company.description.map((item) => <CompanyDescription key={item}>{item || 'Описание компании'}</CompanyDescription>)}
-                            {company.services && 
-                            company.services.map((item) => 
-                                <CompanyServices key={item}>
-                                    <CompanyServicestTitle>{item[0]}</CompanyServicestTitle>
-                                    {item.map((service, index) => index > 0 && <CompanyServicesItem  key={service}>{service}</CompanyServicesItem>)}
-                                </CompanyServices>
-                            )}
+                            {company.description.map((item) => (
+                                <CompanyDescription key={item}>{item || 'Описание компании'}</CompanyDescription>
+                            ))}
+                            {company.services &&
+                                company.services.map((item) => (
+                                    <CompanyServices key={item}>
+                                        <CompanyServicestTitle>{item[0]}</CompanyServicestTitle>
+                                        {item.map(
+                                            (service, index) =>
+                                                index > 0 && (
+                                                    <CompanyServicesItem key={service}>{service}</CompanyServicesItem>
+                                                ),
+                                        )}
+                                    </CompanyServices>
+                                ))}
                         </CompanyTextWrapper>
-
                     </CompanyContentWrapper>
                 </Container>
             </CompanyInfoSection>
@@ -55,14 +58,12 @@ const Company = ({ company }) => {
                         <CompanyProductsTitle>ОСНОВНАЯ ПРОДУКЦИЯ:</CompanyProductsTitle>
 
                         <CompanyProductsWrapper>
-                            {company.products.map(product => (
+                            {company.products.map((product) => (
                                 <CompanyProduct key={product.imageUrl}>
                                     <CompanyProductImageWrapper>
-                                        <img src={product.imageUrl} alt="Изображение продукта кампании"/>
+                                        <img src={product.imageUrl} alt="Изображение продукта кампании" />
                                     </CompanyProductImageWrapper>
-                                    <CompanyProductName>
-                                        {product.name}
-                                    </CompanyProductName>
+                                    <CompanyProductName>{product.name}</CompanyProductName>
                                 </CompanyProduct>
                             ))}
                         </CompanyProductsWrapper>
@@ -96,7 +97,7 @@ const CompanyContentWrapper = styled.div`
     ${breakpoint.laptop`
         width: 100%;
     `}
-    
+
     ${breakpoint.mobile`
     flex-direction: column;
     justify-content: center;
@@ -154,11 +155,10 @@ const CompanyServicesItem = styled.li`
     margin-top: 10px;
 
     &:before {
-        content: "•";
+        content: '•';
         color: #023059;
         margin-right: 10px;
     }
-    
 `
 
 const CompanyProductsSection = styled.section`
@@ -172,8 +172,8 @@ const CompanyProductsSection = styled.section`
         padding-bottom: 30px;
     `}
 `
-const CompanyProductsTitle =styled(H2)`
-${breakpoint.mobile`
+const CompanyProductsTitle = styled(H2)`
+    ${breakpoint.mobile`
     width: 60%;
     margin: 0 auto;
     margin-bottom: 20px;

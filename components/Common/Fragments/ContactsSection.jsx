@@ -1,12 +1,11 @@
-import styled from "styled-components"
-import { breakpoint } from "../../../lib/theme"
-import { Container } from "../../ui/layouts/Container"
-import { Link } from "../../ui/Link"
-import { H2 } from "../../ui/Typography"
-import { MapComponent } from "../MapComponent"
+import styled from 'styled-components'
+import { breakpoint } from '../../../lib/theme'
+import { Container } from '../../ui/layouts/Container'
+import { Link } from '../../ui/Link'
+import { H2 } from '../../ui/Typography'
+import { MapComponent } from '../MapComponent'
 
 export const ContactsSection = ({ ...extraProps }) => {
-
     return (
         <ContactsSectionWrapper {...extraProps}>
             <Container>
@@ -15,24 +14,30 @@ export const ContactsSection = ({ ...extraProps }) => {
 
                     <ContactInfoItem>
                         <ContactInfoTitle icon={'/static/icons/address.svg'}>Адрес:</ContactInfoTitle>
-                        <ContactInfoContent>195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»</ContactInfoContent>
+                        <ContactInfoContent>
+                            195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»
+                        </ContactInfoContent>
                     </ContactInfoItem>
 
                     <ContactInfoItem>
                         <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
-                        <ContactInfoContent><Link href={'tel:+78123394597'}>+7 (812) 339-45-97</Link></ContactInfoContent>
+                        <ContactInfoContent>
+                            <Link href={'tel:+78123394597'}>+7 (812) 339-45-97</Link>
+                        </ContactInfoContent>
                     </ContactInfoItem>
 
                     <ContactInfoItem>
                         <ContactInfoTitle icon={'/static/icons/email.svg'}>Электронная почта:</ContactInfoTitle>
-                        <ContactInfoContent><Link href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</Link></ContactInfoContent>
+                        <ContactInfoContent>
+                            <Link href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</Link>
+                        </ContactInfoContent>
                     </ContactInfoItem>
                 </ContactsInfoWrapper>
             </Container>
 
             <MapWrapper>
                 <MapComponent />
-            </MapWrapper>            
+            </MapWrapper>
         </ContactsSectionWrapper>
     )
 }

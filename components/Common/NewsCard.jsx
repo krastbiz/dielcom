@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { breakpoint } from "../../lib/theme"
-import { getNewsDetailPageUrl } from "../../lib/utils/routeHelper"
-import { Link } from "../ui/Link"
+import styled from 'styled-components'
+import { breakpoint } from '../../lib/theme'
+import { getNewsDetailPageUrl } from '../../lib/utils/routeHelper'
+import { Link } from '../ui/Link'
 
 export const NewsCard = ({ news }) => {
     const { id, imageUrl, companyId, title, shortDescription } = news
@@ -11,7 +11,7 @@ export const NewsCard = ({ news }) => {
         <NewsCardWrapper>
             <Link href={cardLink}>
                 <ImageWrapper>
-                    <img src={imageUrl} alt="Изображение новости"/>
+                    <img src={imageUrl} alt="Изображение новости" />
                 </ImageWrapper>
                 <ContentWrapper>
                     <NewsTitle>{title}</NewsTitle>
@@ -30,7 +30,6 @@ export const NewsCardWrapper = styled.div`
     :last-child {
         margin-right: 0;
     }
-
 `
 
 const ContentWrapper = styled.div``

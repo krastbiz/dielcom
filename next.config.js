@@ -6,7 +6,7 @@ const nextConfig = {
     },
     env: {
         ...environmentVariables,
-    }
+    },
 }
 
 module.exports = nextConfig
