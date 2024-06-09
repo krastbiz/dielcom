@@ -87,7 +87,7 @@ export const FloatContactDialog = () => {
                     )}
                     <ContactFormDescription>
                         Нажимая кнопку "Отправить", Вы даете согласие на
-                        <StyledLink href={'/policy'}> обработку персональных данных</StyledLink>
+                        <StyledLink href={'/policy#personalData'}> обработку персональных данных</StyledLink>
                     </ContactFormDescription>
                 </ContactFormWrapper>
             )}
@@ -96,9 +96,12 @@ export const FloatContactDialog = () => {
                     <PolicyInfoBannerWrapper>
                         <PolicyInfoBanner>
                             Продолжая просмотр сайта, вы соглашаетесь с{' '}
-                            <StyledLink href={'/policy'}>Политикой конфиденциальности</StyledLink> и с использованием
-                            файлов cookie в соответствии с{' '}
-                            <StyledLink href={'/policy'}>Информацией об использовании файлов cookie</StyledLink>.
+                            <StyledLink href={'/policy#privacyPolicy'}>Политикой конфиденциальности</StyledLink> и с
+                            использованием файлов cookie в соответствии с{' '}
+                            <StyledLink href={'/policy#cookiePolicy'}>
+                                Информацией об использовании файлов cookie
+                            </StyledLink>
+                            .
                         </PolicyInfoBanner>
                         <PolicyInfoBannerButton onClick={hideBanner} type="submit">
                             Ok

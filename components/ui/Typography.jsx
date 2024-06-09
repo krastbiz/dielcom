@@ -24,3 +24,12 @@ export const H2 = styled.h2`
     line-height: 30px;
     text-transform: uppercase;
 `
+
+export const H3 = styled.h3`
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: ${({ alternativeColored, theme }) => (alternativeColored ? 'white' : theme.colors.primary)};
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+`
