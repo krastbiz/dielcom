@@ -74,7 +74,7 @@ const ContainerStyled = styled(Container)`
 `
 
 const NavigationStyled = styled(Navigation)`
-    margin-left: auto;
+    margin-left: 20px;
 
     ${breakpoint.desktopLarge`
         ${NavLinkWrapper} + ${NavLinkWrapper} {

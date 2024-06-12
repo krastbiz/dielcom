@@ -14,7 +14,7 @@ export const HeaderContacts = ({ ...extraProps }) => {
         <HeaderContactsWrapper {...extraProps}>
             <a href="mailto:spb@dielcom.ru">spb@dielcom.ru</a>
             <HeaderPhoneWrapper>
-                <a href="tel:+78123394597">+7 (812) 339-45-97</a>
+                <HeaderPhoneLink href="tel:+78123394597">+7 (812) 339-45-97</HeaderPhoneLink>
                 <HeaderContactMe onClick={toggleFormVisibility}>Заказать звонок</HeaderContactMe>
                 <ContactFormHeader isVisible={isFormVisible} setIsFormVisible={setIsFormVisible} />
             </HeaderPhoneWrapper>
@@ -47,4 +47,7 @@ const HeaderContactMe = styled.div`
     &:hover {
         color: #5b76cf;
     }
+`
+const HeaderPhoneLink = styled.a`
+    text-wrap: nowrap;
 `
