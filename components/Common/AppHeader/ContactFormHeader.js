@@ -11,7 +11,7 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
 
     const resetForm = () => {
         setName('')
-        setPhone('')
+        setTel('')
         setFormSubmitted(false)
     }
 
