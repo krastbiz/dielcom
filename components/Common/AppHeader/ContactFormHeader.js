@@ -17,8 +17,11 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
+        const formDataToSend = new FormData();
+        formDataToSend.append('name', name);
+        formDataToSend.append('tel', tel);
         if (name && tel) {
-            sendContactForm({ name, tel }).then(() => {
+            sendContactForm(formDataToSend).then(() => {
                 setFormSubmitted(true)
                 setTimeout(() => {
                     resetForm()

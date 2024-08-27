@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Catalog from '../../components/CatalogPage/Catalog'
+import {Catalog} from '../../components/CatalogPage/Catalog'
 import { getCatalogPageUrl } from '../../lib/utils/routeHelper'
 import { getPageMetadata, getPageCanonical } from '../../lib/utils/pageHelper'
-import { BRANDS_ARRAY, COMPANY_ARRAY } from '../../mock-data'
+import { CATEGORIES_ARRAY } from '../../mock-data'
 
-const CatalogPage = ({ companies, brands }) => {
+const CatalogPage = ({ categories }) => {
     const pageTitle = `Компании, поставляющие электронные компоненты`
     const pageDescription = 'Закажите электронные компоненты, оставьте вашу заявку'
     const pageRelativeUrl = getCatalogPageUrl()
@@ -15,16 +15,21 @@ const CatalogPage = ({ companies, brands }) => {
                 {getPageMetadata(pageTitle, pageDescription)}
                 {getPageCanonical(pageRelativeUrl)}
             </Head>
-            <Catalog companies={companies} brands={brands} />
+            <Catalog categories={categories} />
         </>
     )
 }
 
 export const getStaticProps = () => {
+    const categoriesArray = Array.from(CATEGORIES_ARRAY.values()).map(category => ({
+        ...category,
+        products: category.products.map(product => ({
+            ...product,
+        })),
+    }));
     return {
         props: {
-            companies: COMPANY_ARRAY,
-            brands: BRANDS_ARRAY,
+            categories: categoriesArray,
         },
     }
 }

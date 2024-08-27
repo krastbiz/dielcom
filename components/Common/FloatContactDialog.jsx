@@ -33,8 +33,12 @@ export const FloatContactDialog = () => {
     }
 
     const onFormSubmit = (e) => {
-        e.preventDefault()
-        sendContactForm({ email, message, tel }).then(() => {
+        e.preventDefault();
+        const formDataToSend = new FormData();
+        formDataToSend.append('email', email);
+        formDataToSend.append('tel', tel);
+        formDataToSend.append('message', message);
+        sendContactForm(formDataToSend).then(() => {
             setEmailWasSent(true)
         })
     }
@@ -95,9 +99,11 @@ export const FloatContactDialog = () => {
                 {!hidePolicyBanner && (
                     <PolicyInfoBannerWrapper>
                         <PolicyInfoBanner>
-                            Продолжая просмотр сайта, вы соглашаетесь с{' '}
-                            <StyledLink href={'/policy#privacyPolicy'} alternativeColored>Политикой конфиденциальности</StyledLink> и с
-                            использованием файлов cookie в соответствии с{' '}
+                            Продолжая просмотр сайта, вы соглашаетесь с
+                            <StyledLink href={'/policy#privacyPolicy'} alternativeColored>
+                                Политикой конфиденциальности
+                            </StyledLink>{' '}
+                            и с использованием файлов cookie в соответствии с
                             <StyledLink href={'/policy#cookiePolicy'} alternativeColored>
                                 Информацией об использовании файлов cookie
                             </StyledLink>

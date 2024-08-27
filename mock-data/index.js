@@ -279,59 +279,150 @@ export const NEWS_ARRAY = [
     },
 ]
 
-export const BRANDS_ARRAY = [
-    {
-        imageUrl: '/static/images/world-brands/brand-1.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-2.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-3.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-4.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-5.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-6.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-7.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-8.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-9.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-10.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-11.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-12.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-13.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-14.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-15.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-16.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-17.png',
-    },
-    {
-        imageUrl: '/static/images/world-brands/brand-18.png',
-    },
-]
+export const CATEGORIES_ARRAY = new Map([
+    [
+        'wirelessTechnologies',
+        {
+            id: 'wireless-technologies',
+            name: 'Беспроводные технологии',
+            imageUrl: '/static/images/categories/wirelessTechnologies.png',
+            products: [
+                { id: 'antennas-and-adapters', label: 'Антенны и переходники' },
+                { id: 'rfid-components', label: 'Компоненты RFID' },
+                { id: 'transceiver-modules', label: 'Приемо-передающие модули' },
+            ],
+        },
+    ],
+    [
+        'sensors',
+        {
+            id: 'sensors',
+            name: 'Датчики',
+            imageUrl: '/static/images/categories/sensors.jpg',
+            products: [
+                { id: 'sensor-accessories', label: 'Аксессуары для датчиков' },
+                { id: 'vibration-accelerometers', label: 'Виброакселерометры' },
+                { id: 'humidity-sensors', label: 'Датчики влажности' },
+                { id: 'gas-sensors', label: 'Датчики газа' },
+                { id: 'pressure-sensors', label: 'Датчики давления' },
+                { id: 'inertial-sensors', label: 'Датчики инерциальные' },
+                { id: 'voltage-sensors', label: 'Датчики напряжения' },
+                { id: 'position-sensors', label: 'Датчики положения' },
+                { id: 'temperature-sensors', label: 'Датчики температуры' },
+                { id: 'current-sensors', label: 'Датчики тока' },
+                { id: 'magnetometers', label: 'Магнитометры' },
+                { id: 'vibration-speed-transducers', label: 'Преобразователи виброскорости' },
+                { id: 'flow-meters', label: 'Расходомеры' },
+                { id: 'photosensitive-sensors', label: 'Фоточувствительные датчики' },
+            ],
+        },
+    ],
+    [
+        'measurementEquipment',
+        {
+            id: 'measurement-equipment',
+            name: 'Измерительное оборудование',
+            imageUrl: '/static/images/categories/measurementEquipment.jpg',
+            products: [
+                { id: 'measurement-equipment-accessories', label: 'Аксессуары к измерительному оборудованию' },
+                { id: 'signal-generators', label: 'Генераторы сигналов' },
+                { id: 'energy-flow-meters', label: 'Измерители расхода энергии' },
+                { id: 'electric-quantity-meters', label: 'Измерители электрических величин' },
+                { id: 'calibrators', label: 'Калибраторы' },
+                { id: 'phase-sequence-indicators', label: 'Указатели порядка фаз' },
+            ],
+        },
+    ],
+    [
+        'powerSupplies',
+        {
+            id: 'power-supplies',
+            name: 'Источники питания',
+            imageUrl: '/static/images/categories/powerSupplies.png',
+            products: [
+                { id: 'converter-accessories', label: 'Аксессуары для преобразователей' },
+                { id: 'uninterruptible-power-supplies', label: 'Источники бесперебойного питания' },
+                { id: 'ac-dc-converters', label: 'AC-DC преобразователи' },
+                { id: 'dc-ac-inverters', label: 'DC-AC инверторы' },
+                { id: 'dc-dc-converters', label: 'DC-DC преобразователи' },
+            ],
+        },
+    ],
+    [
+        'optoelectronics',
+        {
+            id: 'optoelectronics',
+            name: 'Оптоэлектроника',
+            imageUrl: '/static/images/categories/optoelectronics.jpg',
+            products: [
+                { id: 'indicators', label: 'Индикация' },
+                { id: 'optoelectronic-components', label: 'Оптоэлектронные компоненты' },
+            ],
+        },
+    ],
+    [
+        'printedCircuitBoards',
+        {
+            id: 'printed-circuit-boards',
+            name: 'Печатные платы',
+            imageUrl: '/static/images/categories/printedCircuitBoards.jpeg',
+            products: [
+                { id: 'multilayer-pcbs', label: 'Многослойные печатные платы' },
+            ],
+        },
+    ],
+    [
+        'microwaveComponentsAndSolutions',
+        {
+            id: 'microwave-components-and-solutions',
+            name: 'СВЧ компоненты и решения',
+            imageUrl: '/static/images/categories/microwaveComponentsAndSolutions.jpg',
+            products: [
+                { id: 'rf-antennas-and-components', label: 'РЧ антенны и комплектующие' },
+                { id: 'rf-discrete-semiconductors', label: 'РЧ дискретные полупроводники' },
+                { id: 'rf-integrated-components', label: 'РЧ интегральные компоненты' },
+                { id: 'rf-passive-components', label: 'РЧ пассивные компоненты' },
+                { id: 'microwave-waveguides-and-components', label: 'СВЧ волноводы и их составляющие' },
+                { id: 'modular-microwave-components', label: 'СВЧ компоненты в модульном исполнении' },
+                { id: 'connectors-and-adapters', label: 'Соединители и адаптеры' },
+            ],
+        },
+    ],
+    [
+        'powerElectronics',
+        {
+            id: 'power-electronics',
+            name: 'Силовая электроника',
+            imageUrl: '/static/images/categories/powerElectronics.jpg',
+            products: [
+                { id: 'igbt-power-modules', label: 'Модули силовые IGBT' },
+                { id: 'mosfet-power-modules', label: 'Модули силовые MOSFET' },
+                { id: 'power-capacitors', label: 'Силовой конденсатор' },
+                { id: 'igbt-transistors', label: 'IGBT транзисторы' },
+            ],
+        },
+    ],
+    [
+        'electromechanics',
+        {
+            id: 'electromechanics',
+            name: 'Электромеханика',
+            imageUrl: '/static/images/categories/electromechanics.jpg',
+            products: [
+                { id: 'accessories', label: 'Аксессуары' },
+                { id: 'interface-connectors', label: 'Интерфейсные разъемы' },
+                { id: 'cables-fittings-and-terminals', label: 'Кабели, фурнитура, вводы и наконечники' },
+                { id: 'terminals', label: 'Клеммы' },
+                { id: 'cases', label: 'Корпуса' },
+                { id: 'rf-connectors', label: 'РЧ разъемы' },
+                { id: 'cable-assemblies', label: 'Сборки кабельные' },
+                { id: 'signal-connectors', label: 'Сигнальные разъемы' },
+                { id: 'power-connectors', label: 'Силовые разъемы' },
+                { id: 'specialized-connectors', label: 'Специализированные разъемы' },
+            ],
+        },
+    ],
+]);
+
+
+

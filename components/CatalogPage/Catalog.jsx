@@ -1,133 +1,161 @@
-import styled from 'styled-components'
-import { getCatalogPageUrl, getCompanyPageUrl } from '../../lib/utils/routeHelper'
+import styled from 'styled-components';
+import { getCatalogPageUrl, getProductPageUrl } from '../../lib/utils/routeHelper';
+import { Container } from '../ui/layouts/Container';
 import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
-import { Container } from '../ui/layouts/Container'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { H1, H2 } from '../ui/Typography'
-import { Link } from '../ui/Link'
+import { MainLayout } from '../ui/layouts/MainLayout';
+import { H1 } from '../ui/Typography';
+import { Link } from '../ui/Link';
 import { breakpoint } from '../../lib/theme'
 
-const Catalog = ({ companies, brands }) => {
-    return (
-        <MainLayout>
-            <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Поставщики' }]}>
-                <DefaultMainContent>
-                    <H1>ЛИНЕЙКА ПОСТАВОК</H1>
-                    <MainSectionSubtitle>Бренды, официально представленные компанией Диэлком-ЭК</MainSectionSubtitle>
-                </DefaultMainContent>
-            </MainSection>
+export const Catalog = ({ categories }) => {
+  return (
+    <MainLayout>
+      <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Поставщики' }]}>
+        <DefaultMainContent>
+          <H1>ЛИНЕЙКА ПОСТАВОК</H1>
+          <MainSectionSubtitle>Бренды, официально представленные компанией Диэлком-ЭК</MainSectionSubtitle>
+        </DefaultMainContent>
+      </MainSection>
 
-            <DistributionSection>
-                <Container>
-                    <H2>Дистрибьюция</H2>
-
-                    <CatalogItemsWrapper>
-                        {companies.map((company) => (
-                            <CatalogItem key={company.id}>
-                                <Link href={getCompanyPageUrl(company.id)}>
-                                    <CatalogItemLogoWrapper>
-                                        <img src={company.logo} alt={`Логотип компании ${company.name}`} />
-                                    </CatalogItemLogoWrapper>
-                                    <CatalogItemTitle>{company.title}</CatalogItemTitle>
-                                </Link>
-                            </CatalogItem>
-                        ))}
-                    </CatalogItemsWrapper>
-
-                    {/* <H2>Мировые бренды</H2>
-
-                    <CatalogItemsWrapper>
-                        {brands.map(brand => (
-                            <CatalogItem key={brand.imageUrl}>
-                                <CatalogItemLogoWrapper>
-                                    <img src={brand.imageUrl} alt={`Логотип бренда`}/>
-                                </CatalogItemLogoWrapper>
-                            </CatalogItem>
-                        ))}
-
-                    </CatalogItemsWrapper> */}
-                </Container>
-            </DistributionSection>
-        </MainLayout>
-    )
-}
-
-export default Catalog
+      <CatalogSection>
+        <CustomContainer>
+          <CatalogGrid>
+            {categories.map((category) => (
+              <CategoryCard key={category.id}>
+                <CategoryImageWrapper>
+                  <img src={category.imageUrl} alt={`${category.name} logo`} />
+                </CategoryImageWrapper>
+                <ProductsList>
+                  <CategoryTitle>{category.name}</CategoryTitle>
+                  {category.products.map((product) => (
+                    <ProductItem key={product.id}>
+                      <Link href={getProductPageUrl(category.id, product.id)}>{product.label}</Link>
+                    </ProductItem>
+                  ))}
+                </ProductsList>
+              </CategoryCard>
+            ))}
+          </CatalogGrid>
+        </CustomContainer>
+      </CatalogSection>
+    </MainLayout>
+  );
+};
 
 const MainSectionSubtitle = styled.p`
-    font-size: 18px;
-    line-height: 24px;
-    color: white;
-`
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+`;
 
-const DistributionSection = styled.section`
-    ${H2} {
-        text-align: center;
-    }
+const CatalogSection = styled.section`
+  background-color: ${({ theme }) => theme.colors.background};
+`;
 
-    ${Container} {
-        flex-direction: column;
-    }
-`
+const CustomContainer = styled(Container)`
+    padding: 0;
+`;
 
-const CatalogItemsWrapper = styled.div`
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(6, 200px);
-    justify-content: space-between;
-    row-gap: 30px;
+const CatalogGrid = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 0;
+  max-width: 1030px;
+  margin: 0 auto;
 
-    ${breakpoint.desktopLarge`
-        grid-template-columns: repeat(6,170px);
-    `}
+  ${breakpoint.tablet`
+    grid-template-columns: 1fr;
+    margin: 0;
+  `}
+`;
 
-    ${breakpoint.desktop`
-        grid-template-columns: repeat(3,200px);
-        justify-content: space-evenly;
-    `}
+const CategoryCard = styled.div`
+  background-color: white;
+  padding: 20px;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  display: flex;
+  align-items: flex-start;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
 
-    ${breakpoint.tablet`
-        grid-template-columns: repeat(2,140px);
-    `}
-`
+  &:hover {
+    box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
+    z-index: 5;
+  }
 
-const CatalogItemTitle = styled.div`
-    margin-top: 10px;
-    text-align: center;
-`
+  ${breakpoint.mobile`
+    flex-direction: column;
+    align-items: start;
+  `}
+`;
 
-const CatalogItem = styled.div`
-    color: ${({ theme }) => theme.colors.primary};
+const CategoryImageWrapper = styled.div`
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
 
-    :hover {
-        ${CatalogItemTitle} {
-            color: ${({ theme }) => theme.colors.active};
-        }
-    }
-`
-
-const CatalogItemLogoWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  img {
     width: 100%;
-    height: 130px;
-    border: 1px solid ${({ theme }) => theme.colors.primary};
-    border-radius: 3px;
+    height: 100%;
+  }
+
+  ${breakpoint.tablet`
+    width: 65px;
+    height: 65px;
+    margin-right: 15px;
+  `}
+
+  ${breakpoint.mobile`
+    width: 120px;
+    height: 120px;
+    margin-right: 0;
+  `}
+`;
+
+const ProductsList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: 100%;
+`;
+
+const CategoryTitle = styled.li`
+  font-size: 20px;
+  color: ${({ theme }) => theme.colors.main};
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: start;
+  grid-column: 1 / -1;
+`;
+
+const ProductItem = styled.li`
+  a {
+    color: ${({ theme }) => theme.colors.primary};
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+
     &:hover {
-        border: none;
-        box-shadow: 0px 0px 21px 5px rgba(34, 60, 80, 0.2);
+      color: ${({ theme }) => theme.colors.active};
     }
+  }
+  
+  width: 100%;
+  max-width: 150px;
 
-    img {
-        max-height: 50px;
-        max-width: 150px;
-    }
+  ${breakpoint.tablet`
+    width: 100%;
+  `}
+`;
 
-    ${breakpoint.tablet`
-        img {
-            width: 100%;
-        }
-    `}
-`
+
+
+
+
+
+
+
