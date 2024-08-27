@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {Catalog} from '../../components/CatalogPage/Catalog'
+import { Catalog } from '../../components/CatalogPage/Catalog'
 import { getCatalogPageUrl } from '../../lib/utils/routeHelper'
 import { getPageMetadata, getPageCanonical } from '../../lib/utils/pageHelper'
 import { CATEGORIES_ARRAY } from '../../mock-data'
@@ -21,12 +21,12 @@ const CatalogPage = ({ categories }) => {
 }
 
 export const getStaticProps = () => {
-    const categoriesArray = Array.from(CATEGORIES_ARRAY.values()).map(category => ({
+    const categoriesArray = Array.from(CATEGORIES_ARRAY.values()).map((category) => ({
         ...category,
-        products: category.products.map(product => ({
+        products: category.products.map((product) => ({
             ...product,
         })),
-    }));
+    }))
     return {
         props: {
             categories: categoriesArray,

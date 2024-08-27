@@ -366,9 +366,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'printed-circuit-boards',
             name: 'Печатные платы',
             imageUrl: '/static/images/categories/printedCircuitBoards.jpeg',
-            products: [
-                { id: 'multilayer-pcbs', label: 'Многослойные печатные платы' },
-            ],
+            products: [{ id: 'multilayer-pcbs', label: 'Многослойные печатные платы' }],
         },
     ],
     [
@@ -422,7 +420,4 @@ export const CATEGORIES_ARRAY = new Map([
             ],
         },
     ],
-]);
-
-
-
+])
