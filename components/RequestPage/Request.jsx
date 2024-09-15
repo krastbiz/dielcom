@@ -146,7 +146,6 @@ export const RequestForm = ({ company }) => {
                                 <ContactFormDescription>
                                     Нажимая кнопку "Отправить", Вы даете согласие на
                                     <StyledLink href={'/policy#personalData'}>
-                                        {' '}
                                         обработку персональных данных
                                     </StyledLink>
                                 </ContactFormDescription>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
 import { getCatalogPageUrl, getProductPageUrl } from '../../lib/utils/routeHelper'
 import { Container } from '../ui/layouts/Container'
 import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
@@ -8,12 +9,13 @@ import { Link } from '../ui/Link'
 import { breakpoint } from '../../lib/theme'
 
 export const Catalog = ({ categories }) => {
+    const router = useRouter()
     return (
         <MainLayout>
             <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Поставщики' }]}>
                 <DefaultMainContent>
                     <H1>ЛИНЕЙКА ПОСТАВОК</H1>
-                    <MainSectionSubtitle>Бренды, официально представленные компанией Диэлком-ЭК</MainSectionSubtitle>
+                    <MainSectionSubtitle onClick={() => router.push('/brands')}>Перейти к брендам, официально представленным компанией Диэлком-ЭК</MainSectionSubtitle>
                 </DefaultMainContent>
             </MainSection>
 
@@ -48,6 +50,7 @@ const MainSectionSubtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: white;
+    cursor: pointer;
 `
 
 const CatalogSection = styled.section`
