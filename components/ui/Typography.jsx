@@ -18,7 +18,7 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
     margin-top: 20px;
     margin-bottom: 20px;
-    color: ${({ alternativeColored, theme }) => (alternativeColored ? 'white' : theme.colors.primary)};
+    color: ${({ alternative, theme }) => (alternative ? 'white' : theme.colors.primary)};
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -28,7 +28,7 @@ export const H2 = styled.h2`
 export const H3 = styled.h3`
     margin-top: 0px;
     margin-bottom: 20px;
-    color: ${({ alternativeColored, theme }) => (alternativeColored ? 'white' : theme.colors.primary)};
+    color: ${({ alternative, theme }) => (alternative ? 'white' : theme.colors.primary)};
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;

@@ -12,10 +12,12 @@ export const Catalog = ({ categories }) => {
     const router = useRouter()
     return (
         <MainLayout>
-            <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Поставщики' }]}>
+            <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Линейка поставок' }]}>
                 <DefaultMainContent>
                     <H1>ЛИНЕЙКА ПОСТАВОК</H1>
-                    <MainSectionSubtitle onClick={() => router.push('/brands')}>Перейти к брендам, официально представленным компанией Диэлком-ЭК</MainSectionSubtitle>
+                    <MainSectionSubtitle onClick={() => router.push('/brands')}>
+                        Перейти к брендам, официально представленным компанией Диэлком-ЭК
+                    </MainSectionSubtitle>
                 </DefaultMainContent>
             </MainSection>
 

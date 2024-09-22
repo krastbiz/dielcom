@@ -428,13 +428,12 @@ export const COMPANY_ARRAY = [
     { ...MultiDimensionCompany },
     { ...FeasycomCompany },
     { ...ReniceCompany },
-    {...GigadeviceCompany},
-    {...PuyaCompany},
-    {...WXDHCompany},
-    {...TaiMiCompany},
-    {...SkyMEMSCompany},
-    {...ZITNTechCompany}
-
+    { ...GigadeviceCompany },
+    { ...PuyaCompany },
+    { ...WXDHCompany },
+    { ...TaiMiCompany },
+    { ...SkyMEMSCompany },
+    { ...ZITNTechCompany },
 ]
 
 export const NEWS_ARRAY = [

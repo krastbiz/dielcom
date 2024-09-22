@@ -1,0 +1,16 @@
+export const translates = {
+    type: 'Тип устройства',
+    brand: 'Производитель',
+    partNumber: 'Модель',
+    frequencyRange: 'Диапазоны частот',
+    gain: 'Усиление',
+    connectorType: 'Тип разъема',
+    measuringRange: 'Диапазон измерений',
+    displacementInstability: 'Нестабильность смещения (Аллан)',
+    interface: 'Интерфейс',
+    supplyVoltage: 'Напряжение питания',
+    operatingTemperature: 'Рабочая температура',
+    dimensions: 'Габариты',
+    weight: 'Масса',
+    connector: 'Соединитель',
+}

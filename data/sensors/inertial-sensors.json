@@ -1,0 +1,110 @@
+[
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU80",
+        "measuringRange": "Гироскоп: ±400°/с, Ускорение: ±8 g",
+        "displacementInstability": "Гироскоп: 3°/ч, Ускорение: 50 ug",
+        "interface": "UART, SPI",
+        "supplyVoltage": "3,3 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "23,3 × 22,4 × 7,5 мм",
+        "weight": "15 г",
+        "connector": "7×2 контакта (соответствует гнезду SAMTEC CLM-107-02)"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU90",
+        "measuringRange": "Гироскоп: ±500°/с, Ускорение: ±16 g",
+        "displacementInstability": "Гироскоп: 1,5°/ч, Ускорение: 35 ug",
+        "interface": "UART",
+        "supplyVoltage": "3,3 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "23,3 × 22,4 × 7,5 мм",
+        "weight": "15 г",
+        "connector": "7×2 контакта (соответствует гнезду SAMTEC CLM-107-02)"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU188",
+        "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
+        "displacementInstability": "Гироскоп: 1,2°/ч, Ускорение: 50 ug",
+        "interface": "RS422",
+        "supplyVoltage": "5 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "24,95 × 22,39 × 8,1 мм",
+        "weight": "22 г",
+        "connector": "Пигтейл"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU286",
+        "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
+        "displacementInstability": "Гироскоп: 1,2°/ч, Ускорение: 50 ug",
+        "interface": "UART",
+        "supplyVoltage": "5 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "22,4 × 22,4 × 9 мм",
+        "weight": "20 г",
+        "connector": "Разъем Molex, модель: 5015680607"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU388",
+        "measuringRange": "Гироскоп: ±500°/с, Ускорение: ±40 g",
+        "displacementInstability": "Гироскоп: 0,8°/ч, Ускорение: 10 ug",
+        "interface": "RS422",
+        "supplyVoltage": "3,6 – 36 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "33,5 × 25,5 × 15 мм",
+        "weight": "30 г",
+        "connector": "9-контактный J63A"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU5000",
+        "measuringRange": "Гироскоп: ±4000°/с, Ускорение: Ось X/Y ±30 g, Ось Z ±150 g",
+        "displacementInstability": "Гироскоп: 1°/ч, Ускорение: Ось X/Y 30 ug, Ось Z 120 ug",
+        "interface": "RS422",
+        "supplyVoltage": "6 – 30 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "46 × 46 × 24 мм",
+        "weight": "100 г",
+        "connector": "15 контактов J30J"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU488М",
+        "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
+        "displacementInstability": "Гироскоп: 1°/ч, Ускорение: 30 ug",
+        "interface": "UART, SPI",
+        "supplyVoltage": "3,3 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "47 × 44 × 14 мм",
+        "weight": "50 г",
+        "connector": "2 × 12 контактов"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU588",
+        "measuringRange": "Гироскоп: ±450°/с, Ускорение: Ось X/Y ±16 g, Ось Z ±50/100 g",
+        "displacementInstability": "Гироскоп: 1°/ч, Ускорение: Ось X/Y 30 ug, Ось Z 150 ug",
+        "interface": "UART, SPI",
+        "supplyVoltage": "3,3 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "47 × 44 × 14 мм",
+        "weight": "50 г",
+        "connector": "2 × 12 контактов"
+    },
+    {
+        "brand": "SkyMEMS",
+        "partNumber": "IMU688М",
+        "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
+        "displacementInstability": "Гироскоп: 0,6°/ч, Ускорение: 20 ug",
+        "interface": "UART, SPI",
+        "supplyVoltage": "3,3 В",
+        "operatingTemperature": "От -40 °С до +85 °С",
+        "dimensions": "47 × 44 × 14 мм",
+        "weight": "50 г",
+        "connector": "2 × 12 контактов"
+    }
+]

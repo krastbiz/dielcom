@@ -4,10 +4,10 @@ const path = require('path')
 
 const { transformDataToCamelCase } = require('./utils')
 
-const EXCEL_FILE_PATH = path.resolve('../data/wireless-technologies/antennas-and-adapters.xlsx')
-const JSON_FILE_PATH = path.resolve('../data/wireless-technologies/antennas-and-adapters.json')
+const EXCEL_FILE_PATH = path.resolve('../data/sensors/inertial-sensors.xlsx')
+const JSON_FILE_PATH = path.resolve('../data/sensors/inertial-sensors.json')
 
-const generateAntennasCatalogData = () => {
+const generateCatalogData = () => {
     const workbook = xlsx.readFile(EXCEL_FILE_PATH)
     const sheetName = workbook.SheetNames[0]
     const sheet = workbook.Sheets[sheetName]
@@ -19,4 +19,4 @@ const generateAntennasCatalogData = () => {
     console.log(`JSON файл был успешно создан: ${JSON_FILE_PATH}`)
 }
 
-generateAntennasCatalogData()
+generateCatalogData()

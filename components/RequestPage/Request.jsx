@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
 import { sendContactForm } from '../../lib/api'
 import { breakpoint } from '../../lib/theme'
 import { Button } from '../ui/buttons/Button'
@@ -10,8 +11,9 @@ import { MainLayout } from '../ui/layouts/MainLayout'
 
 export const RequestForm = ({ company }) => {
     const textareaRef = useRef(null)
+    const { query } = useRouter()
     const [formData, setFormData] = useState({
-        components: company.name,
+        components: company || query.partnumber || '',
         name: '',
         email: '',
         tel: '',
@@ -145,9 +147,7 @@ export const RequestForm = ({ company }) => {
                                 </Button>
                                 <ContactFormDescription>
                                     Нажимая кнопку "Отправить", Вы даете согласие на
-                                    <StyledLink href={'/policy#personalData'}>
-                                        обработку персональных данных
-                                    </StyledLink>
+                                    <StyledLink href={'/policy#personalData'}>обработку персональных данных</StyledLink>
                                 </ContactFormDescription>
                             </StyledContactForm>
                         )}

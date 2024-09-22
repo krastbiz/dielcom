@@ -10,7 +10,7 @@ import { breakpoint } from '../../lib/theme'
 export const Brands = ({ companies }) => {
     return (
         <MainLayout>
-            <MainSection showBreadcrumb breadcrumbs={[{ href: getBrandsPageUrl(), text: 'Поставщики' }]}>
+            <MainSection showBreadcrumb breadcrumbs={[{ href: getBrandsPageUrl(), text: 'Бренды' }]}>
                 <DefaultMainContent>
                     <H1>ЛИНЕЙКА ПОСТАВОК</H1>
                     <MainSectionSubtitle>Бренды, официально представленные компанией Диэлком-ЭК</MainSectionSubtitle>

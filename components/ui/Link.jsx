@@ -20,6 +20,6 @@ export const StyledLink = styled(NextLink)`
     font-style: italic;
     text-decoration: underline;
     &:hover {
-        color: ${({ alternativeColored, theme }) => (alternativeColored ? 'white' : theme.colors.active)};
+        color: ${({ alternative, theme }) => (alternative ? 'white' : theme.colors.active)};
     }
 `

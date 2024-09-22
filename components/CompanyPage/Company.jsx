@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { breakpoint } from '../../lib/theme'
-import { getCatalogPageUrl, getCompanyPageUrl } from '../../lib/utils/routeHelper'
 import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
 import { Container } from '../ui/layouts/Container'
 import { MainLayout } from '../ui/layouts/MainLayout'
@@ -14,8 +13,8 @@ const Company = ({ company }) => {
             <MainSection
                 showBreadcrumb
                 breadcrumbs={[
-                    { href: getCatalogPageUrl(), text: 'Поставщики' },
-                    { href: getCompanyPageUrl(company.id), text: company.name },
+                    { href: getBrandsPageUrl(), text: 'Бренды' },
+                    { href: getBrandPageUrl(company.id), text: company.name },
                 ]}
             >
                 <DefaultMainContent>
