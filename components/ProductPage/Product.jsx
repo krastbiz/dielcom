@@ -12,6 +12,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
     const router = useRouter()
     const [searchTerm, setSearchTerm] = useState('')
     const [selectedFilters, setSelectedFilters] = useState({})
+    const [sortConfig, setSortConfig] = useState({ key: '', direction: 'asc' })
 
     const handleOrderClick = (partNumber) => {
         router.push({
@@ -41,6 +42,45 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
         return matchesPartNumber && matchesFilters
     })
 
+    const handleSort = (key) => {
+        let direction = 'asc'
+        if (sortConfig.key === key && sortConfig.direction === 'asc') {
+            direction = 'desc'
+        }
+        setSortConfig({ key, direction })
+    }
+
+    const sortedCatalog = [...filteredCatalog].sort((a, b) => {
+        const valueA = a[sortConfig.key] || ''
+        const valueB = b[sortConfig.key] || ''
+
+        if (valueA === '' && valueB === '') {
+            return 0
+        }
+
+        if (valueA === '') {
+            return sortConfig.direction === 'asc' ? 1 : -1
+        }
+
+        if (valueB === '') {
+            return sortConfig.direction === 'asc' ? -1 : 1
+        }
+
+        if (!isNaN(valueA) && !isNaN(valueB)) {
+            return sortConfig.direction === 'asc' ? valueA - valueB : valueB - valueA
+        }
+
+        if (valueA < valueB) {
+            return sortConfig.direction === 'asc' ? -1 : 1
+        }
+
+        if (valueA > valueB) {
+            return sortConfig.direction === 'asc' ? 1 : -1
+        }
+
+        return 0
+    })
+
     return (
         <MainLayout>
             <MainSection
@@ -58,15 +98,33 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
 
             <CatalogSection>
                 <FilterContainer>
+                    <FilterLabel>Модель</FilterLabel>
                     <SearchInput
                         type="text"
                         placeholder="Поиск по партномеру"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
+                    <FilterLabel>{translates['brand']}</FilterLabel>
+                    <FilterOptions>
+                        <ScrollableOptions>
+                            {filters['brand'].map((value) => (
+                                <FilterOption key={value}>
+                                    <input
+                                        type="checkbox"
+                                        id={`brand-${value}`}
+                                        checked={selectedFilters['brand']?.includes(value) || false}
+                                        onChange={() => handleFilterChange('brand', value)}
+                                    />
+                                    <label htmlFor={`brand-${value}`}>{value}</label>
+                                </FilterOption>
+                            ))}
+                        </ScrollableOptions>
+                    </FilterOptions>
                     {Object.keys(filters).map(
-                        (key, index) =>
-                            key !== 'partNumber' && (
+                        (key) =>
+                            key !== 'partNumber' &&
+                            key !== 'brand' && (
                                 <FilterSection key={key}>
                                     <FilterLabel>{translates[key]}</FilterLabel>
                                     <FilterOptions>
@@ -94,18 +152,21 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                         <thead>
                             <StickyHeaderRow>
                                 {headers.map((header) => (
-                                    <th key={header}>{translates[header]}</th>
+                                    <th key={header} onClick={() => handleSort(header)}>
+                                        {translates[header]}
+                                        {sortConfig.key === header && (sortConfig.direction === 'asc' ? ' ▲' : ' ▼')}
+                                    </th>
                                 ))}
                             </StickyHeaderRow>
                         </thead>
                         <tbody>
-                            {filteredCatalog.map((category) => (
-                                <tr key={category.partNumber}>
+                            {sortedCatalog.map((item) => (
+                                <tr key={`${item.partNumber}${item.id}`}>
                                     {headers.map((header) => (
-                                        <td key={header}>{category[header]}</td>
+                                        <td key={header}>{item[header]}</td>
                                     ))}
                                     <td>
-                                        <OrderButton onClick={() => handleOrderClick(category.partNumber)}>
+                                        <OrderButton onClick={() => handleOrderClick(item.partNumber)}>
                                             Заказать
                                         </OrderButton>
                                     </td>
@@ -141,6 +202,7 @@ const SearchInput = styled.input`
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    margin-top: 5px;
     border: 1px solid ${({ theme }) => theme.colors.primary};
     border-radius: 5px;
 `
@@ -174,6 +236,8 @@ const CustomContainer = styled(Container)`
     padding: 0;
     display: flex;
     flex-direction: column;
+    max-height: 600px;
+    overflow-y: auto;
 `
 
 const CatalogTable = styled.table`
@@ -191,20 +255,21 @@ const CatalogTable = styled.table`
     }
 
     tbody tr:hover {
-        background-color: ${({ theme }) => theme.colors.lightBackground};
+        background-color: ${({ theme }) => theme.colors.background};
     }
 `
 
 const StickyHeaderRow = styled.tr`
-    background-color: ${({ theme }) => theme.colors.headerBackground};
+    background-color: ${({ theme }) => theme.colors.background};
     position: sticky;
     top: 0;
     z-index: 10;
-
     th {
         font-weight: bold;
         padding: 10px;
         background-color: inherit;
+        cursor: pointer;
+        white-space: nowrap;
     }
 `
 
@@ -220,3 +285,4 @@ const OrderButton = styled.button`
         background-color: ${({ theme }) => theme.colors.active};
     }
 `
+

@@ -10,7 +10,7 @@ const transformDataToCamelCase = (data) => {
 
         Object.keys(item).forEach((key) => {
             const camelCaseKey = toCamelCase(key)
-            transformedItem[camelCaseKey] = item[key].trim() || ''
+            transformedItem[camelCaseKey] = String(item[key]).trim() || ''
         })
 
         return transformedItem
