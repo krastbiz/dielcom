@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { breakpoint } from '../../lib/theme'
+import { getBrandPageUrl, getBrandsPageUrl } from '../../lib/utils/routeHelper'
 import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
 import { Container } from '../ui/layouts/Container'
 import { MainLayout } from '../ui/layouts/MainLayout'

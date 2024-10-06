@@ -124,7 +124,8 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                     {Object.keys(filters).map(
                         (key) =>
                             key !== 'partNumber' &&
-                            key !== 'brand' && (
+                            key !== 'brand' &&
+                            key !== 'id' && (
                                 <FilterSection key={key}>
                                     <FilterLabel>{translates[key]}</FilterLabel>
                                     <FilterOptions>
