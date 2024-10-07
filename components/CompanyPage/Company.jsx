@@ -226,5 +226,4 @@ const CompanyProductName = styled.div`
     color: ${({ theme }) => theme.colors.main};
     display: flex;
     justify-content: center;
-    }
 `

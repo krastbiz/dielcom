@@ -1,1093 +1,1093 @@
 [
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-010",
     "brand": "Yetnorson",
     "id": "1",
-    "partNumber": "YNX-2.4G-TLB-010",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "7dB",
     "connectorType": "SMA/TNC/BNC"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-2dB-UFL",
     "brand": "Yetnorson",
     "id": "2",
-    "partNumber": "YNX-2.4G-2dB-UFL",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "connectorType": "UFL"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-5dB-UFL",
     "brand": "Yetnorson",
     "id": "3",
-    "partNumber": "YNX-2.4G-5dB-UFL",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "connectorType": "UFL"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-01",
     "brand": "Yetnorson",
     "id": "4",
-    "partNumber": "YNX-2.4G-TLB-01",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "3dB",
     "connectorType": "SMA-J"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-2DB-003",
     "brand": "Yetnorson",
     "id": "5",
-    "partNumber": "YNX-2.4G-2DB-003",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-02",
     "brand": "Yetnorson",
     "id": "6",
-    "partNumber": "YNX-2.4G-TLB-02",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "3dB",
     "connectorType": "SMA-J"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-03",
     "brand": "Yetnorson",
     "id": "7",
-    "partNumber": "YNX-2.4G-TLB-03",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "3dB",
     "connectorType": "SMA-J"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-04",
     "brand": "Yetnorson",
     "id": "8",
-    "partNumber": "YNX-2.4G-TLB-04",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "connectorType": "SMA"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-06",
     "brand": "Yetnorson",
     "id": "9",
-    "partNumber": "YNX-2.4G-TLB-06",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "connectorType": "SMA/BNC/TNC"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-07",
     "brand": "Yetnorson",
     "id": "10",
-    "partNumber": "YNX-2.4G-TLB-07",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "5dB",
     "connectorType": "SMA"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-TLB-09",
     "brand": "Yetnorson",
     "id": "11",
-    "partNumber": "YNX-2.4G-TLB-09",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "7dB",
     "connectorType": "SMA/TNC/BNC"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-TLB-12DB-002",
     "brand": "Yetnorson",
     "id": "12",
-    "partNumber": "YNX-TLB-12DB-002",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "12dBi"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-TLB-9DB-001",
     "brand": "Yetnorson",
     "id": "13",
-    "partNumber": "YNX-TLB-9DB-001",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "9dBi",
     "connectorType": "SMA-RP"
   },
   {
-    "type": "2.4G Magnetic",
+    "partNumber": "YNX-TQC-2.4G-011",
     "brand": "Yetnorson",
     "id": "14",
-    "partNumber": "YNX-TQC-2.4G-011",
+    "type": "2.4G Magnetic",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "9dBi",
     "connectorType": "SMA"
   },
   {
-    "type": "2.4G pcb",
+    "partNumber": "YNX-2.4G-3DB-001",
     "brand": "Yetnorson",
     "id": "15",
-    "partNumber": "YNX-2.4G-3DB-001",
+    "type": "2.4G pcb",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "connectorType": "IPEX"
   },
   {
-    "type": "2.4G pcb",
+    "partNumber": "YNX-2.4G-3DB-002",
     "brand": "Yetnorson",
     "id": "16",
-    "partNumber": "YNX-2.4G-3DB-002",
+    "type": "2.4G pcb",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "connectorType": "IPEX"
   },
   {
-    "type": "2.4G pcb",
+    "partNumber": "YNX-2.4G-3DB-003",
     "brand": "Yetnorson",
     "id": "17",
-    "partNumber": "YNX-2.4G-3DB-003",
+    "type": "2.4G pcb",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "connectorType": "IPEX"
   },
   {
-    "type": "2.4G",
+    "partNumber": "YNX-2.4G-2dB-005",
     "brand": "Yetnorson",
     "id": "18",
-    "partNumber": "YNX-2.4G-2dB-005",
+    "type": "2.4G",
     "frequencyRange": "2400-2500/5100-5800 Mhz",
     "gain": "2dB",
     "connectorType": "SMA"
   },
   {
-    "type": "418mhz",
+    "partNumber": "YNX-418Mhz-001",
     "brand": "Yetnorson",
     "id": "19",
-    "partNumber": "YNX-418Mhz-001",
+    "type": "418mhz",
     "frequencyRange": "418 Mhz",
     "connectorType": "SMA male"
   },
   {
-    "type": "433/868/915Mhz",
+    "partNumber": "YNX-433Mhz-2dB-003",
     "brand": "Yetnorson",
     "id": "20",
-    "partNumber": "YNX-433Mhz-2dB-003",
+    "type": "433/868/915Mhz",
     "frequencyRange": "433/868/915 Mhz",
     "connectorType": "SMA-\r\nJW-male"
   },
   {
-    "type": "433/868/915Mhz",
+    "partNumber": "YNX-433Mhz-2dB-005",
     "brand": "Yetnorson",
     "id": "21",
-    "partNumber": "YNX-433Mhz-2dB-005",
+    "type": "433/868/915Mhz",
     "frequencyRange": "433/868/915 Mhz",
     "connectorType": "SMA-\r\nJW-male"
   },
   {
-    "type": "433/868/915Mhz",
+    "partNumber": "YNX-433Mhz-3dB-002",
     "brand": "Yetnorson",
     "id": "22",
-    "partNumber": "YNX-433Mhz-3dB-002",
+    "type": "433/868/915Mhz",
     "frequencyRange": "433/868/915 Mhz",
     "gain": "3dBi",
     "connectorType": "SMA-female"
   },
   {
-    "type": "433/868/915Mhz",
+    "partNumber": "YNX-433Mhz-3dB-007",
     "brand": "Yetnorson",
     "id": "23",
-    "partNumber": "YNX-433Mhz-3dB-007",
+    "type": "433/868/915Mhz",
     "frequencyRange": "433/868/915 Mhz",
     "connectorType": "BNC/TNC"
   },
   {
-    "type": "433/868/915Mhz",
+    "partNumber": "YNX-433Mhz-3dB-076",
     "brand": "Yetnorson",
     "id": "24",
-    "partNumber": "YNX-433Mhz-3dB-076",
+    "type": "433/868/915Mhz",
     "frequencyRange": "433/868/915 Mhz",
     "gain": "3dBi",
     "connectorType": "SMA-J"
   },
   {
-    "type": "433/868/915mhz",
+    "partNumber": "YNX-433mhz-5dbi-03",
     "brand": "Yetnorson",
     "id": "25",
-    "partNumber": "YNX-433mhz-5dbi-03",
+    "type": "433/868/915mhz",
     "frequencyRange": "433/868/915 Mhz"
   },
   {
-    "type": "433Mhz",
+    "partNumber": "YNX-433Mhz-3dB-002",
     "brand": "Yetnorson",
     "id": "26",
-    "partNumber": "YNX-433Mhz-3dB-002",
+    "type": "433Mhz",
     "frequencyRange": "433 Mhz",
     "connectorType": "SMA male"
   },
   {
-    "type": "433mhz",
+    "partNumber": "YNX-433Mhz-001",
     "brand": "Yetnorson",
     "id": "27",
-    "partNumber": "YNX-433Mhz-001",
+    "type": "433mhz",
     "frequencyRange": "433 Mhz",
     "connectorType": "SMA male"
   },
   {
-    "type": "433mhz",
+    "partNumber": "YNX-433mhz-5dbi-04",
     "brand": "Yetnorson",
     "id": "28",
-    "partNumber": "YNX-433mhz-5dbi-04",
+    "type": "433mhz",
     "frequencyRange": "433 Mhz"
   },
   {
-    "type": "433mhz",
+    "partNumber": "YNX-433mhz-5dbi-05",
     "brand": "Yetnorson",
     "id": "29",
-    "partNumber": "YNX-433mhz-5dbi-05",
+    "type": "433mhz",
     "frequencyRange": "433 Mhz"
   },
   {
-    "type": "450Mhz",
+    "partNumber": "YNX-450-5dB-SMA",
     "brand": "Yetnorson",
     "id": "30",
-    "partNumber": "YNX-450-5dB-SMA",
+    "type": "450Mhz",
     "frequencyRange": "450 Mhz",
     "gain": "3dB",
     "connectorType": "TNC"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-001",
     "brand": "Yetnorson",
     "id": "31",
-    "partNumber": "YNX-4G-001",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-0010",
     "brand": "Yetnorson",
     "id": "32",
-    "partNumber": "YNX-4G-0010",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-002",
     "brand": "Yetnorson",
     "id": "33",
-    "partNumber": "YNX-4G-002",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-003",
     "brand": "Yetnorson",
     "id": "34",
-    "partNumber": "YNX-4G-003",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-004",
     "brand": "Yetnorson",
     "id": "35",
-    "partNumber": "YNX-4G-004",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-005",
     "brand": "Yetnorson",
     "id": "36",
-    "partNumber": "YNX-4G-005",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-006",
     "brand": "Yetnorson",
     "id": "37",
-    "partNumber": "YNX-4G-006",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-007",
     "brand": "Yetnorson",
     "id": "38",
-    "partNumber": "YNX-4G-007",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-008",
     "brand": "Yetnorson",
     "id": "39",
-    "partNumber": "YNX-4G-008",
+    "type": "4G",
     "connectorType": "SMA/MMCX"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-009",
     "brand": "Yetnorson",
     "id": "40",
-    "partNumber": "YNX-4G-009",
+    "type": "4G",
     "connectorType": "SMA/TS9/CRC9"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-016",
     "brand": "Yetnorson",
     "id": "41",
-    "partNumber": "YNX-4G-016",
+    "type": "4G",
     "connectorType": "N female"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-017",
     "brand": "Yetnorson",
     "id": "42",
-    "partNumber": "YNX-4G-017",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-0190",
     "brand": "Yetnorson",
     "id": "43",
-    "partNumber": "YNX-4G-0190",
+    "type": "4G",
     "connectorType": "SMA"
   },
   {
-    "type": "4G",
+    "partNumber": "YNX-4G-NZ-01",
     "brand": "Yetnorson",
     "id": "44",
-    "partNumber": "YNX-4G-NZ-01"
+    "type": "4G"
   },
   {
-    "type": "4G MIMO",
+    "partNumber": "YNX-4G-0011",
     "brand": "Yetnorson",
     "id": "45",
-    "partNumber": "YNX-4G-0011",
+    "type": "4G MIMO",
     "connectorType": "SMA/TS9/CRC9"
   },
   {
-    "type": "4G MIMO",
+    "partNumber": "YNX-4G-0012",
     "brand": "Yetnorson",
     "id": "46",
-    "partNumber": "YNX-4G-0012",
+    "type": "4G MIMO",
     "connectorType": "SMA/TS9/CRC10"
   },
   {
-    "type": "4G MIMO",
+    "partNumber": "YNX-4G-013",
     "brand": "Yetnorson",
     "id": "47",
-    "partNumber": "YNX-4G-013",
+    "type": "4G MIMO",
     "connectorType": "SMA/TS9/CRC11"
   },
   {
-    "type": "4G MIMO",
+    "partNumber": "YNX-4G-014",
     "brand": "Yetnorson",
     "id": "48",
-    "partNumber": "YNX-4G-014",
+    "type": "4G MIMO",
     "connectorType": "SMA/TS9/CRC12"
   },
   {
-    "type": "4G/5G",
+    "partNumber": "YNX-PT-01",
     "brand": "Yetnorson",
     "id": "49",
-    "partNumber": "YNX-PT-01",
+    "type": "4G/5G",
     "frequencyRange": "600-2700 MHz",
     "gain": "7dB",
     "connectorType": "N female"
   },
   {
-    "type": "4G/5G",
+    "partNumber": "YNX-PT-02",
     "brand": "Yetnorson",
     "id": "50",
-    "partNumber": "YNX-PT-02",
+    "type": "4G/5G",
     "frequencyRange": "600-2700 MHz",
     "gain": "15dB",
     "connectorType": "N female"
   },
   {
-    "type": "4G+GPS",
+    "partNumber": "YNX-GPS+GSM-002",
     "brand": "Yetnorson",
     "id": "51",
-    "partNumber": "YNX-GPS+GSM-002",
+    "type": "4G+GPS",
     "frequencyRange": "1575.42±2/900-1800 MHz",
     "connectorType": "SMA S/T-M"
   },
   {
-    "type": "5G",
+    "partNumber": "YNX-4G-018",
     "brand": "Yetnorson",
     "id": "52",
-    "partNumber": "YNX-4G-018"
+    "type": "5G"
   },
   {
-    "type": "868/915Mhz",
+    "partNumber": "YNX-BLG-LORA",
     "brand": "Yetnorson",
     "id": "53",
-    "partNumber": "YNX-BLG-LORA",
+    "type": "868/915Mhz",
     "frequencyRange": "868/915 Mhz",
     "gain": "5.8/8/10/12dBi"
   },
   {
-    "type": "868MHz",
+    "partNumber": "YNX-868mhz-5dbi-05",
     "brand": "Yetnorson",
     "id": "54",
-    "partNumber": "YNX-868mhz-5dbi-05",
+    "type": "868MHz",
     "frequencyRange": "868MHz"
   },
   {
-    "type": "Cable",
+    "partNumber": "YNX-TLB-1800",
     "brand": "Yetnorson",
     "id": "55",
-    "partNumber": "YNX-TLB-1800",
+    "type": "Cable",
     "connectorType": "GT13/GT16/GT5/VR1/HF201"
   },
   {
-    "type": "Ceramic",
+    "partNumber": "YNX-GPS-T01",
     "brand": "Yetnorson",
     "id": "56",
-    "partNumber": "YNX-GPS-T01"
+    "type": "Ceramic"
   },
   {
-    "type": "DVB-T2",
+    "partNumber": "YNX-DVB-T2-C008",
     "brand": "Yetnorson",
     "id": "57",
-    "partNumber": "YNX-DVB-T2-C008",
+    "type": "DVB-T2",
     "connectorType": "IEC/F/SMA"
   },
   {
-    "type": "Fiberglass",
+    "partNumber": "YNX-\r\n2.4GBLG-\r\n04",
     "brand": "Yetnorson",
     "id": "58",
-    "partNumber": "YNX-\r\n2.4GBLG-\r\n04",
+    "type": "Fiberglass",
     "frequencyRange": "2400-2500 Mhz",
     "connectorType": "N female"
   },
   {
-    "type": "FM/AM",
+    "partNumber": "YNX-Fm-001",
     "brand": "Yetnorson",
     "id": "59",
-    "partNumber": "YNX-Fm-001",
+    "type": "FM/AM",
     "connectorType": "M6 screw"
   },
   {
-    "type": "FM/AM",
+    "partNumber": "YNX-Fm-002",
     "brand": "Yetnorson",
     "id": "60",
-    "partNumber": "YNX-Fm-002",
+    "type": "FM/AM",
     "connectorType": "M6 screw"
   },
   {
-    "type": "FM/AM",
+    "partNumber": "YNX-Fm-003",
     "brand": "Yetnorson",
     "id": "61",
-    "partNumber": "YNX-Fm-003",
+    "type": "FM/AM",
     "connectorType": "M6 screw"
   },
   {
-    "type": "GPS",
+    "partNumber": "YNX-TLB-1800",
     "brand": "Yetnorson",
     "id": "62",
-    "partNumber": "YNX-TLB-1800",
+    "type": "GPS",
     "connectorType": "SMA male/GT13/GT16"
   },
   {
-    "type": "GPS \r\n(in-built)",
+    "partNumber": "YNX-GPS-UFL-01",
     "brand": "Yetnorson",
     "id": "63",
-    "partNumber": "YNX-GPS-UFL-01",
+    "type": "GPS \r\n(in-built)",
     "gain": "28dB",
     "connectorType": "IPEX-UFL"
   },
   {
-    "type": "GPS   (in-built)",
+    "partNumber": "YNX-GPS-UFL-\r\n02",
     "brand": "Yetnorson",
     "id": "64",
-    "partNumber": "YNX-GPS-UFL-\r\n02",
+    "type": "GPS   (in-built)",
     "connectorType": "MMCX male"
   },
   {
-    "type": "GPS Marine",
+    "partNumber": "YNX-GPS- GHH-001",
     "brand": "Yetnorson",
     "id": "65",
-    "partNumber": "YNX-GPS- GHH-001",
+    "type": "GPS Marine",
     "frequencyRange": "1575.42±2 MHz",
     "gain": "28dB",
     "connectorType": "BNC/N female"
   },
   {
-    "type": "GPS Receiving and Launch",
+    "partNumber": "YNX-GPS-RL-01",
     "brand": "Yetnorson",
     "id": "66",
-    "partNumber": "YNX-GPS-RL-01",
+    "type": "GPS Receiving and Launch",
     "connectorType": "SMA"
   },
   {
-    "type": "GPS*ISDB",
+    "partNumber": "YNX-TLB-1800",
     "brand": "Yetnorson",
     "id": "67",
-    "partNumber": "YNX-TLB-1800",
+    "type": "GPS*ISDB",
     "frequencyRange": "470-862 Mhz",
     "connectorType": "SMA male/GT13/GT16"
   },
   {
-    "type": "GPS+GNSS",
+    "partNumber": "YNX-GPS-001",
     "brand": "Yetnorson",
     "id": "68",
-    "partNumber": "YNX-GPS-001",
+    "type": "GPS+GNSS",
     "frequencyRange": "1575.42±2 MHz",
     "gain": "28dB",
     "connectorType": "SMA/Fakra"
   },
   {
-    "type": "GPS+GNSS",
+    "partNumber": "YNX-GPS-002",
     "brand": "Yetnorson",
     "id": "69",
-    "partNumber": "YNX-GPS-002",
+    "type": "GPS+GNSS",
     "frequencyRange": "1575.42±2 MHz",
     "gain": "28dB",
     "connectorType": "SMA S/T-M"
   },
   {
-    "type": "GPS+GNSS",
+    "partNumber": "YNX-GPS-003",
     "brand": "Yetnorson",
     "id": "70",
-    "partNumber": "YNX-GPS-003",
+    "type": "GPS+GNSS",
     "frequencyRange": "1575.42±2 MHz",
     "gain": "28dB",
     "connectorType": "Fakra"
   },
   {
-    "type": "GPS+GNSS",
+    "partNumber": "YNX-GPS-004",
     "brand": "Yetnorson",
     "id": "71",
-    "partNumber": "YNX-GPS-004",
+    "type": "GPS+GNSS",
     "frequencyRange": "1575.42±2 MHz",
     "gain": "28dB",
     "connectorType": "SMA S/T-M"
   },
   {
-    "type": "GPS+GNSS",
+    "partNumber": "YNX-GPS-007",
     "brand": "Yetnorson",
     "id": "72",
-    "partNumber": "YNX-GPS-007",
+    "type": "GPS+GNSS",
     "frequencyRange": "1575.42±2 MHz",
     "gain": "28dB",
     "connectorType": "SMA"
   },
   {
-    "type": "GPS+GNSS",
+    "partNumber": "YNX-GPS-008",
     "brand": "Yetnorson",
     "id": "73",
-    "partNumber": "YNX-GPS-008",
+    "type": "GPS+GNSS",
     "frequencyRange": "1575.42±2 MHz",
     "gain": "28dB",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-2dB-001",
     "brand": "Yetnorson",
     "id": "74",
-    "partNumber": "YNX-GSM-2dB-001",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "gain": "3dB",
     "connectorType": "SMA-J"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-2dB-006",
     "brand": "Yetnorson",
     "id": "75",
-    "partNumber": "YNX-GSM-2dB-006",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "gain": "3dB",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-2dB-04",
     "brand": "Yetnorson",
     "id": "76",
-    "partNumber": "YNX-GSM-2dB-04",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "gain": "3dB",
     "connectorType": "SMA-J"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-3dB-003",
     "brand": "Yetnorson",
     "id": "77",
-    "partNumber": "YNX-GSM-3dB-003",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "gain": "3dB",
     "connectorType": "SMA-J"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-3db-007",
     "brand": "Yetnorson",
     "id": "78",
-    "partNumber": "YNX-GSM-3db-007",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "gain": "3dB",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-5db-008",
     "brand": "Yetnorson",
     "id": "79",
-    "partNumber": "YNX-GSM-5db-008",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "gain": "5dB",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-TP-001",
     "brand": "Yetnorson",
     "id": "80",
-    "partNumber": "YNX-GSM-TP-001",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-TP-002",
     "brand": "Yetnorson",
     "id": "81",
-    "partNumber": "YNX-GSM-TP-002",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-GSM-TP-003",
     "brand": "Yetnorson",
     "id": "82",
-    "partNumber": "YNX-GSM-TP-003",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-TQC-GSM-002",
     "brand": "Yetnorson",
     "id": "83",
-    "partNumber": "YNX-TQC-GSM-002",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-TQC-GSM-003",
     "brand": "Yetnorson",
     "id": "84",
-    "partNumber": "YNX-TQC-GSM-003",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-TQC-GSM-004",
     "brand": "Yetnorson",
     "id": "85",
-    "partNumber": "YNX-TQC-GSM-004",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-TQC-GSM-005",
     "brand": "Yetnorson",
     "id": "86",
-    "partNumber": "YNX-TQC-GSM-005",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-TQC-GSM-006",
     "brand": "Yetnorson",
     "id": "87",
-    "partNumber": "YNX-TQC-GSM-006",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM pcb",
+    "partNumber": "YNX-GSM -PCB001",
     "brand": "Yetnorson",
     "id": "88",
-    "partNumber": "YNX-GSM -PCB001",
+    "type": "GSM pcb",
     "frequencyRange": "890-1900 MHz",
     "connectorType": "IPEX"
   },
   {
-    "type": "GSM pcb",
+    "partNumber": "YNX-GSM -PCB002",
     "brand": "Yetnorson",
     "id": "89",
-    "partNumber": "YNX-GSM -PCB002",
+    "type": "GSM pcb",
     "frequencyRange": "890-1900 MHz",
     "connectorType": "IPEX"
   },
   {
-    "type": "GSM pcb",
+    "partNumber": "YNX-GSM -PCB003",
     "brand": "Yetnorson",
     "id": "90",
-    "partNumber": "YNX-GSM -PCB003",
+    "type": "GSM pcb",
     "frequencyRange": "890-1900 MHz",
     "connectorType": "IPEX"
   },
   {
-    "type": "GSM pcb",
+    "partNumber": "YNX-GSM -PCB004",
     "brand": "Yetnorson",
     "id": "91",
-    "partNumber": "YNX-GSM -PCB004",
+    "type": "GSM pcb",
     "frequencyRange": "890-1900 MHz",
     "connectorType": "IPEX"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-GSM-006",
     "brand": "Yetnorson",
     "id": "92",
-    "partNumber": "YNX-GSM-006",
+    "type": "GSM/3G",
     "frequencyRange": "800-2100 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-GSM-007",
     "brand": "Yetnorson",
     "id": "93",
-    "partNumber": "YNX-GSM-007",
+    "type": "GSM/3G",
     "frequencyRange": "800-2100 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-GSM-008",
     "brand": "Yetnorson",
     "id": "94",
-    "partNumber": "YNX-GSM-008",
+    "type": "GSM/3G",
     "frequencyRange": "800-2100 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-GSM-009",
     "brand": "Yetnorson",
     "id": "95",
-    "partNumber": "YNX-GSM-009",
+    "type": "GSM/3G",
     "frequencyRange": "800-2100 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-3G-02",
     "brand": "Yetnorson",
     "id": "96",
-    "partNumber": "YNX-3G-02",
+    "type": "GSM/3G",
     "frequencyRange": "890-1900 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-3G-03",
     "brand": "Yetnorson",
     "id": "97",
-    "partNumber": "YNX-3G-03",
+    "type": "GSM/3G",
     "frequencyRange": "890-1900 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-3G-2dB-CRC9",
     "brand": "Yetnorson",
     "id": "98",
-    "partNumber": "YNX-3G-2dB-CRC9",
+    "type": "GSM/3G",
     "gain": "3dBi",
     "connectorType": "CRC9/TS9"
   },
   {
-    "type": "GSM/3G",
+    "partNumber": "YNX-3G-5dB-01",
     "brand": "Yetnorson",
     "id": "99",
-    "partNumber": "YNX-3G-5dB-01",
+    "type": "GSM/3G",
     "gain": "5dbi",
     "connectorType": "Nmale connector"
   },
   {
-    "type": "GSM/4G",
+    "partNumber": "YNX-GSM-010",
     "brand": "Yetnorson",
     "id": "100",
-    "partNumber": "YNX-GSM-010",
+    "type": "GSM/4G",
     "frequencyRange": "800-2100 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM+GPS",
+    "partNumber": "YNX-GPS+GSM-001",
     "brand": "Yetnorson",
     "id": "101",
-    "partNumber": "YNX-GPS+GSM-001",
+    "type": "GSM+GPS",
     "frequencyRange": "1575.42±2/900-1800 MHz"
   },
   {
-    "type": "GSM+GPS",
+    "partNumber": "YNX-GPS+GSM-003",
     "brand": "Yetnorson",
     "id": "102",
-    "partNumber": "YNX-GPS+GSM-003",
+    "type": "GSM+GPS",
     "frequencyRange": "1575.42±2/900-1800 MHz",
     "connectorType": "Fakra"
   },
   {
-    "type": "GSM+GPS",
+    "partNumber": "YNX-GPS+GSM-003",
     "brand": "Yetnorson",
     "id": "103",
-    "partNumber": "YNX-GPS+GSM-003",
+    "type": "GSM+GPS",
     "frequencyRange": "1575.42±2/900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "GSM",
+    "partNumber": "YNX-TQC-GSM-001",
     "brand": "Yetnorson",
     "id": "104",
-    "partNumber": "YNX-TQC-GSM-001",
+    "type": "GSM",
     "frequencyRange": "900-1800 MHz",
     "connectorType": "SMA"
   },
   {
-    "type": "Hanging",
+    "partNumber": "YNX-Hanging-001",
     "brand": "Yetnorson",
     "id": "105",
-    "partNumber": "YNX-Hanging-001",
+    "type": "Hanging",
     "frequencyRange": "600-2700 Mhz",
     "gain": "11dB",
     "connectorType": "N female"
   },
   {
-    "type": "Huawei \r\nRubber",
+    "partNumber": "YNX-Huawei-TNC",
     "brand": "Yetnorson",
     "id": "106",
-    "partNumber": "YNX-Huawei-TNC",
+    "type": "Huawei \r\nRubber",
     "connectorType": "TNC"
   },
   {
-    "type": "Indoor ceiling omni-directional",
+    "partNumber": "YNX-Ceiling-002",
     "brand": "Yetnorson",
     "id": "107",
-    "partNumber": "YNX-Ceiling-002",
+    "type": "Indoor ceiling omni-directional",
     "frequencyRange": "806-2500 Mhz",
     "gain": "3dBi"
   },
   {
-    "type": "ISDB",
+    "partNumber": "YNX-AP-T001",
     "brand": "Yetnorson",
     "id": "108",
-    "partNumber": "YNX-AP-T001",
+    "type": "ISDB",
     "frequencyRange": "470-862 Mhz"
   },
   {
-    "type": "ISDB",
+    "partNumber": "YNX-AP-T002",
     "brand": "Yetnorson",
     "id": "109",
-    "partNumber": "YNX-AP-T002",
+    "type": "ISDB",
     "frequencyRange": "470-862 Mhz"
   },
   {
-    "type": "ISDB",
+    "partNumber": "YNX-TLB-1843",
     "brand": "Yetnorson",
     "id": "110",
-    "partNumber": "YNX-TLB-1843",
+    "type": "ISDB",
     "frequencyRange": "470-862 Mhz",
     "connectorType": "GT13/GT16/SMA"
   },
   {
-    "type": "ISDB",
+    "partNumber": "YNX-TLB-1877",
     "brand": "Yetnorson",
     "id": "111",
-    "partNumber": "YNX-TLB-1877",
+    "type": "ISDB",
     "frequencyRange": "470-862 Mhz"
   },
   {
-    "type": "LPDA",
+    "partNumber": "YNX-LPDA-01",
     "brand": "Yetnorson",
     "id": "112",
-    "partNumber": "YNX-LPDA-01",
+    "type": "LPDA",
     "frequencyRange": "600-2700 MHz",
     "gain": "9dB",
     "connectorType": "N female"
   },
   {
-    "type": "LPDA",
+    "partNumber": "YNX-LPDA-02",
     "brand": "Yetnorson",
     "id": "113",
-    "partNumber": "YNX-LPDA-02",
+    "type": "LPDA",
     "frequencyRange": "600-2700 MHz",
     "gain": "14dB",
     "connectorType": "N female"
   },
   {
-    "type": "Panel",
+    "partNumber": "YNX-Hanging-001",
     "brand": "Yetnorson",
     "id": "114",
-    "partNumber": "YNX-Hanging-001",
+    "type": "Panel",
     "frequencyRange": "600-2700 Mhz",
     "connectorType": "SMA"
   },
   {
-    "type": "RF \r\nCable",
+    "partNumber": "YNX-RF-SMA-004",
     "brand": "Yetnorson",
     "id": "115",
-    "partNumber": "YNX-RF-SMA-004",
+    "type": "RF \r\nCable",
     "connectorType": "SMA female"
   },
   {
-    "type": "RF \r\nCable",
+    "partNumber": "YNX-RF-TNC-001",
     "brand": "Yetnorson",
     "id": "116",
-    "partNumber": "YNX-RF-TNC-001",
+    "type": "RF \r\nCable",
     "connectorType": "TNC female"
   },
   {
-    "type": "RF \r\nCable",
+    "partNumber": "YNX-RF-TNC-MCX",
     "brand": "Yetnorson",
     "id": "117",
-    "partNumber": "YNX-RF-TNC-MCX",
+    "type": "RF \r\nCable",
     "connectorType": "TNC to MCX"
   },
   {
-    "type": "RF cable",
+    "partNumber": "YNX-LMR400-SMA-RP01",
     "brand": "Yetnorson",
     "id": "118",
-    "partNumber": "YNX-LMR400-SMA-RP01",
+    "type": "RF cable",
     "connectorType": "SMA male to N male"
   },
   {
-    "type": "RF cable",
+    "partNumber": "YNX-RG402-SMA-004",
     "brand": "Yetnorson",
     "id": "119",
-    "partNumber": "YNX-RG402-SMA-004",
+    "type": "RF cable",
     "connectorType": "SMA male"
   },
   {
-    "type": "RF connector",
+    "partNumber": "YNX-RF-01",
     "brand": "Yetnorson",
     "id": "120",
-    "partNumber": "YNX-RF-01"
+    "type": "RF connector"
   },
   {
-    "type": "Three in one",
+    "partNumber": "YNX+GPS+WIFI+4G-\r\n003",
     "brand": "Yetnorson",
     "id": "121",
-    "partNumber": "YNX+GPS+WIFI+4G-\r\n003",
+    "type": "Three in one",
     "connectorType": "SMA/Fakra"
   },
   {
-    "type": "Three in one",
+    "partNumber": "YNX+GPS+GSM+wifi-\r\n001",
     "brand": "Yetnorson",
     "id": "122",
-    "partNumber": "YNX+GPS+GSM+wifi-\r\n001",
+    "type": "Three in one",
     "connectorType": "SMA/Fakra"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C11",
     "brand": "Yetnorson",
     "id": "123",
-    "partNumber": "YNX-HD-T-C11",
+    "type": "TV",
     "connectorType": "F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-DVB-T2-C001",
     "brand": "Yetnorson",
     "id": "124",
-    "partNumber": "YNX-DVB-T2-C001",
+    "type": "TV",
     "connectorType": "IEC/MCX\r\nSMA/F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-DVB-T2-C002",
     "brand": "Yetnorson",
     "id": "125",
-    "partNumber": "YNX-DVB-T2-C002",
+    "type": "TV",
     "connectorType": "IEC/F/SMA"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-DVB-T2-C003",
     "brand": "Yetnorson",
     "id": "126",
-    "partNumber": "YNX-DVB-T2-C003",
+    "type": "TV",
     "connectorType": "SMA/F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-DVB-T2-C004",
     "brand": "Yetnorson",
     "id": "127",
-    "partNumber": "YNX-DVB-T2-C004",
+    "type": "TV",
     "connectorType": "SMA/F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-DVB-T2-C006",
     "brand": "Yetnorson",
     "id": "128",
-    "partNumber": "YNX-DVB-T2-C006",
+    "type": "TV",
     "connectorType": "SMA/F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-DVB-T2-C009",
     "brand": "Yetnorson",
     "id": "129",
-    "partNumber": "YNX-DVB-T2-C009",
+    "type": "TV",
     "connectorType": "IEC/MCX\r\nSMA/F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-DVB-T2-C010",
     "brand": "Yetnorson",
     "id": "130",
-    "partNumber": "YNX-DVB-T2-C010",
+    "type": "TV",
     "connectorType": "IEC/MCX\r\nSMA/F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C01",
     "brand": "Yetnorson",
     "id": "131",
-    "partNumber": "YNX-HD-T-C01",
+    "type": "TV",
     "connectorType": "F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C02",
     "brand": "Yetnorson",
     "id": "132",
-    "partNumber": "YNX-HD-T-C02",
+    "type": "TV",
     "connectorType": "F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C03",
     "brand": "Yetnorson",
     "id": "133",
-    "partNumber": "YNX-HD-T-C03",
+    "type": "TV",
     "connectorType": "F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C05",
     "brand": "Yetnorson",
     "id": "134",
-    "partNumber": "YNX-HD-T-C05",
+    "type": "TV",
     "connectorType": "F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C08",
     "brand": "Yetnorson",
     "id": "135",
-    "partNumber": "YNX-HD-T-C08",
+    "type": "TV",
     "connectorType": "F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C09",
     "brand": "Yetnorson",
     "id": "136",
-    "partNumber": "YNX-HD-T-C09",
+    "type": "TV",
     "connectorType": "F male"
   },
   {
-    "type": "TV",
+    "partNumber": "YNX-HD-T-C16",
     "brand": "Yetnorson",
     "id": "137",
-    "partNumber": "YNX-HD-T-C16",
+    "type": "TV",
     "connectorType": "IEC/F"
   },
   {
-    "type": "Y type cable",
+    "partNumber": "YNX-Y cable-001",
     "brand": "Yetnorson",
     "id": "138",
-    "partNumber": "YNX-Y cable-001",
+    "type": "Y type cable",
     "connectorType": "SMA female to 2/SMA male/TS9"
   },
   {
-    "type": "Y type cable",
+    "partNumber": "YNX-Y cable-002",
     "brand": "Yetnorson",
     "id": "139",
-    "partNumber": "YNX-Y cable-002",
+    "type": "Y type cable",
     "connectorType": "TS9 to SMA female"
   },
   {
-    "type": "Yagi",
+    "partNumber": "YNX-Yagi-002",
     "brand": "Yetnorson",
     "id": "140",
-    "partNumber": "YNX-Yagi-002",
+    "type": "Yagi",
     "frequencyRange": "2400-2500 MHz",
     "gain": "18dB",
     "connectorType": "SMA"
   },
   {
-    "type": "0.81 cable",
+    "partNumber": "YNX-0.81-MHF4",
     "brand": "Yetnorson",
     "id": "141",
-    "partNumber": "YNX-0.81-MHF4",
+    "type": "0.81 cable",
     "connectorType": "MHF4 to MHF4"
   }
 ]

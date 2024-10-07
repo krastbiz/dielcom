@@ -163,7 +163,8 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                         <tbody>
                             {sortedCatalog.map((item) => (
                                 <tr key={`${item.partNumber}${item.id}`}>
-                                    {headers.map((header) => (
+                                    <StickyCell>{item.partNumber}</StickyCell>
+                                    {headers.slice(1).map((header) => (
                                         <td key={header}>{item[header]}</td>
                                     ))}
                                     <td>
@@ -264,7 +265,7 @@ const StickyHeaderRow = styled.tr`
     background-color: ${({ theme }) => theme.colors.background};
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 15;
     th {
         font-weight: bold;
         padding: 10px;
@@ -272,6 +273,18 @@ const StickyHeaderRow = styled.tr`
         cursor: pointer;
         white-space: nowrap;
     }
+
+    th:first-child {
+        position: sticky;
+        left: 0;
+    }
+`
+
+const StickyCell = styled.td`
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background-color: ${({ theme }) => theme.colors.background};
 `
 
 const OrderButton = styled.button`
@@ -286,4 +299,3 @@ const OrderButton = styled.button`
         background-color: ${({ theme }) => theme.colors.active};
     }
 `
-
