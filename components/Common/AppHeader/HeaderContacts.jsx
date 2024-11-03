@@ -25,7 +25,7 @@ export const HeaderContacts = ({ ...extraProps }) => {
 const HeaderContactsWrapper = styled.div`
     position: relative;
     font-weight: bold;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.active};
     display: flex;
     flex-wrap: nowrap;
     gap: 15px;
@@ -49,5 +49,5 @@ const HeaderContactMe = styled.div`
     }
 `
 const HeaderPhoneLink = styled.a`
-    text-wrap: nowrap;
+    white-space: nowrap;
 `

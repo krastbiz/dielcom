@@ -143,7 +143,7 @@ const CategoryTitle = styled.li`
 
 const ProductItem = styled.li`
     a {
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.active};
         text-decoration: none;
         font-size: 13px;
         line-height: 20px;

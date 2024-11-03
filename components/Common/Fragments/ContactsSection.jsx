@@ -97,7 +97,7 @@ const MapWrapper = styled.div`
     right: 0;
     width: 50vw;
     height: 100%;
-    background: ${({ theme }) => theme.colors.disabled};
+    background: ${({ theme }) => theme.colors.main};
 
     ${breakpoint.tablet`
         position: static;

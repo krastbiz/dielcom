@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { theme } from '../../../lib/theme'
 import { Link } from '../../ui/Link'
 
-export const NavLink = ({ href, children, isActive, activeColor = theme.colors.primary, ...extraProps }) => {
-    const linkColor = isActive ? activeColor : theme.colors.disabled
+export const NavLink = ({ href, children, isActive, activeColor = theme.colors.active, ...extraProps }) => {
+    const linkColor = isActive ? activeColor : theme.colors.main
 
     return (
         <NavLinkWrapper linkColor={linkColor} {...extraProps}>

@@ -291,14 +291,14 @@ const ServiceTab = styled.li`
     padding-left: 120px;
     display: block;
     margin-bottom: 40px;
-    color: ${({ theme, active }) => (active ? theme.colors.primary : theme.colors.disabled)};
+    color: ${({ theme, active }) => (active ? theme.colors.active : theme.colors.main)};
 
     ::before {
         ${({ active }) => (active ? 'content: "";' : '')}
         position: absolute;
         width: 80px;
         height: 1px;
-        background-color: ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.active};
         top: 13.5px;
         left: 0;
     }
@@ -322,7 +322,7 @@ const ServiceContentTabItem = styled.li`
         position: absolute;
         width: 80px;
         height: 1px;
-        background-color: ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.active};
         top: 13.5px;
         left: 0;
     }
@@ -333,7 +333,7 @@ const AdvantagesSection = styled.section`
     background: radial-gradient(
         56.19% 168.11% at 28.98% -60.9%,
         ${({ theme }) => theme.colors.active} 0%,
-        ${({ theme }) => theme.colors.primary} 100%
+        ${({ theme }) => theme.colors.active} 100%
     );
     position: relative;
 

@@ -89,7 +89,7 @@ const CatalogItemTitle = styled.div`
 `
 
 const CatalogItem = styled.div`
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.active};
     :hover {
         ${CatalogItemTitle} {
             color: ${({ theme }) => theme.colors.active};
@@ -103,7 +103,7 @@ const CatalogItemLogoWrapper = styled.div`
     padding: 10px;
     width: 100%;
     height: 130px;
-    border: 1px solid ${({ theme }) => theme.colors.primary};
+    border: 1px solid ${({ theme }) => theme.colors.active};
     border-radius: 3px;
     &:hover {
         border: none;

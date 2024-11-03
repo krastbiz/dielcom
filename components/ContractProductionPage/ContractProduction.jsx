@@ -137,7 +137,7 @@ const CPInfoListTitle = styled(H2)`
 const CPInfoList = styled.ul`
     width: 600px;
     list-style: none;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.active};
     font-weight: 300;
     font-size: 16px;
 
@@ -155,7 +155,7 @@ const CPInfoListItem = styled.li`
 
     ::before {
         content: '';
-        background-color: ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.active};
         border-radius: 100%;
         height: 10px;
         left: -25px;
@@ -168,7 +168,7 @@ const CPInfoListItem = styled.li`
         padding-left: 20px;
         ::before {
             content: "";
-            background-color: ${({ theme }) => theme.colors.primary};
+            background-color: ${({ theme }) => theme.colors.active};
             border-radius: 100%;
             height: 10px;
             left: 0px;

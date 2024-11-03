@@ -93,7 +93,7 @@ const CopyrightContainer = styled(Container)`
 
 const AppFooterWrapper = styled.footer`
     padding: 95px 0 55px;
-    background: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.active};
     color: white;
 `
 

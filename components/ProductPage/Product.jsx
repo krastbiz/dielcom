@@ -197,7 +197,7 @@ const CatalogSection = styled.section`
 const FilterContainer = styled.div`
     width: 300px;
     padding: 20px;
-    border-right: 1px solid ${({ theme }) => theme.colors.primary};
+    border-right: 1px solid ${({ theme }) => theme.colors.active};
 `
 
 const SearchInput = styled.input`
@@ -205,7 +205,7 @@ const SearchInput = styled.input`
     padding: 10px;
     margin-bottom: 20px;
     margin-top: 5px;
-    border: 1px solid ${({ theme }) => theme.colors.primary};
+    border: 1px solid ${({ theme }) => theme.colors.active};
     border-radius: 5px;
 `
 
@@ -252,7 +252,7 @@ const CatalogTable = styled.table`
     th,
     td {
         padding: 10px;
-        border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
+        border-bottom: 1px solid ${({ theme }) => theme.colors.active};
         max-width: 300px;
     }
 
@@ -289,7 +289,7 @@ const StickyCell = styled.td`
 
 const OrderButton = styled.button`
     padding: 10px 20px;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.active};
     color: white;
     border: none;
     border-radius: 5px;

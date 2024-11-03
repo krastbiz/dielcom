@@ -12,7 +12,7 @@ export const BurgerButton = ({ isActive, onClick, ...extraProps }) => {
 
 const BurgerLine = styled.div`
     position: absolute;
-    background: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.active};
     height: 3px;
     width: 100%;
     border-radius: 3px;

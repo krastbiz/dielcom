@@ -40,6 +40,6 @@ const MainSectionWrapper = styled.div`
     background: radial-gradient(
         56.19% 168.11% at 28.98% -60.9%,
         ${({ theme }) => theme.colors.active} 0%,
-        ${({ theme }) => theme.colors.primary} 100%
+        ${({ theme }) => theme.colors.active} 100%
     );
 `

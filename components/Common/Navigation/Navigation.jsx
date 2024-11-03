@@ -16,7 +16,7 @@ export const Navigation = ({ isFooterNavigation, ...extraProps }) => {
     const currentUrl = nextRouter.asPath
 
     const isLinkActive = (linkUrl) => linkUrl === currentUrl
-    const linkActiveColor = isFooterNavigation ? 'white' : theme.colors.primary
+    const linkActiveColor = isFooterNavigation ? 'white' : theme.colors.active
 
     return (
         <NavigationWrapper {...extraProps}>
