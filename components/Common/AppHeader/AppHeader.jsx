@@ -29,15 +29,16 @@ export const AppHeader = () => {
                         </a>
                     </AppLogoWrapper>
                     <HeaderContainer>
-                        <Navigation isHeader/>
-                        <HeaderContainerRow><FlexItem> <SearchComponent isHomePage /></FlexItem>
-                       
-                        <FlexItem><HeaderContacts hideOnMobile /></FlexItem>
+                        <Navigation isHeader />
+                        <HeaderContainerRow>
+                            <FlexItem>
+                                <SearchComponent isHomePage />
+                            </FlexItem>
+                            <FlexItem>
+                                <HeaderContacts hideOnMobile />
+                            </FlexItem>
                         </HeaderContainerRow>
                     </HeaderContainer>
-
-
-                    
 
                     {isLaptopOrMobileOrTablet && (
                         <BurgerButtonStyled
@@ -77,7 +78,6 @@ const AppLogoWrapper = styled.div`
 const ContainerStyled = styled(Container)`
     align-items: center;
     padding: 0px;
-    width: 100%;
     ${breakpoint.mobile`
     flex-direction: row;
  `}
@@ -96,4 +96,4 @@ const HeaderContainerRow = styled(HeaderContainer)`
 const FlexItem = styled.div`
     flex: 1;
     display: flex;
-`;
+`

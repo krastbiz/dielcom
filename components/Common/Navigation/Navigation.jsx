@@ -38,7 +38,6 @@ const NavLinkStyled = styled(NavLink)``
 const NavigationWrapper = styled.div`
     display: flex;
     justify-content: flex-start;
-    border-bottom: ${({ isHeader, theme }) => isHeader ? `1px solid ${theme.colors.border}` : 'none'};
+    border-bottom: ${({ isHeader, theme }) => (isHeader ? `1px solid ${theme.colors.border}` : 'none')};
     width: 100%;
 `
-

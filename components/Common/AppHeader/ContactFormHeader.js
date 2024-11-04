@@ -75,8 +75,7 @@ const ContactFormWrapper = styled.div`
     background: white;
     text-align: center;
     position: absolute;
-    top: 60px;
-    left: 60px;
+    top: 120px;
 `
 
 const ContactForm = styled.form`
@@ -92,6 +91,7 @@ const ContactForm = styled.form`
 
 const ContactFormTitle = styled.h2`
     margin-top: 0;
+    margin-bottom: 10px;
 `
 
 const ContactFormSuccessMessage = styled.p`

@@ -12,12 +12,12 @@ export const HeaderContacts = ({ ...extraProps }) => {
 
     return (
         <HeaderContactsWrapper {...extraProps}>
-            <a href="mailto:spb@dielcom.ru">spb@dielcom.ru</a>
-            <HeaderPhoneWrapper>
+            <MailLink href="mailto:spb@dielcom.ru">spb@dielcom.ru</MailLink>
+            <HeaderContainer>
                 <HeaderPhoneLink href="tel:+78123394597">+7 (812) 339-45-97</HeaderPhoneLink>
                 <HeaderContactMe onClick={toggleFormVisibility}>Заказать звонок</HeaderContactMe>
                 <ContactFormHeader isVisible={isFormVisible} setIsFormVisible={setIsFormVisible} />
-            </HeaderPhoneWrapper>
+            </HeaderContainer>
         </HeaderContactsWrapper>
     )
 }
@@ -25,27 +25,43 @@ export const HeaderContacts = ({ ...extraProps }) => {
 const HeaderContactsWrapper = styled.div`
     position: relative;
     font-weight: bold;
-    color: ${({ theme }) => theme.colors.active};
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 17px;
+    padding-right: 70px;
+    color: ${({ theme }) => theme.colors.base};
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    gap: 15px;
+    justify-content: flex-end;
 
     ${({ hideOnMobile }) => hideOnMobile && hideOnMobileMixin}
 `
 
-const HeaderPhoneWrapper = styled.div`
+const MailLink = styled.a`
+    border-right: 1px solid ${({ theme }) => theme.colors.border};
+    padding: 0 23px;
+    &:hover {
+        color: ${({ theme }) => theme.colors.active};
+    }
+`
+
+const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin: 0 23px;
+    &:hover {
+        color: ${({ theme }) => theme.colors.active};
+    }
 `
 
 const HeaderContactMe = styled.div`
-    color: #1e4294;
-    font-size: 12px;
-    user-select: none;
+    font-size: 14px;
     text-align: center;
+    color: ${({ theme }) => theme.colors.active};
+    cursor: pointer;
     &:hover {
-        color: #5b76cf;
+        color: ${({ theme }) => theme.colors.linkHover};
     }
 `
 const HeaderPhoneLink = styled.a`

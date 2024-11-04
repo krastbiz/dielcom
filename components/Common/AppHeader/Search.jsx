@@ -59,7 +59,7 @@ export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false }) 
 const SearchContainer = styled.div`
     padding: 24px 48px;
     width: 100%;
-    position: relative;  
+    position: relative;
     border: 1px solid transparent;
     border-right: 1px solid ${({ theme }) => theme.colors.border};
     transition: border-color 0.3s;
@@ -67,7 +67,7 @@ const SearchContainer = styled.div`
     &:focus-within {
         border-color: ${({ theme }) => theme.colors.active};
     }
-`;
+`
 
 const SearchInput = styled.input`
     height: 24px;
@@ -80,7 +80,7 @@ const SearchInput = styled.input`
     padding-right: 40px;
     box-sizing: border-box;
     outline: none;
-`;
+`
 
 const SearchButton = styled.button`
     position: absolute;
@@ -93,7 +93,7 @@ const SearchButton = styled.button`
     display: flex;
     align-items: center;
     padding: 0;
-`;
+`
 
 const SearchIcon = styled.img`
     height: 16px;
