@@ -2,66 +2,84 @@ import styled from 'styled-components'
 import { breakpoint } from '../../../lib/theme'
 import { Container } from '../../ui/layouts/Container'
 import { Link } from '../../ui/Link'
-import { H2 } from '../../ui/Typography'
+import { Navigation } from '../Navigation/Navigation'
 import { MapComponent } from '../MapComponent'
+import { StyledLink } from '../../ui/Link'
 
 export const ContactsSection = ({ ...extraProps }) => {
     return (
         <ContactsSectionWrapper {...extraProps}>
-            <Container>
-                <ContactsInfoWrapper>
-                    <H2Styled>Контакты</H2Styled>
+            <StyledContainer>
+                <SectionTitle>Контакты</SectionTitle>
+                <ContactSectionContainer>
+                    <ContactsInfoWrapper>
+                        <ContactInfoItem>
+                            <ContactInfoTitle>Адрес:</ContactInfoTitle>
+                            <ContactInfoContent>
+                                195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»
+                            </ContactInfoContent>
+                        </ContactInfoItem>
 
-                    <ContactInfoItem>
-                        <ContactInfoTitle icon={'/static/icons/address.svg'}>Адрес:</ContactInfoTitle>
-                        <ContactInfoContent>
-                            195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»
-                        </ContactInfoContent>
-                    </ContactInfoItem>
+                        <ContactInfoItem>
+                            <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
+                            <ContactInfoContent>
+                                <Link href={'tel:+78123394597'}>+7 (812) 339-45-97</Link>
+                            </ContactInfoContent>
+                        </ContactInfoItem>
 
-                    <ContactInfoItem>
-                        <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
-                        <ContactInfoContent>
-                            <Link href={'tel:+78123394597'}>+7 (812) 339-45-97</Link>
-                        </ContactInfoContent>
-                    </ContactInfoItem>
-
-                    <ContactInfoItem>
-                        <ContactInfoTitle icon={'/static/icons/email.svg'}>Электронная почта:</ContactInfoTitle>
-                        <ContactInfoContent>
-                            <Link href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</Link>
-                        </ContactInfoContent>
-                    </ContactInfoItem>
-                </ContactsInfoWrapper>
-            </Container>
-
-            <MapWrapper>
-                <MapComponent />
-            </MapWrapper>
+                        <ContactInfoItem>
+                            <ContactInfoTitle>Электронная почта:</ContactInfoTitle>
+                            <ContactInfoContent>
+                                <Link href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</Link>
+                            </ContactInfoContent>
+                        </ContactInfoItem>
+                    </ContactsInfoWrapper>
+                    <ContactsInfoWrapper>
+                        <Navigation isHeader={false} />
+                        <LinkWrapper>
+                            <StyledLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</StyledLink>
+                            <StyledLink href={'/contacts'}>Документы</StyledLink>
+                        </LinkWrapper>
+                    </ContactsInfoWrapper>
+                </ContactSectionContainer>
+                <MapWrapper>
+                    <MapComponent />
+                </MapWrapper>
+            </StyledContainer>
         </ContactsSectionWrapper>
     )
 }
 
-const H2Styled = styled(H2)`
-    margin-bottom: 45px;
-`
-
 const ContactsSectionWrapper = styled.section`
     position: relative;
+    margin-top: 20px;
 `
-
-const ContactsInfoWrapper = styled.div`
-    padding: 75px 75px 75px 80px;
-    width: 50%;
+const StyledContainer = styled(Container)`
+    flex-direction: column;
+    padding: 0px 75px 55px 80px;
 
     ${breakpoint.laptop`
-        padding: 75px 30px 75px 30px;
+        padding: 0px 30px 55px 30px;
     `}
 
     ${breakpoint.tablet`
-        padding: 35px 0px 15px;
-        width: 100%;
+        padding: 0px 0px 15px;
     `}
+`
+
+const ContactSectionContainer = styled.div`
+    display: flex;
+`
+const ContactsInfoWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+`
+
+const SectionTitle = styled.div`
+    margin-bottom: 20px;
+    color: ${({ theme }) => theme.colors.active};
+    line-height: 51px;
 `
 
 const ContactInfoTitle = styled.div`
@@ -69,39 +87,28 @@ const ContactInfoTitle = styled.div`
     color: ${({ theme }) => theme.colors.main};
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 20px;
-
-    ::before {
-        content: '';
-        position: absolute;
-        left: -40px;
-        background: url(${({ icon }) => icon}) no-repeat;
-        width: 16px;
-        height: 16px;
-    }
+    margin-bottom: 15px;
 `
 const ContactInfoContent = styled.div`
     font-weight: 300;
-    font-size: 18px;
+    font-size: 15px;
     color: ${({ theme }) => theme.colors.main};
 `
 
 const ContactInfoItem = styled.div`
     margin-bottom: 30px;
-    padding-left: 40px;
+`
+
+const LinkWrapper = styled.div`
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 30px
 `
 
 const MapWrapper = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50vw;
-    height: 100%;
-    background: ${({ theme }) => theme.colors.main};
-
-    ${breakpoint.tablet`
-        position: static;
-        height: 480px;
-        width: 100vw;
-    `}
+    width: 100%;
+    height: 322px;
+    margin-bottom: 55px;
 `

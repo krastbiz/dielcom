@@ -76,9 +76,7 @@ export const PolicySection = ({ ...extraProps }) => {
                                 <FeaturesListItem>
                                     Оператор обрабатывает персональные данные в соответствии с Политикой
                                     конфиденциальности, размещенной по адресу{` `}
-                                    <StyledLink href={'https://dielcom-ec.ru/policy'}>
-                                        https://dielcom-ec.ru/policy
-                                    </StyledLink>{' '}
+                                    <StyledLink href={'/policy'}>https://dielcom-ec.ru/policy</StyledLink>{' '}
                                 </FeaturesListItem>
                                 <FeaturesListItem>
                                     Согласие действует с момента его предоставления и до момента отзыва Согласия.{' '}

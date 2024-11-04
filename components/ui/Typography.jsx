@@ -3,33 +3,30 @@ import { breakpoint } from '../../lib/theme'
 
 export const H1 = styled.h1`
     padding: 0;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 64px;
+    line-height: 41px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: ${({ theme }) => theme.colors.textWhite};
     margin: 0 0 15px;
-    font-weight: normal;
+    font-weight: 800;
+    font: ${({ theme }) => theme.fonts.manropeBold};
 
     ${breakpoint.tablet`
-        font-size: 36px;
+        font-size: 48px;
     `}
 `
 
 export const H2 = styled.h2`
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: ${({ alternative, theme }) => (alternative ? 'white' : theme.colors.active)};
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
+    color: ${({ alternative, theme }) => (alternative ? theme.colors.textWhite : theme.colors.base)};
+    font-weight: 400;
+    line-height: 31px;
+    font-size: 20px;
 `
 
 export const H3 = styled.h3`
     margin-top: 0px;
     margin-bottom: 20px;
-    color: ${({ alternative, theme }) => (alternative ? 'white' : theme.colors.active)};
-    font-weight: bold;
+    color: ${({ alternative, theme }) => (alternative ? theme.colors.textWhit : theme.colors.active)};
     font-size: 18px;
     line-height: 24px;
 `

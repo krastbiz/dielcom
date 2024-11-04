@@ -78,6 +78,7 @@ const AppLogoWrapper = styled.div`
 const ContainerStyled = styled(Container)`
     align-items: center;
     padding: 0px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
     ${breakpoint.mobile`
     flex-direction: row;
  `}

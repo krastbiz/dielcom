@@ -43,13 +43,17 @@ const MailLink = styled.a`
     &:hover {
         color: ${({ theme }) => theme.colors.active};
     }
+    letter-spacing: 1px;
 `
 
 const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 5px;
     margin: 0 23px;
+`
+const HeaderPhoneLink = styled.a`
+    white-space: nowrap;
+    letter-spacing: 1px;
     &:hover {
         color: ${({ theme }) => theme.colors.active};
     }
@@ -57,13 +61,11 @@ const HeaderContainer = styled.div`
 
 const HeaderContactMe = styled.div`
     font-size: 14px;
-    text-align: center;
+    text-align: start;
     color: ${({ theme }) => theme.colors.active};
+    font-weight: 400;
     cursor: pointer;
     &:hover {
         color: ${({ theme }) => theme.colors.linkHover};
     }
-`
-const HeaderPhoneLink = styled.a`
-    white-space: nowrap;
 `

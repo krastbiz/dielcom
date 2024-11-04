@@ -36,10 +36,4 @@ const BreadcrumbsContainer = styled(Container)`
     padding-top: 20px;
 `
 
-const MainSectionWrapper = styled.div`
-    background: radial-gradient(
-        56.19% 168.11% at 28.98% -60.9%,
-        ${({ theme }) => theme.colors.active} 0%,
-        ${({ theme }) => theme.colors.active} 100%
-    );
-`
+const MainSectionWrapper = styled.div``

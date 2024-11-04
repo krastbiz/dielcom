@@ -1,9 +1,9 @@
 import styled from 'styled-components'
+import NextLink from 'next/link'
+
 import { breakpoint } from '../../../lib/theme'
 import { getAllNewsPage } from '../../../lib/utils/routeHelper'
-import { Button } from '../../ui/buttons/Button'
 import { Container } from '../../ui/layouts/Container'
-import { H2 } from '../../ui/Typography'
 import { NewsCard, NewsCardWrapper } from '../NewsCard'
 
 export const NewsSection = ({ newsArray }) => {
@@ -11,20 +11,16 @@ export const NewsSection = ({ newsArray }) => {
 
     return (
         <NewsSectionWrapper>
-            <Container>
-                <TitleWrapper>
-                    <H2>Новости</H2>
-                    <SeeAllNewsButton primary as="a" href={getAllNewsPage()}>
-                        Смотреть все Новости
-                    </SeeAllNewsButton>
-                </TitleWrapper>
-
+            <StyledContainer>
                 <NewsCardsWrapper>
                     {newsSlicedArray.map((news, idx) => (
                         <NewsCard key={news.id + news.companyId + idx} news={news} />
                     ))}
                 </NewsCardsWrapper>
-            </Container>
+                <SeeAllNewsLink href={getAllNewsPage()}>
+                    Смотреть все новости <ArrowIcon src="/static/icons/arrow-blue.svg" alt="arrow" />
+                </SeeAllNewsLink>
+            </StyledContainer>
         </NewsSectionWrapper>
     )
 }
@@ -39,34 +35,53 @@ const NewsSectionWrapper = styled.section`
         }
     `}
 `
-const TitleWrapper = styled.div`
-    width: 30%;
-
-    ${breakpoint.laptop`
-        margin-bottom: 20px;
-    `}
-
-    ${breakpoint.tablet`
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-    `}
+const StyledContainer = styled(Container)`
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 90px;
+    position: relative;
+    &::before {
+        content: 'Новости';
+        position: absolute;
+        top: -25px;
+        left: 65px;
+        color: ${({ theme }) => theme.colors.active};
+    }
 `
-const SeeAllNewsButton = styled(Button)``
+const SeeAllNewsLink = styled(NextLink)`
+    display: flex;
+    justify-content: flex-end;
+    color: ${({ theme }) => theme.colors.active};
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 30px;
+    cursor: pointer;
+    &:hover {
+        color: ${({ theme }) => theme.colors.linkHover};
+    }
+`
 
 const NewsCardsWrapper = styled.div`
-    display: flex;
+    display: grid;
     width: 100%;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
 
-    ${breakpoint.tablet`
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 35px;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        height: 460px;
+        background-color: ${({ theme }) => theme.colors.border};
+        transform: translateX(-50%);
+    }
+`
 
-        ${NewsCardWrapper} {
-            margin-bottom: 30px;
-            margin-right: 0;
-            width: 300px;
-        }
-    `}
+const ArrowIcon = styled.img`
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 8px;
 `

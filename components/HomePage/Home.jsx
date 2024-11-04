@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import styled from 'styled-components'
+
 import { breakpoint } from '../../lib/theme'
 import { ContactsSection } from '../Common/Fragments/ContactsSection'
 import { MainSection } from '../Common/Fragments/MainSection'
@@ -8,59 +8,73 @@ import { Button } from '../ui/buttons/Button'
 import { Container } from '../ui/layouts/Container'
 import { MainLayout } from '../ui/layouts/MainLayout'
 import { H1, H2 } from '../ui/Typography'
+import { ServiceCard } from '../Common/ServiceCard'
+import { FeatureCard } from '../Common/FeatureCard'
+
+const services = [
+    {
+        title: 'Поставка электронных компонентов',
+        imageUrl: '/static/images/homepage/service-1.png',
+    },
+    {
+        title: 'Дистрибьюция дисплеев',
+        imageUrl: '/static/images/homepage/service-2.png',
+    },
+    {
+        title: 'Услуги полного цикла производства электроники',
+        imageUrl: '/static/images/homepage/service-3.png',
+    },
+    {
+        title: 'Поставка компонентов под разработку',
+        imageUrl: '/static/images/homepage/service-4.png',
+    },
+]
+
+const features = [
+    {
+        title: 'Сопровождение проектов',
+        content: 'Индивидуальный гибкий подход к каждому клиенту',
+        imageUrl: '/static/images/homepage/feature-1.png',
+    },
+    {
+        title: 'Качество и надежность',
+        content: 'Размещаем и гарантируем оригинальные качественные компоненты и надёжность поставок',
+        imageUrl: '/static/images/homepage/feature-2.png',
+    },
+    {
+        title: 'Оперативность',
+        content: 'Сроки поставки от 7 дней, даем своевременную и оперативную информацию',
+        imageUrl: '/static/images/homepage/feature-3.png',
+    },
+    {
+        title: 'Доступность',
+        content: 'Имеем доступ к товарам на различных рынках',
+        imageUrl: '/static/images/homepage/feature-4.png',
+    },
+    {
+        title: 'Официальные каналы поставки',
+        content: 'Осуществляем доставку продукции через проверенные логистические компании',
+        imageUrl: '/static/images/homepage/feature-5.png',
+    },
+    {
+        title: 'Информационная поддержка',
+        content: 'Предоставляем новые знания о рынке и продукте',
+        imageUrl: '/static/images/homepage/feature-6.png',
+    },
+]
 
 const Home = ({ featuredNews }) => {
-    const [activeServiceTab, setActiveServiceTab] = useState(0)
-    const isActiveServiceTab = (tabName) => {
-        const index = serviceTabs.map((tab) => tab.tabName).indexOf(tabName)
-        return activeServiceTab == index
-    }
-
     const newsArray = featuredNews
-
-    const advantages = [
-        {
-            image: { url: '/static/icons/advantage-1.svg', alt: 'Изображение преимущества' },
-            description: 'Предоставлении лучшего сервиса нашим клиентам',
-        },
-        {
-            image: { url: '/static/icons/advantage-2.svg', alt: 'Изображение преимущества' },
-            description: 'Уникальных технических решениях наших партнеров',
-        },
-        {
-            image: { url: '/static/icons/advantage-3.svg', alt: 'Изображение преимущества' },
-            description: 'Грамотной технической поддержке силами наших инженеров',
-        },
-        {
-            image: { url: '/static/icons/advantage-4.svg', alt: 'Изображение преимущества' },
-            description: 'Построении открытых партнерских отношений с клиентами и поставщиками',
-        },
-        {
-            image: { url: '/static/icons/advantage-5.svg', alt: 'Изображение преимущества' },
-            description: 'Надежности, настойчивости и постоянном совершенствовании',
-        },
-    ]
-
-    const serviceTabs = [
-        {
-            tabName: 'УСЛУГИ ПОЛНОГО ЦИКЛА ПРОИЗВОДСТВА ЭЛЕКТРОНИКИ',
-            tabContent:
-                'Услуги полного цикла контрактного производства, включая комплексное решение задач, связанных с производством электроники. Развивая идеи заказчика, опытные специалисты Диэлком-ЭК готовы провести полную подготовку изделия к серийному производству.',
-        },
-        {
-            tabName: 'ПОСТАВКА КОМПОНЕНТОВ ПОД РАЗРАБОТКУ',
-            tabContent:
-                'Наша компания сотрудничает с крупнейшими мировыми интернет-магазинами электронных компонентов - такими как: Digi-Key, Farnell, Mouser, Newark и десятком других – за счет этого у нас есть возможность поставлять компоненты под разработку – поштучно, а не нормоупаковками. Доставка продукции до нашего склада в Санкт-Петербурге составляет 2-3 недели, однако при необходимости мы можем обеспечить доставку за одну неделю.',
-        },
-    ]
 
     return (
         <MainLayout>
             <MainSection>
                 <MainSectionContainer>
-                    <H1Styled>Дистрибьютор электронных компонентов</H1Styled>
-                    <CatalogButton as="a" href="/catalog">
-                        Перейти к линейке поставок
+                    <H1Styled>Диэлком-ЭК</H1Styled>
+                    <H2 alternative>ДИСТРИБЬЮТОР ЭЛЕКТРОННЫХ КОМПОНЕНТОВ</H2>
+                    <H2Styled alternative>Осуществляем полный цикл контрактного производства </H2Styled>
+                    <CatalogButton primary as="a" href="/catalog">
+                        Перейти к линейке поставок <ArrowIcon src="/static/icons/arrow.svg" alt="arrow" />
                     </CatalogButton>
                 </MainSectionContainer>
             </MainSection>
@@ -68,114 +82,51 @@ const Home = ({ featuredNews }) => {
             <NewsSection newsArray={newsArray} />
 
             <DeliverySection>
-                <DelivertSectionContainer>
-                    <DeliveryWrapper>
-                        <H2>КОМПЛЕКСНЫЕ ПОСТАВКИ</H2>
-                        <DeliveryDescription>Поставка электронных компонентов</DeliveryDescription>
-                        <DeliveryDescription>
-                            Комплексные поставки, а также регистрация проектов у производителей электронных компонентов.
-                            Многолетнее сотрудничество с основными глобальными оптовыми поставщиками (Arrow Electronics,
-                            Avnet и др.), включая прямые контракты с рядом производителей электронных компонентов,
-                            позволяют решать любые задачи. Все компоненты соответствуют основным мировым стандартам.
-                            Диэлком-ЭК предлагает конкурентные цены, разумные сроки поставок и самые современные
-                            технологические решения.
-                        </DeliveryDescription>
-                        <DeliveryDescription>Дистрибьюция дисплеев</DeliveryDescription>
-                        <DeliveryDescription>
-                            С 2016 года осуществляем дистрибьюцию дисплеев ряда ведущих мировых производителей.
-                            Поставляемая продукция охватывает практически все существующие технологии дисплеев: TFT,
-                            OLED, STN/FSTN, VFD, LED, EBTN
-                        </DeliveryDescription>
-                    </DeliveryWrapper>
-
-                    <DeliveryWrapper>
-                        <img src="/static/images/delivery-bg.jpeg" alt="Изображение платы" />
-                    </DeliveryWrapper>
-                </DelivertSectionContainer>
+                <DeliverySectionContainer>
+                    <DeliveryH2>
+                        Мы предлагаем комплексные поставки электронных компонентов, а также предоставляем услуги полного
+                        цикла производства электроники.
+                    </DeliveryH2>
+                </DeliverySectionContainer>
             </DeliverySection>
 
             <ServiceSection>
-                <Container>
-                    <H2>Услуги</H2>
-                    <ServiceTabsAndContentWrapper>
-                        <ServiceTabs>
-                            {serviceTabs.map((tab) => (
-                                <ServiceTab
-                                    key={tab.tabName}
-                                    active={isActiveServiceTab(tab.tabName)}
-                                    onClick={() => setActiveServiceTab(serviceTabs.indexOf(tab))}
-                                >
-                                    {tab.tabName}
-                                </ServiceTab>
-                            ))}
-                        </ServiceTabs>
-
-                        <ServiceContentTabs>
-                            {serviceTabs.map((tab) => (
-                                <ServiceContentTabItem key={tab.tabName} active={isActiveServiceTab(tab.tabName)}>
-                                    {tab.tabContent}
-                                </ServiceContentTabItem>
-                            ))}
-                        </ServiceContentTabs>
-                    </ServiceTabsAndContentWrapper>
-                </Container>
+                <ServiceSectionContainer>
+                    {services.map((service, index) => (
+                        <ServiceCard key={index} {...service} />
+                    ))}
+                </ServiceSectionContainer>
             </ServiceSection>
 
-            <AdvantagesSection>
-                <Container>
-                    <AdvantagesSectionTitle>Мы строим нашу работу, базируясь на:</AdvantagesSectionTitle>
-
-                    <AdvantagesItemsWrapper>
-                        {advantages.map(({ image, description }, idx) => (
-                            <AdvantageItem key={image.url + idx}>
-                                <AdvantageImageWrapper>
-                                    <img src={image.url} alt={image.alt} />
-                                </AdvantageImageWrapper>
-
-                                <AdvantageDescription>{description}</AdvantageDescription>
-                            </AdvantageItem>
-                        ))}
-                    </AdvantagesItemsWrapper>
-                </Container>
-            </AdvantagesSection>
-
             <FeaturesSection>
-                <Container>
-                    <FeaturesSectionTitle>
-                        СОТРУДНИЧАЯ С ДИЭЛКОМ-ЭК НАШИ ЗАКАЗЧИКИ-ПАРТНЕРЫ ПОЛУЧАЮТ:
-                    </FeaturesSectionTitle>
-
-                    <FeaturesList>
-                        <FeaturesListItem>индивидуальный гибкий подход к каждому клиенту</FeaturesListItem>
-                        <FeaturesListItem>оригинальные качественные компоненты</FeaturesListItem>
-                        <FeaturesListItem>доступ к товарам на разных рынках</FeaturesListItem>
-                        <FeaturesListItem>официальные каналы поставки</FeaturesListItem>
-                        <FeaturesListItem>сроки поставки от 7 дней</FeaturesListItem>
-                        <FeaturesListItem>новые знания о рынке и продукте</FeaturesListItem>
-                        <FeaturesListItem>своевременную и оперативную информацию</FeaturesListItem>
-                        <FeaturesListItem>бесплатные образцы</FeaturesListItem>
-                        <FeaturesListItem>сопровождение проектов</FeaturesListItem>
-                        <FeaturesListItem>высокую надежность поставок</FeaturesListItem>
-                        <FeaturesListItem>гарантию на поставленные компоненты</FeaturesListItem>
-                    </FeaturesList>
-                </Container>
+                <ServiceSectionContainer>
+                    <FeatureSectionTitle>
+                        Сотрудничая с Диэлком-ЭК, наши заказчики-партнеры получают:
+                    </FeatureSectionTitle>
+                    {features.map((service, index) => (
+                        <FeatureCard key={index} {...service} />
+                    ))}
+                </ServiceSectionContainer>
             </FeaturesSection>
 
-            <ConctactsSectionStyled />
+            <ContactsSection />
         </MainLayout>
     )
 }
 
-const H1Styled = styled(H1)`
-    max-width: 400px;
-    margin-bottom: 35px;
-    font-size: 36px;
+const H1Styled = styled(H1)``
+
+const H2Styled = styled(H2)`
+    margin-top: 250px;
+    margin-bottom: 27px;
+    max-width: 350px;
 `
 
 const MainSectionContainer = styled(Container)`
-    padding: 100px 40px;
+    padding: 140px 190px;
+    padding-bottom: 0px;
     flex-direction: column;
-    background-image: url(/static/images/homepage-bg.jpeg);
+    background-image: url(/static/images/homepage/homepage-bg.webp);
     background-size: cover;
 
     ${breakpoint.tablet`
@@ -187,285 +138,62 @@ const MainSectionContainer = styled(Container)`
 `
 
 const CatalogButton = styled(Button)`
-    max-width: 250px;
-`
-
-const ConctactsSectionStyled = styled(ContactsSection)`
-    background: ${({ theme }) => theme.colors.background};
+    max-width: 333px;
+    height: 54px;
 `
 
 const DeliverySection = styled.section`
     background: ${({ theme }) => theme.colors.background};
-
-    ${breakpoint.laptop`
-        background: white;
-    `}
+    margin: 55px 0 75px;
 `
 
-const DelivertSectionContainer = styled(Container)`
-    padding-top: 90px;
-    padding-bottom: 90px;
-    padding-left: 120px;
-    padding-right: 120px;
-    background: white;
+const DeliverySectionContainer = styled(Container)``
 
-    ${breakpoint.laptop`
-        flex-wrap: wrap;
-        padding: 20px;
-    `}
-`
-
-const DeliveryWrapper = styled.div`
-    width: 50%;
-
-    :first-child {
-        padding-right: 40px;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    ${breakpoint.laptop`
-        width: 100%;
-
-        :first-child {
-            order: 2;
-            padding-right: 0;
-        }
-
-        :last-child {
-            order: 1;
-        }
-    `}
-`
-
-const DeliveryDescription = styled.p`
-    margin-bottom: 14px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: ${({ theme }) => theme.colors.main};
-
-    ${breakpoint.laptop`
-        text-align: justify;
-    `}
-`
-
-const ServiceSection = styled.section`
-    background: ${({ theme }) => theme.colors.background};
-
-    ${Container} {
-        flex-direction: column;
-    }
-`
-
-const ServiceTabsAndContentWrapper = styled.div`
-    display: flex;
-
-    ${breakpoint.laptop`
-        flex-direction: column;
-    `}
-`
-
-const ServiceTabs = styled.ul`
-    margin-right: 100px;
-    list-style: none;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 28px;
-    text-transform: uppercase;
-    min-width: 470px;
-
-    ${breakpoint.desktop`
-        margin-right: 0;
-    `}
-
-    ${breakpoint.laptop`
-        min-width: unset;
-    `}
-`
-
-const ServiceTab = styled.li`
+const DeliveryH2 = styled(H2)`
+    font-size: 40px;
+    line-height: 43px;
+    max-width: 80%;
+    padding-left: 60px;
     position: relative;
-    padding-left: 120px;
-    display: block;
-    margin-bottom: 40px;
-    color: ${({ theme, active }) => (active ? theme.colors.active : theme.colors.main)};
+    text-indent: 240px;
 
-    ::before {
-        ${({ active }) => (active ? 'content: "";' : '')}
+    &::before {
+        content: 'Комплексные поставки';
         position: absolute;
-        width: 80px;
-        height: 1px;
-        background-color: ${({ theme }) => theme.colors.active};
-        top: 13.5px;
-        left: 0;
-    }
-`
-const ServiceContentTabs = styled.ul`
-    list-style: none;
-`
-const ServiceContentTabItem = styled.li`
-    display: ${({ active }) => (active ? 'block' : 'none')};
-
-    position: relative;
-    padding-left: 120px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: justify;
-    color: ${({ theme }) => theme.colors.main};
-
-    ::before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 1px;
-        background-color: ${({ theme }) => theme.colors.active};
-        top: 13.5px;
-        left: 0;
-    }
-`
-
-const AdvantagesSection = styled.section`
-    padding: 115px 0 130px;
-    background: radial-gradient(
-        56.19% 168.11% at 28.98% -60.9%,
-        ${({ theme }) => theme.colors.active} 0%,
-        ${({ theme }) => theme.colors.active} 100%
-    );
-    position: relative;
-
-    ::before {
-        content: '';
-        background-image: url(/static/images/advantages-bg.png);
-        mix-blend-mode: multiply;
-        position: absolute;
-        left: 0;
-        right: 0;
+        left: -170px;
         top: 0;
-        bottom: 0;
-    }
-
-    ${Container} {
-        flex-direction: column;
-    }
-
-    ${breakpoint.laptop`
-        padding: 20px;
-    `}
-`
-
-const AdvantagesItemsWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-
-    ${breakpoint.desktop`
-        flex-wrap: wrap;
-        justify-content: center;
-    `}
-`
-const AdvantagesSectionTitle = styled(H2)`
-    padding-left: 120px;
-    margin-bottom: 85px;
-    color: white;
-
-    ${breakpoint.laptop`
-        padding-left: 0;
-        margin-bottom: 35px;
-        text-align: center;
-    `}
-`
-const AdvantageItem = styled.div`
-    margin-right: 30px;
-    text-align: center;
-
-    :last-child {
-        margin-right: 0;
-    }
-
-    ${breakpoint.desktop`
-        margin-right: 0;
-        width: 30%;
-    `}
-
-    ${breakpoint.laptop`
-        margin-bottom: 40px;
-        display: flex;
-        align-items: center;
-        width: 100%;
-
-        :last-child {
-            margin-bottom: 0;
-        }
-    `}
-`
-const AdvantageImageWrapper = styled.div`
-    margin-bottom: 55px;
-
-    ${breakpoint.laptop`
-        margin-bottom: 0;
-        margin-right: 20px;
-        width: 70px;
-        img {
-            width: 100%
-        }
-    `}
-`
-const AdvantageDescription = styled.div`
-    font-size: 18px;
-    line-height: 1.56;
-    color: white;
-
-    ${breakpoint.laptop`
-        text-align: left;
-    `}
-`
-
-const FeaturesSection = styled.section`
-    padding: 160px 0 120px;
-    ${Container} {
-        flex-direction: column;
+        font-size: 15px;
+        font-weight: 500;
+        color: ${({ theme }) => theme.colors.active};
     }
 `
-const FeaturesSectionTitle = styled(H2)`
-    margin-bottom: 85px;
 
-    ${breakpoint.tablet`
-        margin-bottom: 35px;
-    `}
+const ArrowIcon = styled.img`
+    height: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
 `
-const FeaturesList = styled.ul`
-    column-count: 2;
-
-    ${breakpoint.tablet`
-        column-count: 1;
-    `}
+const ServiceSection = styled.section`
+    margin-bottom: 110px;
 `
-const FeaturesListItem = styled.li`
-    position: relative;
-    padding-left: 40px;
-    display: block;
-    font-size: 18px;
-    line-height: 40px;
-    color: ${({ theme }) => theme.colors.main};
 
-    ::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 8px;
-        height: 8px;
-        background: ${({ theme }) => theme.colors.active};
-        border-radius: 100%;
-        margin-top: -4px;
-    }
+const ServiceSectionContainer = styled(Container)`
+    gap: 10px;
+    padding-left: 100px;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+`
 
-    ${breakpoint.tablet`
-        font-size: 16px;
-    `}
+const FeaturesSection = styled.section``
+
+const FeatureSectionTitle = styled.div`
+    color: ${({ theme }) => theme.colors.active};
+    font-weight: 600;
+    width: 305px;
+    height: 206px;
+    padding-top: 73px;
+    padding-right: 122px;
 `
 
 export default Home

@@ -4,21 +4,25 @@ import styled from 'styled-components'
 export const Link = ({ href, target, children }) => {
     if (href.startsWith('tel') || href.startsWith('mailto') || href.startsWith('#'))
         return (
-            <a href={href} target={target}>
+            <StyledBasicLink href={href} target={target}>
                 {children}
-            </a>
+            </StyledBasicLink>
         )
 
     return (
-        <NextLink href={href} target={target}>
+        <NextLink href={href} target={target} passHref>
             {children}
         </NextLink>
     )
 }
 
+const StyledBasicLink = styled.a`
+    &:hover {
+        color: ${({ theme }) => theme.colors.linkHover};
+    }
+`
+
 export const StyledLink = styled(NextLink)`
-    font-style: italic;
-    text-decoration: underline;
     &:hover {
         color: ${({ alternative, theme }) => (alternative ? theme.colors.textWhite : theme.colors.active)};
     }

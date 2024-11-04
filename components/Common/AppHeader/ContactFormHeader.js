@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import { sendContactForm } from '../../../lib/api'
 import { Button } from '../../ui/buttons/Button'
@@ -54,9 +54,9 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
                         value={tel}
                         onChange={(e) => setTel(e.target.value)}
                     />
-                    <Button primary type="submit">
+                    <StyledButton primary type="submit">
                         Отправить
-                    </Button>
+                    </StyledButton>
                     <ContactFormDescription>
                         Нажимая кнопку "Отправить", Вы даете согласие на
                         <StyledLink href={'/policy'}> обработку персональных данных</StyledLink>
@@ -67,15 +67,32 @@ export const ContactFormHeader = ({ isVisible, setIsFormVisible }) => {
     )
 }
 
+const fadeIn = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
+
 const ContactFormWrapper = styled.div`
-    display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
+    opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+    visibility: ${({ isVisible }) => (isVisible ? 'visible' : 'hidden')};
+    transition:
+        opacity 0.3s ease-in-out,
+        visibility 0.3s ease-in-out;
     padding: 20px;
     width: 300px;
     border: 1px solid ${({ theme }) => theme.colors.background};
     background: white;
     text-align: center;
     position: absolute;
-    top: 120px;
+    top: 90px;
+    right: 20px;
+    animation: ${({ isVisible }) => (isVisible ? fadeIn : 'none')} 0.3s ease-in-out;
 `
 
 const ContactForm = styled.form`
@@ -105,4 +122,9 @@ const ContactFormDescription = styled.p`
     margin-top: 10px;
     color: ${({ theme }) => theme.colors.main};
     text-align: start;
+`
+
+const StyledButton = styled(Button)`
+    border-radius: 5px;
+    padding: 13px 20px;
 `

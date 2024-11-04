@@ -1,46 +1,58 @@
 import styled from 'styled-components'
+import { format, parse } from 'date-fns'
+import { ru } from 'date-fns/locale'
+
+import { H2 } from '../ui/Typography'
 import { breakpoint } from '../../lib/theme'
 import { getNewsDetailPageUrl } from '../../lib/utils/routeHelper'
 import { Link } from '../ui/Link'
 
-export const NewsCard = ({ news }) => {
-    const { id, imageUrl, companyId, title, shortDescription } = news
+const formatDate = (dateString) => {
+    const parsedDate = parse(dateString, 'dd.MM.yyyy', new Date())
+    return format(parsedDate, 'd MMMM yyyy', { locale: ru })
+}
+
+export const NewsCard = ({ news, showImage = false }) => {
+    const { id, imageUrl, companyId, title, shortDescription, date } = news
     const cardLink = getNewsDetailPageUrl({ companyId, id })
 
     return (
-        <NewsCardWrapper>
-            <Link href={cardLink}>
-                <ImageWrapper>
-                    <img src={imageUrl} alt="Изображение новости" />
-                </ImageWrapper>
+        <Link href={cardLink}>
+            <NewsCardWrapper>
+                {showImage && (
+                    <ImageWrapper>
+                        <img src={imageUrl} alt="Изображение новости" />
+                    </ImageWrapper>
+                )}
                 <ContentWrapper>
+                    <NewsDate>{formatDate(date)}</NewsDate>
                     <NewsTitle>{title}</NewsTitle>
                     <NewsDescription>{shortDescription}</NewsDescription>
                 </ContentWrapper>
-            </Link>
-        </NewsCardWrapper>
+            </NewsCardWrapper>
+        </Link>
     )
 }
 
 export const NewsCardWrapper = styled.div`
-    width: auto;
-
-    margin-right: 30px;
-
-    :last-child {
-        margin-right: 0;
+    height: 300px;
+    padding: 0 65px;
+    &:hover {
+        box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
+        z-index: 5;
     }
 `
 
 const ContentWrapper = styled.div``
-const NewsTitle = styled.div`
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: ${({ theme }) => theme.colors.main};
+const NewsTitle = styled(H2)`
+    margin-bottom: 15px;
     font-weight: 700;
 `
-const NewsDescription = styled.div`
-    font-size: 14px;
+const NewsDescription = styled(H2)``
+
+const NewsDate = styled.div`
+    padding: 16px 0;
+    border-top: 1px solid ${({ theme }) => theme.colors.border};
 `
 
 const ImageWrapper = styled.div`
