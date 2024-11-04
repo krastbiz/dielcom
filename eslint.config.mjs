@@ -1,12 +1,13 @@
-const babelParser = require('@babel/eslint-parser')
-const reactPlugin = require('eslint-plugin-react')
-const reactHooksPlugin = require('eslint-plugin-react-hooks')
-const importPlugin = require('eslint-plugin-import')
-const prettierPlugin = require('eslint-plugin-prettier')
-const noConstructorBindPlugin = require('eslint-plugin-no-constructor-bind')
+import babelParser from '@babel/eslint-parser'
+import reactPlugin from 'eslint-plugin-react'
+import reactHooksPlugin from 'eslint-plugin-react-hooks'
+import importPlugin from 'eslint-plugin-import'
+import prettierPlugin from 'eslint-plugin-prettier'
+import noConstructorBindPlugin from 'eslint-plugin-no-constructor-bind'
 
-module.exports = [
+export default [
     {
+        files: ['**/*.js', '**/*.jsx', '**/*.css'],
         languageOptions: {
             parser: babelParser,
             parserOptions: {

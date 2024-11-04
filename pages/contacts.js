@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import { Contacts } from '../components/ContactsPage/Contacts'
 import { getContactsPageUrl } from '../lib/utils/routeHelper'
 import { getPageMetadata, getPageCanonical } from '../lib/utils/pageHelper'

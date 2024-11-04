@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+
 import Fuse from 'fuse.js'
 
 const DATA_FILE_PATH = path.resolve(process.cwd(), 'data/catalog-data.json')
@@ -48,8 +49,12 @@ export async function getCatalog(req, res) {
         const valueA = String(fieldA).toLowerCase()
         const valueB = String(fieldB).toLowerCase()
 
-        if (valueA < valueB) return sortOrder === 'asc' ? -1 : 1
-        if (valueA > valueB) return sortOrder === 'asc' ? 1 : -1
+        if (valueA < valueB) {
+            return sortOrder === 'asc' ? -1 : 1
+        }
+        if (valueA > valueB) {
+            return sortOrder === 'asc' ? 1 : -1
+        }
         return 0
     })
 
@@ -71,8 +76,7 @@ export async function getCatalog(req, res) {
 export default function handler(req, res) {
     if (req.method === 'GET') {
         return getCatalog(req, res)
-    } else {
-        res.setHeader('Allow', ['GET'])
-        res.status(405).end(`Method ${req.method} Not Allowed`)
     }
+    res.setHeader('Allow', ['GET'])
+    res.status(405).end(`Method ${req.method} Not Allowed`)
 }

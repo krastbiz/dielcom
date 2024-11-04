@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import Home from '../components/HomePage/Home'
 import { getHomePageUrl } from '../lib/utils/routeHelper'
 import { getPageMetadata, getPageCanonical } from '../lib/utils/pageHelper'
@@ -20,12 +21,10 @@ const HomePage = ({ featuredNews }) => {
     )
 }
 
-export const getStaticProps = () => {
-    return {
-        props: {
-            featuredNews: NEWS_ARRAY,
-        },
-    }
-}
+export const getStaticProps = () => ({
+    props: {
+        featuredNews: NEWS_ARRAY,
+    },
+})
 
 export default HomePage

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import ContractProduction from '../components/ContractProductionPage/ContractProduction'
 import { getContractProductionPageUrl } from '../lib/utils/routeHelper'
 import { getPageMetadata, getPageCanonical } from '../lib/utils/pageHelper'

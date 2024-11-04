@@ -28,7 +28,7 @@ export const AppFooter = () => {
                 </FooterLogoWrapper>
 
                 {/* Navigation */}
-                <NavigationStyled isFooterNavigation />
+                <NavigationStyled />
 
                 <ContactsWrapper>
                     {CONTACTS.map((contact) => (

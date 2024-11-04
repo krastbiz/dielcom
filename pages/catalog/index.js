@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import { Catalog } from '../../components/CatalogPage/Catalog'
 import { getCatalogPageUrl } from '../../lib/utils/routeHelper'
 import { getPageMetadata, getPageCanonical } from '../../lib/utils/pageHelper'

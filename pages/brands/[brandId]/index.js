@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import Company from '../../../components/CompanyPage/Company'
 import { COMPANY_ARRAY } from '../../../mock-data'
 import { getBrandPageUrl } from '../../../lib/utils/routeHelper'
@@ -26,7 +27,7 @@ export const getServerSideProps = ({ query }) => {
     const company = COMPANY_ARRAY.find((comp) => comp.id === brandId)
     return {
         props: {
-            company: company,
+            company,
         },
     }
 }

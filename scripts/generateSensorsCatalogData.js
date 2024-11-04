@@ -1,6 +1,7 @@
-const xlsx = require('xlsx')
 const fs = require('fs')
 const path = require('path')
+
+const xlsx = require('xlsx')
 
 const { transformDataToCamelCase } = require('./utils')
 
@@ -16,6 +17,7 @@ const generateCatalogData = () => {
     const transformedData = transformDataToCamelCase(data)
 
     fs.writeFileSync(JSON_FILE_PATH, JSON.stringify(transformedData, null, 2))
+    //eslint-disable-next-line
     console.log(`JSON файл был успешно создан: ${JSON_FILE_PATH}`)
 }
 

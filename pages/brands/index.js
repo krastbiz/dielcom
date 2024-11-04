@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import { Brands } from '../../components/BrandsPage/Brands'
 import { getCatalogPageUrl } from '../../lib/utils/routeHelper'
 import { getPageMetadata, getPageCanonical } from '../../lib/utils/pageHelper'
@@ -19,12 +20,10 @@ const BrandsPage = ({ companies, brands }) => {
     )
 }
 
-export const getStaticProps = () => {
-    return {
-        props: {
-            companies: COMPANY_ARRAY,
-        },
-    }
-}
+export const getStaticProps = () => ({
+    props: {
+        companies: COMPANY_ARRAY,
+    },
+})
 
 export default BrandsPage

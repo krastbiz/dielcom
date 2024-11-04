@@ -8,8 +8,9 @@ import { MobileMenu } from './MobileMenu'
 import { Navigation } from '../Navigation/Navigation'
 import { NavLinkWrapper } from '../Navigation/NavLink'
 import { HeaderContacts } from './HeaderContacts'
+import { SearchComponent } from './Search'
 
-const HEADER_HEIGHT = '70px'
+const HEADER_HEIGHT = '116x'
 
 export const AppHeader = () => {
     const [isMobileMenuActive, setIsMobileMenuActive] = useState(false)
@@ -27,10 +28,16 @@ export const AppHeader = () => {
                             <img src="/static/icons/logo.svg" alt="Логотип сайта" href={'/'} />
                         </a>
                     </AppLogoWrapper>
+                    <HeaderContainer>
+                        <Navigation isHeader/>
+                        <HeaderContainerRow><FlexItem> <SearchComponent isHomePage /></FlexItem>
+                       
+                        <FlexItem><HeaderContacts hideOnMobile /></FlexItem>
+                        </HeaderContainerRow>
+                    </HeaderContainer>
 
-                    <HeaderContacts hideOnMobile />
 
-                    <NavigationStyled />
+                    
 
                     {isLaptopOrMobileOrTablet && (
                         <BurgerButtonStyled
@@ -52,43 +59,41 @@ const BurgerButtonStyled = styled(BurgerButton)`
 const AppHeaderWrapper = styled.header`
     height: ${HEADER_HEIGHT};
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     position: sticky;
     z-index: 1000;
     top: 0;
-    background: white;
+    background: ${({ theme }) => theme.colors.background};
 `
 const AppLogoWrapper = styled.div`
-    margin-right: 60px;
+    padding: 37px 29px;
+    border-right: 1px solid ${({ theme }) => theme.colors.border};
 
     ${breakpoint.desktop`
-        margin-right: 30px;
+        padding: 30px 20px;
     `}
 `
 
 const ContainerStyled = styled(Container)`
     align-items: center;
+    padding: 0px;
+    width: 100%;
     ${breakpoint.mobile`
     flex-direction: row;
  `}
 `
 
-const NavigationStyled = styled(Navigation)`
-    margin-left: 20px;
-
-    ${breakpoint.desktopLarge`
-        ${NavLinkWrapper} + ${NavLinkWrapper} {
-            margin-left: 70px;
-        }
-    `}
-
-    ${breakpoint.desktop`
-        ${NavLinkWrapper} + ${NavLinkWrapper} {
-            margin-left: 20px;
-        }
-    `}
-
-    ${breakpoint.laptop`
-        display: none;
-    `}
+const HeaderContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 `
+
+const HeaderContainerRow = styled(HeaderContainer)`
+    flex-direction: row;
+    flex-wrap: nowrap;
+`
+const FlexItem = styled.div`
+    flex: 1;
+    display: flex;
+`;

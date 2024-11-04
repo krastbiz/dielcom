@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import { getPolicyPageUrl } from '../lib/utils/routeHelper'
 import { getPageCanonical, getPageMetadata } from '../lib/utils/pageHelper'
 import { Policy } from '../components/PolicyPage/Policy'

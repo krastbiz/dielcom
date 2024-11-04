@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
+
 import Head from 'next/head'
+
 import { RequestForm } from '../../../../components/RequestPage/Request'
 import { Product } from '../../../../components/ProductPage/Product'
 import { getProductPageUrl } from '../../../../lib/utils/routeHelper'
@@ -9,7 +11,7 @@ import { CATEGORIES_ARRAY } from '../../../../mock-data'
 import { kebabToCamel } from '../../../../lib/utils/helpers'
 
 const ProductPage = (props) => {
-    const { catalog, name, categoryId, productId, filters } = props
+    const { catalog, name, categoryId, productId } = props
     const pageTitle = `Электронные компоненты ${name}`
     const pageDescription = `Закажите ${name}, оставьте вашу заявку`
     const pageRelativeUrl = getProductPageUrl(categoryId, productId)
@@ -20,7 +22,7 @@ const ProductPage = (props) => {
                 {getPageMetadata(pageTitle, pageDescription)}
                 {getPageCanonical(pageRelativeUrl)}
             </Head>
-            {!!catalog.length ? <Product {...props} /> : <RequestForm company={name} />}
+            {catalog.length ? <Product {...props} /> : <RequestForm company={name} />}
         </>
     )
 }
@@ -29,7 +31,7 @@ export const getServerSideProps = async ({ params }) => {
     const { categoryId, productId } = params
     const catalogPath = path.resolve(`data/${categoryId}/${productId}.json`)
     let catalog = []
-    let filters = {}
+    const filters = {}
 
     if (fs.existsSync(catalogPath)) {
         const catalogData = fs.readFileSync(catalogPath, 'utf-8')
@@ -62,9 +64,8 @@ export const getServerSideProps = async ({ params }) => {
                 return -1
             } else if (bIsNum) {
                 return 1
-            } else {
-                return a.localeCompare(b)
             }
+            return a.localeCompare(b)
         })
     })
 

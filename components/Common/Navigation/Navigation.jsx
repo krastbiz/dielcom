@@ -11,21 +11,21 @@ const NAV_ITEMS = [
     { href: '/contacts', text: 'Контакты' },
 ]
 
-export const Navigation = ({ isFooterNavigation, ...extraProps }) => {
+export const Navigation = ({ ...extraProps }) => {
     const nextRouter = useRouter()
     const currentUrl = nextRouter.asPath
 
     const isLinkActive = (linkUrl) => linkUrl === currentUrl
-    const linkActiveColor = isFooterNavigation ? 'white' : theme.colors.active
 
     return (
         <NavigationWrapper {...extraProps}>
             {NAV_ITEMS.map((navItem) => (
                 <NavLinkStyled
-                    activeColor={linkActiveColor}
                     isActive={isLinkActive(navItem.href)}
                     key={navItem.href + navItem.text}
                     href={navItem.href}
+                    activeColor={theme.colors.active}
+                    activeColorText={theme.colors.textWhite}
                 >
                     {navItem.text}
                 </NavLinkStyled>
@@ -37,8 +37,8 @@ const NavLinkStyled = styled(NavLink)``
 
 const NavigationWrapper = styled.div`
     display: flex;
-
-    ${NavLinkStyled} + ${NavLinkStyled} {
-        margin-left: 110px;
-    }
+    justify-content: flex-start;
+    border-bottom: ${({ isHeader, theme }) => isHeader ? `1px solid ${theme.colors.border}` : 'none'};
+    width: 100%;
 `
+

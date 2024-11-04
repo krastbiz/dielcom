@@ -1,5 +1,8 @@
-import { IncomingForm } from 'formidable'
+/* eslint-disable no-console */
 import fs from 'fs'
+
+import { IncomingForm } from 'formidable'
+
 import { sendMail } from '../../lib/mailer'
 
 export const config = {
