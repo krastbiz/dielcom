@@ -34,12 +34,16 @@ const BreadcrumbsWrapper = styled.div`
     display: flex;
 
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
-    color: white;
+    color: ${({ theme }) => theme.colors.textGray};
 `
 
-const Breadcrumb = styled.div``
+const Breadcrumb = styled.div`
+    &:hover {
+        color: ${({ theme }) => theme.colors.linkHover};
+    }
+`
 const BreadcrumbDelimeter = styled.span`
     padding: 0 5px;
 `

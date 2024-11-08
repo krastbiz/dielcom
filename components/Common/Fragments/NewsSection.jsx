@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 import { breakpoint } from '../../../lib/theme'
 import { getAllNewsPage } from '../../../lib/utils/routeHelper'
 import { Container } from '../../ui/layouts/Container'
-import { NewsCard, NewsCardWrapper } from '../NewsCard'
+import { NewsCard } from '../NewsCard'
 
 export const NewsSection = ({ newsArray }) => {
     const newsSlicedArray = newsArray.slice(0, 3)

@@ -18,7 +18,7 @@ export const AppFooter = () => {
 
 const AppFooterWrapper = styled.footer`
     background: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.base};
+    color: ${({ theme }) => theme.colors.main};
     margin-bottom: 100px;
 `
 const StyledContainer = styled(Container)`

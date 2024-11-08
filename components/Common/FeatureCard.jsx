@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const FeatureCard = ({ title, content, imageUrl }) => {
-    console.log(imageUrl)
     return (
         <FeatureCardWrapper imageUrl={imageUrl}>
             <Title>{title}</Title>
@@ -12,7 +11,7 @@ export const FeatureCard = ({ title, content, imageUrl }) => {
 
 export const FeatureCardWrapper = styled.div`
     padding: 80px 0px 0px 18px;
-    color: ${({ theme }) => theme.colors.base};
+    color: ${({ theme }) => theme.colors.main};
     border: 1px solid ${({ theme }) => theme.colors.border};
     background-color: ${({ theme }) => theme.colors.altBg};
     width: 305px;

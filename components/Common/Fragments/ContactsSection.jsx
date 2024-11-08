@@ -104,7 +104,7 @@ const LinkWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 14px;
-    margin-top: 30px
+    margin-top: 30px;
 `
 
 const MapWrapper = styled.div`

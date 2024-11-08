@@ -29,7 +29,7 @@ const HeaderContactsWrapper = styled.div`
     line-height: 24px;
     padding-top: 17px;
     padding-right: 70px;
-    color: ${({ theme }) => theme.colors.base};
+    color: ${({ theme }) => theme.colors.main};
     width: 100%;
     display: flex;
     justify-content: flex-end;

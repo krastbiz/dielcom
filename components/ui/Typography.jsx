@@ -17,7 +17,7 @@ export const H1 = styled.h1`
 `
 
 export const H2 = styled.h2`
-    color: ${({ alternative, theme }) => (alternative ? theme.colors.textWhite : theme.colors.base)};
+    color: ${({ alternative, theme }) => (alternative ? theme.colors.textWhite : theme.colors.main)};
     font-weight: 400;
     line-height: 31px;
     font-size: 20px;
