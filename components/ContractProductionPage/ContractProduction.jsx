@@ -105,7 +105,6 @@ const CPMainContentDescription = styled.p`
     font-size: 14px;
     line-height: 24px;
     text-align: justify;
-    color: white;
 `
 
 const CPMainContentImageWrapper = styled.div`

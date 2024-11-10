@@ -153,14 +153,13 @@ const DeliveryH2 = styled(H2)`
     font-size: 40px;
     line-height: 43px;
     max-width: 80%;
-    padding-left: 60px;
     position: relative;
     text-indent: 240px;
 
     &::before {
         content: 'Комплексные поставки';
         position: absolute;
-        left: -170px;
+        left: -235px;
         top: 0;
         font-size: 15px;
         font-weight: 500;
@@ -179,7 +178,6 @@ const ServiceSection = styled.section`
 
 const ServiceSectionContainer = styled(Container)`
     gap: 10px;
-    padding-left: 100px;
     flex-wrap: wrap;
     padding-bottom: 90px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.border};

@@ -185,7 +185,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
 const MainSectionSubtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
-    color: white;
+    color: ${({ theme }) => theme.colors.textWhite};
     cursor: pointer;
 `
 
@@ -290,7 +290,7 @@ const StickyCell = styled.td`
 const OrderButton = styled.button`
     padding: 10px 20px;
     background-color: ${({ theme }) => theme.colors.active};
-    color: white;
+    color: ${({ theme }) => theme.colors.textWhite};
     border: none;
     border-radius: 5px;
     cursor: pointer;

@@ -87,7 +87,7 @@ const ContactFormWrapper = styled.div`
     padding: 20px;
     width: 300px;
     border: 1px solid ${({ theme }) => theme.colors.background};
-    background: white;
+    background: ${({ theme }) => theme.colors.background};
     text-align: center;
     position: absolute;
     top: 90px;

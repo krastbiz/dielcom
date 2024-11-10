@@ -27,12 +27,10 @@ export const DefaultMainContent = ({ children }) => {
 const DefaultMainContentWrapper = styled.div`
     max-width: 500px;
     margin-top: 40px;
-    padding-left: 50px;
 `
 
 const BreadcrumbsContainer = styled(Container)`
     padding-top: 20px;
-    padding-left: 90px;
 `
 
 const MainSectionWrapper = styled.div``

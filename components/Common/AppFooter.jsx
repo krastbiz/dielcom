@@ -22,7 +22,6 @@ const AppFooterWrapper = styled.footer`
     margin-bottom: 100px;
 `
 const StyledContainer = styled(Container)`
-    padding-left: 80px;
     flex-direction: column;
 `
 

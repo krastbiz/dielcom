@@ -18,7 +18,7 @@ const ContactFloatButtonWrapper = styled.div`
     width: 80px;
     height: 80px;
 
-    background: white;
+    background: ${({ theme }) => theme.colors.background};
     border: 1px solid ${({ theme }) => theme.colors.background};
     border-radius: 50%;
 

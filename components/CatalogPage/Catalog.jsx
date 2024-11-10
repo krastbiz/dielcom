@@ -67,7 +67,9 @@ export const Catalog = ({ categories }) => {
                 </CustomContainer>
             </CatalogSection>
             <BrandsSection>
+                <BrandsContainer>
                 <BrandSectionTitle>Бренды</BrandSectionTitle>
+                </BrandsContainer>
                 <BrandsContainer>
                     {brands.map((brand) => (
                         <BrandCard {...brand} />
@@ -98,12 +100,11 @@ const CatalogSection = styled.section`
 `
 
 const CustomContainer = styled(Container)`
-    padding: 0;
+    padding: 0 80px 80px 69px;
 `
 const MasonryGrid = styled(Masonry)`
     display: flex;
     width: 100%;
-    padding: 0 80px 80px;
     margin-top: 50px;
     position: relative;
 
@@ -134,7 +135,7 @@ const CategoryCard = styled.div`
         switch (index) {
             case 5:
                 return `
-                    padding-bottom: 60px;
+                    padding-bottom: 70px;
                 `
             case 6:
                 return `
@@ -143,16 +144,16 @@ const CategoryCard = styled.div`
             case 7:
                 return `
                     position: absolute;
-                    top: calc(100% / 3 + 210px);
-                    left: calc(66.66% - 14px); 
-                    width: 29%;
+                    top: calc(100% / 3 + 240px);
+                    left: calc(66.66% + 10px); 
+                    width: 32.5%;
                 `
             case 8:
                 return `
                     position: absolute;
-                    top: calc(100% * 2 / 3 - 5px);
-                    left: 90px;
-                    width: 29%;
+                    top: calc(100% * 2 / 3 + 50px);
+                    left: 10px;
+                    width: 32.5%;
                     padding-bottom: 80px;
                 `
             default:
@@ -227,12 +228,10 @@ const BrandSectionTitle = styled.div`
     margin: 0 auto;
     margin-bottom: 50px;
     width: 100%;
-    padding-left: 150px;
 `
 
 const BrandsContainer = styled(Container)`
     justify-content: space-between;
-    padding-left: 80px;
 `
 
 const BrandsLink = styled(NextLink)`

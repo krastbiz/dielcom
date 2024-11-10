@@ -3,7 +3,7 @@ import { breakpoint, screenWidth } from '../../../lib/theme'
 
 const Container = styled.div`
     padding-right: 40px;
-    padding-left: 40px;
+    padding-left: 80px;
     display: flex;
     width: ${screenWidth.desktopLarge};
     margin: 0 auto;

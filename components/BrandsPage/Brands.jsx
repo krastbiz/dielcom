@@ -53,7 +53,6 @@ export const Brands = ({ companies }) => {
 const MainSectionSubtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
-    color: white;
 `
 
 const DistributionSection = styled.section`

@@ -37,7 +37,6 @@ const NewsSectionWrapper = styled.section`
 `
 const StyledContainer = styled(Container)`
     flex-direction: column;
-    padding-left: 100px;
     padding-right: 90px;
     position: relative;
     &::before {

@@ -37,7 +37,7 @@ const MobileMenuWrapper = styled.div`
     padding-top: calc(100vh - calc(100vh - ${({ headerHeight }) => headerHeight}));
     top: 0;
     width: 100%;
-    background: white;
+    background: ${({ theme }) => theme.colors.background};
     z-index: 500;
     text-align: center;
 `

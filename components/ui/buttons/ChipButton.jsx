@@ -14,10 +14,10 @@ const ChipButtonWrapper = styled.div`
     padding: 6px 18px;
     font-size: 16px;
     line-height: 1.35;
-    color: ${({ isActive, theme }) => (isActive ? theme.colors.active : 'white')};
+    color: ${({ isActive, theme }) => (isActive ? theme.colors.active : theme.colors.textWhite)};
     font-weight: 400;
     text-align: center;
     border: 1px solid ${({ theme }) => theme.colors.active};
-    background-color: ${({ isActive, theme }) => (isActive ? 'white' : theme.colors.active)};
+    background-color: ${({ isActive, theme }) => (isActive ? theme.colors.background : theme.colors.active)};
     border-radius: 20px;
 `
