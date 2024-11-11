@@ -1,12 +1,13 @@
 import styled from 'styled-components'
-import { getBrandsPageUrl, getBrandPageUrl, breakpoint } from '../../../lib'
+import { breakpoint, getBrandsPageUrl, getBrandPageUrl } from '../../../lib'
 import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
 import { Link } from '../../ui/Link'
+import { ProductSideBar } from '../../Common/ProductsSideBar'
 
-export const Brands = ({ companies }) => {
+export const Brands = ({ companies, categories }) => {
     return (
         <MainLayout>
             <MainSection showBreadcrumb breadcrumbs={[{ href: getBrandsPageUrl(), text: 'Бренды' }]}>
@@ -19,23 +20,30 @@ export const Brands = ({ companies }) => {
                 <DistributionContainer>
                     <BrandsSubtitle>Дистрибьюция</BrandsSubtitle>
 
-                    <CatalogItemsWrapper>
-                        {companies.map((company) => (
-                            <CatalogItem key={company.id}>
-                                <CatalogItemContainer>
-                                    <CatalogItemTitle>{company.name}</CatalogItemTitle>{' '}
-                                    <CatalogItemLogoWrapper>
-                                        <img src={company.logo} alt={`Логотип компании ${company.name}`} />
-                                    </CatalogItemLogoWrapper>
-                                </CatalogItemContainer>
-                                <CatalogItemContainerRight>
-                                    <CatalogItemTitle>{company.category}</CatalogItemTitle>
-                                    <CatalogItemDescription>{company.shortDescription}</CatalogItemDescription>
-                                    <Link href={getBrandPageUrl(company.id)}><LinkContainer>Подробнее</LinkContainer></Link>
-                                </CatalogItemContainerRight>
-                            </CatalogItem>
-                        ))}
-                    </CatalogItemsWrapper>
+                    <CatalogWrapper>
+                        <CatalogItemsWrapper>
+                            {companies.map((company) => (
+                                <CatalogItem key={company.id}>
+                                    <CatalogItemContainer>
+                                        <CatalogItemTitle>{company.name}</CatalogItemTitle>
+                                        <CatalogItemLogoWrapper>
+                                            <img src={company.logo} alt={`Логотип компании ${company.name}`} />
+                                        </CatalogItemLogoWrapper>
+                                    </CatalogItemContainer>
+                                    <CatalogItemContainerRight>
+                                        <CatalogItemTitle>{company.category}</CatalogItemTitle>
+                                        <CatalogItemDescription>{company.shortDescription}</CatalogItemDescription>
+                                        <Link href={getBrandPageUrl(company.id)}>
+                                            <LinkContainer>Подробнее</LinkContainer>
+                                        </Link>
+                                    </CatalogItemContainerRight>
+                                </CatalogItem>
+                            ))}
+                        </CatalogItemsWrapper>
+                        <StickySidebar>
+                            <ProductSideBar categories={categories} />
+                        </StickySidebar>
+                    </CatalogWrapper>
                 </DistributionContainer>
             </DistributionSection>
         </MainLayout>
@@ -61,17 +69,29 @@ const BrandsSubtitle = styled.div`
     margin-bottom: 15px;
 `
 
+const CatalogWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+
+    ${breakpoint.tablet`
+        flex-direction: column;
+    `}
+`
+
+const CatalogItemsWrapper = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+`
+
 const CatalogItem = styled.div`
     display: flex;
     border: 1px solid ${({ theme }) => theme.colors.border};
     max-width: 800px;
     margin-bottom: 80px;
-`
-
-const CatalogItemsWrapper = styled.div`
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
 `
 
 const CatalogItemContainer = styled.div`
@@ -131,3 +151,13 @@ const LinkContainer = styled.div`
     }
 `
 
+const StickySidebar = styled.div`
+    width: 350px;
+    position: sticky;
+    top: 380px;
+
+    ${breakpoint.tablet`
+        position: static;
+        width: 100%;
+    `}
+`

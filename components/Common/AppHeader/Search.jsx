@@ -32,7 +32,7 @@ export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false }) 
 
     const handleKeyDown = (e) => {
         if (e.key === 'Enter' && isHomePage) {
-            router.push(`/catalog?q=${searchValue}`)
+            router.push(`/search?q=${searchValue}`)
         }
     }
 

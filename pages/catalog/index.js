@@ -21,19 +21,19 @@ const CatalogPage = ({ categories, brands }) => {
 }
 
 export const getStaticProps = () => {
-    const categoriesArray = Array.from(CATEGORIES_ARRAY.values()).map((category) => ({
+    const categories = Array.from(CATEGORIES_ARRAY.values()).map((category) => ({
         ...category,
         products: category.products.map((product) => ({
             ...product,
         })),
     }))
     const selectedBrands = ['pairui', 'locosys', 'yetnorson', 'multi-dimension', 'feasycom']
-    const brandsArray = COMPANY_ARRAY.filter((product) => selectedBrands.some((brand) => product.id === brand))
+    const brands = COMPANY_ARRAY.filter((product) => selectedBrands.some((brand) => product.id === brand))
 
     return {
         props: {
-            categories: categoriesArray,
-            brands: brandsArray,
+            categories,
+            brands,
         },
     }
 }

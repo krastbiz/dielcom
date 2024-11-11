@@ -9,7 +9,7 @@ const cache = new Map()
 export async function getCatalog(req, res) {
     const { page, itemsPerPage, sortBy, sortOrder, catalogName } = req.query
 
-    const cacheKey = `${search}|${itemsPerPage}|${sortBy}|${sortOrder}`
+    const cacheKey = `${catalogName}|${itemsPerPage}|${sortBy}|${sortOrder}`
 
     if (cache.has(cacheKey)) {
         const { data, total } = cache.get(cacheKey)
