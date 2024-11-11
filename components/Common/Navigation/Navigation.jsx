@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import { theme } from '../../../lib/theme'
+import { theme } from '../../../lib'
 import { NavLink } from './NavLink'
 
 const NAV_ITEMS_HEADER = [

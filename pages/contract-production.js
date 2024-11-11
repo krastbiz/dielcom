@@ -1,8 +1,7 @@
 import Head from 'next/head'
 
-import ContractProduction from '../components/ContractProductionPage/ContractProduction'
-import { getContractProductionPageUrl } from '../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../lib/utils/pageHelper'
+import ContractProduction from '../components/pages/ContractProductionPage/ContractProduction'
+import { getContractProductionPageUrl, getPageMetadata, getPageCanonical } from '../lib'
 
 const ContractProductionPage = () => {
     const pageTitle = 'Электронные компоненты'

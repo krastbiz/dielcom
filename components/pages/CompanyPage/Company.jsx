@@ -1,10 +1,9 @@
 import styled from 'styled-components'
-import { breakpoint } from '../../lib/theme'
-import { getBrandPageUrl, getBrandsPageUrl } from '../../lib/utils/routeHelper'
-import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
-import { Container } from '../ui/layouts/Container'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { H1, H2 } from '../ui/Typography'
+import { breakpoint, getBrandPageUrl, getBrandsPageUrl } from '../../../lib'
+import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
+import { Container } from '../../ui/layouts/Container'
+import { MainLayout } from '../../ui/layouts/MainLayout'
+import { H2, H3 } from '../../ui/Typography'
 
 const Company = ({ company }) => {
     const displayCompanyProducts = company.products.length > 0
@@ -19,19 +18,19 @@ const Company = ({ company }) => {
                 ]}
             >
                 <DefaultMainContent>
-                    <H1>{company.name}</H1>
+                <CompanyLogoWrapper>
+                            <img src={company.logo} alt="Логотип кампании" />
+                        </CompanyLogoWrapper>
+                    <H2>{company.name}</H2>
+
                 </DefaultMainContent>
             </MainSection>
 
             <CompanyInfoSection>
                 <Container>
                     <CompanyContentWrapper>
-                        <CompanyLogoWrapper>
-                            <img src={company.logo} alt="Логотип кампании" />
-                        </CompanyLogoWrapper>
 
                         <CompanyTextWrapper>
-                            <CompanyName>{company.name}</CompanyName>
                             {company.description.map((item) => (
                                 <CompanyDescription key={item}>{item || 'Описание компании'}</CompanyDescription>
                             ))}
@@ -54,20 +53,20 @@ const Company = ({ company }) => {
 
             {displayCompanyProducts && (
                 <CompanyProductsSection>
-                    <Container>
-                        <CompanyProductsTitle>ОСНОВНАЯ ПРОДУКЦИЯ:</CompanyProductsTitle>
+                    <ProductsContainer>
+                        <CompanyProductsTitle>Основная продукция</CompanyProductsTitle>
 
                         <CompanyProductsWrapper>
                             {company.products.map((product) => (
                                 <CompanyProduct key={product.imageUrl}>
+                                    <CompanyProductName>{product.name}</CompanyProductName>
                                     <CompanyProductImageWrapper>
                                         <img src={product.imageUrl} alt="Изображение продукта кампании" />
                                     </CompanyProductImageWrapper>
-                                    <CompanyProductName>{product.name}</CompanyProductName>
                                 </CompanyProduct>
                             ))}
                         </CompanyProductsWrapper>
-                    </Container>
+                    </ProductsContainer>
                 </CompanyProductsSection>
             )}
         </MainLayout>
@@ -78,10 +77,10 @@ export default Company
 
 const CompanyInfoSection = styled.section`
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 
     ${Container} {
-        justify-content: center;
+        justify-content: start;
     }
 
     ${breakpoint.tablet`
@@ -92,22 +91,22 @@ const CompanyInfoSection = styled.section`
 const CompanyContentWrapper = styled.div`
     display: flex;
     justify-content: center;
-    width: 80%;
+    flex-direction: column;
 
     ${breakpoint.laptop`
         width: 100%;
     `}
 
     ${breakpoint.mobile`
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 `}
 `
 const CompanyLogoWrapper = styled.div`
-    margin-right: 50px;
+    padding: 65px 0;
     & img {
-        max-width: 200px;
+        max-height: 100px;
+        width: 170px;
     }
 
     ${breakpoint.mobile`
@@ -120,19 +119,12 @@ const CompanyLogoWrapper = styled.div`
 const CompanyTextWrapper = styled.div`
     width: 100%;
 `
-const CompanyName = styled(H2)`
-    margin: 0;
-    margin-bottom: 20px;
-    ${breakpoint.mobile`
-    display: flex;
-    justify-content: center;
-`}
-`
+
 const CompanyDescription = styled.p`
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 65x;
+    color: ${({ theme }) => theme.colors.text};
+    max-width: 780px;
+    text-align: start;
 `
 
 const CompanyServices = styled.ul`
@@ -172,7 +164,10 @@ const CompanyProductsSection = styled.section`
         padding-bottom: 30px;
     `}
 `
-const CompanyProductsTitle = styled(H2)`
+const CompanyProductsTitle = styled.div`
+    color: ${({ theme }) => theme.colors.active};
+    margin-bottom: 30px;
+    font-weight: 600;
     ${breakpoint.mobile`
     width: 60%;
     margin: 0 auto;
@@ -183,10 +178,8 @@ const CompanyProductsWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
+    width: 60%;
 
-    ${breakpoint.laptop`
-        grid-template-columns: repeat(4, 1fr);
-    `}
     ${breakpoint.tablet`
         grid-template-columns: repeat(3, 1fr);
     `}
@@ -195,21 +188,25 @@ const CompanyProductsWrapper = styled.div`
     `}
 `
 
+const ProductsContainer = styled(Container)`
+    padding-bottom: 180px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+    `
+
 const CompanyProduct = styled.div`
-    width: 100%;
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    border-radius: 10px;
+    max-width: 203px;
+    padding: 31px 16px 21px;
 `
 const CompanyProductImageWrapper = styled.div`
     margin-bottom: 20px;
 
     img {
-        width: 100%;
-        height: 180px;
+        width: 170px;
+        max-height: 102px;
     }
-    ${breakpoint.laptop`
-    img {
-        height: 140px;
-    };
-    `}
+
     ${breakpoint.mobile`
     display: flex;
     justify-content: center;
@@ -220,10 +217,6 @@ const CompanyProductImageWrapper = styled.div`
 `}
 `
 const CompanyProductName = styled.div`
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 1.33;
-    color: ${({ theme }) => theme.colors.main};
-    display: flex;
-    justify-content: center;
+    color: ${({ theme }) => theme.colors.textGray};
+    margin-bottom: 87px;
 `

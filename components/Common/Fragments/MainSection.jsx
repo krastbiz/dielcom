@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoint } from '../../../lib/theme'
+import { breakpoint } from '../../../lib'
 import { Container } from '../../ui/layouts/Container'
 import { Breadcrumbs } from '../Breadcrumbs'
 
@@ -25,7 +25,7 @@ export const DefaultMainContent = ({ children }) => {
 }
 
 const DefaultMainContentWrapper = styled.div`
-    max-width: 500px;
+    max-width: 600px;
     margin-top: 40px;
 `
 

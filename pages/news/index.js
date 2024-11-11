@@ -1,9 +1,8 @@
 import Head from 'next/head'
 
-import AllNews from '../../components/AllNewsPage/AllNews'
+import AllNews from '../../components/pages/AllNewsPage/AllNews'
 import { COMPANY_ARRAY, NEWS_ARRAY } from '../../mock-data'
-import { getAllNewsPage, getCompanyNewsPage } from '../../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../../lib/utils/pageHelper'
+import { getAllNewsPage, getCompanyNewsPage, getPageMetadata, getPageCanonical } from '../../lib'
 
 const AllNewsPage = ({ companies, news, company }) => {
     const pageTitle = `Последние новости от компании ${company ? company.name : 'Dielcom'}`

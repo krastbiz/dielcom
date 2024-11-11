@@ -23,6 +23,13 @@ const StyledBasicLink = styled.a`
 `
 
 export const StyledLink = styled(NextLink)`
+    padding-left: 5px;
+    &:hover {
+        color: ${({ theme }) => theme.colors.linkHover};
+    }
+`
+
+export const StyledLinkAlternative = styled(NextLink)`
     &:hover {
         color: ${({ alternative, theme }) => (alternative ? theme.colors.textWhite : theme.colors.active)};
     }

@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 
-import { breakpoint } from '../../lib/theme'
-import { ContactsSection } from '../Common/Fragments/ContactsSection'
-import { MainSection } from '../Common/Fragments/MainSection'
-import { NewsSection } from '../Common/Fragments/NewsSection'
-import { Button } from '../ui/buttons/Button'
-import { Container } from '../ui/layouts/Container'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { H1, H2 } from '../ui/Typography'
-import { ServiceCard } from '../Common/ServiceCard'
-import { FeatureCard } from '../Common/FeatureCard'
+import { breakpoint } from '../../../lib'
+import { MainSection } from '../../Common/Fragments/MainSection'
+import { NewsSection } from '../../Common/Fragments/NewsSection'
+import { Button } from '../../ui/buttons/Button'
+import { Container } from '../../ui/layouts/Container'
+import { MainLayout } from '../../ui/layouts/MainLayout'
+import { H1, H2, H3 } from '../../ui/Typography'
+import { ServiceCard } from '../../Common/ServiceCard'
+import { FeatureCard } from '../../Common/FeatureCard'
 
 const services = [
     {
@@ -70,9 +69,9 @@ const Home = ({ featuredNews }) => {
         <MainLayout>
             <MainSection>
                 <MainSectionContainer>
-                    <H1Styled>Диэлком-ЭК</H1Styled>
-                    <H2 alternative>ДИСТРИБЬЮТОР ЭЛЕКТРОННЫХ КОМПОНЕНТОВ</H2>
-                    <H2Styled alternative>Осуществляем полный цикл контрактного производства </H2Styled>
+                    <H1 alternative>Диэлком-ЭК</H1>
+                    <H3 alternative>ДИСТРИБЬЮТОР ЭЛЕКТРОННЫХ КОМПОНЕНТОВ</H3>
+                    <H3Styled alternative>Осуществляем полный цикл контрактного производства </H3Styled>
                     <CatalogButton primary as="a" href="/catalog">
                         Перейти к линейке поставок <ArrowIcon src="/static/icons/arrow.svg" alt="arrow" />
                     </CatalogButton>
@@ -108,18 +107,16 @@ const Home = ({ featuredNews }) => {
                     ))}
                 </ServiceSectionContainer>
             </FeaturesSection>
-
-            <ContactsSection />
         </MainLayout>
     )
 }
 
-const H1Styled = styled(H1)``
-
-const H2Styled = styled(H2)`
-    margin-top: 250px;
+const H3Styled = styled(H3)`
+    margin-top: 210px;
     margin-bottom: 27px;
     max-width: 350px;
+    position: relative;
+    top: 25px;
 `
 
 const MainSectionContainer = styled(Container)`
@@ -128,6 +125,7 @@ const MainSectionContainer = styled(Container)`
     flex-direction: column;
     background-image: url(/static/images/homepage/homepage-bg.webp);
     background-size: cover;
+    margin-bottom: 100px;
 
     ${breakpoint.tablet`
         padding: unset;
@@ -140,6 +138,8 @@ const MainSectionContainer = styled(Container)`
 const CatalogButton = styled(Button)`
     max-width: 333px;
     height: 54px;
+    position: relative;
+    top: 25px;
 `
 
 const DeliverySection = styled.section`
@@ -150,8 +150,6 @@ const DeliverySection = styled.section`
 const DeliverySectionContainer = styled(Container)``
 
 const DeliveryH2 = styled(H2)`
-    font-size: 40px;
-    line-height: 43px;
     max-width: 80%;
     position: relative;
     text-indent: 240px;
@@ -180,7 +178,6 @@ const ServiceSectionContainer = styled(Container)`
     gap: 10px;
     flex-wrap: wrap;
     padding-bottom: 90px;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 `
 
 const FeaturesSection = styled.section``
@@ -192,6 +189,7 @@ const FeatureSectionTitle = styled.div`
     height: 206px;
     padding-top: 73px;
     padding-right: 122px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 `
 
 export default Home

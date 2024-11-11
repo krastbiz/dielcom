@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import NextLink from 'next/link'
 
-import { breakpoint } from '../../../lib/theme'
-import { getAllNewsPage } from '../../../lib/utils/routeHelper'
+import { breakpoint, getAllNewsPage } from '../../../lib'
 import { Container } from '../../ui/layouts/Container'
 import { NewsCard } from '../NewsCard'
 

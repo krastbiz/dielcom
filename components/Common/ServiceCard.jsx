@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { breakpoint } from '../../lib/theme'
+import { breakpoint } from '../../lib'
 
 export const ServiceCard = ({ title, imageUrl }) => {
     return (

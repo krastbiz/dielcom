@@ -1,15 +1,13 @@
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import { breakpoint } from '../../lib/theme'
-import { useScrollRestoration } from '../../lib/utils/hooks/useScrollResoration'
-import { AllNewsFilter } from '../../lib/utils/newsHelper'
-import { getAllNewsPage, getCompanyNewsPage } from '../../lib/utils/routeHelper'
-import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
-import { NewsCard, NewsCardWrapper } from '../Common/NewsCard'
-import { ChipButton } from '../ui/buttons/ChipButton'
-import { Container } from '../ui/layouts/Container'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { H1 } from '../ui/Typography'
+
+import { breakpoint, useScrollRestoration, AllNewsFilter, getAllNewsPage, getCompanyNewsPage } from '../../../lib'
+import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
+import { NewsCard, NewsCardWrapper } from '../../Common/NewsCard'
+import { ChipButton } from '../../ui/buttons/ChipButton'
+import { Container } from '../../ui/layouts/Container'
+import { MainLayout } from '../../ui/layouts/MainLayout'
+import { H2 } from '../../ui/Typography'
 
 const AllNews = ({ companies, filteredNews }) => {
     const { query } = useRouter()
@@ -46,7 +44,7 @@ const AllNews = ({ companies, filteredNews }) => {
         <MainLayout>
             <MainSection showBreadcrumb breadcrumbs={getBreadcrumbs()}>
                 <DefaultMainContent>
-                    <H1>Новости рынка электронных компонентов</H1>
+                    <H2>Новости рынка электронных компонентов</H2>
                 </DefaultMainContent>
             </MainSection>
 

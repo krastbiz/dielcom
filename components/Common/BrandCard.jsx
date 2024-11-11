@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 import { Link } from '../ui/Link'
-import { getBrandPageUrl } from '../../lib/utils/routeHelper'
+import { getBrandPageUrl } from '../../lib'
 
-export const BrandCard = ({ title, brand }) => {
+export const BrandCard = ({ name, id }) => {
     return (
-        <Link href={getBrandPageUrl(brand)}>
+        <Link href={getBrandPageUrl(id)}>
             <BrandCardWrapper>
-                <Title>{title}</Title>
-                <Image src={`/static/images/companies/${brand}/logo-small.png`} alt={brand} />
+                <Title>{name}</Title>
+                <Image src={`/static/images/companies/${id}/logo-small.png`} alt={name} />
             </BrandCardWrapper>
         </Link>
     )

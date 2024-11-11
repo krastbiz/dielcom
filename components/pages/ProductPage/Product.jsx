@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import { getCatalogPageUrl, getProductPageUrl, getRequestPageUrl } from '../../lib/utils/routeHelper'
-import { Container } from '../ui/layouts/Container'
-import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { H1 } from '../ui/Typography'
-import { translates } from '../../mock-data/translates'
+import { getCatalogPageUrl, getProductPageUrl, getRequestPageUrl } from '../../../lib'
+import { Container } from '../../ui/layouts/Container'
+import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
+import { MainLayout } from '../../ui/layouts/MainLayout'
+import { H1 } from '../../ui/Typography'
+import { translates } from '../../../mock-data/translates'
 
 export const Product = ({ catalog, name, categoryId, productId, filters }) => {
     const router = useRouter()

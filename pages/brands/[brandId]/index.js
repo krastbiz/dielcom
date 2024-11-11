@@ -1,9 +1,8 @@
 import Head from 'next/head'
 
-import Company from '../../../components/CompanyPage/Company'
+import Company from '../../../components/pages/CompanyPage/Company'
 import { COMPANY_ARRAY } from '../../../mock-data'
-import { getBrandPageUrl } from '../../../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../../../lib/utils/pageHelper'
+import { getBrandPageUrl, getPageMetadata, getPageCanonical } from '../../../lib'
 
 const CompanyPage = ({ company }) => {
     const pageTitle = `Электронные компоненты компании ${company.name}`

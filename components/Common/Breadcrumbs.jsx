@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { getHomePageUrl } from '../../lib/utils/routeHelper'
+import { getHomePageUrl } from '../../lib'
 import { Link } from '../ui/Link'
 
 const DefaultBreadcrumb = {

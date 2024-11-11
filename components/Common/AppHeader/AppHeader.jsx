@@ -1,12 +1,10 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { breakpoint } from '../../../lib/theme'
-import { useDeviceCheck } from '../../../lib/utils/hooks/useDeviceCheck'
+import { breakpoint, useDeviceCheck } from '../../../lib'
 import { BurgerButton } from '../../ui/buttons/BurgerButton'
 import { Container } from '../../ui/layouts/Container'
 import { MobileMenu } from './MobileMenu'
 import { Navigation } from '../Navigation/Navigation'
-import { NavLinkWrapper } from '../Navigation/NavLink'
 import { HeaderContacts } from './HeaderContacts'
 import { SearchComponent } from './Search'
 

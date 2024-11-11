@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
-import { sendContactForm } from '../../lib/api'
-import { breakpoint } from '../../lib/theme'
-import { Button } from '../ui/buttons/Button'
-import { H2 } from '../ui/Typography'
-import { StyledLink } from '../ui/Link'
-import { Container } from '../ui/layouts/Container'
-import { MainLayout } from '../ui/layouts/MainLayout'
+import { breakpoint } from '../../../lib'
+import { sendContactForm } from '../../../lib/api'
+import { Button } from '../../ui/buttons/Button'
+import { H3 } from '../../ui/Typography'
+import { StyledLink } from '../../ui/Link'
+import { Container } from '../../ui/layouts/Container'
+import { MainLayout } from '../../ui/layouts/MainLayout'
 
 export const RequestForm = ({ company }) => {
     const textareaRef = useRef(null)
@@ -168,7 +168,7 @@ const RequestFormWrapper = styled.div`
         flex-direction: column`}
 `
 
-const TitleWrapper = styled(H2)`
+const TitleWrapper = styled(H3)`
     flex: 1;
     width: 50%;
     padding-top: 50px;

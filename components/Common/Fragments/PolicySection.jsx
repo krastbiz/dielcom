@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Container } from '../../ui/layouts/Container'
 import { StyledLink } from '../../ui/Link'
-import { H2, H3 } from '../../ui/Typography'
-import { breakpoint } from '../../../lib/theme'
+import { H3 } from '../../ui/Typography'
+import { breakpoint } from '../../../lib'
 
 export const PolicySection = ({ ...extraProps }) => {
     const [selectedSection, setSelectedSection] = useState('personalData')
@@ -49,7 +49,7 @@ export const PolicySection = ({ ...extraProps }) => {
                 <Content>
                     {selectedSection === 'personalData' && (
                         <PolicyWrapper>
-                            <H2Styled>Согласие на обработку персональных данных </H2Styled>
+                            <H3Styled>Согласие на обработку персональных данных </H3Styled>
                             <FeaturesList>
                                 <FeaturesListItem>
                                     Я даю свое согласие Обществу с ограниченной ответственностью ООО «Диэлком-ЭК» (ИНН:
@@ -458,7 +458,7 @@ const PolicyWrapper = styled.div`
     `}
 `
 
-const H2Styled = styled(H2)`
+const H3Styled = styled(H3)`
     margin-bottom: 30px;
 `
 

@@ -1,11 +1,9 @@
 import styled from 'styled-components'
-import { breakpoint } from '../../lib/theme'
-import { getContractProductionPageUrl } from '../../lib/utils/routeHelper'
-import { ContactsSection } from '../Common/Fragments/ContactsSection'
-import { MainSection } from '../Common/Fragments/MainSection'
-import { Container } from '../ui/layouts/Container'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { H1, H2 } from '../ui/Typography'
+import { breakpoint, getContractProductionPageUrl } from '../../../lib'
+import { MainSection } from '../../Common/Fragments/MainSection'
+import { Container } from '../../ui/layouts/Container'
+import { MainLayout } from '../../ui/layouts/MainLayout'
+import { H2 } from '../../ui/Typography'
 
 const ContractProduction = () => {
     return (
@@ -71,8 +69,6 @@ const ContractProduction = () => {
                         </CPInfoList>
                     </Container>
                 </CPInfoSection>
-
-                <ContactsSection />
             </MainLayout>
         </>
     )
@@ -99,8 +95,10 @@ const CPMainContentTextWrapper = styled.div`
         width: 100%;
     `}
 `
+const CPMainContentTitle = styled(H2)`
+    margin-bottom: 20px;
+`
 
-const CPMainContentTitle = styled(H1)``
 const CPMainContentDescription = styled.p`
     font-size: 14px;
     line-height: 24px;
@@ -121,6 +119,7 @@ const CPMainContentImageWrapper = styled.div`
 const CPInfoSection = styled.section`
     padding-top: 20px;
     padding-bottom: 50px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
     ${Container} {
         flex-direction: column;
         align-items: center;

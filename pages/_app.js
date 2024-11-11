@@ -2,8 +2,7 @@ import React from 'react'
 
 import { ThemeProvider } from 'styled-components'
 
-import { theme } from '../lib/theme'
-import { GlobalStyle } from '../lib/globalStyles'
+import { GlobalStyle, theme } from '../lib'
 
 const App = ({ Component, pageProps }) => (
     <>

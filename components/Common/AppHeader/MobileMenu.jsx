@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoint } from '../../../lib/theme'
+import { breakpoint } from '../../../lib'
 import { Navigation } from '../Navigation/Navigation'
 import { NavLinkWrapper } from '../Navigation/NavLink'
 import { HeaderContacts } from './HeaderContacts'

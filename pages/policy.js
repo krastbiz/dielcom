@@ -1,8 +1,7 @@
 import Head from 'next/head'
 
-import { getPolicyPageUrl } from '../lib/utils/routeHelper'
-import { getPageCanonical, getPageMetadata } from '../lib/utils/pageHelper'
-import { Policy } from '../components/PolicyPage/Policy'
+import { getPolicyPageUrl, getPageCanonical, getPageMetadata } from '../lib'
+import { Policy } from '../components/pages/PolicyPage/Policy'
 
 const PolicyPage = () => {
     const pageTitle = 'Электронные компоненты'

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoint, screenWidth } from '../../../lib/theme'
+import { breakpoint, screenWidth } from '../../../lib'
 
 const Container = styled.div`
     padding-right: 40px;

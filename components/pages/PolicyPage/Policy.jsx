@@ -1,5 +1,5 @@
-import { PolicySection } from '../Common/Fragments/PolicySection'
-import { MainLayout } from '../ui/layouts/MainLayout'
+import { PolicySection } from '../../Common/Fragments/PolicySection'
+import { MainLayout } from '../../ui/layouts/MainLayout'
 
 export const Policy = () => {
     return (

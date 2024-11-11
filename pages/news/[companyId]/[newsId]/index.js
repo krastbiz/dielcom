@@ -1,9 +1,8 @@
 import Head from 'next/head'
 
-import NewsDetail from '../../../../components/NewsDetailPage/NewsDetail'
+import NewsDetail from '../../../../components/pages/NewsDetailPage/NewsDetail'
 import { COMPANY_ARRAY, NEWS_ARRAY } from '../../../../mock-data'
-import { getNewsDetailPageUrl } from '../../../../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../../../../lib/utils/pageHelper'
+import { getNewsDetailPageUrl, getPageMetadata, getPageCanonical } from '../../../../lib'
 
 const NewsDetailPage = ({ company, newsDetail, featuredNewsArray }) => {
     const pageTitle = `Новости компании ${company.name}`

@@ -1,11 +1,10 @@
 import Head from 'next/head'
 
-import { Brands } from '../../components/BrandsPage/Brands'
-import { getCatalogPageUrl } from '../../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../../lib/utils/pageHelper'
+import { Brands } from '../../components/pages/BrandsPage/Brands'
+import { getCatalogPageUrl, getPageMetadata, getPageCanonical } from '../../lib'
 import { COMPANY_ARRAY } from '../../mock-data'
 
-const BrandsPage = ({ companies, brands }) => {
+const BrandsPage = ({ companies }) => {
     const pageTitle = `Компании, поставляющие электронные компоненты`
     const pageDescription = 'Закажите электронные компоненты, оставьте вашу заявку'
     const pageRelativeUrl = getCatalogPageUrl()

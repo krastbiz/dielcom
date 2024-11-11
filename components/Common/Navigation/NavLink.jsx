@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { theme } from '../../../lib/theme'
+import { theme } from '../../../lib'
 import { Link } from '../../ui/Link'
 
 export const NavLink = ({ href, children, ...extraProps }) => {

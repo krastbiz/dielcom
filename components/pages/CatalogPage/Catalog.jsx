@@ -2,25 +2,15 @@ import styled from 'styled-components'
 import Masonry from 'react-masonry-css'
 import NextLink from 'next/link'
 
-import { getCatalogPageUrl, getProductPageUrl, getBrandPageUrl } from '../../lib/utils/routeHelper'
-import { Container } from '../ui/layouts/Container'
-import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { ContactsSection } from '../Common/Fragments/ContactsSection'
-import { H2 } from '../ui/Typography'
-import { Link } from '../ui/Link'
-import { breakpoint } from '../../lib/theme'
-import { BrandCard } from '../Common/BrandCard'
+import { getCatalogPageUrl, getProductPageUrl, getBrandsPageUrl, breakpoint } from '../../../lib'
+import { Container } from '../../ui/layouts/Container'
+import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
+import { MainLayout } from '../../ui/layouts/MainLayout'
+import { H2 } from '../../ui/Typography'
+import { Link } from '../../ui/Link'
+import { BrandCard } from '../../Common/BrandCard'
 
-const brands = [
-    { title: 'Pairui Group Fuan Electronics', brand: 'pairui' },
-    { title: 'LOCOSYS Technology Inc', brand: 'locosys' },
-    { title: 'Shenzhen Yetnorson Technology', brand: 'yetnorson' },
-    { title: 'MultiDimension Technology', brand: 'multi-dimension' },
-    { title: 'Shenzhen Feasycom Technology', brand: 'feasycom' },
-]
-
-export const Catalog = ({ categories }) => {
+export const Catalog = ({ categories, brands }) => {
     const masonryBreakpoints = {
         default: 3, // 3 columns by default
         1024: 2, // 2 columns on screens >= 1024px
@@ -31,7 +21,7 @@ export const Catalog = ({ categories }) => {
         <MainLayout>
             <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Линейка поставок' }]}>
                 <DefaultMainContent>
-                    <StyledH2>Каталог электронных компонентов</StyledH2>
+                    <H2>Каталог электронных компонентов</H2>
                     <MainSectionSubtitle>
                         Поставка качественных электронных компонентов при высоком уровне сервисной поддержки, начиная от
                         технической задачи до формирования индивидуального плана поставок.
@@ -68,27 +58,20 @@ export const Catalog = ({ categories }) => {
             </CatalogSection>
             <BrandsSection>
                 <BrandsContainer>
-                <BrandSectionTitle>Бренды</BrandSectionTitle>
+                    <BrandSectionTitle>Бренды</BrandSectionTitle>
                 </BrandsContainer>
                 <BrandsContainer>
                     {brands.map((brand) => (
                         <BrandCard {...brand} />
                     ))}
-                    <BrandsLink href={getBrandPageUrl()}>
+                    <BrandsLink href={getBrandsPageUrl()}>
                         Смотреть все бренды <ArrowIcon src="/static/icons/arrow-blue.svg" alt="arrow" />
                     </BrandsLink>
                 </BrandsContainer>
             </BrandsSection>
-            <ContactsSection />
         </MainLayout>
     )
 }
-
-const StyledH2 = styled(H2)`
-    font-size: 40px;
-    line-height: 43px;
-    margin-bottom: 18px;
-`
 
 const MainSectionSubtitle = styled.p`
     color: ${({ theme }) => theme.colors.main};

@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import { breakpoint } from '../../lib/theme'
-import { getAllNewsPage, getCompanyNewsPage, getNewsDetailPageUrl } from '../../lib/utils/routeHelper'
-import { DefaultMainContent, MainSection } from '../Common/Fragments/MainSection'
-import { NewsSection } from '../Common/Fragments/NewsSection'
-import { Container } from '../ui/layouts/Container'
-import { MainLayout } from '../ui/layouts/MainLayout'
-import { H1, H2 } from '../ui/Typography'
+
+import { breakpoint, getAllNewsPage, getCompanyNewsPage, getNewsDetailPageUrl } from '../../../lib'
+import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
+import { NewsSection } from '../../Common/Fragments/NewsSection'
+import { Container } from '../../ui/layouts/Container'
+import { MainLayout } from '../../ui/layouts/MainLayout'
+import { H1, H2 } from '../../ui/Typography'
 
 const NewsDetail = ({ company, newsDetail, featuredNewsArray }) => {
     const { query } = useRouter()

@@ -1,8 +1,7 @@
 import Head from 'next/head'
 
-import Home from '../components/HomePage/Home'
-import { getHomePageUrl } from '../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../lib/utils/pageHelper'
+import Home from '../components/pages/HomePage/Home'
+import { getHomePageUrl, getPageMetadata, getPageCanonical } from '../lib'
 import { NEWS_ARRAY } from '../mock-data'
 
 const HomePage = ({ featuredNews }) => {

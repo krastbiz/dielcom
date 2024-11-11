@@ -1,10 +1,8 @@
 import Head from 'next/head'
 
-import { Catalog } from '../../../components/CatalogPage/Catalog'
-import { getCatalogPageUrl } from '../../../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../../../lib/utils/pageHelper'
+import { Catalog } from '../../../components/pages/CatalogPage/Catalog'
+import { getCatalogPageUrl, getPageMetadata, getPageCanonical, kebabToCamel } from '../../../lib'
 import { CATEGORIES_ARRAY } from '../../../mock-data'
-import { kebabToCamel } from '../../../lib/utils/helpers'
 
 const CategoryPage = ({ category }) => {
     const pageTitle = `Продукты в категории ${category.name}`

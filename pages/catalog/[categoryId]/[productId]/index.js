@@ -1,14 +1,11 @@
 import fs from 'fs'
 import path from 'path'
-
 import Head from 'next/head'
 
-import { RequestForm } from '../../../../components/RequestPage/Request'
-import { Product } from '../../../../components/ProductPage/Product'
-import { getProductPageUrl } from '../../../../lib/utils/routeHelper'
-import { getPageMetadata, getPageCanonical } from '../../../../lib/utils/pageHelper'
+import { RequestForm } from '../../../../components/pages/RequestPage/Request'
+import { Product } from '../../../../components/pages/ProductPage/Product'
+import { getProductPageUrl, getPageMetadata, getPageCanonical, kebabToCamel } from '../../../../lib'
 import { CATEGORIES_ARRAY } from '../../../../mock-data'
-import { kebabToCamel } from '../../../../lib/utils/helpers'
 
 const ProductPage = (props) => {
     const { catalog, name, categoryId, productId } = props
