@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import { getProductPageUrl } from '../../lib'
 import { Link } from '../ui/Link'
+import { breakpoint } from '../../lib'
 
 export const ProductSideBar = ({ categories }) => {
     const [expandedList, setExpandedList] = useState([])
@@ -14,34 +15,51 @@ export const ProductSideBar = ({ categories }) => {
     }
 
     return (
-        <SideBarWrapper>
-            {categories.map((category, index) => {
-                const isExpanded = expandedList.includes(index)
-                return (
-                    <CategoryCard key={category.id}>
-                        <CategoryTitle onClick={() => toggleCategory(index)}>
-                            {category.name}
-                            <Arrow>{isExpanded ? '︿' : '﹀'}</Arrow>
-                        </CategoryTitle>
-                        <ProductsList expanded={isExpanded}>
-                            {category.products.map((product) => (
-                                <ProductItem key={product.id}>
-                                    <Link href={getProductPageUrl(category.id, product.id)}>{product.label}</Link>
-                                </ProductItem>
-                            ))}
-                        </ProductsList>
-                    </CategoryCard>
-                )
-            })}
-        </SideBarWrapper>
+        <StickySidebar>
+            <SideBarWrapper>
+                {categories.map((category, index) => {
+                    const isExpanded = expandedList.includes(index)
+                    return (
+                        <CategoryCard key={category.id}>
+                            <CategoryTitle onClick={() => toggleCategory(index)}>
+                                {category.name}
+                                <Arrow>{isExpanded ? '︿' : '﹀'}</Arrow>
+                            </CategoryTitle>
+                            <ProductsList expanded={isExpanded}>
+                                {category.products.map((product) => (
+                                    <ProductItem key={product.id}>
+                                        <Link href={getProductPageUrl(category.id, product.id)}>{product.label}</Link>
+                                    </ProductItem>
+                                ))}
+                            </ProductsList>
+                        </CategoryCard>
+                    )
+                })}
+            </SideBarWrapper>
+        </StickySidebar>
     )
 }
 
+const StickySidebar = styled.div`
+    width: 350px;
+    position: sticky;
+    top: 240px;
+    max-height: 850px;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Для Firefox */
+    -ms-overflow-style: none; /* Для IE и Edge */
+    &::-webkit-scrollbar {
+        display: none; /* Для Chrome, Safari и Opera */
+
+        /* ${breakpoint.tablet`
+        position: static;
+        width: 100%;
+    `} */
+    }
+`
+
 const SideBarWrapper = styled.div`
     padding: 0 20px;
-    position: relative;
-    top: -250px;
-    left: 100px;
     background-color: ${({ theme }) => theme.colors.background};
     border-left: 1px solid ${({ theme }) => theme.colors.border};
     padding-bottom: 2px;

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+
 import { breakpoint, getBrandPageUrl, getBrandsPageUrl } from '../../../lib'
-import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
+import { DefaultMainContentSB, MainSectionSB } from '../../Common/Fragments/MainSection'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
@@ -11,74 +12,88 @@ const Company = ({ company, categories }) => {
 
     return (
         <MainLayout>
-            <MainSection
-                showBreadcrumb
-                breadcrumbs={[
-                    { href: getBrandsPageUrl(), text: 'Бренды' },
-                    { href: getBrandPageUrl(company.id), text: company.name },
-                ]}
-            >
-                <DefaultMainContent>
-                    <CompanyLogoWrapper>
-                        <img src={company.logo} alt="Логотип кампании" />
-                    </CompanyLogoWrapper>
-                    <H2>{company.name}</H2>
-                </DefaultMainContent>
-            </MainSection>
+            <StyledContainer>
+                <ContentArea>
+                    <MainSectionSB
+                        showBreadcrumb
+                        breadcrumbs={[
+                            { href: getBrandsPageUrl(), text: 'Бренды' },
+                            { href: getBrandPageUrl(company.id), text: company.name },
+                        ]}
+                    >
+                        <DefaultMainContentSB>
+                            <CompanyLogoWrapper>
+                                <img src={company.logo} alt="Логотип кампании" />
+                            </CompanyLogoWrapper>
+                            <H2>{company.name}</H2>
+                        </DefaultMainContentSB>
+                    </MainSectionSB>
 
-            <CompanyInfoSection>
-                <Container>
-                    <ContentAndSidebarWrapper>
-                        <CompanyContentWrapper>
-                            <CompanyTextWrapper>
-                                {company.description.map((item) => (
-                                    <CompanyDescription key={item}>{item || 'Описание компании'}</CompanyDescription>
-                                ))}
-                                {company.services &&
-                                    company.services.map((item) => (
-                                        <CompanyServices key={item}>
-                                            <CompanyServicestTitle>{item[0]}</CompanyServicestTitle>
-                                            {item.map(
-                                                (service, index) =>
-                                                    index > 0 && (
-                                                        <CompanyServicesItem key={service}>
-                                                            {service}
-                                                        </CompanyServicesItem>
-                                                    ),
-                                            )}
-                                        </CompanyServices>
+                    <CompanyInfoSection>
+                        <ContentAndSidebarWrapper>
+                            <CompanyContentWrapper>
+                                <CompanyTextWrapper>
+                                    {company.description.map((item) => (
+                                        <CompanyDescription key={item}>
+                                            {item || 'Описание компании'}
+                                        </CompanyDescription>
                                     ))}
-                            </CompanyTextWrapper>
-                        </CompanyContentWrapper>
-                    </ContentAndSidebarWrapper>
-                </Container>
-            </CompanyInfoSection>
+                                    {company.services &&
+                                        company.services.map((item) => (
+                                            <CompanyServices key={item}>
+                                                <CompanyServicestTitle>{item[0]}</CompanyServicestTitle>
+                                                {item.map(
+                                                    (service, index) =>
+                                                        index > 0 && (
+                                                            <CompanyServicesItem key={service}>
+                                                                {service}
+                                                            </CompanyServicesItem>
+                                                        ),
+                                                )}
+                                            </CompanyServices>
+                                        ))}
+                                </CompanyTextWrapper>
+                            </CompanyContentWrapper>
+                        </ContentAndSidebarWrapper>
+                    </CompanyInfoSection>
 
-            {displayCompanyProducts && (
-                <CompanyProductsSection>
-                    <ProductsContainer>
-                        <CompanyProductsTitle>Основная продукция</CompanyProductsTitle>
-                        <CompanyProductsWrapper>
-                            {company.products.map((product) => (
-                                <CompanyProduct key={product.imageUrl}>
-                                    <CompanyProductName>{product.name}</CompanyProductName>
-                                    <CompanyProductImageWrapper>
-                                        <img src={product.imageUrl} alt="Изображение продукта кампании" />
-                                    </CompanyProductImageWrapper>
-                                </CompanyProduct>
-                            ))}
-                        </CompanyProductsWrapper>
-                    </ProductsContainer>
-                </CompanyProductsSection>
-            )}
-            <RightSidebarWrapper>
+                    {displayCompanyProducts && (
+                        <CompanyProductsSection>
+                            <ProductsContainer>
+                                <CompanyProductsTitle>Основная продукция</CompanyProductsTitle>
+                                <CompanyProductsWrapper>
+                                    {company.products.map((product) => (
+                                        <CompanyProduct key={product.imageUrl}>
+                                            <CompanyProductName>{product.name}</CompanyProductName>
+                                            <CompanyProductImageWrapper>
+                                                <img src={product.imageUrl} alt="Изображение продукта кампании" />
+                                            </CompanyProductImageWrapper>
+                                        </CompanyProduct>
+                                    ))}
+                                </CompanyProductsWrapper>
+                            </ProductsContainer>
+                        </CompanyProductsSection>
+                    )}
+                </ContentArea>
                 <ProductSideBar categories={categories} />
-            </RightSidebarWrapper>
+            </StyledContainer>
         </MainLayout>
     )
 }
 
 export default Company
+
+const StyledContainer = styled(Container)`
+    align-items: flex-start;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+    padding-bottom: 50px;
+`
+
+const ContentArea = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+`
 
 const CompanyInfoSection = styled.section`
     padding-top: 100px;
@@ -107,20 +122,6 @@ const CompanyContentWrapper = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
-`
-
-const RightSidebarWrapper = styled.aside`
-    width: 350px;
-    position: fixed;
-    top: 480px;
-    right: 200px;
-    margin-left: 20px;
-
-    ${breakpoint.tablet`
-        position: static;
-        width: 100%;
-        margin-top: 20px;
-    `}
 `
 
 const CompanyLogoWrapper = styled.div`
@@ -177,7 +178,7 @@ const CompanyServicesItem = styled.li`
 `
 
 const CompanyProductsSection = styled.section`
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 
     ${Container} {
         flex-direction: column;
@@ -185,7 +186,7 @@ const CompanyProductsSection = styled.section`
 
     ${breakpoint.tablet`
         padding-top: 30px;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     `}
 `
 
@@ -215,9 +216,9 @@ const CompanyProductsWrapper = styled.div`
     `}
 `
 
-const ProductsContainer = styled(Container)`
+const ProductsContainer = styled.div`
+    display: flex;
     padding-bottom: 180px;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 `
 
 const CompanyProduct = styled.div`

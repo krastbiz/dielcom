@@ -1,11 +1,13 @@
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
 
 import { Button } from '../../../ui/buttons/Button'
 import { breakpoint, useDeviceCheck } from '../../../../lib'
 
-export const SearchTable = ({ data = [], loading, onSort, sortBy, sortOrder, handleClick }) => {
+export const SearchTable = ({ data = [], loading, onSort, sortBy, sortOrder }) => {
     const { isMobile, isTablet } = useDeviceCheck()
     const isMobileOrTablet = isMobile || isTablet
+    const router = useRouter()
 
     const renderSortIcon = (field) => {
         if (sortBy !== field) return null
@@ -35,14 +37,14 @@ export const SearchTable = ({ data = [], loading, onSort, sortBy, sortOrder, han
                                 <td data-label="Доступно">{item.available}</td>
                                 <td data-label="Срок">{item.leadtime}</td>
                                 <td data-label="Заказать">
-                                    <Button
+                                    <StyledButton
                                         onClick={() =>
-                                            handleClick(`Производитель ${item.brand}, партномер ${item.partnumber}`)
+                                            router.push(`/request?q=${`Производитель ${item.brand}, партномер ${item.partnumber}`}`)
                                         }
                                         primary
                                     >
                                         Заказать
-                                    </Button>
+                                    </StyledButton>
                                 </td>
                             </TableRow>
                         ))}
@@ -70,7 +72,7 @@ const TableHeader = styled.thead`
     background: ${({ theme }) => theme.colors.active};
     color: ${({ theme }) => theme.colors.base};
     position: sticky;
-    top: 160px;
+    top: 120px;
     z-index: 5;
 
     th {
@@ -159,3 +161,11 @@ const LoadingText = styled.p`
     font-size: 16px;
 `
 
+const StyledButton = styled(Button)`
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: none;
+    padding: 13px 20px;
+`

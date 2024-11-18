@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components'
+import { useRouter } from 'next/router'
+
 import { breakpoint, useDeviceCheck } from '../../../lib'
 import { BurgerButton } from '../../ui/buttons/BurgerButton'
 import { Container } from '../../ui/layouts/Container'
@@ -12,10 +14,12 @@ const HEADER_HEIGHT = '116x'
 
 export const AppHeader = () => {
     const [isMobileMenuActive, setIsMobileMenuActive] = useState(false)
+    const { pathname } = useRouter()
 
     const { isLaptop, isMobile, isTablet } = useDeviceCheck()
     const isLaptopOrMobileOrTablet = isLaptop || isMobile || isTablet
     const showMobileMenu = isLaptopOrMobileOrTablet && isMobileMenuActive
+    const isInSearchPage = pathname === '/search'
 
     return (
         <>
@@ -29,9 +33,11 @@ export const AppHeader = () => {
                     <HeaderContainer>
                         <Navigation isHeader />
                         <HeaderContainerRow>
-                            <FlexItem>
-                                <SearchComponent isHomePage />
-                            </FlexItem>
+                            {!isInSearchPage && (
+                                <FlexItem>
+                                    <SearchComponent isHomePage />
+                                </FlexItem>
+                            )}
                             <FlexItem>
                                 <HeaderContacts hideOnMobile />
                             </FlexItem>

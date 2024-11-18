@@ -45,7 +45,7 @@ export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false }) 
                 onKeyDown={handleKeyDown}
             />
             {isHomePage && (
-                <Link href={`/catalog?q=${searchValue}`} passHref>
+                <Link href={`/search?q=${searchValue}`} passHref>
                     <SearchButton>
                         <SearchIcon src="/static/icons/search.svg" alt="Поиск" />
                     </SearchButton>

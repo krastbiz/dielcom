@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import { Contacts } from '../components/pages/ContactsPage/Contacts'
+import { Search } from '../components/pages/SearchPage/Search'
 import { getPageMetadata, getPageCanonical, getSearchPageUrl } from '../lib'
 
-const ContactsPage = () => {
+const SearchPage = () => {
     const pageTitle = 'Электронные компоненты'
     const pageDescription = 'Закажите электронные компоненты, оставьте вашу заявку'
     const pageRelativeUrl = getSearchPageUrl()
@@ -14,9 +14,9 @@ const ContactsPage = () => {
                 {getPageMetadata(pageTitle, pageDescription)}
                 {getPageCanonical(pageRelativeUrl)}
             </Head>
-            <Contacts />
+            <Search />
         </>
     )
 }
 
-export default ContactsPage
+export default SearchPage

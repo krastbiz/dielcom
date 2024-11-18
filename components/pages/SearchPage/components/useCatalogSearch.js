@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
-import { search } from '../../lib/api'
+import { search } from '../../../../lib/api'
 import debounce from 'lodash/debounce'
 
 export const useCatalogSearch = () => {
@@ -12,10 +12,8 @@ export const useCatalogSearch = () => {
     const [loading, setLoading] = useState(false)
     const [sortBy, setSortBy] = useState('brand')
     const [sortOrder, setSortOrder] = useState('asc')
-    const [defaultFormValue, setFormValue] = useState('')
-    const defaultSearchValue = query.q || ''
+    const defaultSearchValue = query.q ?? ''
     const searchValueRef = useRef(defaultSearchValue)
-    const requestFormRef = useRef()
 
     const fetchData = useCallback(async (query, pageNum, sortBy, sortOrder) => {
         setLoading(true)
@@ -96,13 +94,6 @@ export const useCatalogSearch = () => {
         }
     }, [hasMore, loadMore])
 
-    const scrollToForm = (value) => {
-        if (requestFormRef.current) {
-            setFormValue(value)
-            requestFormRef.current.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
-
     return {
         data,
         loadMoreRef,
@@ -114,8 +105,5 @@ export const useCatalogSearch = () => {
         handleSort,
         sortBy,
         sortOrder,
-        requestFormRef,
-        scrollToForm,
-        defaultFormValue,
     }
 }
