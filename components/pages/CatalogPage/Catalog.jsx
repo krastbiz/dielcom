@@ -137,7 +137,7 @@ const CategoryCard = styled.div`
                     top: calc(100% * 2 / 3 + 50px);
                     left: 10px;
                     width: 32.5%;
-                    padding-bottom: 80px;
+                    padding-bottom: 0px;
                 `
             default:
                 return ''

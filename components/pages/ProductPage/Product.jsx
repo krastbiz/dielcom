@@ -5,7 +5,7 @@ import { getCatalogPageUrl, getProductPageUrl, getRequestPageUrl } from '../../.
 import { Container } from '../../ui/layouts/Container'
 import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSection'
 import { MainLayout } from '../../ui/layouts/MainLayout'
-import { H1 } from '../../ui/Typography'
+import { H2 } from '../../ui/Typography'
 import { translates } from '../../../mock-data/translates'
 
 export const Product = ({ catalog, name, categoryId, productId, filters }) => {
@@ -21,7 +21,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
         })
     }
 
-    const headers = Object.keys(catalog[0]).filter((key) => translates[key])
+    const headers = Object.keys(catalog[0])
 
     const handleFilterChange = (key, value) => {
         setSelectedFilters((prev) => {
@@ -35,7 +35,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
     }
 
     const filteredCatalog = catalog.filter((item) => {
-        const matchesPartNumber = item.partNumber.toLowerCase().includes(searchTerm.toLowerCase())
+        const matchesPartNumber = item.partNumber?.toLowerCase().includes(searchTerm.toLowerCase())
         const matchesFilters = Object.keys(selectedFilters).every((key) => {
             return !selectedFilters[key].length || selectedFilters[key].includes(item[key])
         })
@@ -91,7 +91,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                 ]}
             >
                 <DefaultMainContent>
-                    <H1>ЛИНЕЙКА ПОСТАВОК</H1>
+                    <H2>ЛИНЕЙКА ПОСТАВОК</H2>
                     <MainSectionSubtitle>{name}</MainSectionSubtitle>
                 </DefaultMainContent>
             </MainSection>
@@ -127,7 +127,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                             key !== 'brand' &&
                             key !== 'id' && (
                                 <FilterSection key={key}>
-                                    <FilterLabel>{translates[key]}</FilterLabel>
+                                    <FilterLabel>{translates[key] || key}</FilterLabel>
                                     <FilterOptions>
                                         <ScrollableOptions>
                                             {filters[key].map((value) => (
@@ -154,7 +154,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                             <StickyHeaderRow>
                                 {headers.map((header) => (
                                     <th key={header} onClick={() => handleSort(header)}>
-                                        {translates[header]}
+                                        {translates[header] || header}
                                         {sortConfig.key === header && (sortConfig.direction === 'asc' ? ' ▲' : ' ▼')}
                                     </th>
                                 ))}

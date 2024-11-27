@@ -66,7 +66,7 @@ const SideBarWrapper = styled.div`
 `
 
 const CategoryCard = styled.div`
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     padding-left: 25px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 `
@@ -107,12 +107,12 @@ const ProductsList = styled.ul`
 `
 
 const ProductItem = styled.li`
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 
     a {
         color: ${({ theme }) => theme.colors.textGray};
         text-decoration: none;
-        font-size: 16px;
+        font-size: 14px;
 
         &:hover {
             color: ${({ theme }) => theme.colors.active};

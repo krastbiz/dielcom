@@ -641,11 +641,33 @@ export const CATEGORIES_ARRAY = new Map([
             name: 'Силовая электроника',
             imageUrl: '/static/images/categories/powerElectronics.png',
             products: [
+                { id: 'mosfet-transistors', label: 'MOSFET транзисторы' },
+                { id: 'sic-diodes', label: 'SiC диоды' },
                 { id: 'igbt-power-modules', label: 'Модули силовые IGBT' },
                 { id: 'mosfet-power-modules', label: 'Модули силовые MOSFET' },
                 { id: 'power-capacitors', label: 'Силовой конденсатор' },
                 { id: 'igbt-transistors', label: 'IGBT транзисторы' },
+                
             ],
         },
     ],
 ])
+
+export const NAV_ITEMS_HEADER = [
+    { href: '/', text: 'Главная' },
+    { href: '/catalog', text: 'Линейка поставок', hovered: 'catalog' },
+    { href: '/brands', text: 'Бренды' },
+    { href: '/contract-production', text: 'Контрактное производство' },
+    { href: '/contacts', text: 'Контакты' },
+]
+
+export const NAV_ITEMS_CONTACTS = [
+    { href: '/', text: 'Главная' },
+    { href: '/catalog', text: 'Линейка поставок' },
+    { href: '/contract-production', text: 'Контрактное производство' },
+    { href: '/news', text: 'Новости' },
+]
+
+export const CATALOG_SUBMENU = [
+    { id: 'catalog', content: CATEGORIES_ARRAY },
+];

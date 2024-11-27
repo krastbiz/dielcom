@@ -5,8 +5,8 @@ const xlsx = require('xlsx')
 
 const { transformDataToCamelCase } = require('./utils')
 
-const EXCEL_FILE_PATH = path.resolve('../data/wireless-technologies/antennas-and-adapters.xlsx')
-const JSON_FILE_PATH = path.resolve('../data/wireless-technologies/antennas-and-adapters.json')
+const EXCEL_FILE_PATH = path.resolve('../data/power-electronics/mosfet-transistors.xlsx')
+const JSON_FILE_PATH = path.resolve('../data/power-electronics/mosfet-transistors.json')
 
 const generateAntennasCatalogData = () => {
     const workbook = xlsx.readFile(EXCEL_FILE_PATH)

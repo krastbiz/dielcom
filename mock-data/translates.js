@@ -13,4 +13,9 @@ export const translates = {
     dimensions: 'Габариты',
     weight: 'Масса',
     connector: 'Соединитель',
+    housing: 'Корпус',
+    technology: 'Технология',
+    voltage: 'Напряжение, В',
+    frequency: 'Частота',
+    polarity: 'Полярность',
 }

@@ -68,6 +68,7 @@ export default class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
+                    <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" defer></script>
                 </body>
             </Html>
         )
