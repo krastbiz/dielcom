@@ -39,7 +39,9 @@ export const SearchTable = ({ data = [], loading, onSort, sortBy, sortOrder }) =
                                 <td data-label="Заказать">
                                     <StyledButton
                                         onClick={() =>
-                                            router.push(`/request?q=${`Производитель ${item.brand}, партномер ${item.partnumber}`}`)
+                                            router.push(
+                                                `/request?q=${`Производитель ${item.brand}, партномер ${item.partnumber}`}`,
+                                            )
                                         }
                                         primary
                                     >

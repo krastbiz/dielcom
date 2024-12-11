@@ -13,7 +13,7 @@ export const RequestForm = ({ company }) => {
     const textareaRef = useRef(null)
     const { query } = useRouter()
     const [formData, setFormData] = useState({
-        components: query.q || company   || '',
+        components: query.q || company || '',
         name: '',
         email: '',
         tel: '',
@@ -76,7 +76,6 @@ export const RequestForm = ({ company }) => {
         textarea.style.height = 'auto'
         textarea.style.height = `${textarea.scrollHeight}px`
     }
-    console.log(formData.components)
 
     return (
         <MainLayout>

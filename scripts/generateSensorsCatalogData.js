@@ -5,8 +5,8 @@ const xlsx = require('xlsx')
 
 const { transformDataToCamelCase } = require('./utils')
 
-const EXCEL_FILE_PATH = path.resolve('../data/sensors/inertial-sensors.xlsx')
-const JSON_FILE_PATH = path.resolve('../data/sensors/inertial-sensors.json')
+const EXCEL_FILE_PATH = path.resolve('../data/sensors/magnetic-sensors.xlsx')
+const JSON_FILE_PATH = path.resolve('../data/sensors/magnetic-sensors.json')
 
 const generateCatalogData = () => {
     const workbook = xlsx.readFile(EXCEL_FILE_PATH)
