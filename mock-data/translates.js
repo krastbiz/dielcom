@@ -18,4 +18,9 @@ export const translates = {
     voltage: 'Напряжение, В',
     frequency: 'Частота',
     polarity: 'Полярность',
+    series: 'Серия',
+    consumption: 'Потребление',
+    operatingModes: 'Режимы работы',
+    direction: 'Направление (ось) чувствительности',
+    outputInterface: 'Выходной интерфейс',
 }
