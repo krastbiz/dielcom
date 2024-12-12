@@ -529,7 +529,7 @@ export const CATEGORIES_ARRAY = new Map([
             products: [
                 { id: 'inertial-sensors', label: 'Датчики инерциальные' },
                 { id: 'sensor-accessories', label: 'Аксессуары для датчиков' },
-                { id: 'vibration-accelerometers', label: 'Виброакселерометры' },
+                { id: 'accelerometers', label: 'Акселерометры' },
                 { id: 'humidity-sensors', label: 'Датчики влажности' },
                 { id: 'gas-sensors', label: 'Датчики газа' },
                 { id: 'pressure-sensors', label: 'Датчики давления' },
