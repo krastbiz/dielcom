@@ -154,7 +154,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                             <StickyHeaderRow>
                                 {headers.map(
                                     (header) =>
-                                        header !== id && (
+                                        header !== 'id' && (
                                             <th key={header} onClick={() => handleSort(header)}>
                                                 {translates[header] || header}
                                                 {sortConfig.key === header &&
