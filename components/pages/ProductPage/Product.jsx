@@ -152,12 +152,16 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                     <CatalogTable>
                         <thead>
                             <StickyHeaderRow>
-                                {headers.map((header) => (
-                                    <th key={header} onClick={() => handleSort(header)}>
-                                        {translates[header] || header}
-                                        {sortConfig.key === header && (sortConfig.direction === 'asc' ? ' ▲' : ' ▼')}
-                                    </th>
-                                ))}
+                                {headers.map(
+                                    (header) =>
+                                        header !== id && (
+                                            <th key={header} onClick={() => handleSort(header)}>
+                                                {translates[header] || header}
+                                                {sortConfig.key === header &&
+                                                    (sortConfig.direction === 'asc' ? ' ▲' : ' ▼')}
+                                            </th>
+                                        ),
+                                )}
                             </StickyHeaderRow>
                         </thead>
                         <tbody>
