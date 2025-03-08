@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { breakpoint } from '../../../lib'
-import { Container } from '../../ui/layouts/Container'
-import { StyledLink } from '../../ui/Link'
-import { Navigation } from '../Navigation/Navigation'
-import { MapComponent } from '../MapComponent'
-import { H1 } from '../../ui/Typography'
+import { breakpoint } from '../../../../lib'
+import { Container } from '../../../ui/layouts/Container'
+import { StyledLink } from '../../../ui/Link'
+import { Navigation } from '../../Navigation/Navigation'
+import { MapComponent } from '../../MapComponent'
+import { H1 } from '../../../ui/Typography'
 
 export const ContactsSection = ({ ...extraProps }) => {
     return (

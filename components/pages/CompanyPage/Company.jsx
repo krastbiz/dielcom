@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
 import { breakpoint, getBrandPageUrl, getBrandsPageUrl } from '../../../lib'
-import { DefaultMainContentSB, MainSectionSB } from '../../Common/Fragments/MainSection'
+import { DefaultMainContentSB, MainSectionSB } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
-import { ProductSideBar } from '../../Common/ProductsSideBar'
 
-const Company = ({ company, categories }) => {
+const Company = ({ company }) => {
     const displayCompanyProducts = company.products.length > 0
 
     return (
@@ -75,7 +74,6 @@ const Company = ({ company, categories }) => {
                         </CompanyProductsSection>
                     )}
                 </ContentArea>
-                <ProductSideBar categories={categories} />
             </StyledContainer>
         </MainLayout>
     )

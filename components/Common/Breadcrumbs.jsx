@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { getHomePageUrl } from '../../lib'
 import { Link } from '../ui/Link'
+import { useRouter } from 'next/router'
 
 const DefaultBreadcrumb = {
     text: 'Главная',
@@ -10,6 +11,10 @@ const DefaultBreadcrumb = {
 
 export const Breadcrumbs = ({ breadcrumbs }) => {
     const crumbs = [DefaultBreadcrumb, ...(breadcrumbs || [])]
+    const nextRouter = useRouter()
+    const currentUrl = nextRouter.asPath
+
+    const isLinkActive = (linkUrl) => linkUrl === currentUrl
 
     return (
         <BreadcrumbsWrapper>
@@ -18,7 +23,7 @@ export const Breadcrumbs = ({ breadcrumbs }) => {
 
                 return (
                     <React.Fragment key={index}>
-                        <Breadcrumb>
+                        <Breadcrumb isActive={isLinkActive(crumb.href)}>
                             <Link href={crumb.href}>{crumb.text}</Link>
                         </Breadcrumb>
 
@@ -37,6 +42,7 @@ const BreadcrumbsWrapper = styled.div`
 `
 
 const Breadcrumb = styled.div`
+    color: ${({ isActive, theme }) => isActive && theme.colors.linkHover};
     &:hover {
         color: ${({ theme }) => theme.colors.linkHover};
     }

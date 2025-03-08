@@ -2,13 +2,12 @@ import styled from 'styled-components'
 
 import { breakpoint, getBrandsPageUrl } from '../../../lib'
 import { StyledLink } from '../../ui/Link'
-import { MainSection } from '../../Common/Fragments/MainSection'
 // import { NewsSection } from '../../Common/Fragments/NewsSection'
 import { Button } from '../../ui/buttons/Button'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
-import { H1, H2 } from '../../ui/Typography'
-import { AdvantageCard, BrandCard, SupplyCard } from '../../Common'
+import { H1, H1Gradient, H2, GradientText, GradientTextInverse } from '../../ui/Typography'
+import { AdvantageCard, BrandCard, MainSection, SupplyCard } from '../../Common'
 import { screenWidth } from '../../../lib'
 
 const supply = [
@@ -88,22 +87,24 @@ const Home = ({ featuredNews, brands }) => {
     return (
         <MainLayout>
             <MainSection>
-                <MainSectionContainer>
-                    <MainSectionContent>
-                        <H1Gradient>электронные компоненты</H1Gradient>
-                        <H1 alternative>для вашего бизнеса</H1>
-                        <MainSectionWrapper>
-                            <MainSectionText>
-                                Широкий ассортимент качественных комплектующих от ведущих мировых брендов. <br />
-                                Гарантия оригинальности, быстрая доставка и техническая поддержка на каждом этапе.
-                            </MainSectionText>
-                            <CatalogButton primary as="a" href="/catalog">
-                                <ButtonText>Перейти в каталог </ButtonText>
-                                <ArrowIcon src="/static/icons/arrow-right.svg" alt="arrow" />
-                            </CatalogButton>
-                        </MainSectionWrapper>
-                    </MainSectionContent>
-                </MainSectionContainer>
+                <MainSectionBgContainer>
+                    <MainSectionContainer>
+                        <MainSectionContent>
+                            <H1Gradient>электронные компоненты</H1Gradient>
+                            <H1 alternative>для вашего бизнеса</H1>
+                            <MainSectionWrapper>
+                                <MainSectionText>
+                                    Широкий ассортимент качественных комплектующих от ведущих мировых брендов. <br />
+                                    Гарантия оригинальности, быстрая доставка и техническая поддержка на каждом этапе.
+                                </MainSectionText>
+                                <CatalogButton primary as="a" href="/catalog">
+                                    <ButtonText>Перейти в каталог </ButtonText>
+                                    <ArrowIcon src="/static/icons/arrow-right.svg" alt="arrow" />
+                                </CatalogButton>
+                            </MainSectionWrapper>
+                        </MainSectionContent>
+                    </MainSectionContainer>
+                </MainSectionBgContainer>
             </MainSection>
 
             <BrandsSection>
@@ -188,16 +189,13 @@ const Home = ({ featuredNews, brands }) => {
     )
 }
 
-const H1Gradient = styled(H1)`
-    background: linear-gradient(89.81deg, #005ff9 0%, #97dbfc 50%, #c0e8ff 65%, #d4f1ff 82%, #ffffff 100%);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow:
-        0px 0px 10px rgba(0, 95, 249, 0.6),
-        0px 0px 20px rgba(0, 95, 249, 0.5),
-        0px 0px 30px rgba(0, 95, 249, 0.4);
+const MainSectionBgContainer = styled.div`
+    background-image: url(/static/images/homepage/homepage-bg.png);
+    background-size: cover;
+    height: 646px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 `
 
 const MainSectionContainer = styled(Container)`
@@ -347,29 +345,6 @@ const GoalContentItem = styled.div`
     :first-child {
         margin-right: 188px;
     }
-`
-
-const GradientText = styled.span`
-    background: linear-gradient(89.81deg, #005ff9 0%, #97dbfc 50%, #c0e8ff 65%, #d4f1ff 82%, #ffffff 100%);
-    font-family: ${({ theme }) => theme.fonts.hauora};
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow:
-        0px 0px 10px rgba(0, 95, 249, 0.6),
-        0px 0px 20px rgba(0, 95, 249, 0.5),
-        0px 0px 30px rgba(0, 95, 249, 0.4);
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: -0.04em;
-`
-
-const GradientTextInverse = styled(GradientText)`
-    background: linear-gradient(98deg, #005ff9 0%, #4293c4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 `
 
 const SupplySection = styled.section`

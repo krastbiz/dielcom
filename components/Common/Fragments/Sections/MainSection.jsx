@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { breakpoint } from '../../../lib'
-import { Container } from '../../ui/layouts/Container'
-import { Breadcrumbs } from '../Breadcrumbs'
+import { Container } from '../../../ui/layouts/Container'
+import { Breadcrumbs } from '../../Breadcrumbs'
 
 export const MainSection = ({ children, showBreadcrumb, breadcrumbs, ...otherProps }) => {
     return (
@@ -54,14 +53,7 @@ const BreadcrumbsContainerSB = styled.div`
     padding-top: 20px;
 `
 
-const MainSectionWrapper = styled.div`
-    background-image: url(/static/images/homepage/homepage-bg.png);
-    background-size: cover;
-    height: 646px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-`
+const MainSectionWrapper = styled.div``
 
 export const MainContentTitle = styled.h1`
     color: ${({ theme }) => theme.colors.active};

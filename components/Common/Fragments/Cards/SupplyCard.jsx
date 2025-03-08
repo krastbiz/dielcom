@@ -5,7 +5,7 @@ export const SupplyCard = ({ title, image, number }) => {
         <SupplyCardWrapper>
             <Number>/0{number}</Number>
             <Title>{title}</Title>
-            <Image src={image} alt={title}/>
+            <Image src={image} alt={title} />
         </SupplyCardWrapper>
     )
 }

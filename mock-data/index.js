@@ -512,7 +512,7 @@ export const CATEGORIES_ARRAY = new Map([
         {
             id: 'wireless-technologies',
             name: 'Беспроводные технологии',
-            imageUrl: '/static/images/categories/wirelessTechnologies.png',
+            imageUrl: '/static/images/categories/wireless-technologie.png',
             products: [
                 { id: 'antennas-and-adapters', label: 'Антенны и переходники' },
                 { id: 'rfid-components', label: 'Компоненты RFID' },
@@ -550,7 +550,7 @@ export const CATEGORIES_ARRAY = new Map([
         {
             id: 'measurement-equipment',
             name: 'Измерительное оборудование',
-            imageUrl: '/static/images/categories/measurementEquipment.png',
+            imageUrl: '/static/images/categories/measurement-equipment.png',
             products: [
                 { id: 'signal-generators', label: 'Генераторы сигналов' },
                 { id: 'energy-flow-meters', label: 'Измерители расхода энергии' },
@@ -566,7 +566,7 @@ export const CATEGORIES_ARRAY = new Map([
         {
             id: 'power-supplies',
             name: 'Источники питания',
-            imageUrl: '/static/images/categories/powerSupplies.png',
+            imageUrl: '/static/images/categories/power-supplies.png',
             products: [
                 { id: 'ac-dc-converters', label: 'AC-DC преобразователи' },
                 { id: 'dc-dc-converters', label: 'DC-DC преобразователи' },
@@ -581,7 +581,7 @@ export const CATEGORIES_ARRAY = new Map([
         {
             id: 'microwave-components-and-solutions',
             name: 'СВЧ компоненты и решения',
-            imageUrl: '/static/images/categories/microwaveComponentsAndSolutions.png',
+            imageUrl: '/static/images/categories/microwave-components-and-solutions.png',
             products: [
                 { id: 'rf-antennas-and-components', label: 'РЧ антенны и комплектующие' },
                 { id: 'rf-discrete-semiconductors', label: 'РЧ дискретные полупроводники' },
@@ -610,7 +610,7 @@ export const CATEGORIES_ARRAY = new Map([
         {
             id: 'printed-circuit-boards',
             name: 'Печатные платы',
-            imageUrl: '/static/images/categories/printedCircuitBoards.png',
+            imageUrl: '/static/images/categories/printed-circuit-boards.png',
             products: [{ id: 'multilayer-pcbs', label: 'Многослойные платы' }],
         },
     ],
@@ -639,7 +639,7 @@ export const CATEGORIES_ARRAY = new Map([
         {
             id: 'power-electronics',
             name: 'Силовая электроника',
-            imageUrl: '/static/images/categories/powerElectronics.png',
+            imageUrl: '/static/images/categories/power-electronics.png',
             products: [
                 { id: 'mosfet-transistors', label: 'MOSFET транзисторы' },
                 { id: 'sic-diodes', label: 'SiC диоды' },

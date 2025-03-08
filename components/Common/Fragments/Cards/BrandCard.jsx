@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import { Link } from '../ui/Link'
-import { getBrandPageUrl } from '../../lib'
+import { Link } from '../../../ui/Link'
+import { getBrandPageUrl } from '../../../../lib'
 
 export const BrandCard = ({ name, id }) => {
     return (

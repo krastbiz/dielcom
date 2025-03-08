@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Container } from '../../ui/layouts/Container'
-import { StyledLink } from '../../ui/Link'
-import { H3 } from '../../ui/Typography'
-import { breakpoint } from '../../../lib'
+import { Container } from '../../../ui/layouts/Container'
+import { StyledLink } from '../../../ui/Link'
+import { H3 } from '../../../ui/Typography'
+import { breakpoint } from '../../../../lib'
 
 export const PolicySection = ({ ...extraProps }) => {
     const [selectedSection, setSelectedSection] = useState('personalData')

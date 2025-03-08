@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { breakpoint, getContractProductionPageUrl } from '../../../lib'
-import { MainSection } from '../../Common/Fragments/MainSection'
+import { MainSection } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'

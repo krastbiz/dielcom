@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import { H3 } from '../ui/Typography'
-import { Button } from '../ui/buttons/Button'
+import { H3 } from '../../../ui/Typography'
+import { Button } from '../../../ui/buttons/Button'
 
 export const AdvantageCard = ({ label, content, form = false }) => {
     return (

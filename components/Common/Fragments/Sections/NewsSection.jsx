@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import NextLink from 'next/link'
 
-import { breakpoint, getAllNewsPage } from '../../../lib'
-import { Container } from '../../ui/layouts/Container'
-import { NewsCard } from '../NewsCard'
+import { breakpoint, getAllNewsPage } from '../../../../lib'
+import { Container } from '../../../ui/layouts/Container'
+import { NewsCard } from '../Cards/NewsCard'
 
 export const NewsSection = ({ newsArray }) => {
     const newsSlicedArray = newsArray.slice(0, 3)

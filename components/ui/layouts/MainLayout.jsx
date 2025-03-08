@@ -1,6 +1,4 @@
-import { AppFooter } from '../../Common/AppFooter'
-import { AppHeader } from '../../Common/AppHeader'
-import { ContactsSection } from '../../Common/Fragments/ContactsSection'
+import { AppFooter, AppHeader, ContactsSection } from '../../Common'
 
 export const MainLayout = ({ children }) => {
     return (

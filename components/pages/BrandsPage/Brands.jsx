@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 import { breakpoint, getBrandsPageUrl, getBrandPageUrl } from '../../../lib'
-import { DefaultMainContentSB, MainSectionSB } from '../../Common/Fragments/MainSection'
+import { DefaultMainContentSB, MainSectionSB } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
 import { Link } from '../../ui/Link'
-import { ProductSideBar } from '../../Common/ProductsSideBar'
 
-export const Brands = ({ companies, categories }) => {
+export const Brands = ({ companies }) => {
     return (
         <MainLayout>
             <StyledContainer>
@@ -20,8 +19,6 @@ export const Brands = ({ companies, categories }) => {
 
                     <DistributionSection>
                         <DistributionContainer>
-                            <BrandsSubtitle>Дистрибьюция</BrandsSubtitle>
-
                             <CatalogWrapper>
                                 <CatalogItemsWrapper>
                                     {companies.map((company) => (
@@ -48,8 +45,6 @@ export const Brands = ({ companies, categories }) => {
                         </DistributionContainer>
                     </DistributionSection>
                 </ContentArea>
-
-                <ProductSideBar categories={categories} />
             </StyledContainer>
         </MainLayout>
     )

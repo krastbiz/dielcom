@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { format, parse } from 'date-fns'
 import { ru } from 'date-fns/locale'
 
-import { H3 } from '../ui/Typography'
-import { breakpoint, getNewsDetailPageUrl } from '../../lib'
-import { Link } from '../ui/Link'
+import { H3 } from '../../../ui/Typography'
+import { breakpoint, getNewsDetailPageUrl } from '../../../../lib'
+import { Link } from '../../../ui/Link'
 
 const formatDate = (dateString) => {
     const parsedDate = parse(dateString, 'dd.MM.yyyy', new Date())

@@ -1,10 +1,10 @@
-import { PolicySection } from '../../Common/Fragments/PolicySection'
+import { PolicySection } from '../../Common'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 
 export const Policy = () => {
     return (
         <MainLayout>
-            <PolicySection></PolicySection>
+            <PolicySection />
         </MainLayout>
     )
 }
