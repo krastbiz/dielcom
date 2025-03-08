@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Masonry from 'react-masonry-css'
 import NextLink from 'next/link'
 
 import { getCatalogPageUrl, getProductPageUrl, getBrandsPageUrl, breakpoint } from '../../../lib'
@@ -8,9 +7,8 @@ import { DefaultMainContent, MainSection } from '../../Common/Fragments/MainSect
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
 import { Link } from '../../ui/Link'
-import { BrandCard } from '../../Common/BrandCard'
 
-export const Catalog = ({ categories, brands }) => {
+export const Catalog = ({ categories }) => {
     const masonryBreakpoints = {
         default: 3, // 3 columns by default
         1024: 2, // 2 columns on screens >= 1024px
@@ -19,15 +17,7 @@ export const Catalog = ({ categories, brands }) => {
 
     return (
         <MainLayout>
-            <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Линейка поставок' }]}>
-                <DefaultMainContent>
-                    <H2>Каталог электронных компонентов</H2>
-                    <MainSectionSubtitle>
-                        Поставка качественных электронных компонентов при высоком уровне сервисной поддержки, начиная от
-                        технической задачи до формирования индивидуального плана поставок.
-                    </MainSectionSubtitle>
-                </DefaultMainContent>
-            </MainSection>
+            <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Линейка поставок' }]} />
 
             <CatalogSection>
                 <CustomContainer>
@@ -36,7 +26,7 @@ export const Catalog = ({ categories, brands }) => {
                         className="masonry-grid"
                         columnClassName="masonry-grid_column"
                     >
-                        {categories.map((category, index) => (
+                        {categories?.map((category, index) => (
                             <CategoryCard key={category.id} index={index}>
                                 <ProductsList>
                                     <CategoryTitle>{category.name}</CategoryTitle>
@@ -56,19 +46,6 @@ export const Catalog = ({ categories, brands }) => {
                     </MasonryGrid>
                 </CustomContainer>
             </CatalogSection>
-            <BrandsSection>
-                <BrandsContainer>
-                    <BrandSectionTitle>Бренды</BrandSectionTitle>
-                </BrandsContainer>
-                <BrandsContainer>
-                    {brands.map((brand) => (
-                        <BrandCard {...brand} />
-                    ))}
-                    <BrandsLink href={getBrandsPageUrl()}>
-                        Смотреть все бренды <ArrowIcon src="/static/icons/arrow-blue.svg" alt="arrow" />
-                    </BrandsLink>
-                </BrandsContainer>
-            </BrandsSection>
         </MainLayout>
     )
 }
@@ -85,17 +62,11 @@ const CatalogSection = styled.section`
 const CustomContainer = styled(Container)`
     padding: 0 80px 80px 69px;
 `
-const MasonryGrid = styled(Masonry)`
+const MasonryGrid = styled.div`
     display: flex;
     width: 100%;
     margin-top: 50px;
     position: relative;
-
-    & .masonry-grid_column {
-        margin-left: 11px;
-        background-clip: padding-box;
-        flex-grow: 1;
-    }
 `
 
 const CategoryCard = styled.div`
@@ -190,8 +161,6 @@ const ProductItem = styled.li`
     a {
         color: ${({ theme }) => theme.colors.textGray};
         text-decoration: none;
-        font-size: 16px;
-        line-height: 24px;
 
         &:hover {
             color: ${({ theme }) => theme.colors.active};
@@ -199,38 +168,4 @@ const ProductItem = styled.li`
     }
 
     width: 100%;
-`
-
-const BrandsSection = styled.section`
-    width: 100%;
-    margin-bottom: 110px;
-`
-
-const BrandSectionTitle = styled.div`
-    color: ${({ theme }) => theme.colors.active};
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 100%;
-`
-
-const BrandsContainer = styled(Container)`
-    justify-content: space-between;
-`
-
-const BrandsLink = styled(NextLink)`
-    display: flex;
-    align-items: flex-end;
-    color: ${({ theme }) => theme.colors.active};
-    font-weight: 300;
-    font-size: 14px;
-    margin-right: 30px;
-    cursor: pointer;
-    &:hover {
-        color: ${({ theme }) => theme.colors.linkHover};
-    }
-`
-const ArrowIcon = styled.img`
-    margin-left: 20px;
-    margin-top: 2px;
-    height: 8px;
 `

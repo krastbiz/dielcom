@@ -39,7 +39,7 @@ export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false }) 
     return (
         <SearchContainer isHomePage={isHomePage}>
             <SearchInput
-                placeholder="Поиск по каталогу"
+                placeholder="Найти товары"
                 value={searchValue}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
@@ -57,46 +57,51 @@ export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false }) 
 }
 
 const SearchContainer = styled.div`
-    padding: 24px 48px;
     width: 100%;
     position: relative;
-    border: 1px solid transparent;
-    border-right: 1px solid ${({ theme }) => theme.colors.border};
     transition: border-color 0.3s;
+    border-radius: 5px;
 
-    &:focus-within {
+    /* &:focus-within {
         border-color: ${({ theme }) => theme.colors.active};
-    }
+    } */
 `
 
 const SearchInput = styled.input`
-    height: 24px;
+    height: 50px;
     border: none;
+    border-radius: 5px;
     width: 100%;
-    font-size: 15px;
-    line-height: 24px;
-    color: ${({ theme }) => theme.colors.text};
-    padding-left: 4px;
-    padding-right: 40px;
+    padding: 14px;
+    font-size: 16px;
+    color: ${({ theme }) => theme.colors.textGray};
     box-sizing: border-box;
     outline: none;
+    background-color: ${({ theme }) => theme.colors.altBackground};
 `
 
 const SearchButton = styled.button`
     position: absolute;
-    right: 60px;
+    border: none;
+    right: 0px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
     top: 50%;
     transform: translateY(-50%);
-    border: none;
     cursor: pointer;
-    background: none;
+    background-color: ${({ theme }) => theme.colors.whiteBackground};
     display: flex;
     align-items: center;
-    padding: 0;
+    justify-content: center;
+    &:hover {
+        background-color: ${({ theme }) => theme.colors.main};
+    }
 `
 
 const SearchIcon = styled.img`
-    height: 16px;
+    height: 24px;
+    width: 24px;
 `
 
 const ErrorText = styled.p`

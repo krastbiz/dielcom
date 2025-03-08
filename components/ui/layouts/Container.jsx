@@ -2,15 +2,10 @@ import styled from 'styled-components'
 import { breakpoint, screenWidth } from '../../../lib'
 
 const Container = styled.div`
-    padding-right: 40px;
-    padding-left: 80px;
     display: flex;
-    width: ${screenWidth.desktopLarge};
+    width: ${screenWidth.desktop};
     margin: 0 auto;
 
-    ${breakpoint.desktopLarge`
-        max-width: ${screenWidth.desktop};
-    `}
     ${breakpoint.desktop`
         padding-right: 20px;
         padding-left: 20px;

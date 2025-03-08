@@ -55,5 +55,15 @@ const BreadcrumbsContainerSB = styled.div`
 `
 
 const MainSectionWrapper = styled.div`
-    margin-top: 40px;
+    background-image: url(/static/images/homepage/homepage-bg.png);
+    background-size: cover;
+    height: 646px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+`
+
+export const MainContentTitle = styled.h1`
+    color: ${({ theme }) => theme.colors.active};
+    margin-bottom: 30px;
 `

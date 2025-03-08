@@ -189,7 +189,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
 const MainSectionSubtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
-    color: ${({ theme }) => theme.colors.textWhite};
+    color: ${({ theme }) => theme.colors.text};
     cursor: pointer;
 `
 
@@ -201,7 +201,6 @@ const CatalogSection = styled.section`
 const FilterContainer = styled.div`
     width: 300px;
     padding: 20px;
-    border-right: 1px solid ${({ theme }) => theme.colors.active};
 `
 
 const SearchInput = styled.input`
@@ -294,7 +293,7 @@ const StickyCell = styled.td`
 const OrderButton = styled.button`
     padding: 10px 20px;
     background-color: ${({ theme }) => theme.colors.active};
-    color: ${({ theme }) => theme.colors.textWhite};
+    color: ${({ theme }) => theme.colors.text};
     border: none;
     border-radius: 5px;
     cursor: pointer;

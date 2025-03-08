@@ -100,8 +100,6 @@ const CPMainContentTitle = styled(H2)`
 `
 
 const CPMainContentDescription = styled.p`
-    font-size: 14px;
-    line-height: 24px;
     text-align: justify;
 `
 

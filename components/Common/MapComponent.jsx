@@ -37,4 +37,6 @@ export const MapComponent = () => {
 
 const MapWrapper = styled.div`
     height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
 `

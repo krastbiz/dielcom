@@ -488,7 +488,7 @@ const FeaturesListItem = styled.li`
         text-align: center;
         line-height: 20px;
         font-size: 14px;
-        color: ${({ theme }) => theme.colors.textWhite};
+        color: ${({ theme }) => theme.colors.text};
     }
 
     ${breakpoint.tablet`
@@ -501,7 +501,7 @@ const FeaturesListItemHeader = styled.li`
     display: block;
     font-size: 18px;
     line-height: 40px;
-    color: ${({ alternative, theme }) => (alternative ? theme.colors.textWhite : theme.colors.active)};
+    color: ${({ alternative, theme }) => (alternative ? theme.colors.text : theme.colors.active)};
     font-weight: bold;
     margin-bottom: 20px;
 

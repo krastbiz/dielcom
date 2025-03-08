@@ -113,7 +113,6 @@ const CatalogItem = styled.div`
 `
 
 const CatalogItemContainer = styled.div`
-    border-right: 1px solid ${({ theme }) => theme.colors.border};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -165,6 +164,6 @@ const LinkContainer = styled.div`
     padding: 14px 0;
     &:hover {
         background-color: ${({ theme }) => theme.colors.active};
-        color: ${({ theme }) => theme.colors.textWhite};
+        color: ${({ theme }) => theme.colors.text};
     }
 `

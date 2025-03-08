@@ -36,7 +36,8 @@ export const translates = {
     repeatabilityPpm: 'Повторяемость дрейфа смещения σ k0 (1σ, one month) (μg)',
     repeatabilityPpm_1: 'Повторяемость масштабного коэффициента σ k1/k1(1σ, one month)(ppm)',
     temperatureOffsetCoefficient: 'Температурный коэффициент смещения',
-    temperatureOffsetCoefficientAverage: 'Температурный коэффициент смещения (среднее значение всей температуры) (Ppm/ºC)',
+    temperatureOffsetCoefficientAverage:
+        'Температурный коэффициент смещения (среднее значение всей температуры) (Ppm/ºC)',
     temperatureSlopeCoefficient: 'Температурный коэффициент крутизны выходной хар-ки (ppm/℃)',
     InstallationError: 'Ошибка установки (μrad)',
     noiseSample: 'Шум (сопротивление образца 840 Ом) (mv)',
@@ -53,6 +54,5 @@ export const translates = {
     consumption: 'Потребление @ ±15VDC',
     temperatureSensor: 'Датчик температуры',
     dimensionsMm: 'Габариты (мм)',
-    weightG: 'Вес, г'
-
+    weightG: 'Вес, г',
 }

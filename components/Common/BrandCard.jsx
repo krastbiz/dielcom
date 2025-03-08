@@ -7,38 +7,33 @@ export const BrandCard = ({ name, id }) => {
     return (
         <Link href={getBrandPageUrl(id)}>
             <BrandCardWrapper>
-                <Title>{name}</Title>
-                <Image src={`/static/images/companies/${id}/logo-small.png`} alt={name} />
+                <Image src={`/static/icons/companies/${id}.svg`} alt={name} />
             </BrandCardWrapper>
         </Link>
     )
 }
 
-export const BrandCardWrapper = styled.div`
-    padding: 21px 17px;
-    border: 1px solid ${({ theme }) => theme.colors.border};
-    height: 261px;
+const BrandCardWrapper = styled.div`
+    height: 166px;
+    padding: 0 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
+    align-items: center;
+    box-shadow: 0 0 0 0.5px ${({ theme }) => theme.colors.borderAlt};
+    box-shadow:
+        0 0 0 0.1px ${({ theme }) => theme.colors.borderAlt},
+        inset 0 0 0 0.1px ${({ theme }) => theme.colors.borderAlt};
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #093780 0%, #0e141d 49%, #0c1f3d 100%);
+    margin-right: 10px;
     transition:
         box-shadow 0.3s ease,
         transform 0.3s ease;
 
     &:hover {
-        box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
-        z-index: 5;
+        box-shadow:
+            0 0 0 1px ${({ theme }) => theme.colors.borderAlt},
+            inset 0 0 0 1px ${({ theme }) => theme.colors.borderAlt};
     }
 `
 
-const Title = styled.div`
-    font-weight: bold;
-    color: ${({ theme }) => theme.colors.main};
-    max-width: 165px;
-`
-
-const Image = styled.img`
-    width: 170px;
-    height: 102px;
-`
+const Image = styled.img``

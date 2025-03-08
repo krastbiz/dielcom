@@ -4,101 +4,111 @@ import { useRouter } from 'next/router'
 
 import { breakpoint, useDeviceCheck } from '../../../lib'
 import { BurgerButton } from '../../ui/buttons/BurgerButton'
+import { Button } from '../../ui/buttons/Button'
 import { Container } from '../../ui/layouts/Container'
 import { MobileMenu } from './MobileMenu'
 import { Navigation } from '../Navigation/Navigation'
 import { HeaderContacts } from './HeaderContacts'
 import { SearchComponent } from './Search'
 
-const HEADER_HEIGHT = '116x'
+const HEADER_HEIGHT = '124px'
 
 export const AppHeader = () => {
-    const [isMobileMenuActive, setIsMobileMenuActive] = useState(false)
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
     const { pathname } = useRouter()
-
     const { isLaptop, isMobile, isTablet } = useDeviceCheck()
-    const isLaptopOrMobileOrTablet = isLaptop || isMobile || isTablet
-    const showMobileMenu = isLaptopOrMobileOrTablet && isMobileMenuActive
-    const isInSearchPage = pathname === '/search'
+
+    const isResponsiveView = isLaptop || isMobile || isTablet
+    const showMobileMenu = isResponsiveView && isMobileMenuOpen
+    const isSearchPage = pathname === '/search'
 
     return (
         <>
-            <AppHeaderWrapper>
-                <ContainerStyled>
-                    <AppLogoWrapper>
-                        <a href="/">
-                            <img src="/static/icons/logo.svg" alt="Логотип сайта" href={'/'} />
-                        </a>
-                    </AppLogoWrapper>
-                    <HeaderContainer>
-                        <Navigation isHeader />
-                        <HeaderContainerRow>
-                            {!isInSearchPage && (
-                                <FlexItem>
+            <HeaderWrapper>
+                <StyledContainer>
+                    <HeaderContent>
+                        <Logo href="/">
+                            <img src="/static/icons/logo.svg" alt="Site Logo" />
+                        </Logo>
+                        <CatalogButton primary>Каталог</CatalogButton>
+                        <HeaderActions>
+                            {!isSearchPage && (
+                                <SearchWrapper>
                                     <SearchComponent isHomePage />
-                                </FlexItem>
+                                </SearchWrapper>
                             )}
-                            <FlexItem>
-                                <HeaderContacts hideOnMobile />
-                            </FlexItem>
-                        </HeaderContainerRow>
-                    </HeaderContainer>
-
-                    {isLaptopOrMobileOrTablet && (
-                        <BurgerButtonStyled
-                            isActive={isMobileMenuActive}
-                            onClick={() => setIsMobileMenuActive((prev) => !prev)}
+                            <HeaderContacts hideOnMobile />
+                        </HeaderActions>
+                    </HeaderContent>
+                    <NavigationWrapper>
+                        <Navigation isHeader />
+                    </NavigationWrapper>
+                    {isResponsiveView && (
+                        <StyledBurgerButton
+                            isActive={isMobileMenuOpen}
+                            onClick={() => setMobileMenuOpen((prev) => !prev)}
                         />
                     )}
-                </ContainerStyled>
-            </AppHeaderWrapper>
+                </StyledContainer>
+            </HeaderWrapper>
             {showMobileMenu && <MobileMenu headerHeight={HEADER_HEIGHT} />}
         </>
     )
 }
 
-const BurgerButtonStyled = styled(BurgerButton)`
+const StyledBurgerButton = styled(BurgerButton)`
     margin-left: auto;
 `
 
-const AppHeaderWrapper = styled.header`
+const HeaderWrapper = styled.header`
     height: ${HEADER_HEIGHT};
     display: flex;
     justify-content: space-between;
     position: sticky;
-    z-index: 1000;
     top: 0;
+    z-index: 1000;
     background: ${({ theme }) => theme.colors.background};
 `
-const AppLogoWrapper = styled.div`
-    padding: 37px 29px;
-    border-right: 1px solid ${({ theme }) => theme.colors.border};
 
-    ${breakpoint.desktop`
-        padding: 30px 20px;
+const StyledContainer = styled.div`
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    ${breakpoint.mobile`
+        flex-direction: row;
     `}
 `
 
-const ContainerStyled = styled(Container)`
+const Logo = styled.a`
+    margin-right: 30px;
+`
+
+const CatalogButton = styled(Button)`
+    margin-right: 15px;
+    width: 160px;
+    height: 50px;
+`
+
+const HeaderContent = styled.div`
+    display: flex;
     align-items: center;
-    padding: 0px;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
-    ${breakpoint.mobile`
-    flex-direction: row;
- `}
+    width: 100%;
+    padding: 20px 17px 5px;
 `
 
-const HeaderContainer = styled.div`
+const HeaderActions = styled.div`
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-`
-
-const HeaderContainerRow = styled(HeaderContainer)`
-    flex-direction: row;
     flex-wrap: nowrap;
+    flex-grow: 1;
+    align-items: center;
 `
-const FlexItem = styled.div`
-    flex: 1;
+
+const SearchWrapper = styled.div`
+    flex-grow: 1;
     display: flex;
+`
+
+const NavigationWrapper = styled.div`
+    margin-left: 650px;
+    width: 100%;
 `

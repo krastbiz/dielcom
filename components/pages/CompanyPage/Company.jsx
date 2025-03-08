@@ -154,19 +154,16 @@ const CompanyServices = styled.ul`
     margin-top: 20px;
     list-style: none;
     font-size: 14px;
-    line-height: 22px;
     font-weight: 300;
 `
 
 const CompanyServicestTitle = styled.span`
     font-size: 14px;
-    line-height: 22px;
     font-weight: 600;
 `
 
 const CompanyServicesItem = styled.li`
     font-size: 14px;
-    line-height: 22px;
     font-weight: 300;
     margin-top: 10px;
 

@@ -2,9 +2,9 @@ import Head from 'next/head'
 
 import { Catalog } from '../../components/pages/CatalogPage/Catalog'
 import { getCatalogPageUrl, getPageMetadata, getPageCanonical } from '../../lib'
-import { CATEGORIES_ARRAY, COMPANY_ARRAY } from '../../mock-data'
+import { CATEGORIES_ARRAY } from '../../mock-data'
 
-const CatalogPage = ({ categories, brands }) => {
+const CatalogPage = ({ categories }) => {
     const pageTitle = `Компании, поставляющие электронные компоненты`
     const pageDescription = 'Закажите электронные компоненты, оставьте вашу заявку'
     const pageRelativeUrl = getCatalogPageUrl()
@@ -15,7 +15,7 @@ const CatalogPage = ({ categories, brands }) => {
                 {getPageMetadata(pageTitle, pageDescription)}
                 {getPageCanonical(pageRelativeUrl)}
             </Head>
-            <Catalog categories={categories} brands={brands} />
+            <Catalog categories={categories} />
         </>
     )
 }
@@ -27,13 +27,10 @@ export const getStaticProps = () => {
             ...product,
         })),
     }))
-    const selectedBrands = ['pairui', 'locosys', 'yetnorson', 'multi-dimension', 'feasycom']
-    const brands = COMPANY_ARRAY.filter((product) => selectedBrands.some((brand) => product.id === brand))
 
     return {
         props: {
             categories,
-            brands,
         },
     }
 }

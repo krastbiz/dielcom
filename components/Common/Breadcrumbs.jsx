@@ -33,9 +33,6 @@ export const Breadcrumbs = ({ breadcrumbs }) => {
 const BreadcrumbsWrapper = styled.div`
     display: flex;
 
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 24px;
     color: ${({ theme }) => theme.colors.textGray};
 `
 

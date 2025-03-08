@@ -101,7 +101,7 @@ const YetnorsonCompany = {
 
 const MultiDimensionCompany = {
     category: 'Магнитные датчики',
-    id: 'multi-dimension',
+    id: 'multidimension',
     name: 'MultiDimension Technology',
     logo: '/static/images/companies/multi-dimension/logo.png',
     shortDescription:
@@ -651,20 +651,3 @@ export const CATEGORIES_ARRAY = new Map([
         },
     ],
 ])
-
-export const NAV_ITEMS_HEADER = [
-    { href: '/', text: 'Главная' },
-    { href: '/catalog', text: 'Линейка поставок', hovered: 'catalog' },
-    { href: '/brands', text: 'Бренды' },
-    { href: '/contract-production', text: 'Контрактное производство' },
-    { href: '/contacts', text: 'Контакты' },
-]
-
-export const NAV_ITEMS_CONTACTS = [
-    { href: '/', text: 'Главная' },
-    { href: '/catalog', text: 'Линейка поставок' },
-    { href: '/contract-production', text: 'Контрактное производство' },
-    { href: '/news', text: 'Новости' },
-]
-
-export const CATALOG_SUBMENU = [{ id: 'catalog', content: CATEGORIES_ARRAY }]
