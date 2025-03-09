@@ -61,7 +61,7 @@ export const SearchTable = ({ data = [], loading, onSort, sortBy, sortOrder }) =
 const StyledTable = styled.table`
     width: 100%;
     border-collapse: collapse;
-    font-family: ${({ theme }) => theme.fonts.velasansmed};
+    font-family: ${({ theme }) => theme.fonts.manrope};
     font-size: 16px;
     margin-top: 20px;
 

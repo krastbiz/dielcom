@@ -11,9 +11,9 @@ export const Catalog = ({ categories }) => {
         <MainLayout>
             <MainBgContainer>
                 <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Линейка поставок' }]}>
-                    <StyledMainComponent>
-                        <StyledH2 alternative>Каталог товаров</StyledH2>
-                    </StyledMainComponent>
+                    <DefaultMainContent>
+                        <H2 large>Каталог товаров</H2>
+                    </DefaultMainContent>
                 </MainSection>
 
                 <CatalogSection>
@@ -41,14 +41,8 @@ const CatalogSection = styled.section`
     padding-bottom: 100px;
 `
 
-const StyledMainComponent = styled(DefaultMainContent)``
-
 const CatalogContainer = styled(Container)`
     padding-top: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
-`
-
-const StyledH2 = styled(H2)`
-    font-size: 60px;
 `

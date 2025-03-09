@@ -6,7 +6,7 @@ import { Button } from '../../../ui/buttons/Button'
 export const AdvantageCard = ({ label, content, form = false }) => {
     return (
         <AdvantageCardWrapper alt={!label} form={form}>
-            {label && <H3 alternative={!form}>{label}</H3>}
+            {label && <H3 alternative={form}>{label}</H3>}
             {content && <Content alt={form}>{content}</Content>}
             {form && (
                 <Button primary as="a" href="/request">

@@ -91,7 +91,7 @@ const Home = ({ featuredNews, brands }) => {
                     <MainSectionContainer>
                         <MainSectionContent>
                             <H1Gradient>электронные компоненты</H1Gradient>
-                            <H1 alternative>для вашего бизнеса</H1>
+                            <H1>для вашего бизнеса</H1>
                             <MainSectionWrapper>
                                 <MainSectionText>
                                     Широкий ассортимент качественных комплектующих от ведущих мировых брендов. <br />
@@ -127,7 +127,7 @@ const Home = ({ featuredNews, brands }) => {
             <GoalSection>
                 <GoalContainer>
                     <GoalTitle>[Наша цель]</GoalTitle>
-                    <H2 alternative>
+                    <H2>
                         <GradientText>ООО «ДиЭлКом-ЭК»</GradientText> – один из лидеров на рынке поставок электронных
                         компонентов для промышленных предприятий.
                     </H2>
@@ -150,7 +150,7 @@ const Home = ({ featuredNews, brands }) => {
             </GoalSection>
             <SupplySection>
                 <SupplyContainer>
-                    <H2 alternative>
+                    <H2>
                         Мы предлагаем комплексные поставки электронных <br /> компонентов, а также предоставляем{' '}
                         <GradientText>услуги полного цикла</GradientText>
                         <br />
@@ -170,7 +170,7 @@ const Home = ({ featuredNews, brands }) => {
             <AdvantageSection>
                 <AdvantageContainer>
                     <AdvantageTitle>
-                        <H2 alternative>
+                        <H2>
                             Почему <GradientText>нас</GradientText> выбирают?
                         </H2>
                         <AdvantageSubTitle>

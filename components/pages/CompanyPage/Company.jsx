@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { breakpoint, getBrandPageUrl, getBrandsPageUrl } from '../../../lib'
-import { DefaultMainContentSB, MainSectionSB } from '../../Common'
+import { DefaultMainContent, MainSection } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
@@ -13,20 +13,20 @@ const Company = ({ company }) => {
         <MainLayout>
             <StyledContainer>
                 <ContentArea>
-                    <MainSectionSB
+                    <MainSection
                         showBreadcrumb
                         breadcrumbs={[
                             { href: getBrandsPageUrl(), text: 'Бренды' },
                             { href: getBrandPageUrl(company.id), text: company.name },
                         ]}
                     >
-                        <DefaultMainContentSB>
+                        <DefaultMainContent>
                             <CompanyLogoWrapper>
                                 <img src={company.logo} alt="Логотип кампании" />
                             </CompanyLogoWrapper>
                             <H2>{company.name}</H2>
-                        </DefaultMainContentSB>
-                    </MainSectionSB>
+                        </DefaultMainContent>
+                    </MainSection>
 
                     <CompanyInfoSection>
                         <ContentAndSidebarWrapper>

@@ -4,13 +4,13 @@ import { Container } from '../../../ui/layouts/Container'
 import { StyledLink } from '../../../ui/Link'
 import { Navigation } from '../../Navigation/Navigation'
 import { MapComponent } from '../../MapComponent'
-import { H1 } from '../../../ui/Typography'
+import { H2 } from '../../../ui/Typography'
 
 export const ContactsSection = ({ ...extraProps }) => {
     return (
         <ContactsSectionWrapper {...extraProps}>
             <StyledContainer>
-                <SectionTitle alternative>Контакты</SectionTitle>
+                <SectionTitle large>Контакты</SectionTitle>
                 <MapWrapper>
                     <MapComponent />
                 </MapWrapper>
@@ -100,9 +100,8 @@ const ContactsInfoWrapper = styled.div`
     max-width: 400px;
 `
 
-const SectionTitle = styled(H1)`
+const SectionTitle = styled(H2)`
     margin: 60px 0 50px;
-    font-size: 60px;
 `
 
 const ContactInfoTitle = styled.div`

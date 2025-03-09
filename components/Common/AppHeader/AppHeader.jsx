@@ -68,6 +68,7 @@ const HeaderWrapper = styled.header`
     top: 0;
     z-index: 1000;
     background: ${({ theme }) => theme.colors.background};
+    overflow-x: hidden;
 `
 
 const StyledContainer = styled.div`

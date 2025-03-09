@@ -18,7 +18,7 @@ const SupplyCardWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    background: #1a2333;
+    background: ${({ theme }) => theme.colors.cardBackground};
     margin-right: 5px;
 `
 const Number = styled.div`

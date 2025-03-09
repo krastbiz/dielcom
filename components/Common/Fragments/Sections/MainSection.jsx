@@ -15,42 +15,21 @@ export const MainSection = ({ children, showBreadcrumb, breadcrumbs, ...otherPro
     )
 }
 
-export const DefaultMainContent = ({ children }) => {
+export const DefaultMainContent = ({ children, large }) => {
     return (
         <Container>
-            <DefaultMainContentWrapper>{children}</DefaultMainContentWrapper>
+            <DefaultMainContentWrapper large={large}>{children}</DefaultMainContentWrapper>
         </Container>
     )
 }
 
-export const MainSectionSB = ({ children, showBreadcrumb, breadcrumbs, ...otherProps }) => {
-    return (
-        <MainSectionWrapper {...otherProps}>
-            {showBreadcrumb && (
-                <BreadcrumbsContainerSB>
-                    <Breadcrumbs breadcrumbs={breadcrumbs} />
-                </BreadcrumbsContainerSB>
-            )}
-            {children}
-        </MainSectionWrapper>
-    )
-}
-
-export const DefaultMainContentSB = ({ children }) => {
-    return <DefaultMainContentWrapper>{children}</DefaultMainContentWrapper>
-}
-
 const DefaultMainContentWrapper = styled.div`
-    max-width: 600px;
+    max-width: ${({ large }) => (large ? '1200px' : '600px')};
     margin-top: 30px;
 `
 
 const BreadcrumbsContainer = styled(Container)`
-    padding-top: 20px;
-`
-
-const BreadcrumbsContainerSB = styled.div`
-    padding-top: 20px;
+    padding-top: 30px;
 `
 
 const MainSectionWrapper = styled.div``
