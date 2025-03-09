@@ -3,14 +3,14 @@ import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import Link from 'next/link'
 
-export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false }) => {
+export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false, altBg = true }) => {
     const [searchValue, setSearchValue] = useState(defaultValue || '')
     const [error, setError] = useState('')
     const router = useRouter()
 
     const handleSearch = useCallback(
         (searchValue) => {
-            if (searchValue.length < 2) {
+            if (searchValue.length < 2 && altBg) {
                 setError('Введите минимум 2 символа для поиска')
                 return
             } else {
@@ -43,6 +43,7 @@ export const SearchComponent = ({ defaultValue, onSearch, isHomePage = false }) 
                 value={searchValue}
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
+                altBg={altBg}
             />
             {isHomePage && (
                 <Link href={`/search?q=${searchValue}`} passHref>
@@ -77,7 +78,8 @@ const SearchInput = styled.input`
     color: ${({ theme }) => theme.colors.textGray};
     box-sizing: border-box;
     outline: none;
-    background-color: ${({ theme }) => theme.colors.altBackground};
+    background-color: ${({ theme, altBg }) => altBg ? theme.colors.altBackground : theme.colors.whiteBackground};
+    border: ${({ theme, altBg }) => altBg ? 'none' : `1px solid ${theme.colors.tableBorder}`};
 `
 
 const SearchButton = styled.button`

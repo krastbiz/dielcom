@@ -61,6 +61,7 @@ export const ContactsSection = ({ ...extraProps }) => {
 const ContactsSectionWrapper = styled.section`
     position: relative;
     background: ${({ theme }) => theme.colors.background};
+    overflow: hidden;
     &::before {
         content: '';
         position: absolute;
