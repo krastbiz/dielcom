@@ -14,15 +14,14 @@ export const Catalog = ({ categories }) => {
                     <DefaultMainContent>
                         <H2 large>Каталог товаров</H2>
                     </DefaultMainContent>
+                    <CatalogSection>
+                        <CatalogContainer>
+                            {categories.map(({ id, name }) => (
+                                <CatalogCard key={id} title={name} id={id} />
+                            ))}
+                        </CatalogContainer>
+                    </CatalogSection>
                 </MainSection>
-
-                <CatalogSection>
-                    <CatalogContainer>
-                        {categories.map(({ id, name }) => (
-                            <CatalogCard key={id} title={name} id={id} />
-                        ))}
-                    </CatalogContainer>
-                </CatalogSection>
             </MainBgContainer>
         </MainLayout>
     )

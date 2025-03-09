@@ -16,36 +16,35 @@ export const Brands = ({ companies }) => {
                             Бренды, официально <br /> представленные компанией <H2Gradient large>Диэлком-ЭК</H2Gradient>
                         </H2>
                     </DefaultMainContent>
+                    <DistributionSection>
+                        <DistributionContainer>
+                            {companies.map((company) => (
+                                <CatalogItem key={company.id}>
+                                    <CatalogItemLogoWrapper>
+                                        <img src={company.logo} alt={`Логотип компании ${company.name}`} />
+                                    </CatalogItemLogoWrapper>
+
+                                    <CatalogItemContainer>
+                                        <ItemWrapper>
+                                            <CatalogItemCategory>{company.category}</CatalogItemCategory>
+                                            <CatalogItemName>{company.name}</CatalogItemName>
+                                            <CatalogItemDescription>{company.shortDescription}</CatalogItemDescription>
+                                        </ItemWrapper>
+
+                                        <ButtonWrapper>
+                                            <MoreButton primary as="a" href={getBrandPageUrl(company.id)}>
+                                                Подробнее
+                                            </MoreButton>
+                                            <Button as="a" href={getSearchPageUrl(`brand=${company.id}`)}>
+                                                Товары производителя
+                                            </Button>
+                                        </ButtonWrapper>
+                                    </CatalogItemContainer>
+                                </CatalogItem>
+                            ))}
+                        </DistributionContainer>
+                    </DistributionSection>
                 </MainSection>
-
-                <DistributionSection>
-                    <DistributionContainer>
-                        {companies.map((company) => (
-                            <CatalogItem key={company.id}>
-                                <CatalogItemLogoWrapper>
-                                    <img src={company.logo} alt={`Логотип компании ${company.name}`} />
-                                </CatalogItemLogoWrapper>
-
-                                <CatalogItemContainer>
-                                    <ItemWrapper>
-                                        <CatalogItemCategory>{company.category}</CatalogItemCategory>
-                                        <CatalogItemName>{company.name}</CatalogItemName>
-                                        <CatalogItemDescription>{company.shortDescription}</CatalogItemDescription>
-                                    </ItemWrapper>
-
-                                    <ButtonWrapper>
-                                        <MoreButton primary as="a" href={getBrandPageUrl(company.id)}>
-                                            Подробнее
-                                        </MoreButton>
-                                        <Button as="a" href={getSearchPageUrl(`brand=${company.id}`)}>
-                                            Товары производителя
-                                        </Button>
-                                    </ButtonWrapper>
-                                </CatalogItemContainer>
-                            </CatalogItem>
-                        ))}
-                    </DistributionContainer>
-                </DistributionSection>
             </MainBgContainer>
         </MainLayout>
     )
@@ -62,7 +61,7 @@ const DistributionSection = styled.section`
     background-size: 100% auto;
     background-repeat: repeat-y;
     background-position: top center;
-    margin-top: 25px;
+    padding-top: 30px;
     padding-bottom: 100px;
 `
 

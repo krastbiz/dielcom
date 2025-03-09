@@ -45,30 +45,30 @@ const AllNews = ({ companies, filteredNews }) => {
                 <DefaultMainContent>
                     <H2>Новости рынка электронных компонентов</H2>
                 </DefaultMainContent>
-            </MainSection>
 
-            <AllNewsSection>
-                <Container>
-                    <AllNewsFiltersWrapper>
-                        <>
-                            {filters.map((company, idx) => (
-                                <ChipButton
-                                    key={company.id + idx}
-                                    text={company.name}
-                                    href={getCompanyNewsPage(company.id)}
-                                    isActive={getIsFilterActive(currentCompanyId, company.id)}
-                                />
+                <AllNewsSection>
+                    <Container>
+                        <AllNewsFiltersWrapper>
+                            <>
+                                {filters.map((company, idx) => (
+                                    <ChipButton
+                                        key={company.id + idx}
+                                        text={company.name}
+                                        href={getCompanyNewsPage(company.id)}
+                                        isActive={getIsFilterActive(currentCompanyId, company.id)}
+                                    />
+                                ))}
+                            </>
+                        </AllNewsFiltersWrapper>
+
+                        <AllNewsCardsWrapper>
+                            {filteredNews.map((news, index) => (
+                                <NewsCard key={news.id + news.companyId + index} news={news} />
                             ))}
-                        </>
-                    </AllNewsFiltersWrapper>
-
-                    <AllNewsCardsWrapper>
-                        {filteredNews.map((news, index) => (
-                            <NewsCard key={news.id + news.companyId + index} news={news} />
-                        ))}
-                    </AllNewsCardsWrapper>
-                </Container>
-            </AllNewsSection>
+                        </AllNewsCardsWrapper>
+                    </Container>
+                </AllNewsSection>
+            </MainSection>
         </MainLayout>
     )
 }

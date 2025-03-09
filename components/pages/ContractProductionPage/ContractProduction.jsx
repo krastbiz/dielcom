@@ -80,7 +80,7 @@ const ContractSection = styled.section`
     background-repeat: no-repeat;
     background-position: center top;
     padding-bottom: 100px;
-    padding-top: 25px;
+    padding-top: 30px;
 `
 
 const ContractContainer = styled(Container)`

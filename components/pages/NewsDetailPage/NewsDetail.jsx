@@ -27,19 +27,18 @@ const NewsDetail = ({ company, newsDetail, featuredNewsArray }) => {
                 <DefaultMainContent>
                     <H1>Новости компании {company.name}</H1>
                 </DefaultMainContent>
+                <NewsDetailSection>
+                    <Container>
+                        <H2>{newsDetail.title}</H2>
+                        <NewsDetailImageWrapper>
+                            <img src={newsDetail.imageUrl} alt="Изображение новости" />
+                        </NewsDetailImageWrapper>
+                        <NewsDetailContent>{newsDetail.description}</NewsDetailContent>
+                    </Container>
+                </NewsDetailSection>
+
+                <NewsSection newsArray={featuredNewsArray} />
             </MainSection>
-
-            <NewsDetailSection>
-                <Container>
-                    <H2>{newsDetail.title}</H2>
-                    <NewsDetailImageWrapper>
-                        <img src={newsDetail.imageUrl} alt="Изображение новости" />
-                    </NewsDetailImageWrapper>
-                    <NewsDetailContent>{newsDetail.description}</NewsDetailContent>
-                </Container>
-            </NewsDetailSection>
-
-            <NewsSection newsArray={featuredNewsArray} />
         </MainLayout>
     )
 }

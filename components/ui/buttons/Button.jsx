@@ -10,6 +10,7 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.text};
     border: ${({ primary, theme }) => !primary && `1px solid ${theme.colors.text}`};
     border-radius: 10px;
+    font-family: ${({ theme }) => theme.fonts.manrope};
     &:hover {
         background: ${({ theme, primary }) => (primary ? theme.colors.active : theme.colors.whiteBackground)};
         color: ${({ theme, primary }) => (primary ? theme.colors.text : theme.colors.main)};

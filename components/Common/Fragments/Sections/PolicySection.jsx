@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Container } from '../../../ui/layouts/Container'
 import { StyledLink } from '../../../ui/Link'
-import { H3 } from '../../../ui/Typography'
+import { H2, H3 } from '../../../ui/Typography'
 import { breakpoint } from '../../../../lib'
 
 export const PolicySection = ({ ...extraProps }) => {
@@ -49,82 +49,82 @@ export const PolicySection = ({ ...extraProps }) => {
                 <Content>
                     {selectedSection === 'personalData' && (
                         <PolicyWrapper>
-                            <H3Styled>Согласие на обработку персональных данных </H3Styled>
-                            <FeaturesList>
-                                <FeaturesListItem>
+                            <H2 alternative>Согласие на обработку персональных данных </H2>
+                            <PoliceList>
+                                <PoliceListItem>
                                     Я даю свое согласие Обществу с ограниченной ответственностью ООО «Диэлком-ЭК» (ИНН:
                                     7806552930) на обработку моих персональных данных: фамилия, имя, отчество, номер
                                     телефона, адрес электронной почты.
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Оператор обрабатывает персональные данных с целью рассмотрения заявок на получение
                                     юридических услуг.
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Моё согласие является конкретным, предметным, информированным, сознательным и
                                     однозначным.
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Оператор обрабатывает персональные данные следующими способами: сбор, запись,
                                     систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение,
                                     использование, блокирование, удаление, уничтожение.
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Оператор обрабатывает персональные данные как с использованием средств
                                     автоматизации, так и без использования таких средств.
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Оператор обрабатывает персональные данные в соответствии с Политикой
                                     конфиденциальности, размещенной по адресу{` `}
                                     <StyledLink href={'/policy'}>https://dielcom-ec.ru/policy</StyledLink>{' '}
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Согласие действует с момента его предоставления и до момента отзыва Согласия.{' '}
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Я вправе отозвать согласие путем направления Оператору заявления в форме
                                     электронного документа по адресу электронной почты: spb@dielcom.ru.
-                                </FeaturesListItem>
-                                <FeaturesListItem>
+                                </PoliceListItem>
+                                <PoliceListItem>
                                     Оператор рассматривает заявление в течение 10 (десяти) рабочих дней с момента его
                                     получения.
-                                </FeaturesListItem>
-                            </FeaturesList>
+                                </PoliceListItem>
+                            </PoliceList>
                         </PolicyWrapper>
                     )}
                     {selectedSection === 'privacyPolicy' && (
                         <PolicyWrapper>
-                            <H2Styled>Политика конфиденциальности</H2Styled>
-                            <H3>Редакция №1 от 01.06.2024 </H3>
-                            <FeaturesList>
-                                <FeaturesListItemWithoutCounter>
+                            <H2 alternative>Политика конфиденциальности</H2>
+                            <H3Styled alternative>Редакция №1 от 01.06.2024 </H3Styled>
+                            <PoliceList>
+                                <PoliceListItemWithoutCounter>
                                     Это Политика конфиденциальности <b>ООО «Диэлком-ЭК» (ИНН: 7806552930)</b> (далее —
                                     Политика).
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithoutCounter>
                                     Когда в Политике используются слова «мы», «нас» и прочие, говорится о{' '}
                                     <b>ООО «Диэлком-ЭК» (ИНН: 7806552930)</b>.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>О чем эта Политика?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>О чем эта Политика?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     В Политике изложена информация о том, как мы обрабатываем ваши персональные данные и
                                     обеспечиваем их безопасность и конфиденциальность. Из Политики вы узнаете, какие
                                     персональные данные мы получаем и как их используем.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>Что такое персональные данные?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Что такое персональные данные?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Персональные данные – это любая информация о человеке (субъекте персональных
                                     данных), по которым можно его определить. Мы обрабатываем только те персональные
                                     данные, которые перечислены в Политике, и которые характеризуют вас как пользователя
                                     Сайта. Вы можете дать согласие на обработку персональных данных при заполнении форм
                                     обратной связи на Сайте и иными способами, предусмотренными Политикой.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>Какие права есть у вас?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Какие права есть у вас?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     В любой момент, когда у нас есть ваши персональные данные, вы можете воспользоваться
                                     следующими правами:
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithoutCounter>
                                     <Table>
                                         <tbody>
                                             <TableRow>
@@ -157,37 +157,32 @@ export const PolicySection = ({ ...extraProps }) => {
                                             </TableRow>
                                         </tbody>
                                     </Table>
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithoutCounter>
                                     Вы можете обратиться к нам, если захотите уточнить порядок реализации иных прав,
                                     предусмотренных Федеральным законом “О персональных данных”.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>
-                                    Как мы обрабатываем персональные данные?
-                                </FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Как мы обрабатываем персональные данные?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Мы обрабатываем персональные данные как в цифровой форме (автоматизировано), так и
                                     вручную (без использования средств автоматизации).
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithoutCounter>
                                     При этом мы ограничиваемся следующими действиями:
-                                    <FeaturesListItemWithPoint>сбор </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>систематизация </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>накопление </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>хранение </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>
+                                    <PoliceListItemWithPoint>сбор </PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint>систематизация </PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint>накопление </PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint>хранение </PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint>
                                         уточнение (обновление, изменение){' '}
-                                    </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>обезличивание </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>
-                                        {' '}
-                                        уничтожение персональных данных{' '}
-                                    </FeaturesListItemWithPoint>
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>
+                                    </PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint>обезличивание </PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint> уничтожение персональных данных </PoliceListItemWithPoint>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>
                                     В каких целях мы обрабатываем ваши персональные данные?
-                                </FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     <Table>
                                         <tbody>
                                             <TableRow>
@@ -226,70 +221,68 @@ export const PolicySection = ({ ...extraProps }) => {
                                             </TableRow>
                                         </tbody>
                                     </Table>
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>
                                     Передаем ли мы ваши персональные данные третьим лицам?
-                                </FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Мы не передаем ваши персональные данные третьим лицам без вашего согласия, за
                                     исключением случаев, когда такая обязанность установлена для нас законом.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>
                                     Как мы обеспечиваем безопасность персональных данных?
-                                </FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Мы защищаем персональные данные, которые у нас хранятся, от разглашения, полной или
                                     частичной утраты, а также несанкционированного доступа со стороны третьих лиц. Для
                                     этого мы используем все необходимые технические и организационные меры по
                                     обеспечению безопасности и конфиденциальности, и постоянно обновляем их с учетом
                                     последних технических разработок. Если происходит утечка персональных данных, то мы:
-                                    <FeaturesListItemWithPoint>
+                                    <PoliceListItemWithPoint>
                                         в течение 24 часов уведомляем об этом Роскомнадзор
-                                    </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>
+                                    </PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint>
                                         в течение 72 часов проводим собственное расследование и уведомляем Роскомнадзор
                                         о его результатах
-                                    </FeaturesListItemWithPoint>
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>Что мы не проверяем? </FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                    </PoliceListItemWithPoint>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Что мы не проверяем? </PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Мы не можем проверить и поэтому доверяем Вам в том, что вы:
-                                    <FeaturesListItemWithPoint>
-                                        обладаете полной дееспособностью
-                                    </FeaturesListItemWithPoint>
-                                    <FeaturesListItemWithPoint>
+                                    <PoliceListItemWithPoint>обладаете полной дееспособностью</PoliceListItemWithPoint>
+                                    <PoliceListItemWithPoint>
                                         предоставили собственные достоверные персональные данные
-                                    </FeaturesListItemWithPoint>
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>Как с нами связаться?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                    </PoliceListItemWithPoint>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Как с нами связаться?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     По любым вопросам в отношении обработки персональных данных вы можете обратиться к
                                     нам по электронной почте <a href="mailto:spb@dielcom.ru">spb@dielcom.ru</a>.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithoutCounter>
                                     При обращении укажите свое имя и контакты для обратной связи. Мы ответим на ваше
                                     обращение не позднее 10 рабочих дней с момента его получения.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithoutCounter>
                                     Реквизиты: <b>ООО «Диэлком-ЭК» (ИНН: 7806552930)</b>, адрес эл. почты:{' '}
                                     <a href="mailto:spb@dielcom.ru">spb@dielcom.ru</a>.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithoutCounter>
                                     Политика размещена по адресу:{' '}
                                     <a href="https://dielcom-ec.ru/policy#privacyPolicy">
                                         https://dielcom-ec.ru/policy#privacyPolicy
                                     </a>
                                     .
-                                </FeaturesListItemWithoutCounter>
-                            </FeaturesList>
+                                </PoliceListItemWithoutCounter>
+                            </PoliceList>
                         </PolicyWrapper>
                     )}
                     {selectedSection === 'cookiePolicy' && (
                         <PolicyWrapper>
-                            <H2Styled>Информация об использовании файлов cookie</H2Styled>
-                            <FeaturesList>
-                                <FeaturesListItemHeader>Как мы используем файлы cookie?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                            <H2 alternative>Информация об использовании файлов cookie</H2>
+                            <PoliceList>
+                                <PoliceListItemHeader>Как мы используем файлы cookie?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     На веб-сайте <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>{' '}
                                     используются файлы cookie и похожие технологии (в т.ч., пиксельные теги, веб-маяки,
                                     прозрачные файлы GIF, JavaScript и локальное хранение данных) для вашего удобства,
@@ -301,21 +294,21 @@ export const PolicySection = ({ ...extraProps }) => {
                                     положениями настоящего Уведомления, вам необходимо произвести соответствующие
                                     настройки веб-браузера или прекратить пользование веб-сайтом{' '}
                                     <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>Что такое файлы cookie?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Что такое файлы cookie?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Файлы cookie представляют собой файлы, которые автоматически сохраняются на вашем
                                     устройстве (персональном компьютере, мобильном телефоне и т.п.) при посещении
                                     веб-сайта <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>. При каждом
                                     последующем посещении файлы cookie отправляются на исходный веб-сайт{' '}
                                     <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>Как используются файлы cookie?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Как используются файлы cookie?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     На веб-сайте <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> могут
                                     использоваться следующие типы файлов cookie:
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithPoint>
                                     необходимые файлы cookie. Данные файлы cookie необходимы для обеспечения работы
                                     веб-сайта <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> (в т.ч., для
                                     входа в защищенные зоны веб-сайтов). Данные файлы cookie позволяют вам посещать
@@ -323,8 +316,8 @@ export const PolicySection = ({ ...extraProps }) => {
                                     функционирование веб-сайт
                                     <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> и может сделать
                                     недоступными некоторые функции и сервисы;
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemWithPoint>
                                     файлы cookie для аналитики и адаптации под пользователя. Данные файлы cookie
                                     позволяют ООО «Диэлком-ЭК» анализировать ваши действия в целях совершенствования и
                                     оптимизации работы веб-сайтов. Файлы cookie, относящиеся к аналитике, помогают нам
@@ -332,16 +325,16 @@ export const PolicySection = ({ ...extraProps }) => {
                                     техническую и навигационную информацию (тип веб-браузера, время пребывания на
                                     веб-сайте, посещенные страницы, IP-адрес, местоположение и т.п.) о Вас. Анализ таких
                                     данных может осуществляться с привлечением третьих лиц;
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemWithPoint>
                                     функциональные файлы cookie. Данные файлы cookie служат для вашей идентификации при
                                     повторном посещении веб-сайта{' '}
                                     <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>. Они позволяют нам
                                     индивидуально подбирать содержание веб-сайта для вас, запоминать ваши выбранные
                                     настройки (в т.ч. выбранный язык, настройки отображения контента веб-сайтов).
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemHeader>Что такое файлы cookie?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemHeader>Что такое файлы cookie?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Некоторые файлы cookie действуют с момента вашего входа на веб-сайт
                                     <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> до конца конкретной
                                     сессии работы в веб-браузере. При закрытии веб-браузера срок действия этих файлов
@@ -353,9 +346,9 @@ export const PolicySection = ({ ...extraProps }) => {
                                     использования веб-сайта
                                     <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> не хранятся дольше 1
                                     года с даты последнего посещения.
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemHeader>Как управлять файлами cookie?</FeaturesListItemHeader>
-                                <FeaturesListItemWithoutCounter>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemHeader>Как управлять файлами cookie?</PoliceListItemHeader>
+                                <PoliceListItemWithoutCounter>
                                     Вы имеете возможность самостоятельно разрешать или запрещать использование файлов
                                     cookie через соответствующие настройки вашего веб-браузера. Для получения инструкций
                                     по настройке вам необходимо обратиться к справочной документации или официальному
@@ -364,32 +357,32 @@ export const PolicySection = ({ ...extraProps }) => {
                                     сервисы веб-сайта <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> могут
                                     работать некорректно. Дополнительную информацию об управлении файлами cookie вы
                                     можете получить по следующим ссылкам:
-                                </FeaturesListItemWithoutCounter>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithoutCounter>
+                                <PoliceListItemWithPoint>
                                     <a href="https://support.google.com/chrome/answer/95647?hl=ru">Google Chrome</a>
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemWithPoint>
                                     <a href="https://support.microsoft.com/ru-ru/help/17442/windows-internet-explorer-delete-manage-cookies/">
                                         Microsoft Internet Explorer
                                     </a>
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemWithPoint>
                                     <a href="https://support.microsoft.com/ru-ru/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy">
                                         Microsoft Edge
                                     </a>
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemWithPoint>
                                     <a href="https://support.mozilla.org/ru/kb/kuki-informaciya-kotoruyu-veb-sajty-hranyat-na-vas">
                                         Mozilla Firefox
                                     </a>
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemWithPoint>
                                     <a href="https://support.apple.com/ru-ru/HT201265">Apple Safari</a>
-                                </FeaturesListItemWithPoint>
-                                <FeaturesListItemWithPoint>
+                                </PoliceListItemWithPoint>
+                                <PoliceListItemWithPoint>
                                     <a href="https://help.opera.com/ru/latest/security-and-privacy/">Opera</a>
-                                </FeaturesListItemWithPoint>
-                            </FeaturesList>
+                                </PoliceListItemWithPoint>
+                            </PoliceList>
                         </PolicyWrapper>
                     )}
                 </Content>
@@ -446,11 +439,7 @@ const Content = styled.div`
 `
 
 const PolicyWrapper = styled.div`
-    padding: 25px 75px 75px 80px;
-
-    ${breakpoint.laptop`
-        padding: 25px 30px 75px 30px;
-    `}
+    padding: 25px 10px 75px 30px;
 
     ${breakpoint.tablet`
         padding: 25px 0px 15px;
@@ -460,14 +449,16 @@ const PolicyWrapper = styled.div`
 
 const H3Styled = styled(H3)`
     margin-bottom: 30px;
+    margin-top: 30px;
 `
 
-const FeaturesList = styled.ul`
+const PoliceList = styled.ul`
     column-count: 1;
     counter-reset: list-counter;
+    margin-top: 20px;
 `
 
-const FeaturesListItem = styled.li`
+const PoliceListItem = styled.li`
     position: relative;
     padding-left: 40px;
     display: block;
@@ -496,7 +487,7 @@ const FeaturesListItem = styled.li`
     `}
 `
 
-const FeaturesListItemHeader = styled.li`
+const PoliceListItemHeader = styled.li`
     position: relative;
     display: block;
     font-size: 18px;
@@ -510,7 +501,7 @@ const FeaturesListItemHeader = styled.li`
     `}
 `
 
-const FeaturesListItemWithoutCounter = styled.li`
+const PoliceListItemWithoutCounter = styled.li`
     position: relative;
     display: block;
     font-size: 16px;
@@ -522,7 +513,7 @@ const FeaturesListItemWithoutCounter = styled.li`
         font-size: 14px;
     `}
 `
-const FeaturesListItemWithPoint = styled.li`
+const PoliceListItemWithPoint = styled.li`
     position: relative;
     display: block;
     font-size: 16px;
