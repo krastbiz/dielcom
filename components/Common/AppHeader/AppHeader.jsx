@@ -5,11 +5,11 @@ import { useRouter } from 'next/router'
 import { breakpoint, useDeviceCheck } from '../../../lib'
 import { BurgerButton } from '../../ui/buttons/BurgerButton'
 import { Button } from '../../ui/buttons/Button'
-import { Container } from '../../ui/layouts/Container'
 import { MobileMenu } from './MobileMenu'
 import { Navigation } from '../Navigation/Navigation'
 import { HeaderContacts } from './HeaderContacts'
 import { SearchComponent } from './Search'
+import { getCatalogPageUrl } from '../../../lib'
 
 const HEADER_HEIGHT = '124px'
 
@@ -30,24 +30,27 @@ export const AppHeader = () => {
                         <Logo href="/">
                             <img src="/static/icons/logo.svg" alt="Site Logo" />
                         </Logo>
-                        <CatalogButton primary>Каталог</CatalogButton>
+                        <CatalogButton primary as="a" href={getCatalogPageUrl()}>Каталог</CatalogButton>
                         <HeaderActions>
-                            {!isSearchPage && (
+                            {!isSearchPage && !isMobile && (
                                 <SearchWrapper>
                                     <SearchComponent isHomePage />
                                 </SearchWrapper>
                             )}
-                            <HeaderContacts hideOnMobile />
+                            {isResponsiveView ? (
+                                <StyledBurgerButton
+                                    isActive={isMobileMenuOpen}
+                                    onClick={() => setMobileMenuOpen((prev) => !prev)}
+                                />
+                            ) : (
+                                <HeaderContacts />
+                            )}
                         </HeaderActions>
                     </HeaderContent>
-                    <NavigationWrapper>
-                        <Navigation isHeader />
-                    </NavigationWrapper>
-                    {isResponsiveView && (
-                        <StyledBurgerButton
-                            isActive={isMobileMenuOpen}
-                            onClick={() => setMobileMenuOpen((prev) => !prev)}
-                        />
+                    {!isResponsiveView && (
+                        <NavigationWrapper>
+                            <Navigation isHeader />
+                        </NavigationWrapper>
                     )}
                 </StyledContainer>
             </HeaderWrapper>
@@ -56,9 +59,7 @@ export const AppHeader = () => {
     )
 }
 
-const StyledBurgerButton = styled(BurgerButton)`
-    margin-left: auto;
-`
+const StyledBurgerButton = styled(BurgerButton)``
 
 const HeaderWrapper = styled.header`
     height: ${HEADER_HEIGHT};
@@ -68,26 +69,45 @@ const HeaderWrapper = styled.header`
     top: 0;
     z-index: 1000;
     background: ${({ theme }) => theme.colors.background};
-    overflow-x: hidden;
+    ${breakpoint.laptop`
+        height: 90px;
+    `}
 `
 
 const StyledContainer = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    ${breakpoint.mobile`
+    overflow-x: hidden;
+    ${breakpoint.laptop`
         flex-direction: row;
+        width: 100%;
+        height: 90px;
     `}
 `
 
 const Logo = styled.a`
     margin-right: 30px;
+    ${breakpoint.tablet`
+        margin-right: 8px;
+        img {
+            width: 70px;
+        }
+    `}
 `
 
 const CatalogButton = styled(Button)`
     margin-right: 15px;
     width: 160px;
     height: 50px;
+    ${breakpoint.tablet`
+        margin-right: 5px;
+        width: 125px;
+    `}
+    ${breakpoint.mobile`
+        margin-right: 5px;
+        width: 160px;
+    `}
 `
 
 const HeaderContent = styled.div`
@@ -95,6 +115,15 @@ const HeaderContent = styled.div`
     align-items: center;
     width: 100%;
     padding: 20px 17px 5px;
+    ${breakpoint.laptop`
+        padding: 20px 15px;
+    `}
+    ${breakpoint.tablet`
+        padding: 20px 10px;
+    `}
+    ${breakpoint.mobile`
+        padding: 20px 10px;
+    `}
 `
 
 const HeaderActions = styled.div`
@@ -112,4 +141,9 @@ const SearchWrapper = styled.div`
 const NavigationWrapper = styled.div`
     margin-left: 650px;
     width: 100%;
+    ${breakpoint.desktop`
+        width: 100vw;
+        display: flex;
+        margin-left: 0;
+    `}
 `

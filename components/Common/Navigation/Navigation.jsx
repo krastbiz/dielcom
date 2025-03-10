@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import { theme } from '../../../lib'
+import { theme, breakpoint, useDeviceCheck } from '../../../lib'
 import { NavLink } from './NavLink'
 
 const NAV_ITEMS = [
@@ -14,6 +14,7 @@ const NAV_ITEMS = [
 export const Navigation = ({ isHeader }) => {
     const nextRouter = useRouter()
     const currentUrl = nextRouter.asPath
+    const {isTablet, isMobile} = useDeviceCheck()
 
     const isLinkActive = (linkUrl) => linkUrl === currentUrl
 
@@ -30,6 +31,7 @@ export const Navigation = ({ isHeader }) => {
                     {navItem.text}
                 </NavLink>
             ))}
+            { (isTablet || isMobile) && <NavLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</NavLink>}
         </NavigationWrapper>
     )
 }
@@ -41,4 +43,15 @@ const NavigationWrapper = styled.nav`
     width: 100%;
     font-weight: 400;
     font-size: 16px;
+    ${breakpoint.desktop`
+        justify-content: center;
+    `}
+    ${breakpoint.tablet`
+        display: grid;
+        grid-template-columns: 40% 60%;
+    `}
+    ${breakpoint.mobile`
+        display: flex;
+        flex-direction: column;
+    `}
 `

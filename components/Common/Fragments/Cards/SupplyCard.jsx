@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoint } from '../../../../lib'
 
 export const SupplyCard = ({ title, image, number }) => {
     return (
@@ -20,6 +21,9 @@ const SupplyCardWrapper = styled.div`
     border-radius: 10px;
     background: ${({ theme }) => theme.colors.cardBackground};
     margin-right: 5px;
+    ${breakpoint.laptop`
+        margin-right: 0px;
+    `}
 `
 const Number = styled.div`
     color: ${({ theme }) => theme.colors.text};
@@ -34,6 +38,6 @@ const Title = styled.div`
 `
 const Image = styled.img`
     border-radius: 10px;
-    width: 246px;
+    width: 100%;
     height: 181px;
 `

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { breakpoint, getBrandsPageUrl } from '../../../lib'
+import { breakpoint, getBrandsPageUrl, useDeviceCheck } from '../../../lib'
 import { StyledLink } from '../../ui/Link'
 // import { NewsSection } from '../../Common/Fragments/NewsSection'
 import { Button } from '../../ui/buttons/Button'
@@ -83,6 +83,26 @@ const advantages = [
 
 const Home = ({ featuredNews, brands }) => {
     const newsArray = featuredNews
+    const { isLaptop, isDesktop, isLargeDesktop, isMobile, isTablet } = useDeviceCheck()
+    console.log(useDeviceCheck())
+    const filteredAdvantageCards = () => {
+        if (isLargeDesktop) {
+            return advantages
+        }
+        if (isDesktop) {
+            return advantages.filter((_, index) => index !== 2 && index !== 7 && index !== 10)
+        }
+        if (isLaptop || isTablet) {
+            return advantages.filter((_, index) => index !== 2 && index !== 7 && index !== 8 && index !== 10)
+        }
+        if (isTablet) {
+            return advantages.filter((_, index) => index !== 2 && index!== 5 && index !== 8 && index !== 10)
+        }
+        if (isMobile) {
+            return advantages.filter((_, index) => index!== 2 && index!== 5 && index!== 7 && index!== 8 && index!== 10)
+        }
+        return advantages
+    }
 
     return (
         <MainLayout>
@@ -94,8 +114,8 @@ const Home = ({ featuredNews, brands }) => {
                             <H1>для вашего бизнеса</H1>
                             <MainSectionWrapper>
                                 <MainSectionText>
-                                    Широкий ассортимент качественных комплектующих от ведущих мировых брендов. <br />
-                                    Гарантия оригинальности, быстрая доставка и техническая поддержка на каждом этапе.
+                                    Широкий ассортимент качественных комплектующих от ведущих мировых брендов. Гарантия
+                                    оригинальности, быстрая доставка и техническая поддержка на каждом этапе.
                                 </MainSectionText>
                                 <CatalogButton primary as="a" href="/catalog">
                                     <ButtonText>Перейти в каталог </ButtonText>
@@ -139,21 +159,21 @@ const Home = ({ featuredNews, brands }) => {
                 </GoalContainer>
                 <GoalContent>
                     <GoalContentItem>
-                        <H1Gradient>30+</H1Gradient>
+                        <GoalGradient>30+</GoalGradient>
                         <GoalText>зарубежных партнеров</GoalText>
                     </GoalContentItem>
                     <GoalContentItem>
-                        <H1Gradient>12 лет</H1Gradient>
+                        <GoalGradient>12 лет</GoalGradient>
                         <GoalText>успешной работы на рынке</GoalText>
                     </GoalContentItem>
                 </GoalContent>
             </GoalSection>
             <SupplySection>
                 <SupplyContainer>
+                    <GoalTitle>[Комплексные поставки]</GoalTitle>
                     <H2>
-                        Мы предлагаем комплексные поставки электронных <br /> компонентов, а также предоставляем{' '}
-                        <GradientText>услуги полного цикла</GradientText>
-                        <br />
+                        Мы предлагаем комплексные поставки электронных компонентов, а также предоставляем{' '}
+                        <GradientText>услуги полного цикла</GradientText>{' '}
                         <GradientTextInverse>производства электроники.</GradientTextInverse>
                     </H2>
                     <SupplyContent>
@@ -179,7 +199,7 @@ const Home = ({ featuredNews, brands }) => {
                         </AdvantageSubTitle>
                     </AdvantageTitle>
                     <AdvantageGrid>
-                        {advantages.map(({ label, content, form = false }, id) => (
+                        {filteredAdvantageCards().map(({ label, content, form = false }, id) => (
                             <AdvantageCard key={label + id} label={label} content={content} form={form} />
                         ))}
                     </AdvantageGrid>
@@ -192,6 +212,8 @@ const Home = ({ featuredNews, brands }) => {
 const MainSectionBgContainer = styled.div`
     background-image: url(/static/images/homepage/homepage-bg.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 646px;
     display: flex;
     flex-direction: column;
@@ -202,18 +224,14 @@ const MainSectionContainer = styled(Container)`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-    ${breakpoint.tablet`
-        padding: unset;
-        padding: 0 20px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    `}
 `
 
 const MainSectionContent = styled.div`
     width: 1160px;
     margin: 0 auto;
+    ${breakpoint.desktop`
+        width: 100%;
+    `}
 `
 
 const MainSectionWrapper = styled.div`
@@ -221,12 +239,20 @@ const MainSectionWrapper = styled.div`
     justify-content: space-between;
     width: 100%;
     margin: 10px 0 40px;
+    ${breakpoint.laptop`
+        flex-direction: column;
+        margin-bottom:  15px;
+    `}
 `
 
 const MainSectionText = styled.div`
     color: ${({ theme }) => theme.colors.text};
-    max-width: 790px;
-    letter-spacing: 0.2px;
+    max-width: 700px;
+    letter-spacing: -0.4px;
+    ${breakpoint.laptop`
+        max-width: 100%x;
+        margin-top: 10px;
+    `}
 `
 
 const CatalogButton = styled(Button)`
@@ -234,6 +260,10 @@ const CatalogButton = styled(Button)`
     padding: 15px 20px;
     display: flex;
     align-items: center;
+    ${breakpoint.laptop`
+        max-width: 220px;
+        margin-top: 10px;
+    `}
 `
 
 const ButtonText = styled.div`
@@ -266,6 +296,9 @@ const BrandSectionTitle = styled.div`
     color: ${({ theme }) => theme.colors.text};
     opacity: 0.7;
     margin: 70px 0 30px;
+    ${breakpoint.mobile`
+        margin: 50px 0;
+    `}
 `
 
 const BrandsContainer = styled(Container)`
@@ -325,6 +358,10 @@ const GoalImage = styled.div`
 const GoalText = styled(MainSectionText)`
     margin-top: 10px;
     max-width: 1000px;
+    ${breakpoint.mobile`
+        font-size: 10px;
+        margin-top: 12x;
+    `}
 `
 
 const GoalContent = styled.div`
@@ -337,14 +374,55 @@ const GoalContent = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    ${breakpoint.laptop`
+        height: 188px;
+        margin-top: 60px;
+    `}
+    ${breakpoint.tablet`
+        margin-top: 30px;
+        height: 150px;
+    `}
+    ${breakpoint.tablet`
+        margin-top: 0px;
+        height: 150px;
+    `}
 `
 
 const GoalContentItem = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ${breakpoint.mobile`
+        width: 50%;
+    `}
     :first-child {
         margin-right: 188px;
+        ${breakpoint.laptop`
+        margin-right: 100px;
+    `}
+        ${breakpoint.tablet`
+        margin-right: 35px;
+    `}
+    ${breakpoint.mobile`
+        margin-right: 0px;
+    `}
     }
+`
+
+const GoalGradient = styled(H1Gradient)`
+    ${breakpoint.laptop`
+        font-size: 80px;
+        line-height: 80px;
+    `}
+    ${breakpoint.tablet`
+        font-size: 60px;
+        line-height: 60px;
+    `}
+       ${breakpoint.mobile`
+        font-size: 37px;
+        line-height: 37px;
+    `}
 `
 
 const SupplySection = styled.section`
@@ -358,15 +436,35 @@ const SupplyContainer = styled(Container)`
     display: flex;
     flex-direction: column;
     padding: 80px 0 100px;
+    ${breakpoint.laptop`
+        padding: 0 0 40px;
+    `}
+    ${breakpoint.mobile`
+        padding-right: 10px;
+    `}
 `
 const SupplyContent = styled.div`
     display: flex;
     margin-top: 30px;
+    ${breakpoint.laptop`
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 6px;
+    `}
+    ${breakpoint.mobile`
+        display: flex;
+        flex-direction: column;
+    `}
 `
 
 const SupplyButton = styled(CatalogButton)`
     justify-content: center;
     margin-top: 5px;
+    ${breakpoint.laptop`
+        max-width: 100%;
+        width: 100%;
+    `}
 `
 
 const AdvantageSection = styled.section`
@@ -396,6 +494,14 @@ const AdvantageSection = styled.section`
         background-image: url(/static/images/homepage/homepage-bg6.png);
         z-index: 2;
     }
+    ${breakpoint.laptop`
+        height: 1180px;
+        background-image: url(/static/images/homepage/homepage-bg5-high.png);
+    `}
+    ${breakpoint.mobile`
+        height: 1820px;
+        background-image: url(/static/images/homepage/homepage-bg5-mobile.png);
+    `}
 `
 
 const AdvantageContainer = styled(Container)`
@@ -409,12 +515,22 @@ const AdvantageTitle = styled.div`
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    ${breakpoint.desktop`
+        flex-direction: column;
+    `}
+    ${breakpoint.laptop`
+        margin-top: 70px;
+    `}
 `
 
 const AdvantageSubTitle = styled.div`
     color: ${({ theme }) => theme.colors.text};
     max-width: 550px;
     letter-spacing: 0.2px;
+    ${breakpoint.desktop`
+        margin-top: 10px;
+        max-width: 830px;
+    `}
 `
 
 const AdvantageGrid = styled.div`
@@ -422,6 +538,17 @@ const AdvantageGrid = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
     margin-top: 50px;
+    ${breakpoint.desktop`
+        grid-template-columns: repeat(3, 1fr);
+    `}
+    ${breakpoint.laptop`
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    `}
+    ${breakpoint.mobile`
+        display: flex;
+        flex-direction: column;
+    `}
 `
 
 export default Home

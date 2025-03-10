@@ -76,7 +76,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                 <DefaultMainContent>
                     <StyledH2 large>ЛИНЕЙКА ПОСТАВОК</StyledH2>
                 </DefaultMainContent>
-                <TableIcons onSearch={setSearchTerm}/>
+                <TableIcons onSearch={setSearchTerm} />
                 <CatalogSection>
                     <CustomContainer>
                         <CatalogTable>
@@ -257,7 +257,7 @@ const expandWidth = keyframes`
         transform: scaleX(1);
         opacity: 1;
     }
-`;
+`
 
 const collapseWidth = keyframes`
     from {
@@ -268,7 +268,7 @@ const collapseWidth = keyframes`
         transform: scaleX(0);
         opacity: 0;
     }
-`;
+`
 
 const SearchWrapper = styled.div`
     transform-origin: right center; /* Анимация будет происходить слева */
@@ -276,39 +276,34 @@ const SearchWrapper = styled.div`
     display: flex;
     align-items: center;
     animation: ${({ isOpen }) => (isOpen ? expandWidth : collapseWidth)} 0.3s ease-out forwards;
-`;
+`
 
-const TableIcons = ({onSearch}) => {
-    const [searchOpen, setSearchOpen] = useState(false);
-    const searchRef = useRef(null);
+const TableIcons = ({ onSearch }) => {
+    const [searchOpen, setSearchOpen] = useState(false)
+    const searchRef = useRef(null)
 
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (searchRef.current && !searchRef.current.contains(event.target)) {
-                setSearchOpen(false);
+                setSearchOpen(false)
             }
-        };
+        }
 
         if (searchOpen) {
-            document.addEventListener('mousedown', handleClickOutside);
+            document.addEventListener('mousedown', handleClickOutside)
         }
 
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [searchOpen]);
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [searchOpen])
 
     return (
         <TableIconsWrapper ref={searchRef}>
             <SearchWrapper isOpen={searchOpen}>
-                <SearchComponent onSearch={onSearch} altBg={false}/>
+                <SearchComponent onSearch={onSearch} altBg={false} />
             </SearchWrapper>
-            <SearchIcon
-                src="/static/icons/search-small.svg"
-                alt="Поиск"
-                onClick={() => setSearchOpen(true)}
-            />
+            <SearchIcon src="/static/icons/search-small.svg" alt="Поиск" onClick={() => setSearchOpen(true)} />
         </TableIconsWrapper>
-    );
-};
-
+    )
+}

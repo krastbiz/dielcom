@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
-import { breakpoint } from '../../lib'
+import { breakpoint, useDeviceCheck } from '../../lib'
 import { Container } from '../ui/layouts/Container'
 import { StyledLink } from '../ui/Link'
 import { Button } from '../ui/buttons/Button'
 
 export const AppFooter = () => {
+    const { isLaptop, isDesktop, isLargeDesktop, isMobile, isTablet } = useDeviceCheck()
+    const isPC = isLaptop || isDesktop || isLargeDesktop;
     return (
         <AppFooterWrapper>
             <StyledContainer>
@@ -16,12 +18,19 @@ export const AppFooter = () => {
                     © ООО «Диэлком-ЭК» 2024
                 </CopyrightContainer>
                 <LinkWrapper>
-                    <StyledLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</StyledLink>
+                    {isLaptop && (
+                        <StyledButton primary as="a" href="/catalog">
+                            Перейти в каталог
+                        </StyledButton>
+                    )}
+                    { isPC &&<StyledLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</StyledLink>}
                     {/* <StyledLink href={'/contacts'}>Документы</StyledLink> */}
                 </LinkWrapper>
-                <StyledButton primary as="a" href="/catalog">
-                    Перейти в каталог
-                </StyledButton>
+                { (!isMobile && !isLaptop) && (
+                    <StyledButton primary as="a" href="/catalog">
+                        Перейти в каталог
+                    </StyledButton>
+                )}
             </StyledContainer>
         </AppFooterWrapper>
     )
@@ -31,6 +40,9 @@ const AppFooterWrapper = styled.footer`
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
     padding-bottom: 40px;
+    ${breakpoint.laptop`
+        padding-bottom: 22px;
+    `}
 `
 const StyledContainer = styled(Container)`
     justify-content: space-between;
@@ -46,7 +58,8 @@ const CopyrightContainer = styled.div`
     width: 400px;
     ${breakpoint.laptop`
             font-size: 14px;
-        `}
+             width: 250px;
+    `}
 `
 
 const LinkWrapper = styled.div`
@@ -54,6 +67,9 @@ const LinkWrapper = styled.div`
     justify-content: flex-end;
     flex-direction: column;
     height: 70px;
+        ${breakpoint.laptop`
+            margin-top: 13px;
+    `}
 `
 
 const Logo = styled.a`
@@ -62,4 +78,8 @@ const Logo = styled.a`
 
 const StyledButton = styled(Button)`
     height: 52px;
+    ${breakpoint.laptop`
+        margin-bottom: 6px;
+        width: 200px;
+    `}
 `

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoint } from '../../../lib'
 
 export const Button = styled.button`
     padding: 15px 22px;
@@ -15,4 +16,7 @@ export const Button = styled.button`
         background: ${({ theme, primary }) => (primary ? theme.colors.active : theme.colors.whiteBackground)};
         color: ${({ theme, primary }) => (primary ? theme.colors.text : theme.colors.main)};
     }
+    ${breakpoint.tablet`
+        padding: 15px 8px;
+    `}
 `

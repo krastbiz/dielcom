@@ -5,8 +5,10 @@ import { StyledLink } from '../../../ui/Link'
 import { Navigation } from '../../Navigation/Navigation'
 import { MapComponent } from '../../MapComponent'
 import { H2 } from '../../../ui/Typography'
+import { useDeviceCheck } from '../../../../lib'
 
 export const ContactsSection = ({ ...extraProps }) => {
+    const { isLaptop, isMobile, isTablet } = useDeviceCheck()
     return (
         <ContactsSectionWrapper {...extraProps}>
             <StyledContainer>
@@ -34,22 +36,40 @@ export const ContactsSection = ({ ...extraProps }) => {
                             </ContactInfoContent>
                         </ContactInfoItem>
                     </ContactsInfoWrapper>
-                    <ContactsInfoWrapper>
-                        <ContactInfoItem>
-                            <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
-                            <ContactInfoContent>
-                                <StyledLink href={'tel:+78123394597'}>+7 (812) 339-45-97</StyledLink>
-                            </ContactInfoContent>
-                        </ContactInfoItem>
+                    {!isLaptop && (
+                        <ContactsInfoWrapper>
+                            <ContactInfoItem>
+                                <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
+                                <ContactInfoContent>
+                                    <StyledLink href={'tel:+78123394597'}>+7 (812) 339-45-97</StyledLink>
+                                </ContactInfoContent>
+                            </ContactInfoItem>
 
-                        <ContactInfoItem>
-                            <ContactInfoTitle>Электронная почта:</ContactInfoTitle>
-                            <ContactInfoContent>
-                                <StyledLink href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</StyledLink>
-                            </ContactInfoContent>
-                        </ContactInfoItem>
-                    </ContactsInfoWrapper>
+                            <ContactInfoItem>
+                                <ContactInfoTitle>Электронная почта:</ContactInfoTitle>
+                                <ContactInfoContent>
+                                    <StyledLink href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</StyledLink>
+                                </ContactInfoContent>
+                            </ContactInfoItem>
+                        </ContactsInfoWrapper>
+                    )}
                     <ContactsInfoWrapper>
+                        {isLaptop && (
+                            <>
+                                <ContactInfoItem>
+                                    <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
+                                    <ContactInfoContent>
+                                        <StyledLink href={'tel:+78123394597'}>+7 (812) 339-45-97</StyledLink>
+                                    </ContactInfoContent>
+                                </ContactInfoItem>
+                                <ContactInfoItem>
+                                    <ContactInfoTitle>Электронная почта:</ContactInfoTitle>
+                                    <ContactInfoContent>
+                                        <StyledLink href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</StyledLink>
+                                    </ContactInfoContent>
+                                </ContactInfoItem>
+                            </>
+                        )}
                         <Navigation isHeader={false} />
                     </ContactsInfoWrapper>
                 </ContactSectionContainer>
@@ -82,23 +102,27 @@ const StyledContainer = styled(Container)`
     z-index: 2;
 
     ${breakpoint.laptop`
-        padding: 0px 30px 55px 30px;
-    `}
-
-    ${breakpoint.tablet`
-        padding: 0px 0px 15px;
+        padding: 0;
     `}
 `
 
 const ContactSectionContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    ${breakpoint.tablet`
+        flex-direction: column;
+        margin-bottom: 30px;
+    `}
 `
 const ContactsInfoWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 400px;
+    ${breakpoint.laptop`
+        justify-content: flex-start;
+        max-width: 100%;
+    `}
 `
 
 const SectionTitle = styled(H2)`

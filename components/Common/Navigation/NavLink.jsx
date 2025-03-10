@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from '../../ui/Link'
+import { breakpoint } from '../../../lib'
 
 export const NavLink = ({ href, children, ...extraProps }) => {
     return (
@@ -18,4 +19,7 @@ export const NavLinkWrapper = styled.div`
     &:hover {
         color: ${({ theme }) => theme.colors.linkHover};
     }
+    ${breakpoint.tablet`
+        padding: 5px;
+    `}
 `

@@ -78,8 +78,8 @@ const SearchInput = styled.input`
     color: ${({ theme }) => theme.colors.textGray};
     box-sizing: border-box;
     outline: none;
-    background-color: ${({ theme, altBg }) => altBg ? theme.colors.altBackground : theme.colors.whiteBackground};
-    border: ${({ theme, altBg }) => altBg ? 'none' : `1px solid ${theme.colors.tableBorder}`};
+    background-color: ${({ theme, altBg }) => (altBg ? theme.colors.altBackground : theme.colors.whiteBackground)};
+    border: ${({ theme, altBg }) => (altBg ? 'none' : `1px solid ${theme.colors.tableBorder}`)};
 `
 
 const SearchButton = styled.button`

@@ -10,9 +10,18 @@ export const H1 = styled.h1`
     font-family: ${({ theme }) => theme.fonts.hauora};
     display: inline-block;
     letter-spacing: -0.04em;
+    ${breakpoint.laptop`
+        font-size: 51px;
+        line-height: 51px;
+    `}
 
     ${breakpoint.tablet`
-        font-size: 48px;
+        font-size: 38px;
+        line-height: 38px;
+    `}
+    ${breakpoint.mobile`
+        font-size: 32px;
+        line-height: 32px;
     `}
 `
 
@@ -35,6 +44,14 @@ export const H2 = styled.h2`
     letter-spacing: -0.04em;
     font-family: ${({ theme }) => theme.fonts.hauora};
     color: ${({ alternative, theme }) => (alternative ? theme.colors.main : theme.colors.text)};
+    ${breakpoint.tablet`
+        font-size: ${({ large }) => (large ? '35px' : '30px')};
+        line-height: ${({ large }) => (large ? '35px' : '30px')};
+    `}
+        ${breakpoint.mobile`
+        font-size: 23px;
+        line-height: 23px;
+    `}
 `
 
 export const H2Gradient = styled(H2)`
@@ -71,6 +88,14 @@ export const GradientText = styled.span`
     font-size: 40px;
     font-weight: 500;
     letter-spacing: -0.04em;
+    ${breakpoint.tablet`
+        font-size: 30px;
+        line-height: 30px;
+    `}
+    ${breakpoint.mobile`
+        font-size: 23px;
+        line-height: 23px;
+    `}
 `
 
 export const GradientTextInverse = styled(GradientText)`

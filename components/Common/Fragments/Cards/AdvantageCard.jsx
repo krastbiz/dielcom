@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { H3 } from '../../../ui/Typography'
 import { Button } from '../../../ui/buttons/Button'
+import { breakpoint } from '../../../../lib'
 
 export const AdvantageCard = ({ label, content, form = false }) => {
     return (
@@ -18,12 +19,15 @@ export const AdvantageCard = ({ label, content, form = false }) => {
 }
 
 const AdvantageCardWrapper = styled.div`
-    width: 290px;
+    width: 100%;
     height: 235px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px 20px 30px 30px;
+    ${breakpoint.tablet`
+        padding: 15px;
+    `}
     ${({ alt, form }) =>
         alt
             ? `

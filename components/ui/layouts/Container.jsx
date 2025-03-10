@@ -7,24 +7,14 @@ const Container = styled.div`
     margin: 0 auto;
 
     ${breakpoint.desktop`
-        padding-right: 20px;
-        padding-left: 20px;
-        max-width: ${screenWidth.laptop};
-    `}
-    ${breakpoint.laptop`
-        max-width: ${screenWidth.tablet};
-    `}
-    ${breakpoint.tablet`
-        padding-right: 10px;
-        padding-left: 10px;
-        width: 100%;
-
+        width: calc(100% - 30px);
+        margin: 0 15px;
+        box-sizing: border-box;
     `}
     ${breakpoint.mobile`
-        padding-right: 10px;
-        padding-left: 10px;
-        width: 100%;
-        flex-direction: column;
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        box-sizing: border-box;
     `}
 `
 export { Container }
