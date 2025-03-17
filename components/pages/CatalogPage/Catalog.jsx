@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { getCatalogPageUrl } from '../../../lib'
+import { breakpoint, getCatalogPageUrl } from '../../../lib'
 import { Container } from '../../ui/layouts/Container'
 import { CatalogCard, DefaultMainContent, MainSection } from '../../Common'
 import { MainLayout } from '../../ui/layouts/MainLayout'
@@ -44,4 +44,7 @@ const CatalogContainer = styled(Container)`
     padding-top: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
+    ${breakpoint.laptop`
+        padding-top: 30px;
+    }`}
 `

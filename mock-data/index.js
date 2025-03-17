@@ -657,6 +657,7 @@ export const CONTRACT_ARRAY = [
         title: 'Печатные платы',
         subtitle: 'любой уровень сложности',
         imageUrl: '/static/images/contract/pcb.png',
+        imageUrlWide: '/static/images/contract/pcb-wide.png',
         iconUrl: '/static/icons/contract/pcb.svg',
         options: [
             'Изготовление односторонних, двухсторонних и многослойных плат (до 40 слоёв)',
@@ -668,6 +669,7 @@ export const CONTRACT_ARRAY = [
     {
         title: 'Монтаж печатных плат',
         imageUrl: '/static/images/contract/installation.png',
+        imageUrlWide: '/static/images/contract/installation-wide.png',
         iconUrl: '/static/icons/contract/installation.svg',
         options: [
             'Поверхостный, объёмный и штыревой монтаж печатных узлов',
@@ -680,6 +682,7 @@ export const CONTRACT_ARRAY = [
     {
         title: 'Контроль качества изделий РЭА',
         imageUrl: '/static/images/contract/control.png',
+        imageUrlWide: '/static/images/contract/control-wide.png',
         iconUrl: '/static/icons/contract/control.svg',
         options: [
             'Контроль волнового сопротивления',

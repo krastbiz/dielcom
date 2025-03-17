@@ -282,6 +282,7 @@ const ArrowIcon = styled.img`
 const BrandsSection = styled.section`
     background-color: ${({ theme }) => theme.colors.background};
     padding-top: 15px;
+    overflow: hidden;
 `
 
 const BrandBgContainer = styled.div`

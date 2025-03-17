@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoint, getContractProductionPageUrl, getRequestPageUrl } from '../../../lib'
+import { breakpoint, getContractProductionPageUrl, getRequestPageUrl, useDeviceCheck } from '../../../lib'
 import { DefaultMainContent, MainSection } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
@@ -7,6 +7,8 @@ import { H2, H2Gradient } from '../../ui/Typography'
 import { Button } from '../../ui/buttons/Button'
 
 export const ContractProduction = ({ contract }) => {
+    const {isLaptop, isTablet} = useDeviceCheck();
+    const shortScreen = isTablet | isLaptop;
     return (
         <MainLayout>
             <MainBgContainer>
@@ -29,10 +31,10 @@ export const ContractProduction = ({ contract }) => {
 
                 <ContractSection>
                     <ContractContainer>
-                        {contract.map(({ title, imageUrl, iconUrl, subtitle, options }) => (
+                        {contract.map(({ title, imageUrl, imageUrlWide, iconUrl, subtitle, options }) => (
                             <CatalogItem key={title}>
                                 <CatalogItemLogoWrapper>
-                                    <img src={imageUrl} alt={imageUrl} />
+                                    <img src={shortScreen ? imageUrlWide : imageUrl} alt={title} />
                                 </CatalogItemLogoWrapper>
 
                                 <CatalogItemContainer>
@@ -91,6 +93,9 @@ const ContractContainer = styled(Container)`
 const CatalogItem = styled.div`
     display: flex;
     margin-bottom: 30px;
+    ${breakpoint.laptop`
+        flex-direction: column;
+    `}
 `
 
 const CatalogItemContainer = styled.div`
@@ -100,6 +105,10 @@ const CatalogItemContainer = styled.div`
     font-family: ${({ theme }) => theme.fonts.hauora};
     margin-left: 10px;
     width: 714px;
+    ${breakpoint.laptop`
+        margin-left: 0px;
+        width: 100%;
+    `}
 `
 
 const TitleWrapper = styled.div`
@@ -121,6 +130,22 @@ const IconWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    ${breakpoint.tablet`
+        width: 70px;
+        height: 70px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    `}
+    ${breakpoint.mobile`
+        width: 55px;
+        height: 55px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    `}
 `
 
 const ItemWrapper = styled.div`
@@ -173,8 +198,11 @@ const StyledButton = styled(Button)`
 const CatalogItemDescription = styled.div`
     font-family: ${({ theme }) => theme.fonts.manrope};
     position: relative;
-    padding: 22px 0 22px 45px;
+    padding-left: 45px;
     border-top: 1px solid #313947;
+    height: 66px;
+    display: flex;
+    align-items: center;
 
     &::before {
         content: '•';
@@ -188,14 +216,17 @@ const CatalogItemDescription = styled.div`
 const CatalogItemLogoWrapper = styled.div`
     width: 436px;
     border-radius: 10px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 
-    ${breakpoint.tablet`
-        img {
-            width: 100%;
-        }
+    ${breakpoint.desktop`
+        width: 400px;
     `}
-`
-const MoreButton = styled(Button)`
-    width: 132px;
-    margin-bottom: 10px;
+    ${breakpoint.laptop`
+        width: 100%;
+        height: 400px;
+        margin-bottom: 5px;
+    `}
 `

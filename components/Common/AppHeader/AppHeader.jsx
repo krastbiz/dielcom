@@ -38,7 +38,7 @@ export const AppHeader = () => {
                                 </SearchWrapper>
                             )}
                             {isResponsiveView ? (
-                                <StyledBurgerButton
+                                <BurgerButton
                                     isActive={isMobileMenuOpen}
                                     onClick={() => setMobileMenuOpen((prev) => !prev)}
                                 />
@@ -58,8 +58,6 @@ export const AppHeader = () => {
         </>
     )
 }
-
-const StyledBurgerButton = styled(BurgerButton)``
 
 const HeaderWrapper = styled.header`
     height: ${HEADER_HEIGHT};
@@ -131,6 +129,9 @@ const HeaderActions = styled.div`
     flex-wrap: nowrap;
     flex-grow: 1;
     align-items: center;
+    ${breakpoint.tablet`
+        justify-content: flex-end;
+    `}
 `
 
 const SearchWrapper = styled.div`
