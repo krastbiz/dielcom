@@ -19,7 +19,7 @@ const ProductPage = (props) => {
                 {getPageMetadata(pageTitle, pageDescription)}
                 {getPageCanonical(pageRelativeUrl)}
             </Head>
-            {catalog.length ? <Product {...props} /> : <RequestForm company={name} />}
+            {catalog.length ? <Product {...props} /> : <RequestForm />}
         </>
     )
 }

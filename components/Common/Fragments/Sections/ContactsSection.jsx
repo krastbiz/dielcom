@@ -6,6 +6,7 @@ import { Navigation } from '../../Navigation/Navigation'
 import { MapComponent } from '../../MapComponent'
 import { H2 } from '../../../ui/Typography'
 import { useDeviceCheck } from '../../../../lib'
+import { TelegramIcon, WhatsappIcon } from '../../SocialIcons'
 
 export const ContactsSection = ({ ...extraProps }) => {
     const { isLaptop, isMobile, isTablet } = useDeviceCheck()
@@ -27,12 +28,8 @@ export const ContactsSection = ({ ...extraProps }) => {
                         <ContactInfoItem>
                             <ContactInfoTitle>Соц. сети и мессенджеры</ContactInfoTitle>
                             <ContactInfoContent small>
-                                <IconLink href="https://t.me/@Nordjeg" target="_blank">
-                                    <img src="/static/icons/telegram.svg" alt="telegram" />
-                                </IconLink>
-                                <IconLink href="https://wa.me/79111526297" target="_blank">
-                                    <img src="/static/icons/whatsapp.svg" alt="whatsapp" />
-                                </IconLink>
+                                <TelegramIcon />
+                                <WhatsappIcon />
                             </ContactInfoContent>
                         </ContactInfoItem>
                     </ContactsInfoWrapper>
@@ -150,7 +147,4 @@ const MapWrapper = styled.div`
     width: 100%;
     height: 400px;
     margin-bottom: 20px;
-`
-const IconLink = styled.a`
-    margin-left: 10px;
 `

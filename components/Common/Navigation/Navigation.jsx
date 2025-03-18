@@ -14,7 +14,7 @@ const NAV_ITEMS = [
 export const Navigation = ({ isHeader }) => {
     const nextRouter = useRouter()
     const currentUrl = nextRouter.asPath
-    const {isTablet, isMobile} = useDeviceCheck()
+    const { isTablet, isMobile } = useDeviceCheck()
 
     const isLinkActive = (linkUrl) => linkUrl === currentUrl
 
@@ -31,7 +31,7 @@ export const Navigation = ({ isHeader }) => {
                     {navItem.text}
                 </NavLink>
             ))}
-            { (isTablet || isMobile) && <NavLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</NavLink>}
+            {(isTablet || isMobile) && <NavLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</NavLink>}
         </NavigationWrapper>
     )
 }

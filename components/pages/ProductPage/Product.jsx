@@ -14,10 +14,10 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
     const [searchTerm, setSearchTerm] = useState('')
     const [sortConfig, setSortConfig] = useState({ key: '', direction: 'asc' })
 
-    const handleOrderClick = (partNumber) => {
+    const handleOrderClick = (partNumber, brand) => {
         router.push({
             pathname: getRequestPageUrl(),
-            query: { partnumber: partNumber },
+            query: { partnumber: partNumber, brand: brand },
         })
     }
 
@@ -104,7 +104,7 @@ export const Product = ({ catalog, name, categoryId, productId, filters }) => {
                                 {sortedCatalog.map((item) => (
                                     <tr key={`${item.partNumber}${item.id}`}>
                                         <td>
-                                            <OrderButton onClick={() => handleOrderClick(item.partNumber)}>
+                                            <OrderButton onClick={() => handleOrderClick(item.partNumber, item.brand)}>
                                                 Заказать
                                             </OrderButton>
                                         </td>

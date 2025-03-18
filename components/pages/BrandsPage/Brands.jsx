@@ -22,14 +22,16 @@ export const Brands = ({ companies }) => {
                         <DistributionContainer>
                             {companies.map((company) => (
                                 <CatalogItem key={company.id}>
-                                    { isMobileOrTablet && <CatalogItemCategory>{company.category}</CatalogItemCategory>}
+                                    {isMobileOrTablet && <CatalogItemCategory>{company.category}</CatalogItemCategory>}
                                     <CatalogItemLogoWrapper>
                                         <img src={company.logo} alt={`Логотип компании ${company.name}`} />
                                     </CatalogItemLogoWrapper>
 
                                     <CatalogItemContainer>
                                         <ItemWrapper>
-                                            {!isMobileOrTablet && <CatalogItemCategory>{company.category}</CatalogItemCategory>}
+                                            {!isMobileOrTablet && (
+                                                <CatalogItemCategory>{company.category}</CatalogItemCategory>
+                                            )}
                                             <CatalogItemName>{company.name}</CatalogItemName>
                                             <CatalogItemDescription>{company.shortDescription}</CatalogItemDescription>
                                         </ItemWrapper>

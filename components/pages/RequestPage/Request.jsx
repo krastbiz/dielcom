@@ -9,13 +9,12 @@ import { useRequestForm } from './useRequestForm'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { DefaultMainContent, MainSection } from '../../Common'
 
-export const RequestForm = ({ defaultValue = '' }) => {
+export const RequestForm = () => {
     const {
         formData = {},
         emailWasSent,
         requestNumber,
         selectedFiles,
-        isMobileOrTablet,
         deleteFile,
         onFormSubmit,
         handleBlur,
@@ -23,7 +22,7 @@ export const RequestForm = ({ defaultValue = '' }) => {
         handleChange,
         handleFocus,
         setEmailWasSent,
-    } = useRequestForm(defaultValue)
+    } = useRequestForm()
     return (
         <MainLayout>
             <MainBgContainer>

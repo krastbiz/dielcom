@@ -11,8 +11,6 @@ import { HeaderContacts } from './HeaderContacts'
 import { SearchComponent } from './Search'
 import { getCatalogPageUrl } from '../../../lib'
 
-const HEADER_HEIGHT = '124px'
-
 export const AppHeader = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
     const { pathname } = useRouter()
@@ -30,7 +28,9 @@ export const AppHeader = () => {
                         <Logo href="/">
                             <img src="/static/icons/logo.svg" alt="Site Logo" />
                         </Logo>
-                        <CatalogButton primary as="a" href={getCatalogPageUrl()}>Каталог</CatalogButton>
+                        <CatalogButton primary as="a" href={getCatalogPageUrl()}>
+                            Каталог
+                        </CatalogButton>
                         <HeaderActions>
                             {!isSearchPage && !isMobile && (
                                 <SearchWrapper>
@@ -54,13 +54,13 @@ export const AppHeader = () => {
                     )}
                 </StyledContainer>
             </HeaderWrapper>
-            {showMobileMenu && <MobileMenu headerHeight={HEADER_HEIGHT} />}
+            <MobileMenu isOpen={showMobileMenu} onClose={() => setMobileMenuOpen(false)} />
         </>
     )
 }
 
 const HeaderWrapper = styled.header`
-    height: ${HEADER_HEIGHT};
+    height: 124px;
     display: flex;
     justify-content: space-between;
     position: sticky;

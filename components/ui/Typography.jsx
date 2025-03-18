@@ -48,7 +48,7 @@ export const H2 = styled.h2`
         font-size: ${({ large }) => (large ? '35px' : '30px')};
         line-height: ${({ large }) => (large ? '35px' : '30px')};
     `}
-        ${breakpoint.mobile`
+    ${breakpoint.mobile`
         font-size: 23px;
         line-height: 23px;
     `}

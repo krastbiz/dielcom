@@ -7,8 +7,8 @@ import { H2, H2Gradient } from '../../ui/Typography'
 import { Button } from '../../ui/buttons/Button'
 
 export const ContractProduction = ({ contract }) => {
-    const {isLaptop, isTablet} = useDeviceCheck();
-    const shortScreen = isTablet | isLaptop;
+    const { isLaptop, isTablet } = useDeviceCheck()
+    const shortScreen = isTablet | isLaptop
     return (
         <MainLayout>
             <MainBgContainer>

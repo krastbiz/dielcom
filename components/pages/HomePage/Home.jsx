@@ -84,7 +84,6 @@ const advantages = [
 const Home = ({ featuredNews, brands }) => {
     const newsArray = featuredNews
     const { isLaptop, isDesktop, isLargeDesktop, isMobile, isTablet } = useDeviceCheck()
-    console.log(useDeviceCheck())
     const filteredAdvantageCards = () => {
         if (isLargeDesktop) {
             return advantages
@@ -96,10 +95,12 @@ const Home = ({ featuredNews, brands }) => {
             return advantages.filter((_, index) => index !== 2 && index !== 7 && index !== 8 && index !== 10)
         }
         if (isTablet) {
-            return advantages.filter((_, index) => index !== 2 && index!== 5 && index !== 8 && index !== 10)
+            return advantages.filter((_, index) => index !== 2 && index !== 5 && index !== 8 && index !== 10)
         }
         if (isMobile) {
-            return advantages.filter((_, index) => index!== 2 && index!== 5 && index!== 7 && index!== 8 && index!== 10)
+            return advantages.filter(
+                (_, index) => index !== 2 && index !== 5 && index !== 7 && index !== 8 && index !== 10,
+            )
         }
         return advantages
     }

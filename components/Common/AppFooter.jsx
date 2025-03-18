@@ -7,7 +7,7 @@ import { Button } from '../ui/buttons/Button'
 
 export const AppFooter = () => {
     const { isLaptop, isDesktop, isLargeDesktop, isMobile, isTablet } = useDeviceCheck()
-    const isPC = isLaptop || isDesktop || isLargeDesktop;
+    const isPC = isLaptop || isDesktop || isLargeDesktop
     return (
         <AppFooterWrapper>
             <StyledContainer>
@@ -23,10 +23,10 @@ export const AppFooter = () => {
                             Перейти в каталог
                         </StyledButton>
                     )}
-                    { isPC &&<StyledLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</StyledLink>}
+                    {isPC && <StyledLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</StyledLink>}
                     {/* <StyledLink href={'/contacts'}>Документы</StyledLink> */}
                 </LinkWrapper>
-                { (!isMobile && !isLaptop) && (
+                {!isMobile && !isLaptop && (
                     <StyledButton primary as="a" href="/catalog">
                         Перейти в каталог
                     </StyledButton>
@@ -67,7 +67,7 @@ const LinkWrapper = styled.div`
     justify-content: flex-end;
     flex-direction: column;
     height: 70px;
-        ${breakpoint.laptop`
+    ${breakpoint.laptop`
             margin-top: 13px;
     `}
 `

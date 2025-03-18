@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import { sendContactForm } from '../../../lib/api'
 import { useDeviceCheck } from '../../../lib'
 
@@ -13,7 +14,9 @@ const initialText = `Заполняя форму "Запрос компонен�
 Ограничения по заказу: только юридические лица и ИП.\n
 Минимальный заказ для новых партнеров от 10000 рублей.`
 
-export const useRequestForm = (defaultValue) => {
+export const useRequestForm = () => {
+    const { query } = useRouter()
+    const { partnumber, brand } = query
     const [formData, setFormData] = useState({
         components: initialText,
         name: '',
@@ -24,19 +27,17 @@ export const useRequestForm = (defaultValue) => {
     const [emailWasSent, setEmailWasSent] = useState(false)
     const [selectedFiles, setSelectedFiles] = useState([])
     const [requestNumber, setRequestNumber] = useState(null)
-    const { isMobile, isTablet } = useDeviceCheck()
-    const isMobileOrTablet = isMobile || isTablet
 
     useEffect(() => {
-        if (defaultValue) {
+        if (partnumber || brand) {
             setFormData((prevData) => ({
                 ...prevData,
                 components: initialText.includes(formData.components)
-                    ? defaultValue
+                    ? `Бренд ${brand}, партномер ${partnumber}`
                     : `${prevData.components}\n${defaultValue}`,
             }))
         }
-    }, [defaultValue])
+    }, [partnumber, brand])
 
     const resetForm = () => {
         setFormData({
@@ -107,7 +108,6 @@ export const useRequestForm = (defaultValue) => {
         emailWasSent,
         requestNumber,
         selectedFiles,
-        isMobileOrTablet,
         deleteFile,
         onFormSubmit,
         handleBlur,
