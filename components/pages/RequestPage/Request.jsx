@@ -28,7 +28,7 @@ export const RequestForm = () => {
             <MainBgContainer>
                 <MainSection showBreadcrumb breadcrumbs={[{ href: getRequestPageUrl(), text: 'Форма обратной связи' }]}>
                     <DefaultMainContent large>
-                        <H2 large>Рассчитаем стоимость и сроки доставки комплектующих</H2>
+                        <H2 large>Рассчитаем стоимость и сроки доставки компонентов</H2>
                     </DefaultMainContent>
                     <FormSection id="request">
                         <RequestFormWrapper>

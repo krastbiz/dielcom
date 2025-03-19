@@ -58,11 +58,11 @@ const IconLink = styled.a`
 
     &:hover svg {
         circle {
-            fill: #0d6af9;
+            fill:  ${({ theme }) => theme.colors.main};
         }
 
         path {
-            fill: #f8f8f8;
+            fill:  ${({ theme }) => theme.colors.whiteBackground};
         }
     }
 `

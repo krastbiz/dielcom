@@ -112,7 +112,6 @@ const Home = ({ featuredNews, brands }) => {
                     <MainSectionContainer>
                         <MainSectionContent>
                             <H1Gradient>электронные компоненты</H1Gradient>
-                            <H1>для вашего бизнеса</H1>
                             <MainSectionWrapper>
                                 <MainSectionText>
                                     Широкий ассортимент качественных комплектующих от ведущих мировых брендов. Гарантия
