@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 import { breakpoint, getBrandsPageUrl, useDeviceCheck } from '../../../lib'
 import { StyledLink } from '../../ui/Link'
@@ -210,7 +211,7 @@ const Home = ({ featuredNews, brands }) => {
 }
 
 const MainSectionBgContainer = styled.div`
-    background-image: url(/static/images/homepage/homepage-bg.png);
+    background-image: url(/static/images/homepage/homepage-bg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,7 +272,7 @@ const ButtonText = styled.div`
     opacity: 0.7;
 `
 
-const ArrowIcon = styled.img`
+const ArrowIcon = styled(Image)`
     height: 16px;
     width: 16px;
     position: relative;
@@ -470,7 +471,7 @@ const SupplyButton = styled(CatalogButton)`
 
 const AdvantageSection = styled.section`
     position: relative;
-    background-image: url(/static/images/homepage/homepage-bg5.png);
+    background-image: url(/static/images/homepage/homepage-bg5.webp);
     background-size: cover;
     background-position: center 0px;
     height: 1042px;
@@ -497,7 +498,7 @@ const AdvantageSection = styled.section`
     }
     ${breakpoint.laptop`
         height: 1180px;
-        background-image: url(/static/images/homepage/homepage-bg5-high.png);
+        background-image: url(/static/images/homepage/homepage-bg5-high.webp);
     `}
     ${breakpoint.mobile`
         height: 1820px;

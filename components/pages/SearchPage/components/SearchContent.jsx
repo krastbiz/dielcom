@@ -1,25 +1,27 @@
-import styled from 'styled-components'
-
-import { SearchTable } from './SearchTable'
-import { SearchComponent } from '../../../Common/AppHeader/Search'
-import { Container } from '../../../ui/layouts/Container'
-import { Separator } from '../../../ui/Separator'
 import { useCatalogSearch } from './useCatalogSearch'
+import { BaseCatalogTable } from '../../../Common/BaseCatalogTable'
+import { DefaultMainContent, MainSection } from '../../../Common'
+import { MainLayout } from '../../../ui/layouts/MainLayout'
+import { getCatalogPageUrl } from '../../../../lib'
+import { H2 } from '../../../ui/Typography'
 
 export const SearchContent = () => {
-    const { data, defaultSearchValue, loadMoreRef, loading, handleSearch, handleSort, sortBy, sortOrder } =
-        useCatalogSearch()
+    const { data, loadMoreRef, loading, handleSearch, handleSort, sortConfig } = useCatalogSearch()
 
     return (
-        <SearchContainer>
-            <SearchComponent defaultValue={defaultSearchValue} onSearch={handleSearch} isHomePage={false} />
-            <Separator />
-            <SearchTable data={data} loading={loading} onSort={handleSort} sortBy={sortBy} sortOrder={sortOrder} />
-            <div ref={loadMoreRef} style={{ height: '20px' }} />
-        </SearchContainer>
+        <MainLayout>
+            <MainSection showBreadcrumb breadcrumbs={[{ href: getCatalogPageUrl(), text: 'Линейка поставок' }]}>
+                <DefaultMainContent>
+                    <H2 large>ЛИНЕЙКА ПОСТАВОК</H2>
+                </DefaultMainContent>
+                <BaseCatalogTable
+                    catalog={data}
+                    setSearchTerm={handleSearch}
+                    handleSort={handleSort}
+                    sortConfig={sortConfig}
+                />
+                <div ref={loadMoreRef} style={{ height: '20px' }} />
+            </MainSection>
+        </MainLayout>
     )
 }
-
-const SearchContainer = styled(Container)`
-    flex-direction: column;
-`

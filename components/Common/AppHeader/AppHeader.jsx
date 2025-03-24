@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 import { breakpoint, useDeviceCheck } from '../../../lib'
 import { BurgerButton } from '../../ui/buttons/BurgerButton'
@@ -9,16 +9,20 @@ import { MobileMenu } from './MobileMenu'
 import { Navigation } from '../Navigation/Navigation'
 import { HeaderContacts } from './HeaderContacts'
 import { SearchComponent } from './Search'
+import { CatalogMenu } from './CatalogMenu'
 import { getCatalogPageUrl } from '../../../lib'
 
 export const AppHeader = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
-    const { pathname } = useRouter()
+    const [isCatalogMenuOpen, setCatalogMenuOpen] = useState(false)
     const { isLaptop, isMobile, isTablet } = useDeviceCheck()
 
     const isResponsiveView = isLaptop || isMobile || isTablet
     const showMobileMenu = isResponsiveView && isMobileMenuOpen
-    const isSearchPage = pathname === '/search'
+
+    const handleCatalogMenuToggle = () => {
+        setCatalogMenuOpen((prev) => !prev)
+    }
 
     return (
         <>
@@ -28,11 +32,12 @@ export const AppHeader = () => {
                         <Logo href="/">
                             <img src="/static/icons/logo.svg" alt="Site Logo" />
                         </Logo>
-                        <CatalogButton primary as="a" href={getCatalogPageUrl()}>
+                        <CatalogButton primary onClick={handleCatalogMenuToggle}>
                             Каталог
+                            <Image src="/static/icons/hamburger.svg" alt="hamburger" />
                         </CatalogButton>
                         <HeaderActions>
-                            {!isSearchPage && !isMobile && (
+                            {!isMobile && (
                                 <SearchWrapper>
                                     <SearchComponent isHomePage />
                                 </SearchWrapper>
@@ -54,6 +59,7 @@ export const AppHeader = () => {
                     )}
                 </StyledContainer>
             </HeaderWrapper>
+            {isCatalogMenuOpen && <CatalogMenu onClose={setCatalogMenuOpen} />}
             <MobileMenu isOpen={showMobileMenu} onClose={() => setMobileMenuOpen(false)} />
         </>
     )
@@ -98,6 +104,8 @@ const CatalogButton = styled(Button)`
     margin-right: 15px;
     width: 160px;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
     ${breakpoint.tablet`
         margin-right: 5px;
         width: 125px;

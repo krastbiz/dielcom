@@ -1,7 +1,10 @@
 export const translates = {
+    available: 'Доступно',
+    leadtime: 'Срок поставки',
     type: 'Тип устройства',
     brand: 'Производитель',
-    partNumber: 'Модель',
+    partnumber: 'Компонент',
+    partNumber: 'Компонент',
     frequencyRange: 'Диапазоны частот',
     gain: 'Усиление',
     connectorType: 'Тип разъема',

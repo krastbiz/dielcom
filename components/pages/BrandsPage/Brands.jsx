@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 import { breakpoint, getBrandsPageUrl, getBrandPageUrl, getSearchPageUrl, useDeviceCheck } from '../../../lib'
 import { DefaultMainContent, MainSection } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
@@ -24,7 +25,7 @@ export const Brands = ({ companies }) => {
                                 <CatalogItem key={company.id}>
                                     {isMobileOrTablet && <CatalogItemCategory>{company.category}</CatalogItemCategory>}
                                     <CatalogItemLogoWrapper>
-                                        <img src={company.logo} alt={`Логотип компании ${company.name}`} />
+                                        <Image src={company.logo} alt={`Логотип компании ${company.name}`} />
                                     </CatalogItemLogoWrapper>
 
                                     <CatalogItemContainer>
@@ -40,7 +41,7 @@ export const Brands = ({ companies }) => {
                                             <MoreButton primary as="a" href={getBrandPageUrl(company.id)}>
                                                 Подробнее
                                             </MoreButton>
-                                            <ProductButton as="a" href={getSearchPageUrl(`brand=${company.id}`)}>
+                                            <ProductButton as="a" href={getSearchPageUrl(`q=${company.id}`)}>
                                                 Товары производителя
                                             </ProductButton>
                                         </ButtonWrapper>

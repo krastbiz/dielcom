@@ -1,13 +1,15 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 import { Link } from '../../../ui/Link'
 import { breakpoint } from '../../../../lib'
+import { getSearchPageUrl } from '../../../../lib'
 
 export const CatalogCard = ({ id, title }) => {
     return (
         <CardContainer>
-            <StyledLink href={`/catalog/${id}`}>
+            <StyledLink href={getSearchPageUrl(`category=${id}`)}>
                 <CatalogCardWrapper>
-                    <Image src={`/static/images/categories/${id}.png`} alt={id} />
+                    <ImageOptim src={`/static/images/categories/${id}.png`} alt={id} />
                 </CatalogCardWrapper>
             </StyledLink>
             <Title>{title}</Title>
@@ -67,7 +69,7 @@ const CatalogCardWrapper = styled.div`
     }
 `
 
-const Image = styled.img`
+const ImageOptim = styled(Image)`
     border-radius: 10px;
     width: 250px;
     height: 250px;

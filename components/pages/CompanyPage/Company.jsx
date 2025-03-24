@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 import { breakpoint, getBrandPageUrl, getBrandsPageUrl } from '../../../lib'
 import { DefaultMainContent, MainSection } from '../../Common'
@@ -22,7 +23,7 @@ const Company = ({ company }) => {
                     >
                         <DefaultMainContent>
                             <CompanyLogoWrapper>
-                                <img src={company.logo} alt="Логотип кампании" />
+                                <Image src={company.logo} alt="Логотип кампании" />
                             </CompanyLogoWrapper>
                             <H2>{company.name}</H2>
                         </DefaultMainContent>
@@ -65,7 +66,7 @@ const Company = ({ company }) => {
                                         <CompanyProduct key={product.imageUrl}>
                                             <CompanyProductName>{product.name}</CompanyProductName>
                                             <CompanyProductImageWrapper>
-                                                <img src={product.imageUrl} alt="Изображение продукта кампании" />
+                                                <Image src={product.imageUrl} alt="Изображение продукта кампании" />
                                             </CompanyProductImageWrapper>
                                         </CompanyProduct>
                                     ))}
@@ -150,7 +151,6 @@ const CompanyDescription = styled.p`
 
 const CompanyServices = styled.ul`
     margin-top: 20px;
-    list-style: none;
     font-size: 14px;
     font-weight: 300;
 `

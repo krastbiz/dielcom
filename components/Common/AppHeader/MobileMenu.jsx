@@ -77,7 +77,7 @@ const MobileMenuWrapper = styled.div`
     top: 90px;
     right: 0;
     width: 330px;
-    height: 650px;
+    height: calc(100vh - 90px);
     background: ${({ theme }) => theme.colors.background};
     z-index: 500;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};

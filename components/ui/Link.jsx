@@ -21,6 +21,7 @@ export const Link = ({ href, target, children, className }) => {
 
 export const StyledLink = styled(Link)`
     display: inline-block;
+    text-decoration: ${({ underline }) => (underline ? 'underline' : 'none')};
     &:hover {
         color: ${({ theme }) => theme.colors.linkHover};
     }

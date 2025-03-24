@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 import { breakpoint, useDeviceCheck } from '../../lib'
 import { Container } from '../ui/layouts/Container'
@@ -13,7 +14,7 @@ export const AppFooter = () => {
             <StyledContainer>
                 <CopyrightContainer>
                     <Logo href="/">
-                        <img src="/static/icons/logo.svg" alt="Логотип сайта" />
+                        <Image src="/static/icons/logo.svg" alt="Логотип сайта" />
                     </Logo>
                     © ООО «Диэлком-ЭК» 2024
                 </CopyrightContainer>

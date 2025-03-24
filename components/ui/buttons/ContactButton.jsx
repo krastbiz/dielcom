@@ -4,7 +4,7 @@ import { breakpoint } from '../../../lib'
 export const ContactButton = ({ onClick, isActive }) => {
     return (
         <ContactFloatButtonWrapper onClick={onClick}>
-            {isActive ? <CloseDiv></CloseDiv> : <img src="/static/icons/phone.svg" alt="Изображение почты" />}
+            {isActive ? <CloseDiv /> : <img src="/static/icons/phone.svg" alt="Изображение телефона" />}
         </ContactFloatButtonWrapper>
     )
 }

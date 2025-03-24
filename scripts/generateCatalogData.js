@@ -23,6 +23,9 @@ const generateCatalogData = () => {
             partnumber: cleanedPartnumber,
             available: item['Available'] || 'Под заказ',
             leadtime: item['Lead Time'] || 'По запросу',
+            id: item.id,
+            category: item['Category'],
+            subcategory: item['Subcategory'],
         }
     })
     fs.writeFileSync(JSON_FILE_PATH, JSON.stringify(transformedData, null, 2))

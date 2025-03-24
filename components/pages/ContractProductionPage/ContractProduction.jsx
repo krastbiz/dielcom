@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 import { breakpoint, getContractProductionPageUrl, getRequestPageUrl, useDeviceCheck } from '../../../lib'
 import { DefaultMainContent, MainSection } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
@@ -34,13 +35,13 @@ export const ContractProduction = ({ contract }) => {
                         {contract.map(({ title, imageUrl, imageUrlWide, iconUrl, subtitle, options }) => (
                             <CatalogItem key={title}>
                                 <CatalogItemLogoWrapper>
-                                    <img src={shortScreen ? imageUrlWide : imageUrl} alt={title} />
+                                    <Image src={shortScreen ? imageUrlWide : imageUrl} alt={title} />
                                 </CatalogItemLogoWrapper>
 
                                 <CatalogItemContainer>
                                     <TitleWrapper>
                                         <IconWrapper>
-                                            <img src={iconUrl} />
+                                            <Image src={iconUrl} />
                                         </IconWrapper>
                                         <CatalogItemName subtitle={subtitle}>{title}</CatalogItemName>
                                     </TitleWrapper>

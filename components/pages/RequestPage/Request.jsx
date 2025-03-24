@@ -69,7 +69,7 @@ export const RequestForm = () => {
                                         />
                                         <ContactFormDescription>
                                             Нажимая кнопку "Отправить", Вы даете согласие на
-                                            <StyledLink href={'/policy#personalData'}>
+                                            <StyledLink underline href={'/policy#personalData'}>
                                                 обработку персональных данных
                                             </StyledLink>
                                         </ContactFormDescription>
@@ -166,7 +166,7 @@ const RequestFormWrapper = styled(Container)`
 
     ${breakpoint.tablet`
         padding: 10px;
-        width: 100%;
+        box-sizing: border-box;
     `}
 `
 
@@ -174,6 +174,23 @@ const InputsContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex;
+    :first-child {
+        ${breakpoint.desktop`
+        width: 370px;
+    `}
+        ${breakpoint.laptop`
+        width: 245px;
+    `}
+        ${breakpoint.tablet`
+        width: 100%;
+    `}
+    }
+    :last-child {
+        flex-grow: 1;
+        ${breakpoint.tablet`
+        width: 100%;
+    `}
+    }
 `
 
 const ControlsContainer = styled.div`
@@ -194,7 +211,7 @@ const UploadContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     ${breakpoint.tablet`
-        flex-direction: row;
+        margin: 10px 0px;
     `}
 `
 
@@ -204,6 +221,10 @@ const StyledContactForm = styled.form`
     justify-content: space-between;
     width: 100%;
     height: 433px;
+    ${breakpoint.tablet`
+        height: auto;
+        box-sizing: border-box;
+    `}
 `
 
 const StyledInput = styled.input`
@@ -219,6 +240,17 @@ const StyledInput = styled.input`
         color: #000;
         opacity: 0.5;
     }
+    ${breakpoint.desktop`
+        width: 350px;
+    `}
+    ${breakpoint.laptop`
+        width: 225px;
+        padding: 15px;
+    `}
+    ${breakpoint.tablet`
+        height: 50px;
+        width: 100%;
+    `}
 `
 
 const StyledTextarea = styled.textarea`
@@ -232,7 +264,7 @@ const StyledTextarea = styled.textarea`
     resize: none;
     white-space: 'pre-wrap';
     border-radius: 30px;
-    width: 600px;
+    width: 100%;
     height: 40vh;
     padding: 20px 20px 0;
     box-sizing: border-box;
@@ -243,11 +275,7 @@ const StyledTextarea = styled.textarea`
     &::-webkit-scrollbar {
         display: none;
     }
-    ${breakpoint.desktop`
-        width: 600px;
-    `}
     ${breakpoint.tablet`
-        width: auto;
         height: 200px;
         margin: 0px;
         margin-top: 10px;
@@ -276,8 +304,13 @@ const ContactFormDescription = styled.p`
     width: 428px;
     opacity: 0.6;
     text-align: start;
-    ${breakpoint.tablet`
+    ${breakpoint.laptop`
         width: auto;
+        padding-left: 
+    `}
+    ${breakpoint.tablet`
+        margin-top: 0px;
+        margin-left: 10px;
     `}
 `
 
@@ -309,13 +342,19 @@ const FileUploadText = styled.span`
 `
 
 const AttachedFilesList = styled.ul`
-    list-style: none;
     padding: 0;
     max-height: 50px;
     width: 250px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: ${({ theme }) => theme.colors.grayed} transparent;
+    ${breakpoint.laptop`
+         max-width: 150px;
+         margin-top: 5px;
+    `}
+    ${breakpoint.tablet`
+         max-width: 100%;
+    `}
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -324,9 +363,6 @@ const AttachedFilesList = styled.ul`
         background-color: ${({ theme }) => theme.colors.grayed};
         border-radius: 4px;
     }
-    ${breakpoint.mobile`
-         width: 120px;
-    `}
 `
 
 const AttachedFileItem = styled.li`
@@ -334,6 +370,7 @@ const AttachedFileItem = styled.li`
     color: ${({ theme }) => theme.colors.base};
     margin-bottom: 5px;
     width: 100%;
+    margin: 3px 0px;
 
     &::after {
         content: '✕';
@@ -349,4 +386,7 @@ const AttachedFileItem = styled.li`
 const SendButton = styled(Button)`
     height: 50px;
     width: 200px;
+    ${breakpoint.laptop`
+         width: 120px;
+    `}
 `

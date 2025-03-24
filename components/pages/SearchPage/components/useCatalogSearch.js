@@ -10,15 +10,15 @@ export const useCatalogSearch = () => {
     const [page, setPage] = useState(1)
     const [hasMore, setHasMore] = useState(true)
     const [loading, setLoading] = useState(false)
-    const [sortBy, setSortBy] = useState('brand')
-    const [sortOrder, setSortOrder] = useState('asc')
-    const defaultSearchValue = query.q ?? ''
+    const [sortConfig, setSortConfig] = useState({ key: '', direction: 'asc' })
+    const defaultSearchValue = query.q || ''
+    const category = query.category || ''
     const searchValueRef = useRef(defaultSearchValue)
 
-    const fetchData = useCallback(async (query, pageNum, sortBy, sortOrder) => {
+    const fetchData = useCallback(async (query, category, pageNum, sortBy, sortOrder) => {
         setLoading(true)
         try {
-            const response = await search({ q: query, page: pageNum, itemsPerPage: 100, sortBy, sortOrder })
+            const response = await search({ q: query, category, page: pageNum, itemsPerPage: 100, sortBy, sortOrder })
             const { data: newData, total } = response.data
 
             setData((prevData) => (pageNum === 1 ? newData : [...prevData, ...newData]))
@@ -31,44 +31,41 @@ export const useCatalogSearch = () => {
     }, [])
 
     const debouncedFetchData = useCallback(
-        debounce(async (query, pageNum, sortBy, sortOrder) => {
-            await fetchData(query, pageNum, sortBy, sortOrder)
+        debounce(async (query, category, pageNum, sortBy, sortOrder) => {
+            await fetchData(query, category, pageNum, sortBy, sortOrder)
         }, 500),
         [fetchData],
     )
 
     const handleSearch = useCallback(
         async (value) => {
-            debouncedFetchData(value || searchValueRef.current, 1, sortBy, sortOrder)
+            debouncedFetchData(value || searchValueRef.current, category, 1, sortConfig.key, sortConfig.order)
             searchValueRef.current = value
         },
-        [debouncedFetchData, sortBy, sortOrder],
-    )
-
-    const handleSort = useCallback(
-        (field) => {
-            const newSortOrder = sortBy === field ? (sortOrder === 'asc' ? 'desc' : 'asc') : 'asc'
-            setSortBy(field)
-            setSortOrder(newSortOrder)
-            setPage(1)
-        },
-        [sortBy, sortOrder],
+        [debouncedFetchData],
     )
 
     useEffect(() => {
-        if (defaultSearchValue) {
-            fetchData(defaultSearchValue, 1, sortBy, sortOrder)
+        if (defaultSearchValue || category) {
+            fetchData(defaultSearchValue, category, 1, sortConfig.key, sortConfig.order)
         }
-    }, [])
+    }, [defaultSearchValue])
 
     useEffect(() => {
-        fetchData(searchValueRef.current, page, sortBy, sortOrder)
-    }, [page, sortBy, sortOrder])
+        if (searchValueRef.current) {
+            fetchData(searchValueRef.current, category, page, sortConfig.key, sortConfig.order)
+        }
+    }, [page])
 
     const loadMoreRef = useRef(null)
 
     const loadMore = () => {
         setPage((prevPage) => prevPage + 1)
+    }
+
+    const handleSort = (key) => {
+        const direction = sortConfig.key === key && sortConfig.direction === 'asc' ? 'desc' : 'asc'
+        setSortConfig({ key, direction })
     }
 
     useEffect(() => {
@@ -103,7 +100,6 @@ export const useCatalogSearch = () => {
         loading,
         handleSearch,
         handleSort,
-        sortBy,
-        sortOrder,
+        sortConfig,
     }
 }

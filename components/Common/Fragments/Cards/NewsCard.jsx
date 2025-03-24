@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { format, parse } from 'date-fns'
 import { ru } from 'date-fns/locale'
+import Image from 'next/image'
 
 import { H3 } from '../../../ui/Typography'
 import { breakpoint, getNewsDetailPageUrl } from '../../../../lib'
@@ -20,7 +21,7 @@ export const NewsCard = ({ news, showImage = false }) => {
             <NewsCardWrapper>
                 {showImage && (
                     <ImageWrapper>
-                        <img src={imageUrl} alt="Изображение новости" />
+                        <Image src={imageUrl} alt="Изображение новости" />
                     </ImageWrapper>
                 )}
                 <ContentWrapper>

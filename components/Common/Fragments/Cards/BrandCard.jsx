@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 import { Link } from '../../../ui/Link'
 import { getBrandPageUrl } from '../../../../lib'
@@ -35,5 +36,3 @@ const BrandCardWrapper = styled.div`
             inset 0 0 0 1px ${({ theme }) => theme.colors.borderAlt};
     }
 `
-
-const Image = styled.img``

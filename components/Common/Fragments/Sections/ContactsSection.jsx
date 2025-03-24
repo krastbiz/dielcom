@@ -79,7 +79,7 @@ const ContactsSectionWrapper = styled.section`
     position: relative;
     background: ${({ theme }) => theme.colors.background};
     overflow: hidden;
-    &::before {
+    margin-top &::before {
         content: '';
         position: absolute;
         top: -600px;

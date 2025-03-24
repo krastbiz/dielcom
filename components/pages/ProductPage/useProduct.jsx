@@ -1,102 +1,54 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
-import { getCatalog } from '../../../lib/api'
+import { useState } from 'react'
 
-export const useProduct = ({ categoryId, productId, totalItems, itemsPerPage = 50 }) => {
-    const [catalog, setCatalog] = useState([])
-    const [page, setPage] = useState(1)
-    const [filters, setFilters] = useState({})
-    const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' })
-    const [loading, setLoading] = useState(false)
-    const [hasMore, setHasMore] = useState(catalog.length < totalItems)
-    const [error, setError] = useState(null)
+export const useProduct = ({ catalog }) => {
+    const [searchTerm, setSearchTerm] = useState('')
+    const [sortConfig, setSortConfig] = useState({ key: '', direction: 'asc' })
 
-    const loadMoreRef = useRef(null)
+    const filteredCatalog = catalog.filter((item) => {
+        const matchesPartNumber = item.partNumber?.toLowerCase().includes(searchTerm.toLowerCase())
+        return matchesPartNumber
+    })
 
-    const fetchCatalog = useCallback(
-        async (nextPage) => {
-            if (!hasMore || loading) return
-
-            setLoading(true)
-            setError(null)
-            try {
-                const response = await getCatalog({
-                    categoryId,
-                    productId,
-                    page,
-                    sortBy: sortConfig.key,
-                    sortOrder: sortConfig.direction,
-                })
-
-                const catalog = response.data.catalog
-
-                setCatalog((prev) => [...prev, ...catalog])
-                setPage(nextPage)
-                setHasMore(nextPage * itemsPerPage < totalItems)
-            } catch (error) {
-                console.error('Ошибка загрузки данных:', error)
-                setError(error.message || 'Не удалось загрузить каталог')
-            } finally {
-                setLoading(false)
-            }
-        },
-        [categoryId, productId, filters, sortConfig, hasMore, loading, itemsPerPage, totalItems],
-    )
-
-    const applyFilters = (newFilters) => {
-        setFilters(newFilters)
-        setCatalog([])
-        setPage(1)
-        setHasMore(true)
+    const handleSort = (key) => {
+        const direction = sortConfig.key === key && sortConfig.direction === 'asc' ? 'desc' : 'asc'
+        setSortConfig({ key, direction })
     }
 
-    const applySort = (key) => {
-        setSortConfig((prev) => {
-            const direction = prev.key === key && prev.direction === 'asc' ? 'desc' : 'asc'
-            return { key, direction }
-        })
-        setCatalog([])
-        setPage(1)
-        setHasMore(true)
-    }
+    const sortedCatalog = [...filteredCatalog].sort((a, b) => {
+        const valueA = a[sortConfig.key] || ''
+        const valueB = b[sortConfig.key] || ''
 
-    useEffect(() => {
-        setCatalog([])
-        setPage(1)
-        setHasMore(true)
-        fetchCatalog(1)
-    }, [filters, sortConfig])
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                if (entries[0].isIntersecting && hasMore) {
-                    fetchCatalog(page + 1)
-                }
-            },
-            { threshold: 1.0 },
-        )
-
-        if (loadMoreRef.current) {
-            observer.observe(loadMoreRef.current)
+        if (valueA === '' && valueB === '') {
+            return 0
         }
 
-        return () => {
-            if (loadMoreRef.current) {
-                observer.unobserve(loadMoreRef.current)
-            }
+        if (valueA === '') {
+            return sortConfig.direction === 'asc' ? 1 : -1
         }
-    }, [fetchCatalog, hasMore, page])
 
-    const headers = Object.keys(catalog[0] || {}).filter((key) => key !== 'id')
+        if (valueB === '') {
+            return sortConfig.direction === 'asc' ? -1 : 1
+        }
+
+        if (!isNaN(valueA) && !isNaN(valueB)) {
+            return sortConfig.direction === 'asc' ? valueA - valueB : valueB - valueA
+        }
+
+        if (valueA < valueB) {
+            return sortConfig.direction === 'asc' ? -1 : 1
+        }
+
+        if (valueA > valueB) {
+            return sortConfig.direction === 'asc' ? 1 : -1
+        }
+
+        return 0
+    })
 
     return {
-        catalog,
-        loading,
-        headers,
-        error,
-        loadMoreRef,
+        sortedCatalog,
         sortConfig,
-        applyFilters,
-        applySort,
+        setSearchTerm,
+        handleSort,
     }
 }

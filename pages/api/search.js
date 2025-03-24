@@ -6,8 +6,15 @@ const DATA_FILE_PATH = path.resolve(process.cwd(), 'data/catalog-data.json')
 const cache = new Map()
 
 export async function search(req, res) {
-    const { q: search, page = 1, itemsPerPage = 100, sortBy = 'brand', sortOrder = 'asc' } = req.query
-    const cacheKey = `${search || 'all'}|${page}|${itemsPerPage}|${sortBy}|${sortOrder}`
+    const {
+        q: search = '',
+        category = '',
+        page = 1,
+        itemsPerPage = 100,
+        sortBy = 'brand',
+        sortOrder = 'asc',
+    } = req.query
+    const cacheKey = `${search}|${category}|${page}|${itemsPerPage}|${sortBy}|${sortOrder}`
     const startIndex = Number((page - 1) * itemsPerPage)
     const endIndex = Number(startIndex + itemsPerPage)
 
@@ -22,11 +29,9 @@ export async function search(req, res) {
 
     const data = JSON.parse(fs.readFileSync(DATA_FILE_PATH, 'utf-8'))
 
-    let results
+    let results = category ? data.filter((item) => item.category?.toLowerCase() === category.toLowerCase()) : [...data]
 
-    if (!search) {
-        results = [...data]
-    } else {
+    if (search) {
         const options = {
             keys: ['partnumber', 'brand'],
             includeScore: true,
@@ -34,7 +39,7 @@ export async function search(req, res) {
             minMatchCharLength: 3,
         }
 
-        const fuse = new Fuse(data, options)
+        const fuse = new Fuse(results, options)
         results = fuse.search(search).map((result) => result.item)
     }
 

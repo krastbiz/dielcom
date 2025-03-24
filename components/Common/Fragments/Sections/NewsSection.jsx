@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import NextLink from 'next/link'
+import Image from 'next/image'
 
 import { breakpoint, getAllNewsPage } from '../../../../lib'
 import { Container } from '../../../ui/layouts/Container'
@@ -78,7 +79,7 @@ const NewsCardsWrapper = styled.div`
     }
 `
 
-const ArrowIcon = styled.img`
+const ArrowIcon = styled(Image)`
     margin-left: 20px;
     margin-top: 10px;
     height: 8px;

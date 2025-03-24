@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
+import Image from 'next/image'
 
 import { breakpoint, getAllNewsPage, getCompanyNewsPage, getNewsDetailPageUrl } from '../../../lib'
 import { DefaultMainContent, MainSection, NewsSection } from '../../Common'
@@ -31,7 +32,7 @@ const NewsDetail = ({ company, newsDetail, featuredNewsArray }) => {
                     <Container>
                         <H2>{newsDetail.title}</H2>
                         <NewsDetailImageWrapper>
-                            <img src={newsDetail.imageUrl} alt="Изображение новости" />
+                            <Image src={newsDetail.imageUrl} alt="Изображение новости" />
                         </NewsDetailImageWrapper>
                         <NewsDetailContent>{newsDetail.description}</NewsDetailContent>
                     </Container>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 import { breakpoint } from '../../../../lib'
 
 export const SupplyCard = ({ title, image, number }) => {
@@ -6,7 +7,7 @@ export const SupplyCard = ({ title, image, number }) => {
         <SupplyCardWrapper>
             <Number>/0{number}</Number>
             <Title>{title}</Title>
-            <Image src={image} alt={title} />
+            <ImageOpt src={image} alt={title} />
         </SupplyCardWrapper>
     )
 }
@@ -36,7 +37,7 @@ const Title = styled.div`
     letter-spacing: -0.04em;
     line-height: 120%;
 `
-const Image = styled.img`
+const ImageOpt = styled(Image)`
     border-radius: 10px;
     width: 100%;
     height: 181px;
