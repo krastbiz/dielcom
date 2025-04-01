@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const TelegramIcon = ({ small }) => (
-    <IconLink href="https://t.me/@Nordjeg" target="_blank">
+    <IconLink href="https://t.me/@szmitrukevich" target="_blank">
         <svg
             width={small ? '34' : '55'}
             height={small ? '34' : '55'}
@@ -26,7 +26,7 @@ export const TelegramIcon = ({ small }) => (
 )
 
 export const WhatsappIcon = ({ small }) => (
-    <IconLink href="https://wa.me/79111526297" target="_blank">
+    <IconLink href="https://wa.me/79117467069" target="_blank">
         <svg
             width={small ? '34' : '55'}
             height={small ? '34' : '55'}

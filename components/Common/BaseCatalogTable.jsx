@@ -1,17 +1,18 @@
 import styled, { keyframes } from 'styled-components'
 import { useEffect, useRef, useState } from 'react'
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router'
 
 import { Container } from '../ui/layouts/Container'
 import { translates } from '../../mock-data/translates'
 import { SearchComponent } from './AppHeader/Search'
+import { getRequestPageUrl } from '../../lib'
+
+const filteredHeaders = ['id', 'category', 'subcategory', 'partnumber', 'partNumber']
 
 export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSort, altBg }) => {
-    const headers = catalog[0]
-        ? Object.keys(catalog[0]).filter(
-              (header) => header !== 'id' && header !== 'category' && header !== 'subcategory',
-          )
-        : ['brand', 'partnumber', 'available', 'leadtime']
+    const headers = catalog.length > 0
+    ? Object.keys(catalog[0]).filter((header) => !filteredHeaders.includes(header))
+    : ['brand', 'available', 'leadtime'];
 
     const router = useRouter()
 
@@ -31,6 +32,7 @@ export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSor
                         <thead>
                             <StickyHeaderRow>
                                 <th>Заказать</th>
+                                <th>Партномер</th>
                                 {headers.map((header) => (
                                     <th key={header} onClick={() => handleSort(header)}>
                                         {translates[header] || header}
@@ -56,7 +58,7 @@ export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSor
                                     <StickyCell>{item.partNumber || item.partnumber}</StickyCell>
 
                                     {headers.map(
-                                        (header) => header !== 'partnumber' && header !== 'partNumber' && <td key={header}>{item[header]}</td>,
+                                        (header) => <td key={header}>{item[header]}</td>,
                                     )}
                                 </tr>
                             ))}

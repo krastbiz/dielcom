@@ -513,6 +513,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'wireless-technologies',
             name: 'Беспроводные технологии',
             imageUrl: '/static/images/categories/wireless-technologie.png',
+            iconUrl: '/static/icons/categories/wireless-technologies.svg',
             products: [
                 { id: 'antennas-and-adapters', label: 'Антенны и переходники' },
                 { id: 'rfid-components', label: 'Компоненты RFID' },
@@ -526,6 +527,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'sensors',
             name: 'Датчики',
             imageUrl: '/static/images/categories/sensors.png',
+            iconUrl: '/static/icons/categories/sensors.svg',
             products: [
                 { id: 'inertial-sensors', label: 'Датчики инерциальные' },
                 { id: 'sensor-accessories', label: 'Аксессуары для датчиков' },
@@ -551,6 +553,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'measurement-equipment',
             name: 'Измерительное оборудование',
             imageUrl: '/static/images/categories/measurement-equipment.png',
+            iconUrl: '/static/icons/categories/measurement-equipment.svg',
             products: [
                 { id: 'signal-generators', label: 'Генераторы сигналов' },
                 { id: 'energy-flow-meters', label: 'Измерители расхода энергии' },
@@ -567,6 +570,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'power-supplies',
             name: 'Источники питания',
             imageUrl: '/static/images/categories/power-supplies.png',
+            iconUrl: '/static/icons/categories/power-supplies.svg',
             products: [
                 { id: 'ac-dc-converters', label: 'AC-DC преобразователи' },
                 { id: 'dc-dc-converters', label: 'DC-DC преобразователи' },
@@ -582,6 +586,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'microwave-components-and-solutions',
             name: 'СВЧ компоненты и решения',
             imageUrl: '/static/images/categories/microwave-components-and-solutions.png',
+            iconUrl: '/static/icons/categories/microwave-components-and-solutions.svg',
             products: [
                 { id: 'rf-antennas-and-components', label: 'РЧ антенны и комплектующие' },
                 { id: 'rf-discrete-semiconductors', label: 'РЧ дискретные полупроводники' },
@@ -599,6 +604,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'optoelectronics',
             name: 'Оптоэлектроника',
             imageUrl: '/static/images/categories/optoelectronics.png',
+            iconUrl: '/static/icons/categories/optoelectronics.svg',
             products: [
                 { id: 'indicators', label: 'Индикация' },
                 { id: 'optoelectronic-components', label: 'Оптоэлектронные компоненты' },
@@ -611,6 +617,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'printed-circuit-boards',
             name: 'Печатные платы',
             imageUrl: '/static/images/categories/printed-circuit-boards.png',
+            iconUrl: '/static/icons/categories/printed-circuit-boards.svg',
             products: [{ id: 'multilayer-pcbs', label: 'Многослойные платы' }],
         },
     ],
@@ -620,6 +627,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'electromechanics',
             name: 'Электромеханика',
             imageUrl: '/static/images/categories/electromechanics.png',
+            iconUrl: '/static/icons/categories/electromechanics.svg',
             products: [
                 { id: 'accessories', label: 'Аксессуары' },
                 { id: 'cases', label: 'Корпуса' },
@@ -640,6 +648,7 @@ export const CATEGORIES_ARRAY = new Map([
             id: 'power-electronics',
             name: 'Силовая электроника',
             imageUrl: '/static/images/categories/power-electronics.png',
+            iconUrl: '/static/icons/categories/power-electronics.svg',
             products: [
                 { id: 'mosfet-transistors', label: 'MOSFET транзисторы' },
                 { id: 'sic-diodes', label: 'SiC диоды' },

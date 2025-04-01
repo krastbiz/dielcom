@@ -12,8 +12,7 @@ const Company = ({ company }) => {
 
     return (
         <MainLayout>
-            <StyledContainer>
-                <ContentArea>
+            <MainBgContainer>
                     <MainSection
                         showBreadcrumb
                         breadcrumbs={[
@@ -74,24 +73,17 @@ const Company = ({ company }) => {
                             </ProductsContainer>
                         </CompanyProductsSection>
                     )}
-                </ContentArea>
-            </StyledContainer>
+            </MainBgContainer>
         </MainLayout>
     )
 }
 
 export default Company
 
-const StyledContainer = styled(Container)`
-    align-items: flex-start;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
-    padding-bottom: 50px;
-`
-
-const ContentArea = styled.div`
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+const MainBgContainer = styled.div`
+    background-color: ${({ theme }) => theme.colors.background};
+    position: relative;
+    z-index: 3;
 `
 
 const CompanyInfoSection = styled.section`

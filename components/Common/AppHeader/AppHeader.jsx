@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Image from 'next/image'
 
 import { breakpoint, useDeviceCheck } from '../../../lib'
@@ -10,7 +10,6 @@ import { Navigation } from '../Navigation/Navigation'
 import { HeaderContacts } from './HeaderContacts'
 import { SearchComponent } from './Search'
 import { CatalogMenu } from './CatalogMenu'
-import { getCatalogPageUrl } from '../../../lib'
 
 export const AppHeader = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -21,7 +20,18 @@ export const AppHeader = () => {
     const showMobileMenu = isResponsiveView && isMobileMenuOpen
 
     const handleCatalogMenuToggle = () => {
+        setMobileMenuOpen(false)
         setCatalogMenuOpen((prev) => !prev)
+    }
+
+    const handleMobileMenuToggle = () => {
+        setMobileMenuOpen((prev) => !prev)
+        setCatalogMenuOpen(false)
+    }
+
+    const closeMenus = () => {
+        setMobileMenuOpen(false)
+        setCatalogMenuOpen(false)
     }
 
     return (
@@ -43,10 +53,7 @@ export const AppHeader = () => {
                                 </SearchWrapper>
                             )}
                             {isResponsiveView ? (
-                                <BurgerButton
-                                    isActive={isMobileMenuOpen}
-                                    onClick={() => setMobileMenuOpen((prev) => !prev)}
-                                />
+                                <BurgerButton isActive={isMobileMenuOpen} onClick={handleMobileMenuToggle} />
                             ) : (
                                 <HeaderContacts />
                             )}
@@ -59,8 +66,10 @@ export const AppHeader = () => {
                     )}
                 </StyledContainer>
             </HeaderWrapper>
-            {isCatalogMenuOpen && <CatalogMenu onClose={setCatalogMenuOpen} />}
-            <MobileMenu isOpen={showMobileMenu} onClose={() => setMobileMenuOpen(false)} />
+            <CatalogMenuWrapper isOpen={isCatalogMenuOpen}>
+                <CatalogMenu onClose={closeMenus} isOpen={isCatalogMenuOpen} />
+            </CatalogMenuWrapper>
+            <MobileMenu isOpen={showMobileMenu} onClose={closeMenus} />
         </>
     )
 }
@@ -155,4 +164,36 @@ const NavigationWrapper = styled.div`
         display: flex;
         margin-left: 0;
     `}
+`
+
+const slideDown = keyframes`
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`
+
+const slideUp = keyframes`
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+`
+
+const CatalogMenuWrapper = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    background-color: #1c1c1c;
+    animation: ${({ isOpen }) => (isOpen ? slideDown : slideUp)} 0.3s ease forwards;
 `

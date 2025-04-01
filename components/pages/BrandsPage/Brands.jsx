@@ -142,6 +142,7 @@ const CatalogItemLogoWrapper = styled.div`
 
     img {
         max-width: 350px;
+        width: 100%;
     }
 
     ${breakpoint.laptop`

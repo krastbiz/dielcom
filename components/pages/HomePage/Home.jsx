@@ -14,19 +14,19 @@ import { screenWidth } from '../../../lib'
 const supply = [
     {
         title: 'Поставка электронных компонентов',
-        image: '/static/images/homepage/supply/1.png',
+        image: '/static/images/homepage/supply/1.webp',
     },
     {
         title: 'Дистрибьюция дисплеев',
-        image: '/static/images/homepage/supply/2.png',
+        image: '/static/images/homepage/supply/2.webp',
     },
     {
         title: 'Услуги полного цикла производства электроники',
-        image: '/static/images/homepage/supply/4.png',
+        image: '/static/images/homepage/supply/4.webp',
     },
     {
         title: 'Поставка компонентов под разработку',
-        image: '/static/images/homepage/supply/3.png',
+        image: '/static/images/homepage/supply/3.webp',
     },
 ]
 
@@ -287,7 +287,7 @@ const BrandsSection = styled.section`
 `
 
 const BrandBgContainer = styled.div`
-    background-image: url(/static/images/homepage/homepage-bg2.png);
+    background-image: url(/static/images/homepage/homepage-bg2.webp);
     background-size: 100% 350px;
     background-position: center top;
     background-repeat: no-repeat;
@@ -367,7 +367,7 @@ const GoalText = styled(MainSectionText)`
 `
 
 const GoalContent = styled.div`
-    background-image: url(/static/images/homepage/homepage-bg3.png);
+    background-image: url(/static/images/homepage/homepage-bg3.webp);
     background-size: 100% 240px;
     background-position: center top;
     background-repeat: no-repeat;
@@ -493,7 +493,7 @@ const AdvantageSection = styled.section`
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/static/images/homepage/homepage-bg6.png);
+        background-image: url(/static/images/homepage/homepage-bg6.webp);
         z-index: 2;
     }
     ${breakpoint.laptop`
@@ -502,7 +502,7 @@ const AdvantageSection = styled.section`
     `}
     ${breakpoint.mobile`
         height: 1820px;
-        background-image: url(/static/images/homepage/homepage-bg5-mobile.png);
+        background-image: url(/static/images/homepage/homepage-bg5-mobile.webp);
     `}
 `
 

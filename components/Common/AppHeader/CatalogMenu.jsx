@@ -1,15 +1,20 @@
 import { useState } from 'react'
-import { CATEGORIES_ARRAY } from '../../../mock-data'
 import styled from 'styled-components'
+import Image from 'next/image'
+
+import { CATEGORIES_ARRAY } from '../../../mock-data'
 
 import { Link } from '../../ui/Link'
 import { getProductPageUrl, breakpoint, useDeviceCheck } from '../../../lib'
 import { H3 } from '../../ui/Typography'
 
-export const CatalogMenu = ({ onClose }) => {
+export const CatalogMenu = ({ onClose, isOpen }) => {
     const [activeCategory, setActiveCategory] = useState(null)
     const [isSubMenuOpen, setSubMenuOpen] = useState(false)
     const { isMobile, isTablet } = useDeviceCheck()
+    const isResponsiveView = isMobile || isTablet
+
+    if (!isOpen) return null
 
     const handleCategoryClick = (categoryId) => {
         if (activeCategory === categoryId) {
@@ -22,7 +27,7 @@ export const CatalogMenu = ({ onClose }) => {
     }
 
     const handleCategoryHover = (categoryId) => {
-        if (activeCategory !== categoryId && !(isMobile | isTablet)) {
+        if (activeCategory !== categoryId && !isResponsiveView) {
             setActiveCategory(categoryId)
             setSubMenuOpen(true)
         }
@@ -34,21 +39,30 @@ export const CatalogMenu = ({ onClose }) => {
         onClose(false)
     }
 
+    const handleOutsideClick = (e) => {
+        if (!e.target.closest('[data-category-item]')) {
+            setActiveCategory(null)
+            setSubMenuOpen(false)
+        }
+    }
+
     return (
         <>
-            <Overlay onClick={() => onClose(false)} />
+            <Overlay onClick={handleCloseMenus} />
 
-            <MenuWrapper>
+            <MenuWrapper onClick={handleOutsideClick}>
                 <CategoriesContainer>
                     <CategoriesList isSubMenuOpen={isSubMenuOpen}>
                         {Array.from(CATEGORIES_ARRAY.entries()).map(([key, category]) => (
                             <CategoriesItem
+                                data-category-item
                                 onClick={() => handleCategoryClick(key)}
                                 onMouseEnter={() => handleCategoryHover(key)}
                                 key={key}
                                 isSelected={key === activeCategory}
                             >
-                                {category.name}
+                                <MenuItemIcon src={category.iconUrl} />
+                                {!(isResponsiveView && isSubMenuOpen) && category.name}
                             </CategoriesItem>
                         ))}
                     </CategoriesList>
@@ -89,6 +103,7 @@ const Overlay = styled.div`
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
+    height: 100vh;
     z-index: 999;
 `
 
@@ -113,11 +128,9 @@ const CategoriesList = styled.ul`
     flex-direction: column;
     width: 300px;
     padding: 10px;
+    /* transition: width 0.3s ease; */
     ${breakpoint.laptop`
-        width: 255px;
         padding-right: 3px;
-    `}
-    ${breakpoint.tablet`
         width: ${({ isSubMenuOpen }) => (isSubMenuOpen ? '60px' : '255px')};
     `}
 `
@@ -130,6 +143,8 @@ const CategoriesItem = styled.li`
     padding-right: 5px;
     cursor: pointer;
     font-size: 13px;
+    display: flex;
+    align-items: center;
     &:hover {
         background-color: ${({ theme }) => theme.colors.altBackground};
     }
@@ -163,4 +178,8 @@ const SubmenuItem = styled.li`
     &:hover {
         color: ${({ theme }) => theme.colors.linkHover};
     }
+`
+
+const MenuItemIcon = styled(Image)`
+    margin-right: 10px;
 `
