@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 import { breakpoint, getCatalogPageUrl } from '../../../lib'
 import { Container } from '../../ui/layouts/Container'
-import { CatalogCard, DefaultMainContent, MainSection } from '../../Common'
+import { DefaultMainContent, MainSection } from '../../Common'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
+import { CatalogMenuContent } from './CatalogContent'
 
-export const Catalog = ({ categories }) => {
+export const Catalog = () => {
     return (
         <MainLayout>
             <MainBgContainer>
@@ -16,9 +17,7 @@ export const Catalog = ({ categories }) => {
                     </DefaultMainContent>
                     <CatalogSection>
                         <CatalogContainer>
-                            {categories.map(({ id, name }) => (
-                                <CatalogCard key={id} title={name} id={id} />
-                            ))}
+                            <CatalogMenuContent/>
                         </CatalogContainer>
                     </CatalogSection>
                 </MainSection>

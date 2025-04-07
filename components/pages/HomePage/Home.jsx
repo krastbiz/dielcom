@@ -131,7 +131,6 @@ const Home = ({ featuredNews, brands }) => {
             <BrandsSection>
                 <BrandBgContainer>
                     <BrandsContainer>
-                        <BrandSectionTitle>[Бренды]</BrandSectionTitle>
                         <BrandsLink primary as="a" href={getBrandsPageUrl()}>
                             <ButtonText>Все бренды </ButtonText>
                             <ArrowIcon src="/static/icons/arrow-right.svg" alt="arrow" />
@@ -147,7 +146,6 @@ const Home = ({ featuredNews, brands }) => {
 
             <GoalSection>
                 <GoalContainer>
-                    <GoalTitle>[Наша цель]</GoalTitle>
                     <H2>
                         <GradientText>ООО «ДиЭлКом-ЭК»</GradientText> – один из лидеров на рынке поставок электронных
                         компонентов для промышленных предприятий.
@@ -171,7 +169,6 @@ const Home = ({ featuredNews, brands }) => {
             </GoalSection>
             <SupplySection>
                 <SupplyContainer>
-                    <GoalTitle>[Комплексные поставки]</GoalTitle>
                     <H2>
                         Мы предлагаем комплексные поставки электронных компонентов, а также предоставляем{' '}
                         <GradientText>услуги полного цикла</GradientText>{' '}
@@ -304,7 +301,7 @@ const BrandSectionTitle = styled.div`
 `
 
 const BrandsContainer = styled(Container)`
-    justify-content: space-between;
+    justify-content: flex-end;
 `
 
 const BrandsScrollContainer = styled(Container)`
@@ -328,6 +325,7 @@ const BrandsLink = styled(StyledLink)`
     align-items: flex-end;
     color: ${({ theme }) => theme.colors.text};
     padding-bottom: 30px;
+    margin-top: 50px;
 `
 
 const GoalSection = styled.section`
@@ -342,18 +340,15 @@ const GoalSection = styled.section`
 const GoalContainer = styled(Container)`
     display: flex;
     flex-direction: column;
-`
-
-const GoalTitle = styled(BrandSectionTitle)`
     margin-top: 50px;
-    margin-bottom: 30px;
 `
 
 const GoalImage = styled.div`
     border-radius: 10px;
     height: 500px;
     width: 100%;
-    background: rgba(217, 217, 217, 0.1);
+    background-image: url(/static/images/homepage/otk.webp);
+    background-size: cover;
     margin-top: 30px;
 `
 

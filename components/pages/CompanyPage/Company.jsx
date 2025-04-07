@@ -13,66 +13,64 @@ const Company = ({ company }) => {
     return (
         <MainLayout>
             <MainBgContainer>
-                    <MainSection
-                        showBreadcrumb
-                        breadcrumbs={[
-                            { href: getBrandsPageUrl(), text: 'Бренды' },
-                            { href: getBrandPageUrl(company.id), text: company.name },
-                        ]}
-                    >
-                        <DefaultMainContent>
-                            <CompanyLogoWrapper>
-                                <Image src={company.logo} alt="Логотип кампании" />
-                            </CompanyLogoWrapper>
-                            <H2>{company.name}</H2>
-                        </DefaultMainContent>
-                    </MainSection>
+                <MainSection
+                    showBreadcrumb
+                    breadcrumbs={[
+                        { href: getBrandsPageUrl(), text: 'Бренды' },
+                        { href: getBrandPageUrl(company.id), text: company.name },
+                    ]}
+                >
+                    <DefaultMainContent>
+                        <CompanyLogoWrapper>
+                            <Image src={company.logo} alt="Логотип кампании" />
+                        </CompanyLogoWrapper>
+                        <H2>{company.name}</H2>
+                    </DefaultMainContent>
+                </MainSection>
 
-                    <CompanyInfoSection>
-                        <ContentAndSidebarWrapper>
-                            <CompanyContentWrapper>
-                                <CompanyTextWrapper>
-                                    {company.description.map((item) => (
-                                        <CompanyDescription key={item}>
-                                            {item || 'Описание компании'}
-                                        </CompanyDescription>
+                <CompanyInfoSection>
+                    <ContentAndSidebarWrapper>
+                        <CompanyContentWrapper>
+                            <CompanyTextWrapper>
+                                {company.description.map((item) => (
+                                    <CompanyDescription key={item}>{item || 'Описание компании'}</CompanyDescription>
+                                ))}
+                                {company.services &&
+                                    company.services.map((item) => (
+                                        <CompanyServices key={item}>
+                                            <CompanyServicestTitle>{item[0]}</CompanyServicestTitle>
+                                            {item.map(
+                                                (service, index) =>
+                                                    index > 0 && (
+                                                        <CompanyServicesItem key={service}>
+                                                            {service}
+                                                        </CompanyServicesItem>
+                                                    ),
+                                            )}
+                                        </CompanyServices>
                                     ))}
-                                    {company.services &&
-                                        company.services.map((item) => (
-                                            <CompanyServices key={item}>
-                                                <CompanyServicestTitle>{item[0]}</CompanyServicestTitle>
-                                                {item.map(
-                                                    (service, index) =>
-                                                        index > 0 && (
-                                                            <CompanyServicesItem key={service}>
-                                                                {service}
-                                                            </CompanyServicesItem>
-                                                        ),
-                                                )}
-                                            </CompanyServices>
-                                        ))}
-                                </CompanyTextWrapper>
-                            </CompanyContentWrapper>
-                        </ContentAndSidebarWrapper>
-                    </CompanyInfoSection>
+                            </CompanyTextWrapper>
+                        </CompanyContentWrapper>
+                    </ContentAndSidebarWrapper>
+                </CompanyInfoSection>
 
-                    {displayCompanyProducts && (
-                        <CompanyProductsSection>
-                            <ProductsContainer>
-                                <CompanyProductsTitle>Основная продукция</CompanyProductsTitle>
-                                <CompanyProductsWrapper>
-                                    {company.products.map((product) => (
-                                        <CompanyProduct key={product.imageUrl}>
-                                            <CompanyProductName>{product.name}</CompanyProductName>
-                                            <CompanyProductImageWrapper>
-                                                <Image src={product.imageUrl} alt="Изображение продукта кампании" />
-                                            </CompanyProductImageWrapper>
-                                        </CompanyProduct>
-                                    ))}
-                                </CompanyProductsWrapper>
-                            </ProductsContainer>
-                        </CompanyProductsSection>
-                    )}
+                {displayCompanyProducts && (
+                    <CompanyProductsSection>
+                        <ProductsContainer>
+                            <CompanyProductsTitle>Основная продукция</CompanyProductsTitle>
+                            <CompanyProductsWrapper>
+                                {company.products.map((product) => (
+                                    <CompanyProduct key={product.imageUrl}>
+                                        <CompanyProductName>{product.name}</CompanyProductName>
+                                        <CompanyProductImageWrapper>
+                                            <Image src={product.imageUrl} alt="Изображение продукта кампании" />
+                                        </CompanyProductImageWrapper>
+                                    </CompanyProduct>
+                                ))}
+                            </CompanyProductsWrapper>
+                        </ProductsContainer>
+                    </CompanyProductsSection>
+                )}
             </MainBgContainer>
         </MainLayout>
     )

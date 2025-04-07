@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 import { breakpoint, getBrandsPageUrl, getBrandPageUrl, getSearchPageUrl, useDeviceCheck } from '../../../lib'
-import { DefaultMainContent, MainSection } from '../../Common'
+import { BrandCard, DefaultMainContent, MainSection } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2, H2Gradient } from '../../ui/Typography'
@@ -25,7 +25,7 @@ export const Brands = ({ companies }) => {
                                 <CatalogItem key={company.id}>
                                     {isMobileOrTablet && <CatalogItemCategory>{company.category}</CatalogItemCategory>}
                                     <CatalogItemLogoWrapper>
-                                        <Image src={company.logo} alt={`Логотип компании ${company.name}`} />
+                                        <StyledBrandCard id={company.id} name={company.name} />
                                     </CatalogItemLogoWrapper>
 
                                     <CatalogItemContainer>
@@ -132,46 +132,19 @@ const CatalogItemDescription = styled.div`
 
 const CatalogItemLogoWrapper = styled.div`
     display: flex;
-    width: 360px;
-    height: 360px;
-    border-radius: 10px;
     align-items: center;
-    justify-content: center;
-    background-color: ${({ theme }) => theme.colors.whiteBackground};
-    flex-shrink: 0;
+`
 
-    img {
-        max-width: 350px;
-        width: 100%;
-    }
-
-    ${breakpoint.laptop`
-        width: 250px;
-        height: 250px;
-        img {
-            max-width: 240px;
-        }
-    `}
-    ${breakpoint.tablet`
-        width: 450px;
-        height: 200px;
-        img {
-            max-width: 440px;
-        }
-    `}
-    ${breakpoint.mobile`
-        width: 300px;
-        height: 123px;
-        img {
-            max-width: 100%;
-        }
-    `}
+const StyledBrandCard = styled(BrandCard)`
+    width: 312px;
 `
 const MoreButton = styled(Button)`
     width: 132px;
     margin-bottom: 10px;
+    margin-top: 20px;
     ${breakpoint.laptop`
         margin-right: 10px;
+        margin-top: 0px;
     `}
     ${breakpoint.mobile`
         width: 121px;

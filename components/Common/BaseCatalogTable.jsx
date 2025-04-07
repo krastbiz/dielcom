@@ -10,9 +10,10 @@ import { getRequestPageUrl } from '../../lib'
 const filteredHeaders = ['id', 'category', 'subcategory', 'partnumber', 'partNumber']
 
 export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSort, altBg }) => {
-    const headers = catalog.length > 0
-    ? Object.keys(catalog[0]).filter((header) => !filteredHeaders.includes(header))
-    : ['brand', 'available', 'leadtime'];
+    const headers =
+        catalog.length > 0
+            ? Object.keys(catalog[0]).filter((header) => !filteredHeaders.includes(header))
+            : ['brand', 'available', 'leadtime']
 
     const router = useRouter()
 
@@ -57,9 +58,9 @@ export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSor
                                     </td>
                                     <StickyCell>{item.partNumber || item.partnumber}</StickyCell>
 
-                                    {headers.map(
-                                        (header) => <td key={header}>{item[header]}</td>,
-                                    )}
+                                    {headers.map((header) => (
+                                        <td key={header}>{item[header]}</td>
+                                    ))}
                                 </tr>
                             ))}
                         </tbody>
