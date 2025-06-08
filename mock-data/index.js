@@ -2,7 +2,7 @@ const PairuCompany = {
     category: 'Источники питания',
     id: 'pairui',
     name: 'Pairui Group Fuan Electronics',
-    logo: '/static/images/companies/pairui/logo.png',
+    logo: '/static/icons/companies/pairui.svg',
     shortDescription:
         'Группа компаний PaiRui — вертикально интегрированная холдинг, специализирующаяся на разработке и производстве источников питания, магнитных сердечников и пластиковых деталей с целью предложить конкурентоспособные цены и уникальные продукты высокого качества.',
     description: [
@@ -32,7 +32,7 @@ const LocosysCompany = {
     category: 'GPS-модули',
     id: 'locosys',
     name: 'LOCOSYS Technology Inc',
-    logo: '/static/images/companies/locosys/logo.png',
+    logo: '/static/icons/companies/locosys.svg',
     shortDescription:
         'LOCOSYS Technology Inc., основанная в 2005 году, — ведущий тайваньский производитель компонентов навигационного оборудования, специализирующийся на системах GNSS и беспроводной связи. Компания является квалифицированным поставщиком для автомобильной, личной и судовой навигации и в 2017 году стала ключевым поставщиком автомобильного инерциального счисления в Китае.',
     description: [
@@ -64,7 +64,7 @@ const YetnorsonCompany = {
     category: 'Антенны',
     id: 'yetnorson',
     name: 'Shenzhen Yetnorson Technology',
-    logo: '/static/images/companies/yetnorson/logo.png',
+    logo: '/static/icons/companies/yetnorson.svg',
     shortDescription:
         'Компания Shenzhen Yetnorson Technology Co., Ltd, основанная в 2010 году, специализируется на разработке и производстве антенных устройств и аксессуаров, обладая современными производственными мощностями. Продукция компании, включая антенны и кабельные сборки, используется в различных устройствах и поставляется крупным азиатским автопроизводителям.',
     description: [
@@ -103,7 +103,7 @@ const MultiDimensionCompany = {
     category: 'Магнитные датчики',
     id: 'multidimension',
     name: 'MultiDimension Technology',
-    logo: '/static/images/companies/multi-dimension/logo.png',
+    logo: '/static/icons/companies/multidimension.svg',
     shortDescription:
         'Компания MultiDimension Technology (MDT), основанная в 2010 году в Китае, имеет филиалы в Чэнду, Нинбо и Сан-Хосе. MDT разработала уникальный портфель интеллектуальной собственности и современные производственные мощности для массового производства недорогих магнитных датчиков TMR. Компания предлагает услуги, включая плоскостные и Z-осевые датчики TMR, индивидуальный дизайн датчиков, дизайн ASIC, микроэлектронное обслуживание и лицензирование технологий для клиентов.',
     description: [
@@ -149,7 +149,7 @@ const FeasycomCompany = {
     category: 'Bluetooth- и Wi-Fi-модули',
     id: 'feasycom',
     name: 'Shenzhen Feasycom Technology',
-    logo: '/static/images/companies/feasycom/logo.png',
+    logo: '/static/icons/companies/feasycom.svg',
     shortDescription:
         'Feasycom занимается исследованиями и разработкой продуктов IoT и имеет более 10 лет опыта в беспроводной связи. Компания предлагает решения для снижения рисков и затрат на интеграцию, а также сокращения цикла разработки продуктов. У Feasycom есть собственные реализации стека Bluetooth и Wi-Fi, а также широкий ассортимент продукции, включая технологии Bluetooth, Wi-Fi, RFID, 4G, Matter/Thread и UWB.',
     description: [
@@ -184,7 +184,7 @@ const ReniceCompany = {
     category: 'SSD-накопители',
     id: 'renice',
     name: 'Renice Technology',
-    logo: '/static/images/companies/renice/logo.png',
+    logo: '/static/icons/companies/renice.svg',
     shortDescription:
         'Renice Technology из Шэньчжэня, Китай, - ведущий поставщик надёжных твердотельных накопителей (SSD) и вспомогательного оборудования. Компания разрабатывает высокопроизводительные SSD для авиации, военных, автомобилестроения и медицины, и признана одним из лучших производителей в этом сегменте.Продукция включает SSD разных форматов, военные компьютеры, FPGA DSP платы и серверы хранения на базе процессоров Intel. Технологии Renice обеспечивают надёжность через шифрование AES 256bit, защиту от сбоев и высоких напряжений, а также устойчивость к ударам и широкий температурный диапазон (-45°C ~ +85°C, -55°C ~ +125°C).',
     description: [
@@ -240,7 +240,7 @@ const GigadeviceCompany = {
     category: 'Чипы и микроконтроллеры',
     id: 'gigadevice',
     name: 'GigaDevice',
-    logo: '/static/images/companies/gigadevice/logo.png',
+    logo: '/static/icons/companies/gigadevice.svg',
     shortDescription:
         'GigaDevice Semiconductor – китайская компания со штаб-квартирой в Пекине. Она была основана в 2005 г., а уже в 2016 вышла на IPO на Шанхайской фондовой бирже. Специализация компании – чипы SPI NOR Flash, а также микроконтроллеры на основе архитекур ARM Cortex и RISC-V. По первому направлению она входит в топ-3 мирового рынка, по второму же уверенно набирает популярность в мире благодаря применению популярных архитектур, хорошо описанных и изученных, с обширным выбором средств разработки',
     description: [
@@ -275,7 +275,7 @@ const PuyaCompany = {
     category: 'Чипы и микроконтроллеры',
     id: 'puya',
     name: 'PUYA',
-    logo: '/static/images/companies/puya/logo.png',
+    logo: '/static/icons/companies/puya.svg',
     shortDescription:
         'PUYA Semiconductor (PUYA) – ведущий китайский фаблесс-производитель современных микросхем памяти (SPI Nor Flash и Serial EEPROM). Компания PUYA – инноватор в индустрии полупроводников, использующая в работе передовые технологии. Продукты PUYA успешно конкурируют с мировыми лидерами, обеспечивая высокие технические параметры и имеяя широкий выбор корпусов, в том числе и минимальных размеров.. Основными потребителями являются производители устройств интернета вещей, потребительской электроники, а также телекоммуникационная отрасль.',
     description: [
@@ -283,26 +283,11 @@ const PuyaCompany = {
         `К 2020 году PUYA заняла шестое место в мире по объемам поставок как SPI Nor Flash, так и Serial EEPROM. Совокупные поставки микросхем памяти в этом же году достигли 4 млрд. штук. Филиалы компании находятся в Южной Корее и на Тайване.`,
     ],
     products: [
-        // {
-        //     name: 'Чипы SPI NOR Flash',
-        //     imageUrl: '/static/images/companies/puya/product-1.png',
-        //     description: '',
-        // },
-        // {
-        //     name: '32-bit микроконтроллеры',
-        //     imageUrl: '/static/images/companies/puya/product-2.png',
-        //     description: '',
-        // },
         {
             name: 'Микропроцессоры',
             imageUrl: '/static/images/companies/puya/product-3.png',
             description: '',
         },
-        // {
-        //     name: 'Аналоговые микросхемы',
-        //     imageUrl: '/static/images/companies/puya/product-4.png',
-        //     description: '',
-        // },
     ],
 }
 
@@ -310,139 +295,55 @@ const WXDHCompany = {
     category: 'Силовые устройства и интегральных схемы',
     id: 'wxdh',
     name: 'WXDH',
-    logo: '/static/images/companies/wxdh/logo.png',
+    logo: '/static/icons/companies/wxdh.svg',
     shortDescription:
         'Компания Jiangsu Donghai Semiconductor Co., Ltd. была основана в декабре 2004 года. Ежегодная производственная мощность составляет 500 миллионов силовых устройств. Имеется четыре лаборатории для испытаний характеристик устройств, испытаний на надежность, испытаний приложений и анализа отказов.',
     description: [
         `Компания Jiangsu Donghai Semiconductor Co., Ltd. была основана в декабре 2004 года. Ежегодная производственная мощность составляет 500 миллионов силовых устройств. Имеется четыре лаборатории для испытаний характеристик устройств, испытаний на надежность, испытаний приложений и анализа отказов.`,
         `Donghai — высокотехнологичное предприятие, занимающееся разработкой, проектированием, упаковкой, тестированием и продажей полупроводниковых силовых устройств и интегральных схем.`,
     ],
-    products: [
-        // {
-        //     name: 'Чипы SPI NOR Flash',
-        //     imageUrl: '/static/images/companies/wxdh/product-1.png',
-        //     description: '',
-        // },
-        // {
-        //     name: '32-bit микроконтроллеры',
-        //     imageUrl: '/static/images/companies/wxdh/product-2.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Микропроцессоры',
-        //     imageUrl: '/static/images/companies/wxdh/product-3.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Аналоговые микросхемы',
-        //     imageUrl: '/static/images/companies/wxdh/product-4.png',
-        //     description: '',
-        // },
-    ],
+    products: [],
 }
 
 const TaiMiCompany = {
     category: 'Преобразователи и датчики',
     id: 'taimi',
     name: 'TaiMi',
-    logo: '/static/images/companies/taimi/logo.gif',
+    logo: '/static/icons/companies/taimi.svg',
     shortDescription:
         'TaiMi Electronics Technology Co., Ltd. специализируется на производстве и экспорте электронных компонентов, пьезокерамики, преобразователей, датчиков и ультразвуковых датчиков высочайшего качества. В настоящее время компания обслуживает OEM-производителей автомобильной, оборонной, бытовой техники, телекоммуникаций, авиации и связи.',
     description: [
         `TaiMi Electronics Technology Co., Ltd. специализируется на производстве и экспорте электронных компонентов, пьезокерамики, преобразователей, датчиков и ультразвуковых датчиков высочайшего качества. В настоящее время компания обслуживает OEM-производителей автомобильной, оборонной, бытовой техники, телекоммуникаций, авиации и связи.`,
         `Компания обладает большими возможностями в разработке новых продуктов в соответствии со спецификациями клиента с помощью полного комплекта инструментального оборудования и современного испытательного оборудования.`,
     ],
-    products: [
-        // {
-        //     name: 'Чипы SPI NOR Flash',
-        //     imageUrl: '/static/images/companies/wxdh/product-1.png',
-        //     description: '',
-        // },
-        // {
-        //     name: '32-bit микроконтроллеры',
-        //     imageUrl: '/static/images/companies/wxdh/product-2.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Микропроцессоры',
-        //     imageUrl: '/static/images/companies/wxdh/product-3.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Аналоговые микросхемы',
-        //     imageUrl: '/static/images/companies/wxdh/product-4.png',
-        //     description: '',
-        // },
-    ],
+    products: [],
 }
 
 const SkyMEMSCompany = {
     category: 'MEMS акселерометры и гироскопы',
     id: 'skymems',
     name: 'SkyMEMS',
-    logo: '/static/images/companies/skymems/logo.jpg',
+    logo: '/static/icons/companies/skymems.svg',
     shortDescription:
         'Компания SkyMEMS стремится стать брендом № 1 в области продуктов инерциальной навигации в Китае. Она специализируется на MEMS и технологиях инерциального измерения и управления, а также разработала, спроектировала и произвела акселерометр MEMS, гироскоп MEMS, инклинометр, электронный компас, IMU, Вертикальный гироскоп, AHRS, интегрированная навигационная система, одноосный оптоволоконный гироскоп, оптоволоконный гироскоп и т. д.',
     description: [
         `Компания SkyMEMS стремится стать брендом № 1 в области продуктов инерциальной навигации в Китае. Она специализируется на MEMS и технологиях инерциального измерения и управления, а также разработала, спроектировала и произвела акселерометр MEMS, гироскоп MEMS, инклинометр, электронный компас, IMU, Вертикальный гироскоп, AHRS, интегрированная навигационная система, одноосный оптоволоконный гироскоп, оптоволоконный гироскоп и т. д.`,
         `SkyMEMS владеет ключевыми инерционными технологиями, что очень удобно для предоставления гибких индивидуальных продуктов и решений для клиентов по всему миру по конкурентоспособной цене. Каждый датчик полностью протестирован и откалиброван для обеспечения качества и надежности.`,
     ],
-    products: [
-        // {
-        //     name: 'Чипы SPI NOR Flash',
-        //     imageUrl: '/static/images/companies/wxdh/product-1.png',
-        //     description: '',
-        // },
-        // {
-        //     name: '32-bit микроконтроллеры',
-        //     imageUrl: '/static/images/companies/wxdh/product-2.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Микропроцессоры',
-        //     imageUrl: '/static/images/companies/wxdh/product-3.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Аналоговые микросхемы',
-        //     imageUrl: '/static/images/companies/wxdh/product-4.png',
-        //     description: '',
-        // },
-    ],
+    products: [],
 }
 
 const ZITNTechCompany = {
     category: 'Акселерометры и датчики телеметрии',
     id: 'zitntech',
     name: 'ZITNTech',
-    logo: '/static/images/companies/zitntech/logo.png',
+    logo: '/static/icons/companies/zitntech.svg',
     shortDescription:
         '`Компания Qingdao ZITN Technology была основана в 2002 году командой опытных инженеров и расположена в красивом прибрежном городе Циндао. Она разрабатывает и продает полную линейку продуктов инерциальной навигационной технологии, включая акселерометры, интерфейсные преобразователи, источники питания, датчики телеметрии. , проектирование интегральных схем, многокристальная упаковка и тестирование. Продукция широко используется в современной оборонной промышленности, энергетическом бурении, интеллектуальном транспорте и производстве.',
     description: [
         `Компания Qingdao ZITN Technology была основана в 2002 году командой опытных инженеров и расположена в красивом прибрежном городе Циндао. Она разрабатывает и продает полную линейку продуктов инерциальной навигационной технологии, включая акселерометры, интерфейсные преобразователи, источники питания, датчики телеметрии. , проектирование интегральных схем, многокристальная упаковка и тестирование. Продукция широко используется в современной оборонной промышленности, энергетическом бурении, интеллектуальном транспорте и производстве.`,
     ],
-    products: [
-        // {
-        //     name: 'Чипы SPI NOR Flash',
-        //     imageUrl: '/static/images/companies/wxdh/product-1.png',
-        //     description: '',
-        // },
-        // {
-        //     name: '32-bit микроконтроллеры',
-        //     imageUrl: '/static/images/companies/wxdh/product-2.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Микропроцессоры',
-        //     imageUrl: '/static/images/companies/wxdh/product-3.png',
-        //     description: '',
-        // },
-        // {
-        //     name: 'Аналоговые микросхемы',
-        //     imageUrl: '/static/images/companies/wxdh/product-4.png',
-        //     description: '',
-        // },
-    ],
+    products: [],
 }
 
 export const COMPANY_ARRAY = [
@@ -700,5 +601,76 @@ export const CONTRACT_ARRAY = [
             'Рентген-контроль',
             'Контроль качества отмывки',
         ],
+    },
+]
+
+export const supply = [
+    {
+        title: 'Поставка электронных компонентов',
+        image: '/static/images/homepage/supply/1.webp',
+    },
+    {
+        title: 'Дистрибьюция дисплеев',
+        image: '/static/images/homepage/supply/2.webp',
+    },
+    {
+        title: 'Услуги полного цикла производства электроники',
+        image: '/static/images/homepage/supply/4.webp',
+    },
+    {
+        title: 'Поставка компонентов под разработку',
+        image: '/static/images/homepage/supply/3.webp',
+    },
+]
+
+export const advantages = [
+    {
+        content: 'Осуществляем доставку продукции через проверенные логистические компании',
+        label: 'Официальные каналы поставки',
+    },
+    {
+        label: 'Оперативность',
+        content: 'Сроки поставки от 7 дней, даем своевременную и оперативную информацию',
+    },
+    {
+        label: '',
+        content: '',
+    },
+    {
+        label: 'Доступность',
+        content: 'Имеем доступ к товарам на различных рынках',
+    },
+    {
+        label: 'Качество и надежность',
+        content: 'Размещаем и гарантируем оригинальные качественные компоненты и надёжность поставок',
+    },
+    {
+        label: '',
+        content: '',
+    },
+    {
+        label: 'Заполните форму',
+        content: 'Подайте запрос менеджеру и он сделает для вас расчет стоимости доставки',
+        form: true,
+    },
+    {
+        label: '',
+        content: '',
+    },
+    {
+        label: '',
+        content: '',
+    },
+    {
+        label: 'Сопровождение проектов',
+        content: 'Индивидуальный гибкий подход к каждому клиенту',
+    },
+    {
+        label: '',
+        content: '',
+    },
+    {
+        label: 'Информационная поддержка',
+        content: 'Предоставляем новые знания о рынке и продукте',
     },
 ]

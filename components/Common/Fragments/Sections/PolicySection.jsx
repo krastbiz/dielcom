@@ -404,7 +404,6 @@ const ContainerStyled = styled(Container)`
 const Sidebar = styled.div`
     width: 250px;
     padding: 20px;
-    background: #f4f4f4;
     border-right: 1px solid #ddd;
     position: sticky;
     top: 100px;
@@ -422,10 +421,10 @@ const SidebarLink = styled.div`
     color: inherit;
     text-decoration: none;
     margin-bottom: 20px;
-    color: ${({ theme, isActive }) => (isActive ? theme.colors.active : theme.colors.main)};
+    color: ${({ theme, isActive }) => (isActive ? theme.colors.active : theme.colors.text)};
 
     &:hover {
-        color: #5b76cf;
+        color: ${({ theme }) => theme.colors.linkHover};
     }
 `
 
@@ -450,6 +449,7 @@ const PolicyWrapper = styled.div`
 const H3Styled = styled(H3)`
     margin-bottom: 30px;
     margin-top: 30px;
+    color: ${({ theme }) => theme.colors.text};
 `
 
 const PoliceList = styled.ul`
@@ -464,7 +464,7 @@ const PoliceListItem = styled.li`
     display: block;
     font-size: 16px;
     line-height: 34px;
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.text};
     counter-increment: list-counter;
 
     ::before {
@@ -492,7 +492,7 @@ const PoliceListItemHeader = styled.li`
     display: block;
     font-size: 18px;
     line-height: 40px;
-    color: ${({ alternative, theme }) => (alternative ? theme.colors.text : theme.colors.active)};
+    color: ${({ theme }) => theme.colors.text};
     font-weight: bold;
     margin-bottom: 20px;
 
@@ -506,8 +506,8 @@ const PoliceListItemWithoutCounter = styled.li`
     display: block;
     font-size: 16px;
     line-height: 34px;
-    color: ${({ theme }) => theme.colors.main};
     margin-bottom: 20px;
+    color: ${({ theme }) => theme.colors.text};
 
     ${breakpoint.tablet`
         font-size: 14px;
@@ -518,9 +518,9 @@ const PoliceListItemWithPoint = styled.li`
     display: block;
     font-size: 16px;
     line-height: 34px;
-    color: ${({ theme }) => theme.colors.main};
     margin-bottom: 20px;
     padding-left: 20px;
+    color: ${({ theme }) => theme.colors.text};
 
     ::before {
         content: '';

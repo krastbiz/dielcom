@@ -3,84 +3,13 @@ import Image from 'next/image'
 
 import { breakpoint, getBrandsPageUrl, useDeviceCheck } from '../../../lib'
 import { StyledLink } from '../../ui/Link'
-// import { NewsSection } from '../../Common/Fragments/NewsSection'
 import { Button } from '../../ui/buttons/Button'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
-import { H1, H1Gradient, H2, GradientText, GradientTextInverse } from '../../ui/Typography'
-import { AdvantageCard, BrandCard, MainSection, SupplyCard } from '../../Common'
+import { H1Gradient, H2, GradientText, GradientTextInverse } from '../../ui/Typography'
+import { AdvantageCard, BrandCard, MainSection, SupplyCard, ScrollContainer } from '../../Common'
 import { screenWidth } from '../../../lib'
-
-const supply = [
-    {
-        title: 'Поставка электронных компонентов',
-        image: '/static/images/homepage/supply/1.webp',
-    },
-    {
-        title: 'Дистрибьюция дисплеев',
-        image: '/static/images/homepage/supply/2.webp',
-    },
-    {
-        title: 'Услуги полного цикла производства электроники',
-        image: '/static/images/homepage/supply/4.webp',
-    },
-    {
-        title: 'Поставка компонентов под разработку',
-        image: '/static/images/homepage/supply/3.webp',
-    },
-]
-
-const advantages = [
-    {
-        content: 'Осуществляем доставку продукции через проверенные логистические компании',
-        label: 'Официальные каналы поставки',
-    },
-    {
-        label: 'Оперативность',
-        content: 'Сроки поставки от 7 дней, даем своевременную и оперативную информацию',
-    },
-    {
-        label: '',
-        content: '',
-    },
-    {
-        label: 'Доступность',
-        content: 'Имеем доступ к товарам на различных рынках',
-    },
-    {
-        label: 'Качество и надежность',
-        content: 'Размещаем и гарантируем оригинальные качественные компоненты и надёжность поставок',
-    },
-    {
-        label: '',
-        content: '',
-    },
-    {
-        label: 'Заполните форму',
-        content: 'Подайте запрос менеджеру и он сделает для вас расчет стоимости доставки',
-        form: true,
-    },
-    {
-        label: '',
-        content: '',
-    },
-    {
-        label: '',
-        content: '',
-    },
-    {
-        label: 'Сопровождение проектов',
-        content: 'Индивидуальный гибкий подход к каждому клиенту',
-    },
-    {
-        label: '',
-        content: '',
-    },
-    {
-        label: 'Информационная поддержка',
-        content: 'Предоставляем новые знания о рынке и продукте',
-    },
-]
+import { advantages, supply } from '../../../mock-data'
 
 const Home = ({ featuredNews, brands }) => {
     const newsArray = featuredNews
@@ -304,18 +233,7 @@ const BrandsContainer = styled(Container)`
     justify-content: flex-end;
 `
 
-const BrandsScrollContainer = styled(Container)`
-    justify-content: space-between;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: auto;
-    scrollbar-color: transparent transparent;
-
-    &::-webkit-scrollbar {
-        width: 0px;
-        height: 0px;
-    }
-    width: 100%;
+const BrandsScrollContainer = styled(ScrollContainer)`
     padding-left: calc((100% - ${screenWidth.desktop}) / 2);
     margin-right: 0;
 `

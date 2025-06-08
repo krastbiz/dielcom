@@ -4,10 +4,10 @@ import Image from 'next/image'
 import { Link } from '../../../ui/Link'
 import { getBrandPageUrl } from '../../../../lib'
 
-export const BrandCard = ({ name, id, className  }) => {
+export const BrandCard = ({ name, id, className }) => {
     return (
         <Link href={getBrandPageUrl(id)}>
-            <BrandCardWrapper className={className }>
+            <BrandCardWrapper className={className}>
                 <Image src={`/static/icons/companies/${id}.svg`} alt={name} />
             </BrandCardWrapper>
         </Link>

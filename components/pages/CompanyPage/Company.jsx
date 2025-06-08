@@ -1,14 +1,17 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 
-import { breakpoint, getBrandPageUrl, getBrandsPageUrl } from '../../../lib'
-import { DefaultMainContent, MainSection } from '../../Common'
+import { breakpoint, getBrandPageUrl, getBrandsPageUrl, getSearchPageUrl, useDeviceCheck } from '../../../lib'
+import { MainSection, BrandCard } from '../../Common'
 import { Container } from '../../ui/layouts/Container'
 import { MainLayout } from '../../ui/layouts/MainLayout'
 import { H2 } from '../../ui/Typography'
+import { Button } from '../../ui/buttons/Button'
 
 const Company = ({ company }) => {
     const displayCompanyProducts = company.products.length > 0
+    const { isLaptop, isDesktop, isLargeDesktop } = useDeviceCheck()
+    const isDesk = isDesktop || isLargeDesktop
 
     return (
         <MainLayout>
@@ -19,19 +22,14 @@ const Company = ({ company }) => {
                         { href: getBrandsPageUrl(), text: 'Бренды' },
                         { href: getBrandPageUrl(company.id), text: company.name },
                     ]}
-                >
-                    <DefaultMainContent>
-                        <CompanyLogoWrapper>
-                            <Image src={company.logo} alt="Логотип кампании" />
-                        </CompanyLogoWrapper>
-                        <H2>{company.name}</H2>
-                    </DefaultMainContent>
-                </MainSection>
+                />
 
                 <CompanyInfoSection>
-                    <ContentAndSidebarWrapper>
+                    <CompanyInfoWrapper>
                         <CompanyContentWrapper>
                             <CompanyTextWrapper>
+                                <StyledH2>{company.name}</StyledH2>
+                                {!isDesk && <StyledBrandCard id={company.id} name={company.name} />}
                                 {company.description.map((item) => (
                                     <CompanyDescription key={item}>{item || 'Описание компании'}</CompanyDescription>
                                 ))}
@@ -49,28 +47,29 @@ const Company = ({ company }) => {
                                             )}
                                         </CompanyServices>
                                     ))}
+                                <ProductButton primary as="a" href={getSearchPageUrl(`q=${company.id}`)}>
+                                    Товары производителя
+                                </ProductButton>
                             </CompanyTextWrapper>
+                            {isDesk && <BrandCard id={company.id} name={company.name} />}
                         </CompanyContentWrapper>
-                    </ContentAndSidebarWrapper>
+                        {displayCompanyProducts && (
+                            <CompanyProductsSection>
+                                <CompanyProductsTitle>Основная продукция</CompanyProductsTitle>
+                                <CompanyProductsWrapper>
+                                    {company.products.map((product) => (
+                                        <CompanyProduct key={product.imageUrl}>
+                                            <CompanyProductImageWrapper>
+                                                <Image src={product.imageUrl} alt="Изображение продукта кампании" />
+                                            </CompanyProductImageWrapper>
+                                            <CompanyProductName>{product.name}</CompanyProductName>
+                                        </CompanyProduct>
+                                    ))}
+                                </CompanyProductsWrapper>
+                            </CompanyProductsSection>
+                        )}
+                    </CompanyInfoWrapper>
                 </CompanyInfoSection>
-
-                {displayCompanyProducts && (
-                    <CompanyProductsSection>
-                        <ProductsContainer>
-                            <CompanyProductsTitle>Основная продукция</CompanyProductsTitle>
-                            <CompanyProductsWrapper>
-                                {company.products.map((product) => (
-                                    <CompanyProduct key={product.imageUrl}>
-                                        <CompanyProductName>{product.name}</CompanyProductName>
-                                        <CompanyProductImageWrapper>
-                                            <Image src={product.imageUrl} alt="Изображение продукта кампании" />
-                                        </CompanyProductImageWrapper>
-                                    </CompanyProduct>
-                                ))}
-                            </CompanyProductsWrapper>
-                        </ProductsContainer>
-                    </CompanyProductsSection>
-                )}
             </MainBgContainer>
         </MainLayout>
     )
@@ -84,13 +83,16 @@ const MainBgContainer = styled.div`
     z-index: 3;
 `
 
-const CompanyInfoSection = styled.section`
-    padding-top: 100px;
-    padding-bottom: 70px;
+const StyledH2 = styled(H2)`
+    margin-bottom: 20px;
+`
 
-    ${Container} {
-        justify-content: start;
-    }
+const CompanyInfoSection = styled.section`
+    background-image: url('/static/images/lines-bg2.svg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
 
     ${breakpoint.tablet`
         padding-top: 30px;
@@ -98,66 +100,64 @@ const CompanyInfoSection = styled.section`
     `}
 `
 
-const ContentAndSidebarWrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-
-    ${breakpoint.tablet`
-        flex-direction: column;
-    `}
+const CompanyInfoWrapper = styled(Container)`
+    flex-direction: column;
+    padding-bottom: 50px;
 `
 
 const CompanyContentWrapper = styled.div`
     flex: 1;
     display: flex;
-    flex-direction: column;
-`
-
-const CompanyLogoWrapper = styled.div`
-    padding: 65px 0;
-
-    & img {
-        max-height: 100px;
-        width: 170px;
-    }
-
-    ${breakpoint.mobile`
-        margin-right: 0px;
-        max-width: 40%;
-        margin-bottom: 20px;
-    `}
+    margin-bottom: 50px;
+    align-items: flex-start;
 `
 
 const CompanyTextWrapper = styled.div`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
 `
 
 const CompanyDescription = styled.p`
-    margin-bottom: 65px;
+    margin-bottom: 20px;
     color: ${({ theme }) => theme.colors.text};
     max-width: 780px;
     text-align: start;
+`
+
+const ProductButton = styled(Button)`
+    width: 240px;
+`
+
+const StyledBrandCard = styled(BrandCard)`
+    margin-bottom: 20px;
+    height: 130px;
+    width: 300px;
 `
 
 const CompanyServices = styled.ul`
     margin-top: 20px;
     font-size: 14px;
     font-weight: 300;
+    margin-bottom: 20px;
 `
 
 const CompanyServicestTitle = styled.span`
     font-size: 14px;
     font-weight: 600;
+    color: ${({ theme }) => theme.colors.text};
 `
 
 const CompanyServicesItem = styled.li`
     font-size: 14px;
     font-weight: 300;
     margin-top: 10px;
+    color: ${({ theme }) => theme.colors.text};
 
     &:before {
         content: '•';
-        color: #023059;
+        color: ${({ theme }) => theme.colors.text};
         margin-right: 10px;
     }
 `
@@ -168,71 +168,52 @@ const CompanyProductsSection = styled.section`
     ${Container} {
         flex-direction: column;
     }
-
-    ${breakpoint.tablet`
-        padding-top: 30px;
-        margin-bottom: 30px;
-    `}
 `
 
 const CompanyProductsTitle = styled.div`
-    color: ${({ theme }) => theme.colors.active};
+    color: ${({ theme }) => theme.colors.text};
     margin-bottom: 30px;
-    font-weight: 600;
-
-    ${breakpoint.mobile`
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    `}
+    font-weight: 500;
+    font-size: 20px;
 `
 
 const CompanyProductsWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    width: 60%;
-
-    ${breakpoint.tablet`
-        grid-template-columns: repeat(3, 1fr);
-    `}
-    ${breakpoint.mobile`
-        grid-template-columns: repeat(1, 1fr);
-    `}
-`
-
-const ProductsContainer = styled.div`
     display: flex;
-    padding-bottom: 180px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 `
 
 const CompanyProduct = styled.div`
-    border: 1px solid ${({ theme }) => theme.colors.border};
-    border-radius: 10px;
-    max-width: 203px;
-    padding: 31px 16px 21px;
+    margin-right: 10px;
 `
 
 const CompanyProductImageWrapper = styled.div`
-    margin-bottom: 20px;
+    width: 100%;
 
     img {
-        width: 170px;
-        max-height: 102px;
+        min-width: 360px;
+        max-width: 360px;
+        height: 280px;
+        ${breakpoint.desktop`
+            min-width: 300px;
+            max-width: 300px;
+            height: 235px;
+        `}
+        ${breakpoint.tablet`
+            min-width: 220px;
+            max-width: 220px;
+            height: 230px;
+        `}
+        ${breakpoint.mobile`
+            min-width: 142px;
+            max-width: 142px;
+            height: 142px;
+        `}
     }
-
-    ${breakpoint.mobile`
-        display: flex;
-        justify-content: center;
-
-        img {
-            max-width: 200px;
-            height: auto;
-        }
-    `}
 `
 
 const CompanyProductName = styled.div`
-    color: ${({ theme }) => theme.colors.textGray};
-    margin-bottom: 87px;
+    color: ${({ theme }) => theme.colors.text};
+    font-size: 20px;
+    margin: 20px 0;
 `

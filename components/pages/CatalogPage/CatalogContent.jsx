@@ -33,49 +33,45 @@ export const CatalogMenuContent = () => {
     }
 
     return (
+        <MenuWrapper>
+            <CategoriesContainer>
+                <CategoriesList isSubMenuOpen={isSubMenuOpen}>
+                    {Array.from(CATEGORIES_ARRAY.entries()).map(([key, category]) => (
+                        <CategoriesItem
+                            data-category-item
+                            onClick={() => handleCategoryClick(key)}
+                            onMouseEnter={() => handleCategoryHover(key)}
+                            key={key}
+                            isSelected={key === activeCategory}
+                        >
+                            <MenuItemIcon src={category.iconUrl} />
+                            {!(isResponsiveView && isSubMenuOpen) && category.name}
+                        </CategoriesItem>
+                    ))}
+                </CategoriesList>
+            </CategoriesContainer>
 
-            <MenuWrapper>
-                <CategoriesContainer>
-                    <CategoriesList isSubMenuOpen={isSubMenuOpen}>
-                        {Array.from(CATEGORIES_ARRAY.entries()).map(([key, category]) => (
-                            <CategoriesItem
-                                data-category-item
-                                onClick={() => handleCategoryClick(key)}
-                                onMouseEnter={() => handleCategoryHover(key)}
-                                key={key}
-                                isSelected={key === activeCategory}
-                            >
-                                <MenuItemIcon src={category.iconUrl} />
-                                {!(isResponsiveView && isSubMenuOpen) && category.name}
-                            </CategoriesItem>
-                        ))}
-                    </CategoriesList>
-                </CategoriesContainer>
-
-                <SubMenuContainer>
-                    {activeCategory !== null && isSubMenuOpen && (
-                        <>
-                            <H3>{CATEGORIES_ARRAY.get(activeCategory).name}</H3>
-                            <SubMenuList>
-                                {CATEGORIES_ARRAY.get(activeCategory).products.map((product) => (
-                                    <SubmenuItem>
-                                        <Link
-                                            href={getProductPageUrl(
-                                                CATEGORIES_ARRAY.get(activeCategory).id,
-                                                product.id,
-                                            )}
-                                            key={product.id}
-                                            onClick={() => handleCloseMenus()}
-                                        >
-                                            {product.label}
-                                        </Link>
-                                    </SubmenuItem>
-                                ))}
-                            </SubMenuList>
-                        </>
-                    )}
-                </SubMenuContainer>
-            </MenuWrapper>
+            <SubMenuContainer>
+                {activeCategory !== null && isSubMenuOpen && (
+                    <>
+                        <H3>{CATEGORIES_ARRAY.get(activeCategory).name}</H3>
+                        <SubMenuList>
+                            {CATEGORIES_ARRAY.get(activeCategory).products.map((product) => (
+                                <SubmenuItem>
+                                    <Link
+                                        href={getProductPageUrl(CATEGORIES_ARRAY.get(activeCategory).id, product.id)}
+                                        key={product.id}
+                                        onClick={() => handleCloseMenus()}
+                                    >
+                                        {product.label}
+                                    </Link>
+                                </SubmenuItem>
+                            ))}
+                        </SubMenuList>
+                    </>
+                )}
+            </SubMenuContainer>
+        </MenuWrapper>
     )
 }
 

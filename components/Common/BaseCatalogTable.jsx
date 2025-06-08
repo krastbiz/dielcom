@@ -110,7 +110,7 @@ const CatalogSection = styled.section`
 const CustomContainer = styled(Container)`
     display: flex;
     flex-direction: column;
-    max-height: 600px;
+    max-height: 800px;
     background-color: ${({ theme }) => theme.colors.whiteBackground};
     z-index: 3;
     width: 100%;

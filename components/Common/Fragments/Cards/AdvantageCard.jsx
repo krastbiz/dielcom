@@ -6,9 +6,9 @@ import { breakpoint } from '../../../../lib'
 
 export const AdvantageCard = ({ label, content, form = false }) => {
     return (
-        <AdvantageCardWrapper alt={!label} form={form}>
-            {label && <H3 alternative={form}>{label}</H3>}
-            {content && <Content alt={form}>{content}</Content>}
+        <AdvantageCardWrapper alt={!label}>
+            {label && <H3>{label}</H3>}
+            {content && <Content>{content}</Content>}
             {form && (
                 <Button primary as="a" href="/request">
                     Рассчитать стоимость
@@ -28,15 +28,15 @@ const AdvantageCardWrapper = styled.div`
     ${breakpoint.tablet`
         padding: 15px;
     `}
-    ${({ alt, form }) =>
+    ${({ alt }) =>
         alt
             ? `
             backdrop-filter: none;
             background: transparent;
         `
             : `
-            backdrop-filter: ${form ? 'none' : 'blur(10px)'};
-            background-color: ${form ? 'white' : 'rgba(113, 164, 254, 0.05'};
+            backdrop-filter: ${'blur(10px)'};
+            background-color: ${'rgba(113, 164, 254, 0.05'};
         `}
 `
 
@@ -44,5 +44,5 @@ const Content = styled.div`
     font-size: 14px;
     line-height: 140%;
     opacity: 0.9;
-    color: ${({ alt, theme }) => (alt ? theme.colors.textBlack : theme.colors.text)};
+    color: ${({ theme }) => theme.colors.text};
 `

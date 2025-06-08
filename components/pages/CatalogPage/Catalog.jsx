@@ -17,7 +17,7 @@ export const Catalog = () => {
                     </DefaultMainContent>
                     <CatalogSection>
                         <CatalogContainer>
-                            <CatalogMenuContent/>
+                            <CatalogMenuContent />
                         </CatalogContainer>
                     </CatalogSection>
                 </MainSection>
