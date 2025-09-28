@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 import { sendContactForm } from '../../../lib/api'
-import { useDeviceCheck } from '../../../lib'
 
 const initialText = `Заполняя форму "Запрос компонента", по возможности, просим указать:\n
 - Партномер\n
@@ -15,8 +13,6 @@ const initialText = `Заполняя форму "Запрос компонен�
 Минимальный заказ для новых партнеров от 10000 рублей.`
 
 export const useRequestForm = () => {
-    const { query } = useRouter()
-    const { partnumber, brand } = query
     const [formData, setFormData] = useState({
         components: initialText,
         name: '',
@@ -29,15 +25,28 @@ export const useRequestForm = () => {
     const [requestNumber, setRequestNumber] = useState(null)
 
     useEffect(() => {
-        if (partnumber || brand) {
-            setFormData((prevData) => ({
-                ...prevData,
-                components: initialText.includes(formData.components)
-                    ? `Бренд ${brand}, партномер ${partnumber}`
-                    : `${prevData.components}\n${defaultValue}`,
-            }))
+        const storedItemsRaw = localStorage.getItem('selectedItems')
+        if (!storedItemsRaw) return
+    
+        try {
+            const storedItems = JSON.parse(storedItemsRaw)
+    
+            const selectedList = Object.values(storedItems)
+                .filter((item) => item.selected)
+                .map(
+                    ({ brand, partnumber, quantity }) =>
+                        `Бренд ${brand}, партномер ${partnumber}, количество ${quantity}`
+                )
+            if (selectedList.length > 0) {
+                setFormData((prevData) => ({
+                    ...prevData,
+                    components: selectedList.join('\n'),
+                }))
+            }
+        } catch (e) {
+            console.error('Invalid localStorage data', e)
         }
-    }, [partnumber, brand])
+    }, [])
 
     const resetForm = () => {
         setFormData({

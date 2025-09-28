@@ -10,7 +10,7 @@ export const useCatalogSearch = () => {
     const [page, setPage] = useState(1)
     const [hasMore, setHasMore] = useState(true)
     const [loading, setLoading] = useState(false)
-    const [sortConfig, setSortConfig] = useState({ key: '', direction: 'asc' })
+    const [sortConfig, setSortConfig] = useState({ key: 'partnumber', direction: 'asc' })
     const defaultSearchValue = query.q || ''
     const category = query.category || ''
     const searchValueRef = useRef(defaultSearchValue)

@@ -2,10 +2,10 @@ import { useState } from 'react'
 
 export const useProduct = ({ catalog }) => {
     const [searchTerm, setSearchTerm] = useState('')
-    const [sortConfig, setSortConfig] = useState({ key: '', direction: 'asc' })
+    const [sortConfig, setSortConfig] = useState({ key: 'partnumber', direction: 'asc' })
 
     const filteredCatalog = catalog.filter((item) => {
-        const matchesPartNumber = item.partNumber?.toLowerCase().includes(searchTerm.toLowerCase())
+        const matchesPartNumber = item.partnumber?.toLowerCase().includes(searchTerm.toLowerCase())
         return matchesPartNumber
     })
 

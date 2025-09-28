@@ -8,6 +8,7 @@ const NAV_ITEMS = [
     { href: '/catalog', text: 'Линейка поставок' },
     { href: '/brands', text: 'Бренды' },
     { href: '/contract-production', text: 'Контрактное производство' },
+    { href: '/request', text: 'Заказ' },
     { href: '/contacts', text: 'Контакты' },
 ]
 

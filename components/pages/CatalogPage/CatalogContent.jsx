@@ -11,31 +11,23 @@ import { Container } from '../../ui/layouts/Container'
 
 export const CatalogMenuContent = () => {
     const [activeCategory, setActiveCategory] = useState('wirelessTechnologies')
-    const [isSubMenuOpen, setSubMenuOpen] = useState(false)
     const { isMobile, isTablet } = useDeviceCheck()
     const isResponsiveView = isMobile || isTablet
 
     const handleCategoryClick = (categoryId) => {
-        if (activeCategory === categoryId) {
-            setActiveCategory(null)
-            setSubMenuOpen(false)
-        } else {
-            setActiveCategory(categoryId)
-            setSubMenuOpen(true)
-        }
+        setActiveCategory(categoryId)
     }
 
     const handleCategoryHover = (categoryId) => {
         if (activeCategory !== categoryId && !isResponsiveView) {
             setActiveCategory(categoryId)
-            setSubMenuOpen(true)
         }
     }
 
     return (
         <MenuWrapper>
             <CategoriesContainer>
-                <CategoriesList isSubMenuOpen={isSubMenuOpen}>
+                <CategoriesList>
                     {Array.from(CATEGORIES_ARRAY.entries()).map(([key, category]) => (
                         <CategoriesItem
                             data-category-item
@@ -45,14 +37,14 @@ export const CatalogMenuContent = () => {
                             isSelected={key === activeCategory}
                         >
                             <MenuItemIcon src={category.iconUrl} />
-                            {!(isResponsiveView && isSubMenuOpen) && category.name}
+                            {!isResponsiveView && category.name}
                         </CategoriesItem>
                     ))}
                 </CategoriesList>
             </CategoriesContainer>
 
             <SubMenuContainer>
-                {activeCategory !== null && isSubMenuOpen && (
+                {activeCategory !== null && (
                     <>
                         <H3>{CATEGORIES_ARRAY.get(activeCategory).name}</H3>
                         <SubMenuList>
@@ -100,10 +92,9 @@ const CategoriesList = styled.ul`
     padding: 10px;
     justify-content: space-between;
     flex-grow: 1;
-    /* transition: width 0.3s ease; */
     ${breakpoint.laptop`
         padding-right: 3px;
-        width: ${({ isSubMenuOpen }) => (isSubMenuOpen ? '60px' : '255px')};
+        width: 255px;
     `}
 `
 

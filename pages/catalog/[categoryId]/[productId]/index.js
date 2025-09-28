@@ -43,7 +43,7 @@ export const getServerSideProps = async ({ params }) => {
 
     catalog.forEach((item) => {
         keys.forEach((key) => {
-            if (item[key] !== undefined && key !== 'partNumber' && item[key] !== null) {
+            if (item[key] !== undefined && key !== 'partnumber' && item[key] !== null) {
                 filters[key].add(item[key])
             }
         })

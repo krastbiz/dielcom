@@ -1,7 +1,4 @@
-const toCamelCase = (str) =>
-    str
-        .replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match, index) => (index === 0 ? match.toLowerCase() : match.toUpperCase()))
-        .replace(/\s+/g, '')
+const toCamelCase = (str) => str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match) => match.toLowerCase()).replace(/\s+/g, '')
 
 const transformDataToCamelCase = (data) =>
     data.map((item) => {

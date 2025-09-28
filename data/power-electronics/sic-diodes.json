@@ -1,6 +1,6 @@
 [
     {
-        "partNumber": "DCGT04D65G4",
+        "partnumber": "DCGT04D65G4",
         "brand": "WXDH",
         "id": "401",
         "housing": "TO220-2",
@@ -13,7 +13,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCD04D65G4",
+        "partnumber": "DCD04D65G4",
         "brand": "WXDH",
         "id": "402",
         "housing": "TO252",
@@ -26,7 +26,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT06D65G4",
+        "partnumber": "DCGT06D65G4",
         "brand": "WXDH",
         "id": "403",
         "housing": "TO220-2",
@@ -39,7 +39,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCFT06D65G4",
+        "partnumber": "DCFT06D65G4",
         "brand": "WXDH",
         "id": "404",
         "housing": "TO220F",
@@ -52,7 +52,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCD06D65G4",
+        "partnumber": "DCD06D65G4",
         "brand": "WXDH",
         "id": "405",
         "housing": "TO252",
@@ -65,7 +65,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT08D65G4",
+        "partnumber": "DCGT08D65G4",
         "brand": "WXDH",
         "id": "406",
         "housing": "TO220-2",
@@ -78,7 +78,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCFT08D65G4",
+        "partnumber": "DCFT08D65G4",
         "brand": "WXDH",
         "id": "407",
         "housing": "TO220F",
@@ -91,7 +91,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCD08D65G4",
+        "partnumber": "DCD08D65G4",
         "brand": "WXDH",
         "id": "408",
         "housing": "TO252",
@@ -104,7 +104,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT10D65G4",
+        "partnumber": "DCGT10D65G4",
         "brand": "WXDH",
         "id": "409",
         "housing": "TO220-2",
@@ -117,7 +117,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCFT10D65G4",
+        "partnumber": "DCFT10D65G4",
         "brand": "WXDH",
         "id": "410",
         "housing": "TO220F",
@@ -130,7 +130,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCD10D65G4",
+        "partnumber": "DCD10D65G4",
         "brand": "WXDH",
         "id": "411",
         "housing": "TO252",
@@ -143,7 +143,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCE10D65G4",
+        "partnumber": "DCE10D65G4",
         "brand": "WXDH",
         "id": "412",
         "housing": "TO263-2",
@@ -156,7 +156,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT20D65G4",
+        "partnumber": "DCGT20D65G4",
         "brand": "WXDH",
         "id": "413",
         "housing": "TO220-2",
@@ -169,7 +169,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT20D65G4",
+        "partnumber": "DCCT20D65G4",
         "brand": "WXDH",
         "id": "414",
         "housing": "TO247-2",
@@ -182,7 +182,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCC20D65G4",
+        "partnumber": "DCC20D65G4",
         "brand": "WXDH",
         "id": "415",
         "housing": "TO247-3",
@@ -195,7 +195,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT30D65G6",
+        "partnumber": "DCGT30D65G6",
         "brand": "WXDH",
         "id": "416",
         "housing": "TO220-2",
@@ -208,7 +208,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT30D65G4",
+        "partnumber": "DCCT30D65G4",
         "brand": "WXDH",
         "id": "417",
         "housing": "TO247-2",
@@ -221,7 +221,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT50D65G4",
+        "partnumber": "DCCT50D65G4",
         "brand": "WXDH",
         "id": "418",
         "housing": "TO247-2",
@@ -234,7 +234,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT05D120G3",
+        "partnumber": "DCGT05D120G3",
         "brand": "WXDH",
         "id": "419",
         "housing": "TO220-2",
@@ -247,7 +247,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCD05D120G3",
+        "partnumber": "DCD05D120G3",
         "brand": "WXDH",
         "id": "420",
         "housing": "TO252",
@@ -260,7 +260,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT10D120G4",
+        "partnumber": "DCGT10D120G4",
         "brand": "WXDH",
         "id": "421",
         "housing": "TO220-2",
@@ -273,7 +273,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT10D120G4",
+        "partnumber": "DCCT10D120G4",
         "brand": "WXDH",
         "id": "422",
         "housing": "TO247-2",
@@ -286,7 +286,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCD10D120G4",
+        "partnumber": "DCD10D120G4",
         "brand": "WXDH",
         "id": "423",
         "housing": "TO252",
@@ -299,7 +299,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCE10D120G4",
+        "partnumber": "DCE10D120G4",
         "brand": "WXDH",
         "id": "424",
         "housing": "TO263-2",
@@ -312,7 +312,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT15D120G4",
+        "partnumber": "DCGT15D120G4",
         "brand": "WXDH",
         "id": "425",
         "housing": "TO220-2",
@@ -325,7 +325,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT15D120G4",
+        "partnumber": "DCCT15D120G4",
         "brand": "WXDH",
         "id": "426",
         "housing": "TO247-2",
@@ -338,7 +338,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCE15D120G4",
+        "partnumber": "DCE15D120G4",
         "brand": "WXDH",
         "id": "427",
         "housing": "TO263-2",
@@ -351,7 +351,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCGT20D120G4",
+        "partnumber": "DCGT20D120G4",
         "brand": "WXDH",
         "id": "428",
         "housing": "TO220-2",
@@ -364,7 +364,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT20D120G4",
+        "partnumber": "DCCT20D120G4",
         "brand": "WXDH",
         "id": "429",
         "housing": "TO247-2",
@@ -377,7 +377,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCC20D120G4",
+        "partnumber": "DCC20D120G4",
         "brand": "WXDH",
         "id": "430",
         "housing": "TO247-3",
@@ -390,7 +390,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCE20D120G4",
+        "partnumber": "DCE20D120G4",
         "brand": "WXDH",
         "id": "431",
         "housing": "TO263-2",
@@ -403,7 +403,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT30D120G4",
+        "partnumber": "DCCT30D120G4",
         "brand": "WXDH",
         "id": "432",
         "housing": "TO247-2",
@@ -416,7 +416,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCC30D120G4",
+        "partnumber": "DCC30D120G4",
         "brand": "WXDH",
         "id": "433",
         "housing": "TO247-3",
@@ -429,7 +429,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT40D120G4",
+        "partnumber": "DCCT40D120G4",
         "brand": "WXDH",
         "id": "434",
         "housing": "TO247-2",
@@ -442,7 +442,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCC40D120G4",
+        "partnumber": "DCC40D120G4",
         "brand": "WXDH",
         "id": "435",
         "housing": "TO247-3",
@@ -455,7 +455,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT10D170G3",
+        "partnumber": "DCCT10D170G3",
         "brand": "WXDH",
         "id": "436",
         "housing": "TO247-2",
@@ -468,7 +468,7 @@
         "tj(°C)": "175"
     },
     {
-        "partNumber": "DCCT25D170G1",
+        "partnumber": "DCCT25D170G1",
         "brand": "WXDH",
         "id": "437",
         "housing": "TO247-2",
@@ -481,7 +481,7 @@
         "tj(°C)": "150"
     },
     {
-        "partNumber": "DCCT50D170G3",
+        "partnumber": "DCCT50D170G3",
         "brand": "WXDH",
         "id": "438",
         "housing": "TO247-2",

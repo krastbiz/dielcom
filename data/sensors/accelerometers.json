@@ -1,6 +1,6 @@
 [
     {
-        "partNumber": "DEQ10-01",
+        "partnumber": "DEQ10-01",
         "brand": "Без бренда",
         "series": "DEQ10",
         "range": "±50g",
@@ -29,7 +29,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ10-02",
+        "partnumber": "DEQ10-02",
         "brand": "Без бренда",
         "series": "DEQ10",
         "range": "±50g",
@@ -58,7 +58,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ10-03",
+        "partnumber": "DEQ10-03",
         "brand": "Без бренда",
         "series": "DEQ10",
         "range": "±50g",
@@ -87,7 +87,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ20-01",
+        "partnumber": "DEQ20-01",
         "brand": "Без бренда",
         "series": "DEQ20",
         "range": "±70g",
@@ -116,7 +116,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ20-02",
+        "partnumber": "DEQ20-02",
         "brand": "Без бренда",
         "series": "DEQ20",
         "range": "±70g",
@@ -145,7 +145,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ20-03",
+        "partnumber": "DEQ20-03",
         "brand": "Без бренда",
         "series": "DEQ20",
         "range": "±70g",
@@ -174,7 +174,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ30-01",
+        "partnumber": "DEQ30-01",
         "brand": "Без бренда",
         "series": "DEQ30",
         "range": "±60g",
@@ -203,7 +203,7 @@
         "weightG": "≤30"
     },
     {
-        "partNumber": "DEQ30-02",
+        "partnumber": "DEQ30-02",
         "brand": "Без бренда",
         "series": "DEQ30",
         "range": "±60g",
@@ -232,7 +232,7 @@
         "weightG": "≤30"
     },
     {
-        "partNumber": "DEQ50-01",
+        "partnumber": "DEQ50-01",
         "brand": "Без бренда",
         "series": "DEQ50",
         "range": "≥20g",
@@ -259,7 +259,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ50-02",
+        "partnumber": "DEQ50-02",
         "brand": "Без бренда",
         "series": "DEQ50",
         "range": "≥20g",
@@ -286,7 +286,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ50-03",
+        "partnumber": "DEQ50-03",
         "brand": "Без бренда",
         "series": "DEQ50",
         "range": "≥20g",
@@ -313,7 +313,7 @@
         "weightG": "≤80"
     },
     {
-        "partNumber": "DEQ60-01",
+        "partnumber": "DEQ60-01",
         "brand": "Без бренда",
         "series": "DEQ60",
         "range": "±30g",
@@ -342,7 +342,7 @@
         "weightG": "≤25"
     },
     {
-        "partNumber": "DEQ60-02",
+        "partnumber": "DEQ60-02",
         "brand": "Без бренда",
         "series": "DEQ60",
         "range": "±30g",
@@ -371,7 +371,7 @@
         "weightG": "≤25"
     },
     {
-        "partNumber": "DEQ40-01",
+        "partnumber": "DEQ40-01",
         "brand": "Без бренда",
         "series": "DEQ40",
         "range": "±30g",
@@ -396,7 +396,7 @@
         "weightG": "<65"
     },
     {
-        "partNumber": "DEQ40-02",
+        "partnumber": "DEQ40-02",
         "brand": "Без бренда",
         "series": "DEQ40",
         "range": "±30g",
@@ -421,7 +421,7 @@
         "weightG": "<65"
     },
     {
-        "partNumber": "DEQ40-03",
+        "partnumber": "DEQ40-03",
         "brand": "Без бренда",
         "series": "DEQ40",
         "range": "±30g",
@@ -446,7 +446,7 @@
         "weightG": "<65"
     },
     {
-        "partNumber": "DEQ40-02A",
+        "partnumber": "DEQ40-02A",
         "brand": "Без бренда",
         "series": "DEQ40",
         "range": "≥15g",
@@ -463,7 +463,7 @@
         "weightG": "≤70"
     },
     {
-        "partNumber": "DEQ40-01A",
+        "partnumber": "DEQ40-01A",
         "brand": "Без бренда",
         "series": "DEQ40",
         "range": "≥15g",
@@ -480,7 +480,7 @@
         "weightG": "≤70"
     },
     {
-        "partNumber": "DEQ40-04",
+        "partnumber": "DEQ40-04",
         "brand": "Без бренда",
         "series": "DEQ40",
         "range": "≥15g",

@@ -1,6 +1,6 @@
 [
     {
-        "partNumber": "DH048N02D",
+        "partnumber": "DH048N02D",
         "brand": "WXDH",
         "id": "201",
         "housing": "TO-252",
@@ -21,7 +21,7 @@
         "qgd[NC]": "11.1"
     },
     {
-        "partNumber": "DH009N02",
+        "partnumber": "DH009N02",
         "brand": "WXDH",
         "id": "202",
         "housing": "TO-220",
@@ -42,7 +42,7 @@
         "qgd[NC]": "53"
     },
     {
-        "partNumber": "DH009N02P",
+        "partnumber": "DH009N02P",
         "brand": "WXDH",
         "id": "203",
         "housing": "DFN5*6-8",
@@ -63,7 +63,7 @@
         "qgd[NC]": "53"
     },
     {
-        "partNumber": "DH009N02U",
+        "partnumber": "DH009N02U",
         "brand": "WXDH",
         "id": "204",
         "housing": "TOLL",
@@ -84,7 +84,7 @@
         "qgd[NC]": "52"
     },
     {
-        "partNumber": "DH091N03D",
+        "partnumber": "DH091N03D",
         "brand": "WXDH",
         "id": "205",
         "housing": "TO-252",
@@ -105,7 +105,7 @@
         "qgd[NC]": "4.3"
     },
     {
-        "partNumber": "DH081N03R",
+        "partnumber": "DH081N03R",
         "brand": "WXDH",
         "id": "206",
         "housing": "DFN3*3-8",
@@ -126,7 +126,7 @@
         "qgd[NC]": "4.7"
     },
     {
-        "partNumber": "DH081N03D",
+        "partnumber": "DH081N03D",
         "brand": "WXDH",
         "id": "207",
         "housing": "TO-252",
@@ -147,7 +147,7 @@
         "qgd[NC]": "4.66"
     },
     {
-        "partNumber": "DH060N03R",
+        "partnumber": "DH060N03R",
         "brand": "WXDH",
         "id": "208",
         "housing": "DFN3*3-8",
@@ -168,7 +168,7 @@
         "qgd[NC]": "5.8"
     },
     {
-        "partNumber": "DHB50N03",
+        "partnumber": "DHB50N03",
         "brand": "WXDH",
         "id": "209",
         "housing": "TO-251",
@@ -189,7 +189,7 @@
         "qgd[NC]": "5.8"
     },
     {
-        "partNumber": "DHD50N03",
+        "partnumber": "DHD50N03",
         "brand": "WXDH",
         "id": "210",
         "housing": "TO-252",
@@ -210,7 +210,7 @@
         "qgd[NC]": "5.8"
     },
     {
-        "partNumber": "DH50N03",
+        "partnumber": "DH50N03",
         "brand": "WXDH",
         "id": "211",
         "housing": "TO-220",
@@ -231,7 +231,7 @@
         "qgd[NC]": "5.8"
     },
     {
-        "partNumber": "DH80N03V",
+        "partnumber": "DH80N03V",
         "brand": "WXDH",
         "id": "212",
         "housing": "SOP-8",
@@ -252,7 +252,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DHP80N03",
+        "partnumber": "DHP80N03",
         "brand": "WXDH",
         "id": "213",
         "housing": "DFN5*6-8",
@@ -273,7 +273,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DHD80N03",
+        "partnumber": "DHD80N03",
         "brand": "WXDH",
         "id": "214",
         "housing": "TO-252",
@@ -294,7 +294,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DH90N03V",
+        "partnumber": "DH90N03V",
         "brand": "WXDH",
         "id": "215",
         "housing": "SOP-8",
@@ -315,7 +315,7 @@
         "qgd[NC]": "11"
     },
     {
-        "partNumber": "DHP90N03",
+        "partnumber": "DHP90N03",
         "brand": "WXDH",
         "id": "216",
         "housing": "DFN5*6-8",
@@ -336,7 +336,7 @@
         "qgd[NC]": "11"
     },
     {
-        "partNumber": "DHD90N03",
+        "partnumber": "DHD90N03",
         "brand": "WXDH",
         "id": "217",
         "housing": "TO-252",
@@ -357,7 +357,7 @@
         "qgd[NC]": "11"
     },
     {
-        "partNumber": "DHD90N03",
+        "partnumber": "DHD90N03",
         "brand": "WXDH",
         "id": "218",
         "housing": "TO-252",
@@ -378,7 +378,7 @@
         "qgd[NC]": "8.4"
     },
     {
-        "partNumber": "DH033N03R",
+        "partnumber": "DH033N03R",
         "brand": "WXDH",
         "id": "219",
         "housing": "DFN3*3-8",
@@ -399,7 +399,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "30H10K",
+        "partnumber": "30H10K",
         "brand": "WXDH",
         "id": "220",
         "housing": "TO-252",
@@ -420,7 +420,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "30H10K",
+        "partnumber": "30H10K",
         "brand": "WXDH",
         "id": "221",
         "housing": "TO-252",
@@ -441,7 +441,7 @@
         "qgd[NC]": "8.4"
     },
     {
-        "partNumber": "DH033N03D",
+        "partnumber": "DH033N03D",
         "brand": "WXDH",
         "id": "222",
         "housing": "TO-252",
@@ -462,7 +462,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DH033N03",
+        "partnumber": "DH033N03",
         "brand": "WXDH",
         "id": "223",
         "housing": "TO-220",
@@ -483,7 +483,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DH033N03E",
+        "partnumber": "DH033N03E",
         "brand": "WXDH",
         "id": "224",
         "housing": "TO-263",
@@ -504,7 +504,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHD100N03",
+        "partnumber": "DHD100N03",
         "brand": "WXDH",
         "id": "225",
         "housing": "TO-252",
@@ -525,7 +525,7 @@
         "qgd[NC]": "13.7"
     },
     {
-        "partNumber": "DH030N03P",
+        "partnumber": "DH030N03P",
         "brand": "WXDH",
         "id": "226",
         "housing": "DFN5*6-8",
@@ -546,7 +546,7 @@
         "qgd[NC]": "17"
     },
     {
-        "partNumber": "DH030N03",
+        "partnumber": "DH030N03",
         "brand": "WXDH",
         "id": "227",
         "housing": "TO-220",
@@ -567,7 +567,7 @@
         "qgd[NC]": "17"
     },
     {
-        "partNumber": "DH030N03D",
+        "partnumber": "DH030N03D",
         "brand": "WXDH",
         "id": "228",
         "housing": "TO-252",
@@ -588,7 +588,7 @@
         "qgd[NC]": "17"
     },
     {
-        "partNumber": "DH030N03E",
+        "partnumber": "DH030N03E",
         "brand": "WXDH",
         "id": "229",
         "housing": "TO-263",
@@ -609,7 +609,7 @@
         "qgd[NC]": "17"
     },
     {
-        "partNumber": "DH025N03P",
+        "partnumber": "DH025N03P",
         "brand": "WXDH",
         "id": "230",
         "housing": "DFN5*6-8",
@@ -630,7 +630,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DH025N03D",
+        "partnumber": "DH025N03D",
         "brand": "WXDH",
         "id": "231",
         "housing": "TO-252",
@@ -651,7 +651,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DH025N03",
+        "partnumber": "DH025N03",
         "brand": "WXDH",
         "id": "232",
         "housing": "TO-220",
@@ -672,7 +672,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DH025N03E",
+        "partnumber": "DH025N03E",
         "brand": "WXDH",
         "id": "233",
         "housing": "TO-263",
@@ -693,7 +693,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DH020N03P",
+        "partnumber": "DH020N03P",
         "brand": "WXDH",
         "id": "234",
         "housing": "DFN5*6-8",
@@ -714,7 +714,7 @@
         "qgd[NC]": "37"
     },
     {
-        "partNumber": "DH020N03D",
+        "partnumber": "DH020N03D",
         "brand": "WXDH",
         "id": "235",
         "housing": "TO-252",
@@ -735,7 +735,7 @@
         "qgd[NC]": "37"
     },
     {
-        "partNumber": "DH020N03",
+        "partnumber": "DH020N03",
         "brand": "WXDH",
         "id": "236",
         "housing": "TO-220",
@@ -756,7 +756,7 @@
         "qgd[NC]": "37"
     },
     {
-        "partNumber": "DH020N03E",
+        "partnumber": "DH020N03E",
         "brand": "WXDH",
         "id": "237",
         "housing": "TO-263",
@@ -777,7 +777,7 @@
         "qgd[NC]": "37"
     },
     {
-        "partNumber": "DH012N03P",
+        "partnumber": "DH012N03P",
         "brand": "WXDH",
         "id": "238",
         "housing": "DFN5*6-8",
@@ -798,7 +798,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "DH012N03D",
+        "partnumber": "DH012N03D",
         "brand": "WXDH",
         "id": "239",
         "housing": "TO-252",
@@ -819,7 +819,7 @@
         "qgd[NC]": "56.5"
     },
     {
-        "partNumber": "DH012N03E",
+        "partnumber": "DH012N03E",
         "brand": "WXDH",
         "id": "240",
         "housing": "TO-263",
@@ -840,7 +840,7 @@
         "qgd[NC]": "56.5"
     },
     {
-        "partNumber": "DH012N03",
+        "partnumber": "DH012N03",
         "brand": "WXDH",
         "id": "241",
         "housing": "TO-220",
@@ -861,7 +861,7 @@
         "qgd[NC]": "56.5"
     },
     {
-        "partNumber": "DH012N03U",
+        "partnumber": "DH012N03U",
         "brand": "WXDH",
         "id": "242",
         "housing": "TOLL",
@@ -882,7 +882,7 @@
         "qgd[NC]": "46"
     },
     {
-        "partNumber": "DHS010N03P",
+        "partnumber": "DHS010N03P",
         "brand": "WXDH",
         "id": "243",
         "housing": "DFN5*6-8",
@@ -903,7 +903,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DHS010N03",
+        "partnumber": "DHS010N03",
         "brand": "WXDH",
         "id": "244",
         "housing": "TO-220",
@@ -924,7 +924,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DH065N04P",
+        "partnumber": "DH065N04P",
         "brand": "WXDH",
         "id": "245",
         "housing": "DFN5*6-8",
@@ -945,7 +945,7 @@
         "qgd[NC]": "6"
     },
     {
-        "partNumber": "DH065N04D",
+        "partnumber": "DH065N04D",
         "brand": "WXDH",
         "id": "246",
         "housing": "TO-252",
@@ -966,7 +966,7 @@
         "qgd[NC]": "6"
     },
     {
-        "partNumber": "DH065N04",
+        "partnumber": "DH065N04",
         "brand": "WXDH",
         "id": "247",
         "housing": "TO-220",
@@ -987,7 +987,7 @@
         "qgd[NC]": "6"
     },
     {
-        "partNumber": "DH045N04R",
+        "partnumber": "DH045N04R",
         "brand": "WXDH",
         "id": "248",
         "housing": "DFN3*3-8",
@@ -1008,7 +1008,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DH045N04P",
+        "partnumber": "DH045N04P",
         "brand": "WXDH",
         "id": "249",
         "housing": "DFN5*6-8",
@@ -1029,7 +1029,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DH045N04D",
+        "partnumber": "DH045N04D",
         "brand": "WXDH",
         "id": "250",
         "housing": "TO-252",
@@ -1050,7 +1050,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DH045N04",
+        "partnumber": "DH045N04",
         "brand": "WXDH",
         "id": "251",
         "housing": "TO-220",
@@ -1071,7 +1071,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DH045N04E",
+        "partnumber": "DH045N04E",
         "brand": "WXDH",
         "id": "252",
         "housing": "TO-263",
@@ -1092,7 +1092,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DTG045N04NA",
+        "partnumber": "DTG045N04NA",
         "brand": "WXDH",
         "id": "253",
         "housing": "TO-220",
@@ -1113,7 +1113,7 @@
         "qgd[NC]": "15"
     },
     {
-        "partNumber": "DTE043N04NA",
+        "partnumber": "DTE043N04NA",
         "brand": "WXDH",
         "id": "254",
         "housing": "TO-263",
@@ -1134,7 +1134,7 @@
         "qgd[NC]": "15"
     },
     {
-        "partNumber": "DH033N04P",
+        "partnumber": "DH033N04P",
         "brand": "WXDH",
         "id": "255",
         "housing": "DFN5*6-8",
@@ -1155,7 +1155,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH033N04D",
+        "partnumber": "DH033N04D",
         "brand": "WXDH",
         "id": "256",
         "housing": "TO-252",
@@ -1176,7 +1176,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH033N04",
+        "partnumber": "DH033N04",
         "brand": "WXDH",
         "id": "257",
         "housing": "TO-220",
@@ -1197,7 +1197,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH033N04E",
+        "partnumber": "DH033N04E",
         "brand": "WXDH",
         "id": "258",
         "housing": "TO-263",
@@ -1218,7 +1218,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH025N04P",
+        "partnumber": "DH025N04P",
         "brand": "WXDH",
         "id": "259",
         "housing": "DFN5*6-8",
@@ -1239,7 +1239,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "DH025N04D",
+        "partnumber": "DH025N04D",
         "brand": "WXDH",
         "id": "260",
         "housing": "TO-252",
@@ -1260,7 +1260,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "DH025N04",
+        "partnumber": "DH025N04",
         "brand": "WXDH",
         "id": "261",
         "housing": "TO-220",
@@ -1281,7 +1281,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "DH025N04E",
+        "partnumber": "DH025N04E",
         "brand": "WXDH",
         "id": "262",
         "housing": "TO-263",
@@ -1302,7 +1302,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "DTD032N04NA",
+        "partnumber": "DTD032N04NA",
         "brand": "WXDH",
         "id": "263",
         "housing": "TO-252",
@@ -1323,7 +1323,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DH019N04P",
+        "partnumber": "DH019N04P",
         "brand": "WXDH",
         "id": "264",
         "housing": "DFN5*6-8",
@@ -1344,7 +1344,7 @@
         "qgd[NC]": "28.3"
     },
     {
-        "partNumber": "DH019N04",
+        "partnumber": "DH019N04",
         "brand": "WXDH",
         "id": "265",
         "housing": "TO-220",
@@ -1365,7 +1365,7 @@
         "qgd[NC]": "26"
     },
     {
-        "partNumber": "DH019N04E",
+        "partnumber": "DH019N04E",
         "brand": "WXDH",
         "id": "266",
         "housing": "TO-263",
@@ -1386,7 +1386,7 @@
         "qgd[NC]": "26"
     },
     {
-        "partNumber": "DTG025N04NA",
+        "partnumber": "DTG025N04NA",
         "brand": "WXDH",
         "id": "267",
         "housing": "TO-220",
@@ -1407,7 +1407,7 @@
         "qgd[NC]": "28.3"
     },
     {
-        "partNumber": "DTE025N04NA",
+        "partnumber": "DTE025N04NA",
         "brand": "WXDH",
         "id": "268",
         "housing": "TO-263",
@@ -1428,7 +1428,7 @@
         "qgd[NC]": "28.3"
     },
     {
-        "partNumber": "DTE019N04LA",
+        "partnumber": "DTE019N04LA",
         "brand": "WXDH",
         "id": "269",
         "housing": "TO-263",
@@ -1449,7 +1449,7 @@
         "qgd[NC]": "28.3"
     },
     {
-        "partNumber": "DHS021N04P",
+        "partnumber": "DHS021N04P",
         "brand": "WXDH",
         "id": "270",
         "housing": "DFN5*6-8",
@@ -1470,7 +1470,7 @@
         "qgd[NC]": "10.5"
     },
     {
-        "partNumber": "DHS021N04D",
+        "partnumber": "DHS021N04D",
         "brand": "WXDH",
         "id": "271",
         "housing": "TO-252",
@@ -1491,7 +1491,7 @@
         "qgd[NC]": "10.5"
     },
     {
-        "partNumber": "DHS021N04",
+        "partnumber": "DHS021N04",
         "brand": "WXDH",
         "id": "272",
         "housing": "TO-220",
@@ -1512,7 +1512,7 @@
         "qgd[NC]": "10.5"
     },
     {
-        "partNumber": "DHS021N04E",
+        "partnumber": "DHS021N04E",
         "brand": "WXDH",
         "id": "273",
         "housing": "TO-263",
@@ -1533,7 +1533,7 @@
         "qgd[NC]": "10.5"
     },
     {
-        "partNumber": "DHS020N04P",
+        "partnumber": "DHS020N04P",
         "brand": "WXDH",
         "id": "274",
         "housing": "DFN5*6-8",
@@ -1554,7 +1554,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHS020N04D",
+        "partnumber": "DHS020N04D",
         "brand": "WXDH",
         "id": "275",
         "housing": "TO-252",
@@ -1575,7 +1575,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHS020N04",
+        "partnumber": "DHS020N04",
         "brand": "WXDH",
         "id": "276",
         "housing": "TO-220",
@@ -1596,7 +1596,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHS020N04E",
+        "partnumber": "DHS020N04E",
         "brand": "WXDH",
         "id": "277",
         "housing": "TO-263",
@@ -1617,7 +1617,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHS008N04P",
+        "partnumber": "DHS008N04P",
         "brand": "WXDH",
         "id": "278",
         "housing": "DFN5*6-8",
@@ -1638,7 +1638,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DSU010N04LA",
+        "partnumber": "DSU010N04LA",
         "brand": "WXDH",
         "id": "279",
         "housing": "TOLL",
@@ -1659,7 +1659,7 @@
         "qgd[NC]": "26"
     },
     {
-        "partNumber": "DHS010N04U",
+        "partnumber": "DHS010N04U",
         "brand": "WXDH",
         "id": "280",
         "housing": "TOLL",
@@ -1680,7 +1680,7 @@
         "qgd[NC]": "26"
     },
     {
-        "partNumber": "DH132N06",
+        "partnumber": "DH132N06",
         "brand": "WXDH",
         "id": "281",
         "housing": "TO-220",
@@ -1701,7 +1701,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "DH132N06D",
+        "partnumber": "DH132N06D",
         "brand": "WXDH",
         "id": "282",
         "housing": "TO-252",
@@ -1722,7 +1722,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "DH066N06P",
+        "partnumber": "DH066N06P",
         "brand": "WXDH",
         "id": "283",
         "housing": "DFN5*6-8",
@@ -1743,7 +1743,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH066N06",
+        "partnumber": "DH066N06",
         "brand": "WXDH",
         "id": "284",
         "housing": "TO-220",
@@ -1764,7 +1764,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH066N06B",
+        "partnumber": "DH066N06B",
         "brand": "WXDH",
         "id": "285",
         "housing": "TO-251",
@@ -1785,7 +1785,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH066N06D",
+        "partnumber": "DH066N06D",
         "brand": "WXDH",
         "id": "286",
         "housing": "TO-252",
@@ -1806,7 +1806,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH066N06E",
+        "partnumber": "DH066N06E",
         "brand": "WXDH",
         "id": "287",
         "housing": "TO-263",
@@ -1827,7 +1827,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DATP057N06N",
+        "partnumber": "DATP057N06N",
         "brand": "WXDH",
         "id": "288",
         "housing": "DFN5*6-8",
@@ -1848,7 +1848,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DATD063N06N",
+        "partnumber": "DATD063N06N",
         "brand": "WXDH",
         "id": "289",
         "housing": "TO-252",
@@ -1869,7 +1869,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH065N06P",
+        "partnumber": "DH065N06P",
         "brand": "WXDH",
         "id": "290",
         "housing": "DFN5*6-8",
@@ -1890,7 +1890,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH065N06",
+        "partnumber": "DH065N06",
         "brand": "WXDH",
         "id": "291",
         "housing": "TO-220",
@@ -1911,7 +1911,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH065N06D",
+        "partnumber": "DH065N06D",
         "brand": "WXDH",
         "id": "292",
         "housing": "TO-252",
@@ -1932,7 +1932,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH065N06E",
+        "partnumber": "DH065N06E",
         "brand": "WXDH",
         "id": "293",
         "housing": "TO-263",
@@ -1953,7 +1953,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "DH045N06P",
+        "partnumber": "DH045N06P",
         "brand": "WXDH",
         "id": "294",
         "housing": "DFN5*6-8",
@@ -1974,7 +1974,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DH045N06",
+        "partnumber": "DH045N06",
         "brand": "WXDH",
         "id": "295",
         "housing": "TO-220",
@@ -1995,7 +1995,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DH045N06D",
+        "partnumber": "DH045N06D",
         "brand": "WXDH",
         "id": "296",
         "housing": "TO-252",
@@ -2016,7 +2016,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DH045N06E",
+        "partnumber": "DH045N06E",
         "brand": "WXDH",
         "id": "297",
         "housing": "TO-263",
@@ -2037,7 +2037,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DH026N06",
+        "partnumber": "DH026N06",
         "brand": "WXDH",
         "id": "298",
         "housing": "TO-220",
@@ -2058,7 +2058,7 @@
         "qgd[NC]": "45"
     },
     {
-        "partNumber": "DH026N06E",
+        "partnumber": "DH026N06E",
         "brand": "WXDH",
         "id": "299",
         "housing": "TO-263",
@@ -2079,7 +2079,7 @@
         "qgd[NC]": "45"
     },
     {
-        "partNumber": "DHS022N06",
+        "partnumber": "DHS022N06",
         "brand": "WXDH",
         "id": "300",
         "housing": "TO-220",
@@ -2100,7 +2100,7 @@
         "qgd[NC]": "12.5"
     },
     {
-        "partNumber": "DHS022N06E",
+        "partnumber": "DHS022N06E",
         "brand": "WXDH",
         "id": "301",
         "housing": "TO-263",
@@ -2121,7 +2121,7 @@
         "qgd[NC]": "12.5"
     },
     {
-        "partNumber": "DHS022N06D",
+        "partnumber": "DHS022N06D",
         "brand": "WXDH",
         "id": "302",
         "housing": "TO-3PN",
@@ -2142,7 +2142,7 @@
         "qgd[NC]": "12.5"
     },
     {
-        "partNumber": "DHS025N06P",
+        "partnumber": "DHS025N06P",
         "brand": "WXDH",
         "id": "303",
         "housing": "DFN5*6-8",
@@ -2163,7 +2163,7 @@
         "qgd[NC]": "12.9"
     },
     {
-        "partNumber": "DHS025N06D",
+        "partnumber": "DHS025N06D",
         "brand": "WXDH",
         "id": "304",
         "housing": "TO-252",
@@ -2184,7 +2184,7 @@
         "qgd[NC]": "12.9"
     },
     {
-        "partNumber": "DHS025N06",
+        "partnumber": "DHS025N06",
         "brand": "WXDH",
         "id": "305",
         "housing": "TO-220",
@@ -2205,7 +2205,7 @@
         "qgd[NC]": "12.9"
     },
     {
-        "partNumber": "DHS025N06E",
+        "partnumber": "DHS025N06E",
         "brand": "WXDH",
         "id": "306",
         "housing": "TO-263",
@@ -2226,7 +2226,7 @@
         "qgd[NC]": "12.9"
     },
     {
-        "partNumber": "DHS012N06U",
+        "partnumber": "DHS012N06U",
         "brand": "WXDH",
         "id": "307",
         "housing": "TOLL",
@@ -2247,7 +2247,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DHS015N06U",
+        "partnumber": "DHS015N06U",
         "brand": "WXDH",
         "id": "308",
         "housing": "TOLL",
@@ -2268,7 +2268,7 @@
         "qgd[NC]": "29"
     },
     {
-        "partNumber": "DH240N06LV",
+        "partnumber": "DH240N06LV",
         "brand": "WXDH",
         "id": "309",
         "housing": "SOP-8",
@@ -2289,7 +2289,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DH240N06LB",
+        "partnumber": "DH240N06LB",
         "brand": "WXDH",
         "id": "310",
         "housing": "TO-251",
@@ -2310,7 +2310,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DH240N06LD",
+        "partnumber": "DH240N06LD",
         "brand": "WXDH",
         "id": "311",
         "housing": "TO-252",
@@ -2331,7 +2331,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DH240N06L",
+        "partnumber": "DH240N06L",
         "brand": "WXDH",
         "id": "312",
         "housing": "TO-220",
@@ -2352,7 +2352,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DH240N06LF",
+        "partnumber": "DH240N06LF",
         "brand": "WXDH",
         "id": "313",
         "housing": "TO-220F",
@@ -2373,7 +2373,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DH240N06LE",
+        "partnumber": "DH240N06LE",
         "brand": "WXDH",
         "id": "314",
         "housing": "TO-263",
@@ -2394,7 +2394,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DH105N07P",
+        "partnumber": "DH105N07P",
         "brand": "WXDH",
         "id": "315",
         "housing": "DFN5*6-8",
@@ -2415,7 +2415,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DH105N07",
+        "partnumber": "DH105N07",
         "brand": "WXDH",
         "id": "316",
         "housing": "TO-220",
@@ -2436,7 +2436,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DH105N07B",
+        "partnumber": "DH105N07B",
         "brand": "WXDH",
         "id": "317",
         "housing": "TO-251",
@@ -2457,7 +2457,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DH105N07D",
+        "partnumber": "DH105N07D",
         "brand": "WXDH",
         "id": "318",
         "housing": "TO-252",
@@ -2478,7 +2478,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DH60N06",
+        "partnumber": "DH60N06",
         "brand": "WXDH",
         "id": "319",
         "housing": "TO-220",
@@ -2499,7 +2499,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DH50N06",
+        "partnumber": "DH50N06",
         "brand": "WXDH",
         "id": "320",
         "housing": "TO-220",
@@ -2520,7 +2520,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DHF50N06",
+        "partnumber": "DHF50N06",
         "brand": "WXDH",
         "id": "321",
         "housing": "TO-22F",
@@ -2541,7 +2541,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DHD50N06",
+        "partnumber": "DHD50N06",
         "brand": "WXDH",
         "id": "322",
         "housing": "TO-252",
@@ -2562,7 +2562,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DH072N07",
+        "partnumber": "DH072N07",
         "brand": "WXDH",
         "id": "323",
         "housing": "TO-220",
@@ -2583,7 +2583,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH072N07E",
+        "partnumber": "DH072N07E",
         "brand": "WXDH",
         "id": "324",
         "housing": "TO-263",
@@ -2604,7 +2604,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH072N07D",
+        "partnumber": "DH072N07D",
         "brand": "WXDH",
         "id": "325",
         "housing": "TO-252",
@@ -2625,7 +2625,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH060N07P",
+        "partnumber": "DH060N07P",
         "brand": "WXDH",
         "id": "326",
         "housing": "DFN5*6-8",
@@ -2646,7 +2646,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DHD070N06",
+        "partnumber": "DHD070N06",
         "brand": "WXDH",
         "id": "327",
         "housing": "TO-252",
@@ -2667,7 +2667,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DH070N06",
+        "partnumber": "DH070N06",
         "brand": "WXDH",
         "id": "328",
         "housing": "TO-220",
@@ -2688,7 +2688,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DHE070N06",
+        "partnumber": "DHE070N06",
         "brand": "WXDH",
         "id": "329",
         "housing": "TO-263",
@@ -2709,7 +2709,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DH070N07",
+        "partnumber": "DH070N07",
         "brand": "WXDH",
         "id": "330",
         "housing": "TO-220",
@@ -2730,7 +2730,7 @@
         "qgd[NC]": "21.7"
     },
     {
-        "partNumber": "DH100N06",
+        "partnumber": "DH100N06",
         "brand": "WXDH",
         "id": "331",
         "housing": "TO-220",
@@ -2751,7 +2751,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DH3205A",
+        "partnumber": "DH3205A",
         "brand": "WXDH",
         "id": "332",
         "housing": "TO-220",
@@ -2772,7 +2772,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DH060N07B",
+        "partnumber": "DH060N07B",
         "brand": "WXDH",
         "id": "333",
         "housing": "TO-251",
@@ -2793,7 +2793,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DH060N07D",
+        "partnumber": "DH060N07D",
         "brand": "WXDH",
         "id": "334",
         "housing": "TO-252",
@@ -2814,7 +2814,7 @@
         "qgd[NC]": "26.4"
     },
     {
-        "partNumber": "DHS055N07D",
+        "partnumber": "DHS055N07D",
         "brand": "WXDH",
         "id": "335",
         "housing": "TO-252",
@@ -2835,7 +2835,7 @@
         "qgd[NC]": "5.9"
     },
     {
-        "partNumber": "DHS055N07",
+        "partnumber": "DHS055N07",
         "brand": "WXDH",
         "id": "336",
         "housing": "TO-220",
@@ -2856,7 +2856,7 @@
         "qgd[NC]": "5.9"
     },
     {
-        "partNumber": "DHS055N07E",
+        "partnumber": "DHS055N07E",
         "brand": "WXDH",
         "id": "337",
         "housing": "TO-263",
@@ -2877,7 +2877,7 @@
         "qgd[NC]": "5.9"
     },
     {
-        "partNumber": "DHS043N07P",
+        "partnumber": "DHS043N07P",
         "brand": "WXDH",
         "id": "338",
         "housing": "DFN5*6-8",
@@ -2898,7 +2898,7 @@
         "qgd[NC]": "6.04"
     },
     {
-        "partNumber": "DHS130N06D",
+        "partnumber": "DHS130N06D",
         "brand": "WXDH",
         "id": "339",
         "housing": "TO-252",
@@ -2919,7 +2919,7 @@
         "qgd[NC]": "6.04"
     },
     {
-        "partNumber": "DHS130N06",
+        "partnumber": "DHS130N06",
         "brand": "WXDH",
         "id": "340",
         "housing": "TO-220",
@@ -2940,7 +2940,7 @@
         "qgd[NC]": "6.04"
     },
     {
-        "partNumber": "DHS130N06E",
+        "partnumber": "DHS130N06E",
         "brand": "WXDH",
         "id": "341",
         "housing": "TO-263",
@@ -2961,7 +2961,7 @@
         "qgd[NC]": "6.04"
     },
     {
-        "partNumber": "DHS031N07P",
+        "partnumber": "DHS031N07P",
         "brand": "WXDH",
         "id": "342",
         "housing": "DFN5*6-8",
@@ -2982,7 +2982,7 @@
         "qgd[NC]": "10.6"
     },
     {
-        "partNumber": "DHS031N07D",
+        "partnumber": "DHS031N07D",
         "brand": "WXDH",
         "id": "343",
         "housing": "TO-252",
@@ -3003,7 +3003,7 @@
         "qgd[NC]": "10.6"
     },
     {
-        "partNumber": "DHS031N07",
+        "partnumber": "DHS031N07",
         "brand": "WXDH",
         "id": "344",
         "housing": "TO-220",
@@ -3024,7 +3024,7 @@
         "qgd[NC]": "10.6"
     },
     {
-        "partNumber": "DHS031N07E",
+        "partnumber": "DHS031N07E",
         "brand": "WXDH",
         "id": "345",
         "housing": "TO-263",
@@ -3045,7 +3045,7 @@
         "qgd[NC]": "10.6"
     },
     {
-        "partNumber": "DH300N08D",
+        "partnumber": "DH300N08D",
         "brand": "WXDH",
         "id": "346",
         "housing": "TO-252",
@@ -3066,7 +3066,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DH116N08D",
+        "partnumber": "DH116N08D",
         "brand": "WXDH",
         "id": "347",
         "housing": "TO-252",
@@ -3087,7 +3087,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DH116N08",
+        "partnumber": "DH116N08",
         "brand": "WXDH",
         "id": "348",
         "housing": "TO-220",
@@ -3108,7 +3108,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DH075N08D",
+        "partnumber": "DH075N08D",
         "brand": "WXDH",
         "id": "349",
         "housing": "TO-252",
@@ -3129,7 +3129,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DH075N08",
+        "partnumber": "DH075N08",
         "brand": "WXDH",
         "id": "350",
         "housing": "TO-220",
@@ -3150,7 +3150,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DH8290",
+        "partnumber": "DH8290",
         "brand": "WXDH",
         "id": "351",
         "housing": "TO-220",
@@ -3171,7 +3171,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DHD80N08",
+        "partnumber": "DHD80N08",
         "brand": "WXDH",
         "id": "352",
         "housing": "TO-252",
@@ -3192,7 +3192,7 @@
         "qgd[NC]": "33"
     },
     {
-        "partNumber": "DH80N08",
+        "partnumber": "DH80N08",
         "brand": "WXDH",
         "id": "353",
         "housing": "TO-220",
@@ -3213,7 +3213,7 @@
         "qgd[NC]": "33"
     },
     {
-        "partNumber": "D7509",
+        "partnumber": "D7509",
         "brand": "WXDH",
         "id": "354",
         "housing": "TO-220",
@@ -3234,7 +3234,7 @@
         "qgd[NC]": "33"
     },
     {
-        "partNumber": "ID7509",
+        "partnumber": "ID7509",
         "brand": "WXDH",
         "id": "355",
         "housing": "TO-262",
@@ -3255,7 +3255,7 @@
         "qgd[NC]": "33"
     },
     {
-        "partNumber": "DHE80N08",
+        "partnumber": "DHE80N08",
         "brand": "WXDH",
         "id": "356",
         "housing": "TO-263",
@@ -3276,7 +3276,7 @@
         "qgd[NC]": "33"
     },
     {
-        "partNumber": "DH060N08",
+        "partnumber": "DH060N08",
         "brand": "WXDH",
         "id": "357",
         "housing": "TO-220",
@@ -3297,7 +3297,7 @@
         "qgd[NC]": "38"
     },
     {
-        "partNumber": "DH85N08",
+        "partnumber": "DH85N08",
         "brand": "WXDH",
         "id": "358",
         "housing": "TO-220",
@@ -3318,7 +3318,7 @@
         "qgd[NC]": "34"
     },
     {
-        "partNumber": "F85N08",
+        "partnumber": "F85N08",
         "brand": "WXDH",
         "id": "359",
         "housing": "TO-220F",
@@ -3339,7 +3339,7 @@
         "qgd[NC]": "34"
     },
     {
-        "partNumber": "I85N08",
+        "partnumber": "I85N08",
         "brand": "WXDH",
         "id": "360",
         "housing": "TO-262",
@@ -3360,7 +3360,7 @@
         "qgd[NC]": "34"
     },
     {
-        "partNumber": "DHE85N08",
+        "partnumber": "DHE85N08",
         "brand": "WXDH",
         "id": "361",
         "housing": "TO-263",
@@ -3381,7 +3381,7 @@
         "qgd[NC]": "34"
     },
     {
-        "partNumber": "DH050N85",
+        "partnumber": "DH050N85",
         "brand": "WXDH",
         "id": "362",
         "housing": "TO-220",
@@ -3402,7 +3402,7 @@
         "qgd[NC]": "48"
     },
     {
-        "partNumber": "DH050N85E",
+        "partnumber": "DH050N85E",
         "brand": "WXDH",
         "id": "363",
         "housing": "TO-263",
@@ -3423,7 +3423,7 @@
         "qgd[NC]": "48"
     },
     {
-        "partNumber": "DHS065N85P",
+        "partnumber": "DHS065N85P",
         "brand": "WXDH",
         "id": "364",
         "housing": "DFN5*6-8",
@@ -3444,7 +3444,7 @@
         "qgd[NC]": "6.9"
     },
     {
-        "partNumber": "DHS065N85",
+        "partnumber": "DHS065N85",
         "brand": "WXDH",
         "id": "365",
         "housing": "TO-220",
@@ -3465,7 +3465,7 @@
         "qgd[NC]": "6.9"
     },
     {
-        "partNumber": "DHS065N85E",
+        "partnumber": "DHS065N85E",
         "brand": "WXDH",
         "id": "366",
         "housing": "TO-263",
@@ -3486,7 +3486,7 @@
         "qgd[NC]": "6.9"
     },
     {
-        "partNumber": "DSG065N08N3",
+        "partnumber": "DSG065N08N3",
         "brand": "WXDH",
         "id": "367",
         "housing": "TO-220",
@@ -3507,7 +3507,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DSE060N08N3",
+        "partnumber": "DSE060N08N3",
         "brand": "WXDH",
         "id": "368",
         "housing": "TO-263",
@@ -3528,7 +3528,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHS056N85P",
+        "partnumber": "DHS056N85P",
         "brand": "WXDH",
         "id": "369",
         "housing": "DFN5*6-8",
@@ -3549,7 +3549,7 @@
         "qgd[NC]": "10.7"
     },
     {
-        "partNumber": "DHS056N85I",
+        "partnumber": "DHS056N85I",
         "brand": "WXDH",
         "id": "370",
         "housing": "TO-262",
@@ -3570,7 +3570,7 @@
         "qgd[NC]": "9.6"
     },
     {
-        "partNumber": "DHS056N85E",
+        "partnumber": "DHS056N85E",
         "brand": "WXDH",
         "id": "371",
         "housing": "TO-263",
@@ -3591,7 +3591,7 @@
         "qgd[NC]": "9.6"
     },
     {
-        "partNumber": "DHS056N85",
+        "partnumber": "DHS056N85",
         "brand": "WXDH",
         "id": "372",
         "housing": "TO-220",
@@ -3612,7 +3612,7 @@
         "qgd[NC]": "9.6"
     },
     {
-        "partNumber": "DHS056N85F",
+        "partnumber": "DHS056N85F",
         "brand": "WXDH",
         "id": "373",
         "housing": "TO-220F",
@@ -3633,7 +3633,7 @@
         "qgd[NC]": "9.6"
     },
     {
-        "partNumber": "DHS056N85D",
+        "partnumber": "DHS056N85D",
         "brand": "WXDH",
         "id": "374",
         "housing": "TO-252",
@@ -3654,7 +3654,7 @@
         "qgd[NC]": "9.6"
     },
     {
-        "partNumber": "DSG053N08N3",
+        "partnumber": "DSG053N08N3",
         "brand": "WXDH",
         "id": "375",
         "housing": "TO-220",
@@ -3675,7 +3675,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DSE051N08N3",
+        "partnumber": "DSE051N08N3",
         "brand": "WXDH",
         "id": "376",
         "housing": "TO-263",
@@ -3696,7 +3696,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DHS053N88",
+        "partnumber": "DHS053N88",
         "brand": "WXDH",
         "id": "377",
         "housing": "TO-220",
@@ -3717,7 +3717,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "DHS042N85P",
+        "partnumber": "DHS042N85P",
         "brand": "WXDH",
         "id": "378",
         "housing": "DFN5*6-8",
@@ -3738,7 +3738,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DHS045N85D",
+        "partnumber": "DHS045N85D",
         "brand": "WXDH",
         "id": "379",
         "housing": "TO-252",
@@ -3759,7 +3759,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DHS045N85",
+        "partnumber": "DHS045N85",
         "brand": "WXDH",
         "id": "380",
         "housing": "TO-220",
@@ -3780,7 +3780,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DHS045N85I",
+        "partnumber": "DHS045N85I",
         "brand": "WXDH",
         "id": "381",
         "housing": "TO-262",
@@ -3801,7 +3801,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DHS045N85E",
+        "partnumber": "DHS045N85E",
         "brand": "WXDH",
         "id": "382",
         "housing": "TO-263",
@@ -3822,7 +3822,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DSG048N08N3",
+        "partnumber": "DSG048N08N3",
         "brand": "WXDH",
         "id": "383",
         "housing": "TO-220",
@@ -3843,7 +3843,7 @@
         "qgd[NC]": "7.4"
     },
     {
-        "partNumber": "DSG047N08N3",
+        "partnumber": "DSG047N08N3",
         "brand": "WXDH",
         "id": "384",
         "housing": "TO-220",
@@ -3864,7 +3864,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DSE047N08N3",
+        "partnumber": "DSE047N08N3",
         "brand": "WXDH",
         "id": "385",
         "housing": "TO-263",
@@ -3885,7 +3885,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DHS043N85P",
+        "partnumber": "DHS043N85P",
         "brand": "WXDH",
         "id": "386",
         "housing": "DFN5*6-8",
@@ -3906,7 +3906,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DHS043N85D",
+        "partnumber": "DHS043N85D",
         "brand": "WXDH",
         "id": "387",
         "housing": "TO-252",
@@ -3927,7 +3927,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DHS043N85",
+        "partnumber": "DHS043N85",
         "brand": "WXDH",
         "id": "388",
         "housing": "TO-220",
@@ -3948,7 +3948,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DHS043N85E",
+        "partnumber": "DHS043N85E",
         "brand": "WXDH",
         "id": "389",
         "housing": "TO-263",
@@ -3969,7 +3969,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DSP038N08NA",
+        "partnumber": "DSP038N08NA",
         "brand": "WXDH",
         "id": "390",
         "housing": "DFN5*6-8",
@@ -3990,7 +3990,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DSD040N08N3A",
+        "partnumber": "DSD040N08N3A",
         "brand": "WXDH",
         "id": "391",
         "housing": "TO-252",
@@ -4011,7 +4011,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "DSG041N08NA",
+        "partnumber": "DSG041N08NA",
         "brand": "WXDH",
         "id": "392",
         "housing": "TO-220",
@@ -4032,7 +4032,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "DSE038N08N3A",
+        "partnumber": "DSE038N08N3A",
         "brand": "WXDH",
         "id": "393",
         "housing": "TO-263",
@@ -4053,7 +4053,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "DSP032N08NA",
+        "partnumber": "DSP032N08NA",
         "brand": "WXDH",
         "id": "394",
         "housing": "DFN5*6-8",
@@ -4074,7 +4074,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "DHS035N88",
+        "partnumber": "DHS035N88",
         "brand": "WXDH",
         "id": "395",
         "housing": "TO-220",
@@ -4095,7 +4095,7 @@
         "qgd[NC]": "17.2"
     },
     {
-        "partNumber": "DHS035N88I",
+        "partnumber": "DHS035N88I",
         "brand": "WXDH",
         "id": "396",
         "housing": "TO-262",
@@ -4116,7 +4116,7 @@
         "qgd[NC]": "17.2"
     },
     {
-        "partNumber": "DHS035N88E",
+        "partnumber": "DHS035N88E",
         "brand": "WXDH",
         "id": "397",
         "housing": "TO-263",
@@ -4137,7 +4137,7 @@
         "qgd[NC]": "17.2"
     },
     {
-        "partNumber": "DHS030N88",
+        "partnumber": "DHS030N88",
         "brand": "WXDH",
         "id": "398",
         "housing": "TO-220",
@@ -4158,7 +4158,7 @@
         "qgd[NC]": "19.4"
     },
     {
-        "partNumber": "DHS030N88E",
+        "partnumber": "DHS030N88E",
         "brand": "WXDH",
         "id": "399",
         "housing": "TO-263",
@@ -4179,7 +4179,7 @@
         "qgd[NC]": "19.4"
     },
     {
-        "partNumber": "DHS025N88",
+        "partnumber": "DHS025N88",
         "brand": "WXDH",
         "id": "400",
         "housing": "TO-220",
@@ -4200,7 +4200,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DHS025N88E",
+        "partnumber": "DHS025N88E",
         "brand": "WXDH",
         "id": "401",
         "housing": "TO-263",
@@ -4221,7 +4221,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DHS025N88D",
+        "partnumber": "DHS025N88D",
         "brand": "WXDH",
         "id": "402",
         "housing": "TO-3PN",
@@ -4242,7 +4242,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DSG027N08N3",
+        "partnumber": "DSG027N08N3",
         "brand": "WXDH",
         "id": "403",
         "housing": "TO-220",
@@ -4263,7 +4263,7 @@
         "qgd[NC]": "16"
     },
     {
-        "partNumber": "DSE025N08N3",
+        "partnumber": "DSE025N08N3",
         "brand": "WXDH",
         "id": "404",
         "housing": "TO-263",
@@ -4284,7 +4284,7 @@
         "qgd[NC]": "16"
     },
     {
-        "partNumber": "DHS020N88",
+        "partnumber": "DHS020N88",
         "brand": "WXDH",
         "id": "405",
         "housing": "TO-220",
@@ -4305,7 +4305,7 @@
         "qgd[NC]": "34.9"
     },
     {
-        "partNumber": "DHS020N88E",
+        "partnumber": "DHS020N88E",
         "brand": "WXDH",
         "id": "406",
         "housing": "TO-263",
@@ -4326,7 +4326,7 @@
         "qgd[NC]": "34.9"
     },
     {
-        "partNumber": "DHS020N88D",
+        "partnumber": "DHS020N88D",
         "brand": "WXDH",
         "id": "407",
         "housing": "TO-3PN",
@@ -4347,7 +4347,7 @@
         "qgd[NC]": "34.9"
     },
     {
-        "partNumber": "DHS020N88E",
+        "partnumber": "DHS020N88E",
         "brand": "WXDH",
         "id": "408",
         "housing": "TO-263",
@@ -4368,7 +4368,7 @@
         "qgd[NC]": "46.8"
     },
     {
-        "partNumber": "DHS020N88D",
+        "partnumber": "DHS020N88D",
         "brand": "WXDH",
         "id": "409",
         "housing": "TO-3PN",
@@ -4389,7 +4389,7 @@
         "qgd[NC]": "46.8"
     },
     {
-        "partNumber": "DHS020N88U",
+        "partnumber": "DHS020N88U",
         "brand": "WXDH",
         "id": "410",
         "housing": "TOLL",
@@ -4410,7 +4410,7 @@
         "qgd[NC]": "46.8"
     },
     {
-        "partNumber": "DSU015N08N3",
+        "partnumber": "DSU015N08N3",
         "brand": "WXDH",
         "id": "411",
         "housing": "TOLL",
@@ -4431,7 +4431,7 @@
         "qgd[NC]": "46.8"
     },
     {
-        "partNumber": "DHS045N88D",
+        "partnumber": "DHS045N88D",
         "brand": "WXDH",
         "id": "412",
         "housing": "TO-252",
@@ -4452,7 +4452,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DHS045N88",
+        "partnumber": "DHS045N88",
         "brand": "WXDH",
         "id": "413",
         "housing": "TO-220",
@@ -4473,7 +4473,7 @@
         "qgd[NC]": "9.2"
     },
     {
-        "partNumber": "DSG055N10N3",
+        "partnumber": "DSG055N10N3",
         "brand": "WXDH",
         "id": "414",
         "housing": "TO-220",
@@ -4494,7 +4494,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DSE055N10N3",
+        "partnumber": "DSE055N10N3",
         "brand": "WXDH",
         "id": "415",
         "housing": "TO-263",
@@ -4515,7 +4515,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DH850N10B",
+        "partnumber": "DH850N10B",
         "brand": "WXDH",
         "id": "416",
         "housing": "TO-251",
@@ -4536,7 +4536,7 @@
         "qgd[NC]": "3.2"
     },
     {
-        "partNumber": "DH850N10D",
+        "partnumber": "DH850N10D",
         "brand": "WXDH",
         "id": "417",
         "housing": "TO-252",
@@ -4557,7 +4557,7 @@
         "qgd[NC]": "3.2"
     },
     {
-        "partNumber": "DH1K1N10S",
+        "partnumber": "DH1K1N10S",
         "brand": "WXDH",
         "id": "418",
         "housing": "SOT-223",
@@ -4578,7 +4578,7 @@
         "qgd[NC]": "2.75"
     },
     {
-        "partNumber": "DH1K1N10B",
+        "partnumber": "DH1K1N10B",
         "brand": "WXDH",
         "id": "419",
         "housing": "TO-251",
@@ -4599,7 +4599,7 @@
         "qgd[NC]": "2.75"
     },
     {
-        "partNumber": "DH1K1N10D",
+        "partnumber": "DH1K1N10D",
         "brand": "WXDH",
         "id": "420",
         "housing": "TO-252",
@@ -4620,7 +4620,7 @@
         "qgd[NC]": "2.75"
     },
     {
-        "partNumber": "DH135N10P",
+        "partnumber": "DH135N10P",
         "brand": "WXDH",
         "id": "421",
         "housing": "DFN5*6-8",
@@ -4641,7 +4641,7 @@
         "qgd[NC]": "25"
     },
     {
-        "partNumber": "DH135N10D",
+        "partnumber": "DH135N10D",
         "brand": "WXDH",
         "id": "422",
         "housing": "TO-252",
@@ -4662,7 +4662,7 @@
         "qgd[NC]": "25"
     },
     {
-        "partNumber": "DH135N10",
+        "partnumber": "DH135N10",
         "brand": "WXDH",
         "id": "423",
         "housing": "TO-220",
@@ -4683,7 +4683,7 @@
         "qgd[NC]": "25"
     },
     {
-        "partNumber": "DH140N10D",
+        "partnumber": "DH140N10D",
         "brand": "WXDH",
         "id": "424",
         "housing": "TO-252",
@@ -4704,7 +4704,7 @@
         "qgd[NC]": "30"
     },
     {
-        "partNumber": "DH140N10",
+        "partnumber": "DH140N10",
         "brand": "WXDH",
         "id": "425",
         "housing": "TO-220",
@@ -4725,7 +4725,7 @@
         "qgd[NC]": "30"
     },
     {
-        "partNumber": "ED70N10",
+        "partnumber": "ED70N10",
         "brand": "WXDH",
         "id": "426",
         "housing": "TO-263",
@@ -4746,7 +4746,7 @@
         "qgd[NC]": "30"
     },
     {
-        "partNumber": "DHS400N10D",
+        "partnumber": "DHS400N10D",
         "brand": "WXDH",
         "id": "427",
         "housing": "TO-252",
@@ -4767,7 +4767,7 @@
         "qgd[NC]": "1.4"
     },
     {
-        "partNumber": "DHS400N10",
+        "partnumber": "DHS400N10",
         "brand": "WXDH",
         "id": "428",
         "housing": "TO-220",
@@ -4788,7 +4788,7 @@
         "qgd[NC]": "1.4"
     },
     {
-        "partNumber": "DHS400N10E",
+        "partnumber": "DHS400N10E",
         "brand": "WXDH",
         "id": "429",
         "housing": "TO-263",
@@ -4809,7 +4809,7 @@
         "qgd[NC]": "1.4"
     },
     {
-        "partNumber": "DHS250N10LD",
+        "partnumber": "DHS250N10LD",
         "brand": "WXDH",
         "id": "430",
         "housing": "TO-252",
@@ -4830,7 +4830,7 @@
         "qgd[NC]": "2.34"
     },
     {
-        "partNumber": "DHS180N10LAD",
+        "partnumber": "DHS180N10LAD",
         "brand": "WXDH",
         "id": "431",
         "housing": "TO-252",
@@ -4851,7 +4851,7 @@
         "qgd[NC]": "2.34"
     },
     {
-        "partNumber": "DHS250N10R",
+        "partnumber": "DHS250N10R",
         "brand": "WXDH",
         "id": "432",
         "housing": "DFN3*3-8",
@@ -4872,7 +4872,7 @@
         "qgd[NC]": "1.72"
     },
     {
-        "partNumber": "DHS250N10D",
+        "partnumber": "DHS250N10D",
         "brand": "WXDH",
         "id": "433",
         "housing": "TO-252",
@@ -4893,7 +4893,7 @@
         "qgd[NC]": "1.72"
     },
     {
-        "partNumber": "DHS250N10",
+        "partnumber": "DHS250N10",
         "brand": "WXDH",
         "id": "434",
         "housing": "TO-220",
@@ -4914,7 +4914,7 @@
         "qgd[NC]": "1.72"
     },
     {
-        "partNumber": "DHS210N10L",
+        "partnumber": "DHS210N10L",
         "brand": "WXDH",
         "id": "435",
         "housing": "TO-220",
@@ -4935,7 +4935,7 @@
         "qgd[NC]": "2.34"
     },
     {
-        "partNumber": "DHS210N10LD",
+        "partnumber": "DHS210N10LD",
         "brand": "WXDH",
         "id": "436",
         "housing": "TO-252",
@@ -4956,7 +4956,7 @@
         "qgd[NC]": "2.34"
     },
     {
-        "partNumber": "DHS180N10LB",
+        "partnumber": "DHS180N10LB",
         "brand": "WXDH",
         "id": "437",
         "housing": "TO-251",
@@ -4977,7 +4977,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS180N10LD",
+        "partnumber": "DHS180N10LD",
         "brand": "WXDH",
         "id": "438",
         "housing": "TO-252",
@@ -4998,7 +4998,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS180N10L",
+        "partnumber": "DHS180N10L",
         "brand": "WXDH",
         "id": "439",
         "housing": "TO-220",
@@ -5019,7 +5019,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS180N10LE",
+        "partnumber": "DHS180N10LE",
         "brand": "WXDH",
         "id": "440",
         "housing": "TO-263",
@@ -5040,7 +5040,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS160N100B",
+        "partnumber": "DHS160N100B",
         "brand": "WXDH",
         "id": "441",
         "housing": "TO-251",
@@ -5061,7 +5061,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS160N100D",
+        "partnumber": "DHS160N100D",
         "brand": "WXDH",
         "id": "442",
         "housing": "TO-252",
@@ -5082,7 +5082,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS160N100",
+        "partnumber": "DHS160N100",
         "brand": "WXDH",
         "id": "443",
         "housing": "TO-220",
@@ -5103,7 +5103,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS160N100F",
+        "partnumber": "DHS160N100F",
         "brand": "WXDH",
         "id": "444",
         "housing": "TO-220F",
@@ -5124,7 +5124,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS160N100I",
+        "partnumber": "DHS160N100I",
         "brand": "WXDH",
         "id": "445",
         "housing": "TO-262",
@@ -5145,7 +5145,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS160N100E",
+        "partnumber": "DHS160N100E",
         "brand": "WXDH",
         "id": "446",
         "housing": "TO-263",
@@ -5166,7 +5166,7 @@
         "qgd[NC]": "2.3"
     },
     {
-        "partNumber": "DHS065N10P",
+        "partnumber": "DHS065N10P",
         "brand": "WXDH",
         "id": "447",
         "housing": "DFN5*6-8",
@@ -5187,7 +5187,7 @@
         "qgd[NC]": "6.2"
     },
     {
-        "partNumber": "DHS065N10",
+        "partnumber": "DHS065N10",
         "brand": "WXDH",
         "id": "448",
         "housing": "TO-220",
@@ -5208,7 +5208,7 @@
         "qgd[NC]": "6.2"
     },
     {
-        "partNumber": "DHS065N10B",
+        "partnumber": "DHS065N10B",
         "brand": "WXDH",
         "id": "449",
         "housing": "TO-251",
@@ -5229,7 +5229,7 @@
         "qgd[NC]": "6.2"
     },
     {
-        "partNumber": "DHS065N10D",
+        "partnumber": "DHS065N10D",
         "brand": "WXDH",
         "id": "450",
         "housing": "TO-252",
@@ -5250,7 +5250,7 @@
         "qgd[NC]": "6.2"
     },
     {
-        "partNumber": "DHS065N10E",
+        "partnumber": "DHS065N10E",
         "brand": "WXDH",
         "id": "451",
         "housing": "TO-263",
@@ -5271,7 +5271,7 @@
         "qgd[NC]": "6.2"
     },
     {
-        "partNumber": "DHS052N10P",
+        "partnumber": "DHS052N10P",
         "brand": "WXDH",
         "id": "452",
         "housing": "DFN5*6-8",
@@ -5292,7 +5292,7 @@
         "qgd[NC]": "11.6"
     },
     {
-        "partNumber": "DHS052N10",
+        "partnumber": "DHS052N10",
         "brand": "WXDH",
         "id": "453",
         "housing": "TO-220",
@@ -5313,7 +5313,7 @@
         "qgd[NC]": "11.6"
     },
     {
-        "partNumber": "DHS052N10F",
+        "partnumber": "DHS052N10F",
         "brand": "WXDH",
         "id": "454",
         "housing": "TO-220F",
@@ -5334,7 +5334,7 @@
         "qgd[NC]": "11.6"
     },
     {
-        "partNumber": "DHS052N10D",
+        "partnumber": "DHS052N10D",
         "brand": "WXDH",
         "id": "455",
         "housing": "TO-252",
@@ -5355,7 +5355,7 @@
         "qgd[NC]": "11.6"
     },
     {
-        "partNumber": "DHS052N10I",
+        "partnumber": "DHS052N10I",
         "brand": "WXDH",
         "id": "456",
         "housing": "TO-262",
@@ -5376,7 +5376,7 @@
         "qgd[NC]": "11.6"
     },
     {
-        "partNumber": "DHS052N10E",
+        "partnumber": "DHS052N10E",
         "brand": "WXDH",
         "id": "457",
         "housing": "TO-263",
@@ -5397,7 +5397,7 @@
         "qgd[NC]": "11.6"
     },
     {
-        "partNumber": "DSP051N10N",
+        "partnumber": "DSP051N10N",
         "brand": "WXDH",
         "id": "458",
         "housing": "DFN5*6-8",
@@ -5418,7 +5418,7 @@
         "qgd[NC]": "17"
     },
     {
-        "partNumber": "DHS046N10",
+        "partnumber": "DHS046N10",
         "brand": "WXDH",
         "id": "459",
         "housing": "TO-220",
@@ -5439,7 +5439,7 @@
         "qgd[NC]": "17"
     },
     {
-        "partNumber": "DHS046N10E",
+        "partnumber": "DHS046N10E",
         "brand": "WXDH",
         "id": "460",
         "housing": "TO-263",
@@ -5460,7 +5460,7 @@
         "qgd[NC]": "17"
     },
     {
-        "partNumber": "DHS037N10",
+        "partnumber": "DHS037N10",
         "brand": "WXDH",
         "id": "461",
         "housing": "TO-220",
@@ -5481,7 +5481,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DHS037N10D",
+        "partnumber": "DHS037N10D",
         "brand": "WXDH",
         "id": "462",
         "housing": "TO-3PN",
@@ -5502,7 +5502,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DSG033N10NA",
+        "partnumber": "DSG033N10NA",
         "brand": "WXDH",
         "id": "463",
         "housing": "TO-220",
@@ -5523,7 +5523,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DSE031N10NA",
+        "partnumber": "DSE031N10NA",
         "brand": "WXDH",
         "id": "464",
         "housing": "TO-263",
@@ -5544,7 +5544,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DSG030N10N3",
+        "partnumber": "DSG030N10N3",
         "brand": "WXDH",
         "id": "465",
         "housing": "TO-220",
@@ -5565,7 +5565,7 @@
         "qgd[NC]": "32"
     },
     {
-        "partNumber": "DSE028N10N3",
+        "partnumber": "DSE028N10N3",
         "brand": "WXDH",
         "id": "466",
         "housing": "TO-263",
@@ -5586,7 +5586,7 @@
         "qgd[NC]": "32"
     },
     {
-        "partNumber": "DSG028N10NA",
+        "partnumber": "DSG028N10NA",
         "brand": "WXDH",
         "id": "467",
         "housing": "TO-220",
@@ -5607,7 +5607,7 @@
         "qgd[NC]": "62"
     },
     {
-        "partNumber": "DSE026N10NA",
+        "partnumber": "DSE026N10NA",
         "brand": "WXDH",
         "id": "468",
         "housing": "TO-263",
@@ -5628,7 +5628,7 @@
         "qgd[NC]": "62"
     },
     {
-        "partNumber": "DHS025N10",
+        "partnumber": "DHS025N10",
         "brand": "WXDH",
         "id": "469",
         "housing": "TO-220",
@@ -5649,7 +5649,7 @@
         "qgd[NC]": "37.3"
     },
     {
-        "partNumber": "DHS025N10E",
+        "partnumber": "DHS025N10E",
         "brand": "WXDH",
         "id": "470",
         "housing": "TO-263",
@@ -5670,7 +5670,7 @@
         "qgd[NC]": "37.3"
     },
     {
-        "partNumber": "DHS025N10U",
+        "partnumber": "DHS025N10U",
         "brand": "WXDH",
         "id": "471",
         "housing": "TOLL",
@@ -5691,7 +5691,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "DHS025N10D",
+        "partnumber": "DHS025N10D",
         "brand": "WXDH",
         "id": "472",
         "housing": "TO-3PN",
@@ -5712,7 +5712,7 @@
         "qgd[NC]": "37.3"
     },
     {
-        "partNumber": "DSU026N10NA",
+        "partnumber": "DSU026N10NA",
         "brand": "WXDH",
         "id": "473",
         "housing": "TOLL",
@@ -5733,7 +5733,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DSU021N10NA",
+        "partnumber": "DSU021N10NA",
         "brand": "WXDH",
         "id": "474",
         "housing": "TOLL",
@@ -5754,7 +5754,7 @@
         "qgd[NC]": "60"
     },
     {
-        "partNumber": "DSEQ022N10NA",
+        "partnumber": "DSEQ022N10NA",
         "brand": "WXDH",
         "id": "475",
         "housing": "TO-263-7",
@@ -5775,7 +5775,7 @@
         "qgd[NC]": "41"
     },
     {
-        "partNumber": "DSU020N10NA",
+        "partnumber": "DSU020N10NA",
         "brand": "WXDH",
         "id": "476",
         "housing": "TOLL",
@@ -5796,7 +5796,7 @@
         "qgd[NC]": "32"
     },
     {
-        "partNumber": "DH150N12",
+        "partnumber": "DH150N12",
         "brand": "WXDH",
         "id": "477",
         "housing": "TO-220",
@@ -5817,7 +5817,7 @@
         "qgd[NC]": "33"
     },
     {
-        "partNumber": "DH150N12D",
+        "partnumber": "DH150N12D",
         "brand": "WXDH",
         "id": "478",
         "housing": "TO-252",
@@ -5838,7 +5838,7 @@
         "qgd[NC]": "33"
     },
     {
-        "partNumber": "DSD270N12N3",
+        "partnumber": "DSD270N12N3",
         "brand": "WXDH",
         "id": "479",
         "housing": "TO-252",
@@ -5859,7 +5859,7 @@
         "qgd[NC]": "3.3"
     },
     {
-        "partNumber": "DHS044N12",
+        "partnumber": "DHS044N12",
         "brand": "WXDH",
         "id": "480",
         "housing": "TO-220",
@@ -5880,7 +5880,7 @@
         "qgd[NC]": "15.1"
     },
     {
-        "partNumber": "DHS044N12E",
+        "partnumber": "DHS044N12E",
         "brand": "WXDH",
         "id": "481",
         "housing": "TO-263",
@@ -5901,7 +5901,7 @@
         "qgd[NC]": "15.1"
     },
     {
-        "partNumber": "DHS044N12U",
+        "partnumber": "DHS044N12U",
         "brand": "WXDH",
         "id": "482",
         "housing": "TOLL",
@@ -5922,7 +5922,7 @@
         "qgd[NC]": "20.7"
     },
     {
-        "partNumber": "DHS110N15D",
+        "partnumber": "DHS110N15D",
         "brand": "WXDH",
         "id": "483",
         "housing": "TO-252",
@@ -5943,7 +5943,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHS110N15",
+        "partnumber": "DHS110N15",
         "brand": "WXDH",
         "id": "484",
         "housing": "TO-220",
@@ -5964,7 +5964,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHS110N15",
+        "partnumber": "DHS110N15",
         "brand": "WXDH",
         "id": "485",
         "housing": "TO-220",
@@ -5985,7 +5985,7 @@
         "qgd[NC]": "7.1"
     },
     {
-        "partNumber": "DHS110N15F",
+        "partnumber": "DHS110N15F",
         "brand": "WXDH",
         "id": "486",
         "housing": "TO-220F",
@@ -6006,7 +6006,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHS110N15E",
+        "partnumber": "DHS110N15E",
         "brand": "WXDH",
         "id": "487",
         "housing": "TO-263",
@@ -6027,7 +6027,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DSG059N15NA",
+        "partnumber": "DSG059N15NA",
         "brand": "WXDH",
         "id": "488",
         "housing": "TO-220",
@@ -6048,7 +6048,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DSG060N15NA",
+        "partnumber": "DSG060N15NA",
         "brand": "WXDH",
         "id": "489",
         "housing": "TO-220",
@@ -6069,7 +6069,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DSE058N15NA",
+        "partnumber": "DSE058N15NA",
         "brand": "WXDH",
         "id": "490",
         "housing": "TO-263",
@@ -6090,7 +6090,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DHS042N15",
+        "partnumber": "DHS042N15",
         "brand": "WXDH",
         "id": "491",
         "housing": "TO-220",
@@ -6111,7 +6111,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DHS042N15E",
+        "partnumber": "DHS042N15E",
         "brand": "WXDH",
         "id": "492",
         "housing": "TO-263",
@@ -6132,7 +6132,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "B620",
+        "partnumber": "B620",
         "brand": "WXDH",
         "id": "493",
         "housing": "TO-251",
@@ -6153,7 +6153,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "D620",
+        "partnumber": "D620",
         "brand": "WXDH",
         "id": "494",
         "housing": "TO-252",
@@ -6174,7 +6174,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "B5N20",
+        "partnumber": "B5N20",
         "brand": "WXDH",
         "id": "495",
         "housing": "TO-251",
@@ -6195,7 +6195,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "D5N20",
+        "partnumber": "D5N20",
         "brand": "WXDH",
         "id": "496",
         "housing": "TO-252",
@@ -6216,7 +6216,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "DHP5N20",
+        "partnumber": "DHP5N20",
         "brand": "WXDH",
         "id": "497",
         "housing": "DFN5*6-8",
@@ -6237,7 +6237,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "D630",
+        "partnumber": "D630",
         "brand": "WXDH",
         "id": "498",
         "housing": "TO-252",
@@ -6258,7 +6258,7 @@
         "qgd[NC]": "3.9"
     },
     {
-        "partNumber": "F630",
+        "partnumber": "F630",
         "brand": "WXDH",
         "id": "499",
         "housing": "TO-220F",
@@ -6279,7 +6279,7 @@
         "qgd[NC]": "4.5"
     },
     {
-        "partNumber": "640",
+        "partnumber": "640",
         "brand": "WXDH",
         "id": "500",
         "housing": "TO-220",
@@ -6300,7 +6300,7 @@
         "qgd[NC]": "7.3"
     },
     {
-        "partNumber": "F640",
+        "partnumber": "F640",
         "brand": "WXDH",
         "id": "501",
         "housing": "TO-220F",
@@ -6321,7 +6321,7 @@
         "qgd[NC]": "7.3"
     },
     {
-        "partNumber": "D18N20",
+        "partnumber": "D18N20",
         "brand": "WXDH",
         "id": "502",
         "housing": "TO-252",
@@ -6342,7 +6342,7 @@
         "qgd[NC]": "7.3"
     },
     {
-        "partNumber": "F18N20",
+        "partnumber": "F18N20",
         "brand": "WXDH",
         "id": "503",
         "housing": "TO-220F",
@@ -6363,7 +6363,7 @@
         "qgd[NC]": "7.3"
     },
     {
-        "partNumber": "DH30N20",
+        "partnumber": "DH30N20",
         "brand": "WXDH",
         "id": "504",
         "housing": "T0-220",
@@ -6384,7 +6384,7 @@
         "qgd[NC]": "13"
     },
     {
-        "partNumber": "DH060P03D",
+        "partnumber": "DH060P03D",
         "brand": "WXDH",
         "id": "505",
         "housing": "TO-252",
@@ -6405,7 +6405,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH060P03",
+        "partnumber": "DH060P03",
         "brand": "WXDH",
         "id": "506",
         "housing": "TO-220",
@@ -6426,7 +6426,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH060P03E",
+        "partnumber": "DH060P03E",
         "brand": "WXDH",
         "id": "507",
         "housing": "TO-263",
@@ -6447,7 +6447,7 @@
         "qgd[NC]": "22"
     },
     {
-        "partNumber": "DH105P03D",
+        "partnumber": "DH105P03D",
         "brand": "WXDH",
         "id": "508",
         "housing": "TO-252",
@@ -6468,7 +6468,7 @@
         "qgd[NC]": "5.8"
     },
     {
-        "partNumber": "AOD413",
+        "partnumber": "AOD413",
         "brand": "WXDH",
         "id": "509",
         "housing": "TO-252",
@@ -6489,7 +6489,7 @@
         "qgd[NC]": "4.1"
     },
     {
-        "partNumber": "DH400P04V",
+        "partnumber": "DH400P04V",
         "brand": "WXDH",
         "id": "510",
         "housing": "SOP-8",
@@ -6510,7 +6510,7 @@
         "qgd[NC]": "4"
     },
     {
-        "partNumber": "DH170P04V",
+        "partnumber": "DH170P04V",
         "brand": "WXDH",
         "id": "511",
         "housing": "SOP-8",
@@ -6531,7 +6531,7 @@
         "qgd[NC]": "6"
     },
     {
-        "partNumber": "DH160P04D",
+        "partnumber": "DH160P04D",
         "brand": "WXDH",
         "id": "512",
         "housing": "TO-252",
@@ -6552,7 +6552,7 @@
         "qgd[NC]": "6"
     },
     {
-        "partNumber": "DH500P06R",
+        "partnumber": "DH500P06R",
         "brand": "WXDH",
         "id": "513",
         "housing": "DFN3*3-8",
@@ -6573,7 +6573,7 @@
         "qgd[NC]": "3.8"
     },
     {
-        "partNumber": "DH500P06D",
+        "partnumber": "DH500P06D",
         "brand": "WXDH",
         "id": "514",
         "housing": "TO-252",
@@ -6594,7 +6594,7 @@
         "qgd[NC]": "3.8"
     },
     {
-        "partNumber": "DH9Z24",
+        "partnumber": "DH9Z24",
         "brand": "WXDH",
         "id": "515",
         "housing": "TO220",
@@ -6615,7 +6615,7 @@
         "qgd[NC]": "3.8"
     },
     {
-        "partNumber": "DHD9Z24",
+        "partnumber": "DHD9Z24",
         "brand": "WXDH",
         "id": "516",
         "housing": "TO252",
@@ -6636,7 +6636,7 @@
         "qgd[NC]": "3.8"
     },
     {
-        "partNumber": "DH400P06LV",
+        "partnumber": "DH400P06LV",
         "brand": "WXDH",
         "id": "517",
         "housing": "SOP-8",
@@ -6657,7 +6657,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "DH400P06LB",
+        "partnumber": "DH400P06LB",
         "brand": "WXDH",
         "id": "518",
         "housing": "TO-251",
@@ -6678,7 +6678,7 @@
         "qgd[NC]": "10.5"
     },
     {
-        "partNumber": "DH400P06LD",
+        "partnumber": "DH400P06LD",
         "brand": "WXDH",
         "id": "519",
         "housing": "TO-252",
@@ -6699,7 +6699,7 @@
         "qgd[NC]": "10.5"
     },
     {
-        "partNumber": "DTP125P06LA",
+        "partnumber": "DTP125P06LA",
         "brand": "WXDH",
         "id": "520",
         "housing": "DFN5*6-8",
@@ -6720,7 +6720,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DTD125P06LA",
+        "partnumber": "DTD125P06LA",
         "brand": "WXDH",
         "id": "521",
         "housing": "TO-252",
@@ -6741,7 +6741,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DTG050P06LA",
+        "partnumber": "DTG050P06LA",
         "brand": "WXDH",
         "id": "522",
         "housing": "TO-220",
@@ -6762,7 +6762,7 @@
         "qgd[NC]": "41"
     },
     {
-        "partNumber": "DH100P18D",
+        "partnumber": "DH100P18D",
         "brand": "WXDH",
         "id": "523",
         "housing": "TO-252",
@@ -6783,7 +6783,7 @@
         "qgd[NC]": "4.04"
     },
     {
-        "partNumber": "DH100P18B",
+        "partnumber": "DH100P18B",
         "brand": "WXDH",
         "id": "524",
         "housing": "TO-251",
@@ -6804,7 +6804,7 @@
         "qgd[NC]": "4.04"
     },
     {
-        "partNumber": "DH100P18V",
+        "partnumber": "DH100P18V",
         "brand": "WXDH",
         "id": "525",
         "housing": "SOP-8",
@@ -6825,7 +6825,7 @@
         "qgd[NC]": "4.04"
     },
     {
-        "partNumber": "DH100P20B",
+        "partnumber": "DH100P20B",
         "brand": "WXDH",
         "id": "526",
         "housing": "TO-251",
@@ -6846,7 +6846,7 @@
         "qgd[NC]": "8.1"
     },
     {
-        "partNumber": "DH100P20D",
+        "partnumber": "DH100P20D",
         "brand": "WXDH",
         "id": "527",
         "housing": "TO-252",
@@ -6867,7 +6867,7 @@
         "qgd[NC]": "8.1"
     },
     {
-        "partNumber": "DH100P20B",
+        "partnumber": "DH100P20B",
         "brand": "WXDH",
         "id": "528",
         "housing": "TO-251",
@@ -6888,7 +6888,7 @@
         "qgd[NC]": "29"
     },
     {
-        "partNumber": "DH100P20D",
+        "partnumber": "DH100P20D",
         "brand": "WXDH",
         "id": "529",
         "housing": "TO-252",
@@ -6909,7 +6909,7 @@
         "qgd[NC]": "29"
     },
     {
-        "partNumber": "DH100P30CB",
+        "partnumber": "DH100P30CB",
         "brand": "WXDH",
         "id": "530",
         "housing": "TO-251",
@@ -6930,7 +6930,7 @@
         "qgd[NC]": "16"
     },
     {
-        "partNumber": "DH100P30CD",
+        "partnumber": "DH100P30CD",
         "brand": "WXDH",
         "id": "531",
         "housing": "TO-252",
@@ -6951,7 +6951,7 @@
         "qgd[NC]": "16"
     },
     {
-        "partNumber": "DH100P30E",
+        "partnumber": "DH100P30E",
         "brand": "WXDH",
         "id": "532",
         "housing": "TO-263",
@@ -6972,7 +6972,7 @@
         "qgd[NC]": "16"
     },
     {
-        "partNumber": "DH100P30CD",
+        "partnumber": "DH100P30CD",
         "brand": "WXDH",
         "id": "533",
         "housing": "TO-220",
@@ -6993,7 +6993,7 @@
         "qgd[NC]": "16"
     },
     {
-        "partNumber": "DH100P40",
+        "partnumber": "DH100P40",
         "brand": "WXDH",
         "id": "534",
         "housing": "TO-220",
@@ -7014,7 +7014,7 @@
         "qgd[NC]": "68"
     },
     {
-        "partNumber": "DH100P70",
+        "partnumber": "DH100P70",
         "brand": "WXDH",
         "id": "535",
         "housing": "TO-220",
@@ -7035,7 +7035,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DH100P70",
+        "partnumber": "DH100P70",
         "brand": "WXDH",
         "id": "536",
         "housing": "TO-220",
@@ -7056,7 +7056,7 @@
         "qgd[NC]": "86"
     },
     {
-        "partNumber": "DH100P70I",
+        "partnumber": "DH100P70I",
         "brand": "WXDH",
         "id": "537",
         "housing": "TO-262",
@@ -7077,7 +7077,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DH100P70E",
+        "partnumber": "DH100P70E",
         "brand": "WXDH",
         "id": "538",
         "housing": "TO-263",
@@ -7098,7 +7098,7 @@
         "qgd[NC]": "28"
     },
     {
-        "partNumber": "DH100P70E",
+        "partnumber": "DH100P70E",
         "brand": "WXDH",
         "id": "539",
         "housing": "TO-263",
@@ -7119,7 +7119,7 @@
         "qgd[NC]": "86"
     },
     {
-        "partNumber": "DH7934R",
+        "partnumber": "DH7934R",
         "brand": "WXDH",
         "id": "540",
         "housing": "PDFN3*3-8",
@@ -7159,7 +7159,7 @@
         "qgd[NC]": "4.9"
     },
     {
-        "partNumber": "DH7935R",
+        "partnumber": "DH7935R",
         "brand": "WXDH",
         "id": "542",
         "housing": "PDFN3*3-8",
@@ -7199,7 +7199,7 @@
         "qgd[NC]": "6.1"
     },
     {
-        "partNumber": "DH3260V",
+        "partnumber": "DH3260V",
         "brand": "WXDH",
         "id": "544",
         "housing": "SOP-8",
@@ -7239,7 +7239,7 @@
         "qgd[NC]": "6.9"
     },
     {
-        "partNumber": "DH3278V",
+        "partnumber": "DH3278V",
         "brand": "WXDH",
         "id": "546",
         "housing": "SOP-8",
@@ -7279,7 +7279,7 @@
         "qgd[NC]": "3.8"
     },
     {
-        "partNumber": "DH7860V",
+        "partnumber": "DH7860V",
         "brand": "WXDH",
         "id": "548",
         "housing": "SOP-8",
@@ -7319,7 +7319,7 @@
         "qgd[NC]": "3.8"
     },
     {
-        "partNumber": "730",
+        "partnumber": "730",
         "brand": "WXDH",
         "id": "550",
         "housing": "TO-220",
@@ -7340,7 +7340,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "F730",
+        "partnumber": "F730",
         "brand": "WXDH",
         "id": "551",
         "housing": "TO-220F",
@@ -7361,7 +7361,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "740",
+        "partnumber": "740",
         "brand": "WXDH",
         "id": "552",
         "housing": "TO-220",
@@ -7382,7 +7382,7 @@
         "qgd[NC]": "8.5"
     },
     {
-        "partNumber": "E740",
+        "partnumber": "E740",
         "brand": "WXDH",
         "id": "553",
         "housing": "TO-263",
@@ -7403,7 +7403,7 @@
         "qgd[NC]": "8.5"
     },
     {
-        "partNumber": "F740",
+        "partnumber": "F740",
         "brand": "WXDH",
         "id": "554",
         "housing": "TO-220F",
@@ -7424,7 +7424,7 @@
         "qgd[NC]": "8.5"
     },
     {
-        "partNumber": "F20N40",
+        "partnumber": "F20N40",
         "brand": "WXDH",
         "id": "555",
         "housing": "TO-220F",
@@ -7445,7 +7445,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "D830",
+        "partnumber": "D830",
         "brand": "WXDH",
         "id": "556",
         "housing": "TO-252",
@@ -7466,7 +7466,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "830",
+        "partnumber": "830",
         "brand": "WXDH",
         "id": "557",
         "housing": "TO-220",
@@ -7487,7 +7487,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "F830",
+        "partnumber": "F830",
         "brand": "WXDH",
         "id": "558",
         "housing": "TO-220F",
@@ -7508,7 +7508,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "B5N50",
+        "partnumber": "B5N50",
         "brand": "WXDH",
         "id": "559",
         "housing": "TO-251",
@@ -7529,7 +7529,7 @@
         "qgd[NC]": "15"
     },
     {
-        "partNumber": "D5N50",
+        "partnumber": "D5N50",
         "brand": "WXDH",
         "id": "560",
         "housing": "TO-252",
@@ -7550,7 +7550,7 @@
         "qgd[NC]": "15"
     },
     {
-        "partNumber": "5N50",
+        "partnumber": "5N50",
         "brand": "WXDH",
         "id": "561",
         "housing": "TO-220",
@@ -7571,7 +7571,7 @@
         "qgd[NC]": "15"
     },
     {
-        "partNumber": "F5N50",
+        "partnumber": "F5N50",
         "brand": "WXDH",
         "id": "562",
         "housing": "TO-220F",
@@ -7592,7 +7592,7 @@
         "qgd[NC]": "15"
     },
     {
-        "partNumber": "840",
+        "partnumber": "840",
         "brand": "WXDH",
         "id": "563",
         "housing": "TO-220",
@@ -7613,7 +7613,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "F840",
+        "partnumber": "F840",
         "brand": "WXDH",
         "id": "564",
         "housing": "TO-220F",
@@ -7634,7 +7634,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "B8N50",
+        "partnumber": "B8N50",
         "brand": "WXDH",
         "id": "565",
         "housing": "TO-251",
@@ -7655,7 +7655,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "D8N50",
+        "partnumber": "D8N50",
         "brand": "WXDH",
         "id": "566",
         "housing": "TO-252",
@@ -7676,7 +7676,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "8N50",
+        "partnumber": "8N50",
         "brand": "WXDH",
         "id": "567",
         "housing": "TO-220",
@@ -7697,7 +7697,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "F8N50",
+        "partnumber": "F8N50",
         "brand": "WXDH",
         "id": "568",
         "housing": "TO-220F",
@@ -7718,7 +7718,7 @@
         "qgd[NC]": "9"
     },
     {
-        "partNumber": "D9N50",
+        "partnumber": "D9N50",
         "brand": "WXDH",
         "id": "569",
         "housing": "TO-252",
@@ -7739,7 +7739,7 @@
         "qgd[NC]": "8.8"
     },
     {
-        "partNumber": "10N50",
+        "partnumber": "10N50",
         "brand": "WXDH",
         "id": "570",
         "housing": "T0-220",
@@ -7760,7 +7760,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "F10N50",
+        "partnumber": "F10N50",
         "brand": "WXDH",
         "id": "571",
         "housing": "TO-220F",
@@ -7781,7 +7781,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "F13N50",
+        "partnumber": "F13N50",
         "brand": "WXDH",
         "id": "572",
         "housing": "TO-220F",
@@ -7802,7 +7802,7 @@
         "qgd[NC]": "14.6"
     },
     {
-        "partNumber": "13N50",
+        "partnumber": "13N50",
         "brand": "WXDH",
         "id": "573",
         "housing": "TO-220",
@@ -7823,7 +7823,7 @@
         "qgd[NC]": "14.6"
     },
     {
-        "partNumber": "E13N50",
+        "partnumber": "E13N50",
         "brand": "WXDH",
         "id": "574",
         "housing": "TO-263",
@@ -7844,7 +7844,7 @@
         "qgd[NC]": "14.6"
     },
     {
-        "partNumber": "F18N50",
+        "partnumber": "F18N50",
         "brand": "WXDH",
         "id": "575",
         "housing": "TO-220F",
@@ -7865,7 +7865,7 @@
         "qgd[NC]": "18.6"
     },
     {
-        "partNumber": "18N50",
+        "partnumber": "18N50",
         "brand": "WXDH",
         "id": "576",
         "housing": "TO-220",
@@ -7886,7 +7886,7 @@
         "qgd[NC]": "18.6"
     },
     {
-        "partNumber": "18N50D",
+        "partnumber": "18N50D",
         "brand": "WXDH",
         "id": "577",
         "housing": "TO-3PN",
@@ -7907,7 +7907,7 @@
         "qgd[NC]": "18.6"
     },
     {
-        "partNumber": "F20N50",
+        "partnumber": "F20N50",
         "brand": "WXDH",
         "id": "578",
         "housing": "TO-220F",
@@ -7928,7 +7928,7 @@
         "qgd[NC]": "18.6"
     },
     {
-        "partNumber": "20N50B",
+        "partnumber": "20N50B",
         "brand": "WXDH",
         "id": "579",
         "housing": "TO-247",
@@ -7949,7 +7949,7 @@
         "qgd[NC]": "18.6"
     },
     {
-        "partNumber": "23N50D",
+        "partnumber": "23N50D",
         "brand": "WXDH",
         "id": "580",
         "housing": "TO-3PN",
@@ -7970,7 +7970,7 @@
         "qgd[NC]": "18.6"
     },
     {
-        "partNumber": "B2N60",
+        "partnumber": "B2N60",
         "brand": "WXDH",
         "id": "581",
         "housing": "TO-251",
@@ -7991,7 +7991,7 @@
         "qgd[NC]": "4"
     },
     {
-        "partNumber": "D2N60",
+        "partnumber": "D2N60",
         "brand": "WXDH",
         "id": "582",
         "housing": "TO-252",
@@ -8012,7 +8012,7 @@
         "qgd[NC]": "4"
     },
     {
-        "partNumber": "B4N60",
+        "partnumber": "B4N60",
         "brand": "WXDH",
         "id": "583",
         "housing": "TO-251",
@@ -8033,7 +8033,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "D4N60",
+        "partnumber": "D4N60",
         "brand": "WXDH",
         "id": "584",
         "housing": "TO-252",
@@ -8054,7 +8054,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "4N60",
+        "partnumber": "4N60",
         "brand": "WXDH",
         "id": "585",
         "housing": "TO-220",
@@ -8075,7 +8075,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "F4N60",
+        "partnumber": "F4N60",
         "brand": "WXDH",
         "id": "586",
         "housing": "TO-220F",
@@ -8096,7 +8096,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "B7N60",
+        "partnumber": "B7N60",
         "brand": "WXDH",
         "id": "587",
         "housing": "TO-251",
@@ -8117,7 +8117,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "D7N60",
+        "partnumber": "D7N60",
         "brand": "WXDH",
         "id": "588",
         "housing": "TO-252",
@@ -8138,7 +8138,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "7N60",
+        "partnumber": "7N60",
         "brand": "WXDH",
         "id": "589",
         "housing": "TO-220",
@@ -8159,7 +8159,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "I7N60",
+        "partnumber": "I7N60",
         "brand": "WXDH",
         "id": "590",
         "housing": "TO-262",
@@ -8180,7 +8180,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "E7N60",
+        "partnumber": "E7N60",
         "brand": "WXDH",
         "id": "591",
         "housing": "TO-263",
@@ -8201,7 +8201,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "F7N60",
+        "partnumber": "F7N60",
         "brand": "WXDH",
         "id": "592",
         "housing": "TO-220F",
@@ -8222,7 +8222,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "8N60",
+        "partnumber": "8N60",
         "brand": "WXDH",
         "id": "593",
         "housing": "TO-220",
@@ -8243,7 +8243,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "F8N60",
+        "partnumber": "F8N60",
         "brand": "WXDH",
         "id": "594",
         "housing": "TO-220F",
@@ -8264,7 +8264,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "10N60",
+        "partnumber": "10N60",
         "brand": "WXDH",
         "id": "595",
         "housing": "TO-220",
@@ -8285,7 +8285,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "E10N60",
+        "partnumber": "E10N60",
         "brand": "WXDH",
         "id": "596",
         "housing": "TO-263",
@@ -8306,7 +8306,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "F10N60",
+        "partnumber": "F10N60",
         "brand": "WXDH",
         "id": "597",
         "housing": "TO-220F",
@@ -8327,7 +8327,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "12N60",
+        "partnumber": "12N60",
         "brand": "WXDH",
         "id": "598",
         "housing": "TO-220",
@@ -8348,7 +8348,7 @@
         "qgd[NC]": "14.5"
     },
     {
-        "partNumber": "E12N60",
+        "partnumber": "E12N60",
         "brand": "WXDH",
         "id": "599",
         "housing": "TO-263",
@@ -8369,7 +8369,7 @@
         "qgd[NC]": "14.5"
     },
     {
-        "partNumber": "F12N60",
+        "partnumber": "F12N60",
         "brand": "WXDH",
         "id": "600",
         "housing": "TO-220F",
@@ -8390,7 +8390,7 @@
         "qgd[NC]": "14.5"
     },
     {
-        "partNumber": "16N60",
+        "partnumber": "16N60",
         "brand": "WXDH",
         "id": "601",
         "housing": "TO-220",
@@ -8411,7 +8411,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "F16N60",
+        "partnumber": "F16N60",
         "brand": "WXDH",
         "id": "602",
         "housing": "TO-220F",
@@ -8432,7 +8432,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "20N60",
+        "partnumber": "20N60",
         "brand": "WXDH",
         "id": "603",
         "housing": "TO-220",
@@ -8453,7 +8453,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "F20N60",
+        "partnumber": "F20N60",
         "brand": "WXDH",
         "id": "604",
         "housing": "TO-220F",
@@ -8474,7 +8474,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "20N60D",
+        "partnumber": "20N60D",
         "brand": "WXDH",
         "id": "605",
         "housing": "TO-3PN",
@@ -8495,7 +8495,7 @@
         "qgd[NC]": "24"
     },
     {
-        "partNumber": "B2N65",
+        "partnumber": "B2N65",
         "brand": "WXDH",
         "id": "606",
         "housing": "TO-251",
@@ -8516,7 +8516,7 @@
         "qgd[NC]": "4"
     },
     {
-        "partNumber": "D2N65",
+        "partnumber": "D2N65",
         "brand": "WXDH",
         "id": "607",
         "housing": "TO-252",
@@ -8537,7 +8537,7 @@
         "qgd[NC]": "4"
     },
     {
-        "partNumber": "2N65",
+        "partnumber": "2N65",
         "brand": "WXDH",
         "id": "608",
         "housing": "TO-220",
@@ -8558,7 +8558,7 @@
         "qgd[NC]": "4"
     },
     {
-        "partNumber": "F2N65",
+        "partnumber": "F2N65",
         "brand": "WXDH",
         "id": "609",
         "housing": "TO-220F",
@@ -8579,7 +8579,7 @@
         "qgd[NC]": "4"
     },
     {
-        "partNumber": "B4N65",
+        "partnumber": "B4N65",
         "brand": "WXDH",
         "id": "610",
         "housing": "TO-251",
@@ -8600,7 +8600,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "D4N65",
+        "partnumber": "D4N65",
         "brand": "WXDH",
         "id": "611",
         "housing": "TO-252",
@@ -8621,7 +8621,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "4N65",
+        "partnumber": "4N65",
         "brand": "WXDH",
         "id": "612",
         "housing": "TO-220",
@@ -8642,7 +8642,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "F4N65",
+        "partnumber": "F4N65",
         "brand": "WXDH",
         "id": "613",
         "housing": "TO-220F",
@@ -8663,7 +8663,7 @@
         "qgd[NC]": "6.5"
     },
     {
-        "partNumber": "B7N65",
+        "partnumber": "B7N65",
         "brand": "WXDH",
         "id": "614",
         "housing": "TO-251",
@@ -8684,7 +8684,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "D7N65",
+        "partnumber": "D7N65",
         "brand": "WXDH",
         "id": "615",
         "housing": "TO-252",
@@ -8705,7 +8705,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "7N65",
+        "partnumber": "7N65",
         "brand": "WXDH",
         "id": "616",
         "housing": "TO-220",
@@ -8726,7 +8726,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "F7N65",
+        "partnumber": "F7N65",
         "brand": "WXDH",
         "id": "617",
         "housing": "TO-220F",
@@ -8747,7 +8747,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "8N65",
+        "partnumber": "8N65",
         "brand": "WXDH",
         "id": "618",
         "housing": "TO-220",
@@ -8768,7 +8768,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "F8N65",
+        "partnumber": "F8N65",
         "brand": "WXDH",
         "id": "619",
         "housing": "TO-220F",
@@ -8789,7 +8789,7 @@
         "qgd[NC]": "9.5"
     },
     {
-        "partNumber": "DHD10N65",
+        "partnumber": "DHD10N65",
         "brand": "WXDH",
         "id": "620",
         "housing": "TO-252",
@@ -8810,7 +8810,7 @@
         "qgd[NC]": "11.3"
     },
     {
-        "partNumber": "10N65",
+        "partnumber": "10N65",
         "brand": "WXDH",
         "id": "621",
         "housing": "TO-220",
@@ -8831,7 +8831,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "I10N65",
+        "partnumber": "I10N65",
         "brand": "WXDH",
         "id": "622",
         "housing": "TO-262",
@@ -8852,7 +8852,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "F10N65",
+        "partnumber": "F10N65",
         "brand": "WXDH",
         "id": "623",
         "housing": "TO-220F",
@@ -8873,7 +8873,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "12N65",
+        "partnumber": "12N65",
         "brand": "WXDH",
         "id": "624",
         "housing": "TO-220",
@@ -8894,7 +8894,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "F12N65",
+        "partnumber": "F12N65",
         "brand": "WXDH",
         "id": "625",
         "housing": "TO-220F",
@@ -8915,7 +8915,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "16N65",
+        "partnumber": "16N65",
         "brand": "WXDH",
         "id": "626",
         "housing": "TO-220",
@@ -8936,7 +8936,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "F16N65",
+        "partnumber": "F16N65",
         "brand": "WXDH",
         "id": "627",
         "housing": "TO-220F",
@@ -8957,7 +8957,7 @@
         "qgd[NC]": "21"
     },
     {
-        "partNumber": "DH16N65",
+        "partnumber": "DH16N65",
         "brand": "WXDH",
         "id": "628",
         "housing": "TO-220",
@@ -8978,7 +8978,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "F20N65",
+        "partnumber": "F20N65",
         "brand": "WXDH",
         "id": "629",
         "housing": "TO-220F",
@@ -8999,7 +8999,7 @@
         "qgd[NC]": "26"
     },
     {
-        "partNumber": "B4N70",
+        "partnumber": "B4N70",
         "brand": "WXDH",
         "id": "630",
         "housing": "TO-251",
@@ -9020,7 +9020,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "D4N70",
+        "partnumber": "D4N70",
         "brand": "WXDH",
         "id": "631",
         "housing": "TO-252",
@@ -9041,7 +9041,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "F4N70",
+        "partnumber": "F4N70",
         "brand": "WXDH",
         "id": "632",
         "housing": "TO-220F",
@@ -9062,7 +9062,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "B7N70",
+        "partnumber": "B7N70",
         "brand": "WXDH",
         "id": "633",
         "housing": "TO-251",
@@ -9083,7 +9083,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "D7N70",
+        "partnumber": "D7N70",
         "brand": "WXDH",
         "id": "634",
         "housing": "TO-252",
@@ -9104,7 +9104,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "F7N70",
+        "partnumber": "F7N70",
         "brand": "WXDH",
         "id": "635",
         "housing": "TO0220F",
@@ -9125,7 +9125,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "F8N70",
+        "partnumber": "F8N70",
         "brand": "WXDH",
         "id": "636",
         "housing": "TO-220F",
@@ -9146,7 +9146,7 @@
         "qgd[NC]": "10"
     },
     {
-        "partNumber": "F10N70",
+        "partnumber": "F10N70",
         "brand": "WXDH",
         "id": "637",
         "housing": "TO-220F",
@@ -9167,7 +9167,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "F12N70",
+        "partnumber": "F12N70",
         "brand": "WXDH",
         "id": "638",
         "housing": "TO-220F",
@@ -9188,7 +9188,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "B4N80",
+        "partnumber": "B4N80",
         "brand": "WXDH",
         "id": "639",
         "housing": "TO-251",
@@ -9209,7 +9209,7 @@
         "qgd[NC]": "9.9"
     },
     {
-        "partNumber": "F4N80",
+        "partnumber": "F4N80",
         "brand": "WXDH",
         "id": "640",
         "housing": "TO-220F",
@@ -9230,7 +9230,7 @@
         "qgd[NC]": "9.9"
     },
     {
-        "partNumber": "7N80",
+        "partnumber": "7N80",
         "brand": "WXDH",
         "id": "641",
         "housing": "TO-220",
@@ -9251,7 +9251,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "F7N80",
+        "partnumber": "F7N80",
         "brand": "WXDH",
         "id": "642",
         "housing": "TO-220F",
@@ -9272,7 +9272,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "F7N80",
+        "partnumber": "F7N80",
         "brand": "WXDH",
         "id": "643",
         "housing": "TO-220F",
@@ -9293,7 +9293,7 @@
         "qgd[NC]": "16.2"
     },
     {
-        "partNumber": "E7N80",
+        "partnumber": "E7N80",
         "brand": "WXDH",
         "id": "644",
         "housing": "TO-263",
@@ -9314,7 +9314,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "10N80",
+        "partnumber": "10N80",
         "brand": "WXDH",
         "id": "645",
         "housing": "T0-220",
@@ -9335,7 +9335,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "F10N80",
+        "partnumber": "F10N80",
         "brand": "WXDH",
         "id": "646",
         "housing": "TO-220F",
@@ -9356,7 +9356,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "F10N80",
+        "partnumber": "F10N80",
         "brand": "WXDH",
         "id": "647",
         "housing": "TO-220F",
@@ -9377,7 +9377,7 @@
         "qgd[NC]": "25"
     },
     {
-        "partNumber": "DHU3N90J",
+        "partnumber": "DHU3N90J",
         "brand": "WXDH",
         "id": "648",
         "housing": "TO-251",
@@ -9398,7 +9398,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DHD3N90J",
+        "partnumber": "DHD3N90J",
         "brand": "WXDH",
         "id": "649",
         "housing": "TO-252",
@@ -9419,7 +9419,7 @@
         "qgd[NC]": "7"
     },
     {
-        "partNumber": "DHI6N90J",
+        "partnumber": "DHI6N90J",
         "brand": "WXDH",
         "id": "650",
         "housing": "TO-262",
@@ -9440,7 +9440,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "6N90",
+        "partnumber": "6N90",
         "brand": "WXDH",
         "id": "651",
         "housing": "TO-220",
@@ -9461,7 +9461,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "F6N90",
+        "partnumber": "F6N90",
         "brand": "WXDH",
         "id": "652",
         "housing": "TO-220F",
@@ -9482,7 +9482,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "9N90",
+        "partnumber": "9N90",
         "brand": "WXDH",
         "id": "653",
         "housing": "TO-3PN",
@@ -9503,7 +9503,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "F9N90",
+        "partnumber": "F9N90",
         "brand": "WXDH",
         "id": "654",
         "housing": "TO-220F",
@@ -9524,7 +9524,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "E9N90",
+        "partnumber": "E9N90",
         "brand": "WXDH",
         "id": "655",
         "housing": "TO-263",
@@ -9545,7 +9545,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "13N90",
+        "partnumber": "13N90",
         "brand": "WXDH",
         "id": "656",
         "housing": "TO-3PN",
@@ -9566,7 +9566,7 @@
         "qgd[NC]": "18"
     },
     {
-        "partNumber": "20N90D",
+        "partnumber": "20N90D",
         "brand": "WXDH",
         "id": "657",
         "housing": "TO-3PN",
@@ -9587,7 +9587,7 @@
         "qgd[NC]": "60"
     },
     {
-        "partNumber": "20N90B",
+        "partnumber": "20N90B",
         "brand": "WXDH",
         "id": "658",
         "housing": "TO-247",
@@ -9608,7 +9608,7 @@
         "qgd[NC]": "50"
     },
     {
-        "partNumber": "DPF03N120",
+        "partnumber": "DPF03N120",
         "brand": "WXDH",
         "id": "659",
         "housing": "TO-220F",
@@ -9629,7 +9629,7 @@
         "qgd[NC]": "5.5"
     },
     {
-        "partNumber": "DPE03N120",
+        "partnumber": "DPE03N120",
         "brand": "WXDH",
         "id": "660",
         "housing": "TO-263",
@@ -9650,7 +9650,7 @@
         "qgd[NC]": "5.5"
     },
     {
-        "partNumber": "DH4N150F",
+        "partnumber": "DH4N150F",
         "brand": "WXDH",
         "id": "661",
         "housing": "TO-3PF",
@@ -9671,7 +9671,7 @@
         "qgd[NC]": "15"
     },
     {
-        "partNumber": "DSJ2N50",
+        "partnumber": "DSJ2N50",
         "brand": "WXDH",
         "id": "662",
         "housing": "TO-252",
@@ -9692,7 +9692,7 @@
         "qgd[NC]": "2.7"
     },
     {
-        "partNumber": "DJC099N60F",
+        "partnumber": "DJC099N60F",
         "brand": "WXDH",
         "id": "663",
         "housing": "TO-247",
@@ -9713,7 +9713,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DJF099N60F",
+        "partnumber": "DJF099N60F",
         "brand": "WXDH",
         "id": "664",
         "housing": "TO-220F",
@@ -9734,7 +9734,7 @@
         "qgd[NC]": "23"
     },
     {
-        "partNumber": "DJC070N60F",
+        "partnumber": "DJC070N60F",
         "brand": "WXDH",
         "id": "665",
         "housing": "TO-247",
@@ -9755,7 +9755,7 @@
         "qgd[NC]": "30"
     },
     {
-        "partNumber": "DJC040N60F",
+        "partnumber": "DJC040N60F",
         "brand": "WXDH",
         "id": "666",
         "housing": "TO-247",
@@ -9776,7 +9776,7 @@
         "qgd[NC]": "49"
     },
     {
-        "partNumber": "DHBSJ5N65",
+        "partnumber": "DHBSJ5N65",
         "brand": "WXDH",
         "id": "667",
         "housing": "TO-251",
@@ -9797,7 +9797,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "DHDSJ5N65",
+        "partnumber": "DHDSJ5N65",
         "brand": "WXDH",
         "id": "668",
         "housing": "TO-252",
@@ -9818,7 +9818,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "DHSJ5N65",
+        "partnumber": "DHSJ5N65",
         "brand": "WXDH",
         "id": "669",
         "housing": "TO-220",
@@ -9839,7 +9839,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "DHESJ5N65",
+        "partnumber": "DHESJ5N65",
         "brand": "WXDH",
         "id": "670",
         "housing": "TO-263",
@@ -9860,7 +9860,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "DHFSJ5N65",
+        "partnumber": "DHFSJ5N65",
         "brand": "WXDH",
         "id": "671",
         "housing": "TO-220F",
@@ -9881,7 +9881,7 @@
         "qgd[NC]": "3"
     },
     {
-        "partNumber": "DHBSJ7N65",
+        "partnumber": "DHBSJ7N65",
         "brand": "WXDH",
         "id": "672",
         "housing": "TO-251",
@@ -9902,7 +9902,7 @@
         "qgd[NC]": "4.5"
     },
     {
-        "partNumber": "DHDSJ7N65",
+        "partnumber": "DHDSJ7N65",
         "brand": "WXDH",
         "id": "673",
         "housing": "TO-252",
@@ -9923,7 +9923,7 @@
         "qgd[NC]": "4.5"
     },
     {
-        "partNumber": "DHSJ7N65",
+        "partnumber": "DHSJ7N65",
         "brand": "WXDH",
         "id": "674",
         "housing": "TO-220",
@@ -9944,7 +9944,7 @@
         "qgd[NC]": "4.5"
     },
     {
-        "partNumber": "DHESJ7N65",
+        "partnumber": "DHESJ7N65",
         "brand": "WXDH",
         "id": "675",
         "housing": "TO-263",
@@ -9965,7 +9965,7 @@
         "qgd[NC]": "4.5"
     },
     {
-        "partNumber": "DHFSJ7N65",
+        "partnumber": "DHFSJ7N65",
         "brand": "WXDH",
         "id": "676",
         "housing": "TO-220F",
@@ -9986,7 +9986,7 @@
         "qgd[NC]": "4.5"
     },
     {
-        "partNumber": "DHBSJ8N65",
+        "partnumber": "DHBSJ8N65",
         "brand": "WXDH",
         "id": "677",
         "housing": "TO-251",
@@ -10007,7 +10007,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHDSJ8N65",
+        "partnumber": "DHDSJ8N65",
         "brand": "WXDH",
         "id": "678",
         "housing": "TO-252",
@@ -10028,7 +10028,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHSJ8N65",
+        "partnumber": "DHSJ8N65",
         "brand": "WXDH",
         "id": "679",
         "housing": "TO-220",
@@ -10049,7 +10049,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHESJ8N65",
+        "partnumber": "DHESJ8N65",
         "brand": "WXDH",
         "id": "680",
         "housing": "TO-263",
@@ -10070,7 +10070,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHFSJ8N65",
+        "partnumber": "DHFSJ8N65",
         "brand": "WXDH",
         "id": "681",
         "housing": "TO-220F",
@@ -10091,7 +10091,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHBSJ11N65",
+        "partnumber": "DHBSJ11N65",
         "brand": "WXDH",
         "id": "682",
         "housing": "TO-251",
@@ -10112,7 +10112,7 @@
         "qgd[NC]": "6.4"
     },
     {
-        "partNumber": "DHDSJ11N65",
+        "partnumber": "DHDSJ11N65",
         "brand": "WXDH",
         "id": "683",
         "housing": "TO-252",
@@ -10133,7 +10133,7 @@
         "qgd[NC]": "6.4"
     },
     {
-        "partNumber": "DHFSJ11N65",
+        "partnumber": "DHFSJ11N65",
         "brand": "WXDH",
         "id": "684",
         "housing": "TO-220F",
@@ -10154,7 +10154,7 @@
         "qgd[NC]": "6.4"
     },
     {
-        "partNumber": "DHSJ11N65",
+        "partnumber": "DHSJ11N65",
         "brand": "WXDH",
         "id": "685",
         "housing": "TO-220",
@@ -10175,7 +10175,7 @@
         "qgd[NC]": "6.4"
     },
     {
-        "partNumber": "DHESJ11N65",
+        "partnumber": "DHESJ11N65",
         "brand": "WXDH",
         "id": "686",
         "housing": "TO-263",
@@ -10196,7 +10196,7 @@
         "qgd[NC]": "6.4"
     },
     {
-        "partNumber": "DJD380N65T",
+        "partnumber": "DJD380N65T",
         "brand": "WXDH",
         "id": "687",
         "housing": "TO-252",
@@ -10217,7 +10217,7 @@
         "qgd[NC]": "5.91"
     },
     {
-        "partNumber": "DJF380N65T",
+        "partnumber": "DJF380N65T",
         "brand": "WXDH",
         "id": "688",
         "housing": "TO-220F",
@@ -10238,7 +10238,7 @@
         "qgd[NC]": "5.7"
     },
     {
-        "partNumber": "DHDSJ13N65",
+        "partnumber": "DHDSJ13N65",
         "brand": "WXDH",
         "id": "689",
         "housing": "TO-252",
@@ -10259,7 +10259,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DHSJ13N65",
+        "partnumber": "DHSJ13N65",
         "brand": "WXDH",
         "id": "690",
         "housing": "TO-220",
@@ -10280,7 +10280,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DHESJ13N65",
+        "partnumber": "DHESJ13N65",
         "brand": "WXDH",
         "id": "691",
         "housing": "TO-263",
@@ -10301,7 +10301,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DHFSJ13N65",
+        "partnumber": "DHFSJ13N65",
         "brand": "WXDH",
         "id": "692",
         "housing": "TO-220F",
@@ -10322,7 +10322,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DHDSJ15N65",
+        "partnumber": "DHDSJ15N65",
         "brand": "WXDH",
         "id": "693",
         "housing": "TO-252",
@@ -10343,7 +10343,7 @@
         "qgd[NC]": "10.1"
     },
     {
-        "partNumber": "DHSJ15N65",
+        "partnumber": "DHSJ15N65",
         "brand": "WXDH",
         "id": "694",
         "housing": "TO-220",
@@ -10364,7 +10364,7 @@
         "qgd[NC]": "10.1"
     },
     {
-        "partNumber": "DHFSJ15N65",
+        "partnumber": "DHFSJ15N65",
         "brand": "WXDH",
         "id": "695",
         "housing": "TO-220F",
@@ -10385,7 +10385,7 @@
         "qgd[NC]": "10.1"
     },
     {
-        "partNumber": "DHSJ17N65",
+        "partnumber": "DHSJ17N65",
         "brand": "WXDH",
         "id": "696",
         "housing": "TO-220",
@@ -10406,7 +10406,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHFSJ17N65",
+        "partnumber": "DHFSJ17N65",
         "brand": "WXDH",
         "id": "697",
         "housing": "TO-220F",
@@ -10427,7 +10427,7 @@
         "qgd[NC]": "12"
     },
     {
-        "partNumber": "DHSJ21N65",
+        "partnumber": "DHSJ21N65",
         "brand": "WXDH",
         "id": "698",
         "housing": "TO-220",
@@ -10448,7 +10448,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DHESJ21N65",
+        "partnumber": "DHESJ21N65",
         "brand": "WXDH",
         "id": "699",
         "housing": "TO-263",
@@ -10469,7 +10469,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DHFSJ21N65",
+        "partnumber": "DHFSJ21N65",
         "brand": "WXDH",
         "id": "700",
         "housing": "TO-220F",
@@ -10490,7 +10490,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DHSJ21N65W",
+        "partnumber": "DHSJ21N65W",
         "brand": "WXDH",
         "id": "701",
         "housing": "TO-247",
@@ -10511,7 +10511,7 @@
         "qgd[NC]": "14"
     },
     {
-        "partNumber": "DHSJ25N65F",
+        "partnumber": "DHSJ25N65F",
         "brand": "WXDH",
         "id": "702",
         "housing": "TO-220",
@@ -10532,7 +10532,7 @@
         "qgd[NC]": "20"
     },
     {
-        "partNumber": "DHSJ25N65",
+        "partnumber": "DHSJ25N65",
         "brand": "WXDH",
         "id": "703",
         "housing": "TO-220",
@@ -10553,7 +10553,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "DHFSJ25N65",
+        "partnumber": "DHFSJ25N65",
         "brand": "WXDH",
         "id": "704",
         "housing": "TO-220F",
@@ -10574,7 +10574,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "DHSJ25N65W",
+        "partnumber": "DHSJ25N65W",
         "brand": "WXDH",
         "id": "705",
         "housing": "TO-247",
@@ -10595,7 +10595,7 @@
         "qgd[NC]": "19"
     },
     {
-        "partNumber": "DHDSJ8N70",
+        "partnumber": "DHDSJ8N70",
         "brand": "WXDH",
         "id": "706",
         "housing": "TO-252",
@@ -10616,7 +10616,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DHFSJ8N70",
+        "partnumber": "DHFSJ8N70",
         "brand": "WXDH",
         "id": "707",
         "housing": "TO-220F",
@@ -10637,7 +10637,7 @@
         "qgd[NC]": "5.2"
     },
     {
-        "partNumber": "DJF360N70",
+        "partnumber": "DJF360N70",
         "brand": "WXDH",
         "id": "708",
         "housing": "TO-220F",
@@ -10658,7 +10658,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DHFSJ12N70",
+        "partnumber": "DHFSJ12N70",
         "brand": "WXDH",
         "id": "709",
         "housing": "TO-220F",
@@ -10679,7 +10679,7 @@
         "qgd[NC]": "8"
     },
     {
-        "partNumber": "DJG850N80",
+        "partnumber": "DJG850N80",
         "brand": "WXDH",
         "id": "710",
         "housing": "TO-220",
@@ -10700,7 +10700,7 @@
         "qgd[NC]": "4.1"
     },
     {
-        "partNumber": "DJE850N80",
+        "partnumber": "DJE850N80",
         "brand": "WXDH",
         "id": "711",
         "housing": "TO-263",
@@ -10721,7 +10721,7 @@
         "qgd[NC]": "4.1"
     },
     {
-        "partNumber": "DJF380N80",
+        "partnumber": "DJF380N80",
         "brand": "WXDH",
         "id": "712",
         "housing": "TO-220F",

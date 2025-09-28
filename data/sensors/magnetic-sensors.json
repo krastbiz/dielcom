@@ -1,6 +1,6 @@
 [
     {
-        "partNumber": "TMR1102",
+        "partnumber": "TMR1102",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Униполярный",
@@ -14,7 +14,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR1148",
+        "partnumber": "TMR1148",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Униполярный",
@@ -28,7 +28,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR1155",
+        "partnumber": "TMR1155",
         "brand": "MultiDimension Technology",
         "series": "High Voltage Low Power Consumption Series",
         "type": "Униполярный",
@@ -42,7 +42,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1157",
+        "partnumber": "TMR1157",
         "brand": "MultiDimension Technology",
         "series": "High Voltage Low Power Consumption Series",
         "type": "Униполярный",
@@ -56,7 +56,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1162",
+        "partnumber": "TMR1162",
         "brand": "MultiDimension Technology",
         "series": "Nanoampere Series",
         "type": "Униполярный",
@@ -70,7 +70,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1202",
+        "partnumber": "TMR1202",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Биполярный",
@@ -84,7 +84,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1202H",
+        "partnumber": "TMR1202H",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Биполярный",
@@ -98,7 +98,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1202HT",
+        "partnumber": "TMR1202HT",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Биполярный",
@@ -112,7 +112,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1208",
+        "partnumber": "TMR1208",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Биполярный",
@@ -126,7 +126,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1212",
+        "partnumber": "TMR1212",
         "brand": "MultiDimension Technology",
         "series": "Bi-stable State Series",
         "type": "Биполярный",
@@ -140,7 +140,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1213",
+        "partnumber": "TMR1213",
         "brand": "MultiDimension Technology",
         "series": "Bi-stable State Series",
         "type": "Биполярный",
@@ -154,7 +154,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1215",
+        "partnumber": "TMR1215",
         "brand": "MultiDimension Technology",
         "series": "Bi-stable State Series",
         "type": "Биполярный",
@@ -168,7 +168,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1222",
+        "partnumber": "TMR1222",
         "brand": "MultiDimension Technology",
         "series": "Biaxial High Frequency Response Series",
         "type": "Биполярный",
@@ -182,7 +182,7 @@
         "housing": "DFN8L"
     },
     {
-        "partNumber": "TMR1228",
+        "partnumber": "TMR1228",
         "brand": "MultiDimension Technology",
         "series": "Biaxial High Frequency Response Series",
         "type": "Биполярный",
@@ -196,7 +196,7 @@
         "housing": "DFN8L"
     },
     {
-        "partNumber": "TMR1252",
+        "partnumber": "TMR1252",
         "brand": "MultiDimension Technology",
         "series": "High Voltage Low Power Consumption Series",
         "type": "Биполярный",
@@ -210,7 +210,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1262",
+        "partnumber": "TMR1262",
         "brand": "MultiDimension Technology",
         "series": "Nanoampere Series",
         "type": "Биполярный",
@@ -224,7 +224,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1302",
+        "partnumber": "TMR1302",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -238,7 +238,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1302B",
+        "partnumber": "TMR1302B",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -252,7 +252,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1302H",
+        "partnumber": "TMR1302H",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -266,7 +266,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1302HT",
+        "partnumber": "TMR1302HT",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -280,7 +280,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1303",
+        "partnumber": "TMR1303",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -294,7 +294,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1303B",
+        "partnumber": "TMR1303B",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -308,7 +308,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1304",
+        "partnumber": "TMR1304",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -322,7 +322,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1305",
+        "partnumber": "TMR1305",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -336,7 +336,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1308",
+        "partnumber": "TMR1308",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -350,7 +350,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1309",
+        "partnumber": "TMR1309",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -364,7 +364,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR1340B",
+        "partnumber": "TMR1340B",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -378,7 +378,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR1341",
+        "partnumber": "TMR1341",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -392,7 +392,7 @@
         "housing": "LGA3L (2×1,5×0,63)"
     },
     {
-        "partNumber": "TMR1342",
+        "partnumber": "TMR1342",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -406,7 +406,7 @@
         "housing": "LGA3L (2×1,5×0,63)"
     },
     {
-        "partNumber": "TMR1348",
+        "partnumber": "TMR1348",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",
@@ -420,7 +420,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR1362",
+        "partnumber": "TMR1362",
         "brand": "MultiDimension Technology",
         "series": "Nanoampere Series",
         "type": "Омниполярный",
@@ -434,7 +434,7 @@
         "housing": "SOT23-3 TO92S LGA3L (2×1,5×0,63)"
     },
     {
-        "partNumber": "TMR1363",
+        "partnumber": "TMR1363",
         "brand": "MultiDimension Technology",
         "series": "Nanoampere Series",
         "type": "Омниполярный",
@@ -448,7 +448,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR1365",
+        "partnumber": "TMR1365",
         "brand": "MultiDimension Technology",
         "series": "Nanoampere Series",
         "type": "Омниполярный",
@@ -462,7 +462,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR1366",
+        "partnumber": "TMR1366",
         "brand": "MultiDimension Technology",
         "series": "Nanoampere Series",
         "type": "Омниполярный",
@@ -476,7 +476,7 @@
         "housing": "SOT23-3 TO92S LGA3L (2×1,5×0,63)"
     },
     {
-        "partNumber": "TMR1367",
+        "partnumber": "TMR1367",
         "brand": "MultiDimension Technology",
         "series": "Nanoampere Series",
         "type": "Омниполярный",
@@ -490,7 +490,7 @@
         "housing": "LGA4L (2×1,5×0,63)"
     },
     {
-        "partNumber": "TMR1383",
+        "partnumber": "TMR1383",
         "brand": "MultiDimension Technology",
         "series": "High Voltage Low Power Consumption Series",
         "type": "Омниполярный",
@@ -504,7 +504,7 @@
         "housing": "SOT23-3 TO92S"
     },
     {
-        "partNumber": "TMR1387",
+        "partnumber": "TMR1387",
         "brand": "MultiDimension Technology",
         "series": "High Voltage Low Power Consumption Series",
         "type": "Омниполярный",
@@ -518,7 +518,7 @@
         "housing": "SOT23-3"
     },
     {
-        "partNumber": "TMR13Dx",
+        "partnumber": "TMR13Dx",
         "brand": "MultiDimension Technology",
         "series": "Microampere High Frequency Response Series",
         "type": "Омниполярный",

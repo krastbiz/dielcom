@@ -4,7 +4,6 @@ export const translates = {
     type: 'Тип устройства',
     brand: 'Производитель',
     partnumber: 'Компонент',
-    partNumber: 'Компонент',
     frequencyRange: 'Диапазоны частот',
     gain: 'Усиление',
     connectorType: 'Тип разъема',

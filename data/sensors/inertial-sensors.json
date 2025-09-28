@@ -1,6 +1,6 @@
 [
     {
-        "partNumber": "IMU80",
+        "partnumber": "IMU80",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±400°/с, Ускорение: ±8 g",
         "displacementInstability": "Гироскоп: 3°/ч, Ускорение: 50 ug",
@@ -12,7 +12,7 @@
         "connector": "7×2 контакта (соответствует гнезду SAMTEC CLM-107-02)"
     },
     {
-        "partNumber": "IMU90",
+        "partnumber": "IMU90",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±500°/с, Ускорение: ±16 g",
         "displacementInstability": "Гироскоп: 1,5°/ч, Ускорение: 35 ug",
@@ -24,7 +24,7 @@
         "connector": "7×2 контакта (соответствует гнезду SAMTEC CLM-107-02)"
     },
     {
-        "partNumber": "IMU188",
+        "partnumber": "IMU188",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
         "displacementInstability": "Гироскоп: 1,2°/ч, Ускорение: 50 ug",
@@ -36,7 +36,7 @@
         "connector": "Пигтейл"
     },
     {
-        "partNumber": "IMU286",
+        "partnumber": "IMU286",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
         "displacementInstability": "Гироскоп: 1,2°/ч, Ускорение: 50 ug",
@@ -48,7 +48,7 @@
         "connector": "Разъем Molex, модель: 5015680607"
     },
     {
-        "partNumber": "IMU388",
+        "partnumber": "IMU388",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±500°/с, Ускорение: ±40 g",
         "displacementInstability": "Гироскоп: 0,8°/ч, Ускорение: 10 ug",
@@ -60,7 +60,7 @@
         "connector": "9-контактный J63A"
     },
     {
-        "partNumber": "IMU5000",
+        "partnumber": "IMU5000",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±4000°/с, Ускорение: Ось X/Y ±30 g, Ось Z ±150 g",
         "displacementInstability": "Гироскоп: 1°/ч, Ускорение: Ось X/Y 30 ug, Ось Z 120 ug",
@@ -72,7 +72,7 @@
         "connector": "15 контактов J30J"
     },
     {
-        "partNumber": "IMU488М",
+        "partnumber": "IMU488М",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
         "displacementInstability": "Гироскоп: 1°/ч, Ускорение: 30 ug",
@@ -84,7 +84,7 @@
         "connector": "2 × 12 контактов"
     },
     {
-        "partNumber": "IMU588",
+        "partnumber": "IMU588",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±450°/с, Ускорение: Ось X/Y ±16 g, Ось Z ±50/100 g",
         "displacementInstability": "Гироскоп: 1°/ч, Ускорение: Ось X/Y 30 ug, Ось Z 150 ug",
@@ -96,7 +96,7 @@
         "connector": "2 × 12 контактов"
     },
     {
-        "partNumber": "IMU688М",
+        "partnumber": "IMU688М",
         "brand": "SkyMEMS",
         "measuringRange": "Гироскоп: ±450°/с, Ускорение: ±16 g",
         "displacementInstability": "Гироскоп: 0,6°/ч, Ускорение: 20 ug",

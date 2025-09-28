@@ -3,11 +3,15 @@ import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import { Container } from '../ui/layouts/Container'
+import { SelectionControl } from '../ui/SelectionControl'
 import { translates } from '../../mock-data/translates'
 import { SearchComponent } from './AppHeader/Search'
 import { getRequestPageUrl } from '../../lib'
+import { breakpoint } from '../../lib'
 
-const filteredHeaders = ['id', 'category', 'subcategory', 'partnumber', 'partNumber']
+import { useStoredItems } from './hooks/useStoredItems'
+
+const filteredHeaders = ['id', 'category', 'subcategory', 'partnumber']
 
 export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSort, altBg }) => {
     const headers =
@@ -16,11 +20,12 @@ export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSor
             : ['brand', 'available', 'leadtime']
 
     const router = useRouter()
+    const { storedItems, updateItem } = useStoredItems()
 
-    const handleOrderClick = (partNumber, brand) => {
+    const handleOrderClick = (partnumber, brand) => {
         router.push({
             pathname: getRequestPageUrl(),
-            query: { partnumber: partNumber, brand: brand },
+            query: { partnumber, brand },
         })
     }
 
@@ -32,34 +37,57 @@ export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSor
                     <CatalogTable>
                         <thead>
                             <StickyHeaderRow>
-                                <th>Заказать</th>
-                                <th>Партномер</th>
-                                {headers.map((header) => (
-                                    <th key={header} onClick={() => handleSort(header)}>
-                                        {translates[header] || header}
+                                <HeaderCell>Заказать</HeaderCell>
 
+                                <HeaderCell
+                                    onClick={() => handleSort('partnumber')}
+                                    isActive={sortConfig.key === 'partnumber'}
+                                    isStickyLeft
+                                    title={translates.partnumber}
+                                >
+                                    {translates.partnumber}
+                                    <RotatableIcon
+                                        src={`/static/icons/chevron-down.svg`}
+                                        isFlipped={!(sortConfig.direction === 'asc')}
+                                        isVisible={sortConfig.key === 'partnumber'}
+                                        alt="arrow"
+                                    />
+                                </HeaderCell>
+
+                                {headers.map((header) => (
+                                    <HeaderCell
+                                        key={header}
+                                        onClick={() => handleSort(header)}
+                                        isActive={sortConfig.key === header}
+                                        title={translates[header] || header}
+                                    >
+                                        {translates[header] || header}
                                         <RotatableIcon
                                             src={`/static/icons/chevron-down.svg`}
                                             isFlipped={!(sortConfig.direction === 'asc')}
                                             isVisible={sortConfig.key === header}
                                             alt="arrow"
                                         />
-                                    </th>
+                                    </HeaderCell>
                                 ))}
                             </StickyHeaderRow>
                         </thead>
                         <tbody>
                             {catalog.map((item) => (
-                                <tr key={`${item.partNumber}${item.id}`}>
+                                <tr key={`${item.partnumber}${item.id}`}>
                                     <td>
-                                        <OrderButton onClick={() => handleOrderClick(item.partNumber, item.brand)}>
-                                            Заказать
-                                        </OrderButton>
+                                        <SelectionControl
+                                            itemKey={`${item.partnumber}-${item.brand}`}
+                                            partnumber={item.partnumber}
+                                            brand={item.brand}
+                                            storedItem={storedItems[`${item.partnumber}-${item.brand}`]}
+                                            updateItem={updateItem}
+                                        />
                                     </td>
-                                    <StickyCell>{item.partNumber || item.partnumber}</StickyCell>
+                                    <StickyCell>{item.partnumber}</StickyCell>
 
-                                    {headers.map((header) => (
-                                        <td key={header}>{item[header]}</td>
+                                    {headers.map((name) => (
+                                        <td key={name}>{item[name]}</td>
                                     ))}
                                 </tr>
                             ))}
@@ -120,6 +148,9 @@ const CustomContainer = styled(Container)`
     &::-webkit-scrollbar {
         width: 3px;
     }
+    ${breakpoint.tablet`
+        margin-left: 10px;
+    `}
 `
 
 const TableIconsWrapper = styled.div`
@@ -174,21 +205,27 @@ const StickyHeaderRow = styled.tr`
     position: sticky;
     top: 0;
     z-index: 15;
-    background-color: '#E6F0FF';
+    background-color: ${({ theme }) => theme.colors.whiteBackground};
+`
 
-    th {
-        font-weight: bold;
-        padding: 10px;
-        background-color: ${({ theme }) => theme.colors.whiteBackground};
-        cursor: pointer;
-        white-space: nowrap;
-        border-right: 1px solid ${({ theme }) => theme.colors.tableBorder};
-    }
+const HeaderCell = styled.th`
+    font-weight: bold;
+    padding: 10px;
+    background-color: ${({ isActive, theme }) => (isActive ? theme.colors.active : theme.colors.whiteBackground)};
+    color: ${({ isActive, theme }) => (isActive ? 'white' : theme.colors.textBlack)};
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 150px;
+    border-right: 1px solid ${({ theme }) => theme.colors.tableBorder};
+    position: ${({ isStickyLeft }) => (isStickyLeft ? 'sticky' : 'static')};
+    left: ${({ isStickyLeft }) => (isStickyLeft ? '0' : 'auto')};
+    z-index: ${({ isStickyLeft }) => (isStickyLeft ? 12 : 'auto')};
 
-    th:nth-child(2) {
-        position: sticky;
-        left: 0;
-        background-color: ${({ theme }) => theme.colors.whiteBackground};
+    &:hover {
+        background-color: ${({ theme }) => theme.colors.active};
+        color: white;
     }
 `
 

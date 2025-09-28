@@ -259,16 +259,15 @@ const StyledTextarea = styled.textarea`
     font-size: 12px;
     line-height: 1.4;
     color: #000;
-    opacity: 0.5;
+    opacity: 0.8;
     border: 1px solid #c7c7c7;
     resize: none;
-    white-space: 'pre-wrap';
+    white-space: pre-wrap;
     border-radius: 30px;
     width: 100%;
     height: 40vh;
-    padding: 20px 20px 0;
+    padding: 20px;
     box-sizing: border-box;
-    margin-left: 15px;
     margin-bottom: 20px;
     scrollbar-width: none;
 

@@ -9,8 +9,7 @@ import { getProductPageUrl, breakpoint, useDeviceCheck } from '../../../lib'
 import { H3 } from '../../ui/Typography'
 
 export const CatalogMenu = ({ onClose, isOpen }) => {
-    const [activeCategory, setActiveCategory] = useState(null)
-    const [isSubMenuOpen, setSubMenuOpen] = useState(false)
+    const [activeCategory, setActiveCategory] = useState('wirelessTechnologies')
     const { isMobile, isTablet } = useDeviceCheck()
     const isResponsiveView = isMobile || isTablet
 
@@ -19,30 +18,25 @@ export const CatalogMenu = ({ onClose, isOpen }) => {
     const handleCategoryClick = (categoryId) => {
         if (activeCategory === categoryId) {
             setActiveCategory(null)
-            setSubMenuOpen(false)
         } else {
             setActiveCategory(categoryId)
-            setSubMenuOpen(true)
         }
     }
 
     const handleCategoryHover = (categoryId) => {
         if (activeCategory !== categoryId && !isResponsiveView) {
             setActiveCategory(categoryId)
-            setSubMenuOpen(true)
         }
     }
 
     const handleCloseMenus = () => {
         setActiveCategory(null)
-        setSubMenuOpen(false)
         onClose(false)
     }
 
     const handleOutsideClick = (e) => {
         if (!e.target.closest('[data-category-item]')) {
             setActiveCategory(null)
-            setSubMenuOpen(false)
         }
     }
 
@@ -52,7 +46,7 @@ export const CatalogMenu = ({ onClose, isOpen }) => {
 
             <MenuWrapper onClick={handleOutsideClick}>
                 <CategoriesContainer>
-                    <CategoriesList isSubMenuOpen={isSubMenuOpen}>
+                    <CategoriesList>
                         {Array.from(CATEGORIES_ARRAY.entries()).map(([key, category]) => (
                             <CategoriesItem
                                 data-category-item
@@ -62,14 +56,14 @@ export const CatalogMenu = ({ onClose, isOpen }) => {
                                 isSelected={key === activeCategory}
                             >
                                 <MenuItemIcon src={category.iconUrl} />
-                                {!(isResponsiveView && isSubMenuOpen) && category.name}
+                                {!isResponsiveView && category.name}
                             </CategoriesItem>
                         ))}
                     </CategoriesList>
                 </CategoriesContainer>
 
                 <SubMenuContainer>
-                    {activeCategory !== null && isSubMenuOpen && (
+                    {activeCategory !== null && (
                         <>
                             <H3>{CATEGORIES_ARRAY.get(activeCategory).name}</H3>
                             <SubMenuList>
@@ -131,7 +125,7 @@ const CategoriesList = styled.ul`
     /* transition: width 0.3s ease; */
     ${breakpoint.laptop`
         padding-right: 3px;
-        width: ${({ isSubMenuOpen }) => (isSubMenuOpen ? '60px' : '255px')};
+        width: 255px;
     `}
 `
 
