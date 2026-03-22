@@ -16,7 +16,7 @@ import styled from 'styled-components'
  */
 export const MapComponent = () => {
     const defaultState = {
-        center: [59.921006, 30.413847],
+        center: [59.887747, 30.325794],
         zoom: 14,
     }
 
@@ -28,7 +28,7 @@ export const MapComponent = () => {
                     <RulerControl />
                     <TrafficControl />
                     <GeolocationControl />
-                    <Placemark geometry={[59.921006, 30.41384]} />
+                    <Placemark geometry={[59.887747, 30.325794]} />
                 </Map>
             </YMaps>
         </MapWrapper>
