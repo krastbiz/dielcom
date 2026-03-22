@@ -42,13 +42,15 @@ export const useRequestForm = () => {
 
                     return result
                 })
-            const totalPrice = Object.values(storedItems).reduce((total, item) => {
-                const price = item.price
-                if (price) {
-                    return total + price
-                }
-                return total
-            }, 0)
+            const totalPrice = Object.values(storedItems)
+                .filter((item) => item.selected)
+                .reduce((total, item) => {
+                    const price = item.price
+                    if (price) {
+                        return total + price
+                    }
+                    return total
+                }, 0)
             if (selectedList.length > 0) {
                 setFormData((prevData) => ({
                     ...prevData,
