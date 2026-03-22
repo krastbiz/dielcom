@@ -33,6 +33,7 @@ export default class MyDocument extends Document {
                         rel="stylesheet"
                     />
                     <link rel="shortcut icon" href="/logo.ico" />
+                    <meta name="yandex-verification" content="47cd41084741f167" />
                     {/* Yandex.Metrika Counter */}
                     <script
                         type="text/javascript"
