@@ -12,7 +12,7 @@ const generateCatalogData = () => {
     const data = xlsx.utils.sheet_to_json(sheet)
 
     const transformedData = data.map((item) => {
-        const rawPartnumber = String(item['Part Number']) || ''
+        const rawPartnumber = String(item['PartNumber']) || ''
         const cleanedPartnumber = rawPartnumber
             .replace(/^\s+|\s+$/g, '')
             .replace(/^\(|\)$/g, '')
@@ -22,7 +22,8 @@ const generateCatalogData = () => {
             brand: item['Brand'] || '',
             partnumber: cleanedPartnumber,
             available: item['Available'] || 'Под заказ',
-            leadtime: item['Lead Time'] || 'По запросу',
+            year: item['Year'] || '',
+            price: item['Price'] || '',
             id: item.id,
             category: item['Category'],
             subcategory: item['Subcategory'],

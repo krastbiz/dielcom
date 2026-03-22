@@ -37,15 +37,15 @@ export const AppHeader = () => {
     return (
         <>
             <HeaderWrapper>
+                <Logo href="/">
+                    <img width={90} height={90} src="/static/icons/logo.svg" alt="Site Logo" />
+                </Logo>
                 <StyledContainer>
                     <HeaderContent>
-                        <Logo href="/">
-                            <img src="/static/icons/logo.svg" alt="Site Logo" />
-                        </Logo>
-                        <CatalogButton primary onClick={handleCatalogMenuToggle}>
+                        {/* <CatalogButton primary onClick={handleCatalogMenuToggle}>
                             Каталог
                             <Image src="/static/icons/hamburger.svg" alt="hamburger" />
-                        </CatalogButton>
+                        </CatalogButton> */}
                         <HeaderActions>
                             {!isMobile && (
                                 <SearchWrapper>
@@ -100,10 +100,13 @@ const StyledContainer = styled.div`
 `
 
 const Logo = styled.a`
-    margin-right: 30px;
-    ${breakpoint.tablet`
+    margin-right: 20px;
+    margin-top: 20px;
+    ${breakpoint.laptop`
+        margin-top: 10px;
         margin-right: 8px;
         img {
+            height: 70px;
             width: 70px;
         }
     `}

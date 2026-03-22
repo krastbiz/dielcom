@@ -22,7 +22,8 @@ export const ContactsSection = ({ ...extraProps }) => {
                         <ContactInfoItem>
                             <ContactInfoTitle>Адрес</ContactInfoTitle>
                             <ContactInfoContent small>
-                                195196, Российская Федерация, г. Санкт-Петербург, ул. Таллинская, д.7, литера «О»
+                                196006, г.Санкт-Петербург, вн. тер.г муниципальный округ Московская застава, ул. Коли
+                                Томчака, д.28, литера Ц, помещ./офис 1-Н/413
                             </ContactInfoContent>
                         </ContactInfoItem>
                         <ContactInfoItem>
@@ -38,14 +39,14 @@ export const ContactsSection = ({ ...extraProps }) => {
                             <ContactInfoItem>
                                 <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
                                 <ContactInfoContent>
-                                    <StyledLink href={'tel:+78123394597'}>+7 (812) 339-45-97</StyledLink>
+                                    <StyledLink href={'tel:+78124393013'}>+7 (812) 439-30-13</StyledLink>
                                 </ContactInfoContent>
                             </ContactInfoItem>
 
                             <ContactInfoItem>
                                 <ContactInfoTitle>Электронная почта:</ContactInfoTitle>
                                 <ContactInfoContent>
-                                    <StyledLink href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</StyledLink>
+                                    <StyledLink href={'mailto:sales@elctrade.ru'}>sales@elctrade.ru</StyledLink>
                                 </ContactInfoContent>
                             </ContactInfoItem>
                         </ContactsInfoWrapper>
@@ -56,13 +57,13 @@ export const ContactsSection = ({ ...extraProps }) => {
                                 <ContactInfoItem>
                                     <ContactInfoTitle icon={'/static/icons/phone.svg'}>Телефон:</ContactInfoTitle>
                                     <ContactInfoContent>
-                                        <StyledLink href={'tel:+78123394597'}>+7 (812) 339-45-97</StyledLink>
+                                        <StyledLink href={'tel:+78124393013'}>+7 (812) 439-30-13</StyledLink>
                                     </ContactInfoContent>
                                 </ContactInfoItem>
                                 <ContactInfoItem>
                                     <ContactInfoTitle>Электронная почта:</ContactInfoTitle>
                                     <ContactInfoContent>
-                                        <StyledLink href={'mailto:spb@dielcom.ru'}>spb@dielcom.ru</StyledLink>
+                                        <StyledLink href={'mailto:sales@elctrade.ru'}>sales@elctrade.ru</StyledLink>
                                     </ContactInfoContent>
                                 </ContactInfoItem>
                             </>

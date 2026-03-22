@@ -14,24 +14,24 @@ export const AppFooter = () => {
             <StyledContainer>
                 <CopyrightContainer>
                     <Logo href="/">
-                        <Image src="/static/icons/logo.svg" alt="Логотип сайта" />
+                        <Image width={80} height={80} src="/static/icons/logo.svg" alt="Логотип сайта" />
                     </Logo>
-                    © ООО «Диэлком-ЭК» 2024
+                    © ООО «ЭлСи-Трейд» 2026
                 </CopyrightContainer>
                 <LinkWrapper>
-                    {isLaptop && (
+                    {/* {isLaptop && (
                         <StyledButton primary as="a" href="/catalog">
                             Перейти в каталог
                         </StyledButton>
-                    )}
+                    )} */}
                     {isPC && <StyledLink href={'/policy#privacyPolicy'}>Политика конфиденциальности</StyledLink>}
                     {/* <StyledLink href={'/contacts'}>Документы</StyledLink> */}
                 </LinkWrapper>
-                {!isMobile && !isLaptop && (
+                {/* {!isMobile && !isLaptop && (
                     <StyledButton primary as="a" href="/catalog">
                         Перейти в каталог
                     </StyledButton>
-                )}
+                )} */}
             </StyledContainer>
         </AppFooterWrapper>
     )

@@ -39,7 +39,7 @@ export const useCatalogSearch = () => {
 
     const handleSearch = useCallback(
         async (value) => {
-            debouncedFetchData(value || searchValueRef.current, category, 1, sortConfig.key, sortConfig.order)
+            debouncedFetchData(value || searchValueRef.current, category, 1, sortConfig.key, sortConfig.direction)
             searchValueRef.current = value
         },
         [debouncedFetchData],
@@ -47,15 +47,24 @@ export const useCatalogSearch = () => {
 
     useEffect(() => {
         if (defaultSearchValue || category) {
-            fetchData(defaultSearchValue, category, 1, sortConfig.key, sortConfig.order)
+            searchValueRef.current = defaultSearchValue
+            fetchData(defaultSearchValue, category, 1, sortConfig.key, sortConfig.direction)
         }
     }, [defaultSearchValue])
 
     useEffect(() => {
-        if (searchValueRef.current) {
-            fetchData(searchValueRef.current, category, page, sortConfig.key, sortConfig.order)
+        if (searchValueRef.current || category) {
+            setPage(1)
+
+            fetchData(searchValueRef.current, category, 1, sortConfig.key, sortConfig.direction)
         }
-    }, [page])
+    }, [sortConfig.direction, sortConfig.key, searchValueRef.current])
+
+    useEffect(() => {
+        if (searchValueRef.current) {
+            fetchData(searchValueRef.current, category, page, sortConfig.key, sortConfig.direction)
+        }
+    }, [page, searchValueRef.current])
 
     const loadMoreRef = useRef(null)
 

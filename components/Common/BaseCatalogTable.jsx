@@ -1,12 +1,10 @@
 import styled, { keyframes } from 'styled-components'
 import { useEffect, useRef, useState } from 'react'
-import { useRouter } from 'next/router'
 
 import { Container } from '../ui/layouts/Container'
 import { SelectionControl } from '../ui/SelectionControl'
 import { translates } from '../../mock-data/translates'
 import { SearchComponent } from './AppHeader/Search'
-import { getRequestPageUrl } from '../../lib'
 import { breakpoint } from '../../lib'
 
 import { useStoredItems } from './hooks/useStoredItems'
@@ -19,15 +17,7 @@ export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSor
             ? Object.keys(catalog[0]).filter((header) => !filteredHeaders.includes(header))
             : ['brand', 'available', 'leadtime']
 
-    const router = useRouter()
     const { storedItems, updateItem } = useStoredItems()
-
-    const handleOrderClick = (partnumber, brand) => {
-        router.push({
-            pathname: getRequestPageUrl(),
-            query: { partnumber, brand },
-        })
-    }
 
     return (
         <>
@@ -77,11 +67,12 @@ export const BaseCatalogTable = ({ catalog, sortConfig, setSearchTerm, handleSor
                                 <tr key={`${item.partnumber}${item.id}`}>
                                     <td>
                                         <SelectionControl
-                                            itemKey={`${item.partnumber}-${item.brand}`}
+                                            itemKey={`${item.partnumber}-${item.brand}-${item.id}`}
                                             partnumber={item.partnumber}
                                             brand={item.brand}
-                                            storedItem={storedItems[`${item.partnumber}-${item.brand}`]}
+                                            storedItem={storedItems[`${item.partnumber}-${item.brand}-${item.id}`]}
                                             updateItem={updateItem}
+                                            price={item.price}
                                         />
                                     </td>
                                     <StickyCell>{item.partnumber}</StickyCell>

@@ -27,20 +27,32 @@ export const useRequestForm = () => {
     useEffect(() => {
         const storedItemsRaw = localStorage.getItem('selectedItems')
         if (!storedItemsRaw) return
-    
+
         try {
             const storedItems = JSON.parse(storedItemsRaw)
-    
+
             const selectedList = Object.values(storedItems)
                 .filter((item) => item.selected)
-                .map(
-                    ({ brand, partnumber, quantity }) =>
-                        `Бренд ${brand}, партномер ${partnumber}, количество ${quantity}`
-                )
+                .map(({ brand, partnumber, quantity, price }) => {
+                    const result =
+                        `Бренд ${brand}, партномер ${partnumber}, количество ${quantity}` +
+                        (!!price
+                            ? `, цена ${price}, итоговая стоимость ${quantity * price} руб.`
+                            : `, цену уточняйте по запросу`)
+
+                    return result
+                })
+            const totalPrice = Object.values(storedItems).reduce((total, item) => {
+                const price = item.price
+                if (price) {
+                    return total + price
+                }
+                return total
+            }, 0)
             if (selectedList.length > 0) {
                 setFormData((prevData) => ({
                     ...prevData,
-                    components: selectedList.join('\n'),
+                    components: `${selectedList.join('\n')}\n\nИтого: ${totalPrice} руб.`,
                 }))
             }
         } catch (e) {

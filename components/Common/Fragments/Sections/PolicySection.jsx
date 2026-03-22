@@ -76,14 +76,14 @@ export const PolicySection = ({ ...extraProps }) => {
                                 <PoliceListItem>
                                     Оператор обрабатывает персональные данные в соответствии с Политикой
                                     конфиденциальности, размещенной по адресу{` `}
-                                    <StyledLink href={'/policy'}>https://dielcom-ec.ru/policy</StyledLink>{' '}
+                                    <StyledLink href={'/policy'}>https://elctrade.ru/policy</StyledLink>{' '}
                                 </PoliceListItem>
                                 <PoliceListItem>
                                     Согласие действует с момента его предоставления и до момента отзыва Согласия.{' '}
                                 </PoliceListItem>
                                 <PoliceListItem>
                                     Я вправе отозвать согласие путем направления Оператору заявления в форме
-                                    электронного документа по адресу электронной почты: spb@dielcom.ru.
+                                    электронного документа по адресу электронной почты: sales@elctrade.ru.
                                 </PoliceListItem>
                                 <PoliceListItem>
                                     Оператор рассматривает заявление в течение 10 (десяти) рабочих дней с момента его
@@ -98,12 +98,12 @@ export const PolicySection = ({ ...extraProps }) => {
                             <H3Styled alternative>Редакция №1 от 01.06.2024 </H3Styled>
                             <PoliceList>
                                 <PoliceListItemWithoutCounter>
-                                    Это Политика конфиденциальности <b>ООО «Диэлком-ЭК» (ИНН: 7806552930)</b> (далее —
+                                    Это Политика конфиденциальности <b>ООО «ЭлСи-Трейд» (ИНН: 7810971726)</b> (далее —
                                     Политика).
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemWithoutCounter>
                                     Когда в Политике используются слова «мы», «нас» и прочие, говорится о{' '}
-                                    <b>ООО «Диэлком-ЭК» (ИНН: 7806552930)</b>.
+                                    <b>ООО «ЭлСи-Трейд» (ИНН: 7810971726)</b>.
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemHeader>О чем эта Политика?</PoliceListItemHeader>
                                 <PoliceListItemWithoutCounter>
@@ -257,20 +257,20 @@ export const PolicySection = ({ ...extraProps }) => {
                                 <PoliceListItemHeader>Как с нами связаться?</PoliceListItemHeader>
                                 <PoliceListItemWithoutCounter>
                                     По любым вопросам в отношении обработки персональных данных вы можете обратиться к
-                                    нам по электронной почте <a href="mailto:spb@dielcom.ru">spb@dielcom.ru</a>.
+                                    нам по электронной почте <a href="mailto:sales@elctrade.ru">sales@elctrade.ru</a>.
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemWithoutCounter>
                                     При обращении укажите свое имя и контакты для обратной связи. Мы ответим на ваше
                                     обращение не позднее 10 рабочих дней с момента его получения.
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemWithoutCounter>
-                                    Реквизиты: <b>ООО «Диэлком-ЭК» (ИНН: 7806552930)</b>, адрес эл. почты:{' '}
-                                    <a href="mailto:spb@dielcom.ru">spb@dielcom.ru</a>.
+                                    Реквизиты: <b>ООО «ЭлСи-Трейд» (ИНН: 7810971726)</b>, адрес эл. почты:{' '}
+                                    <a href="mailto:sales@elctrade.ru">sales@elctrade.ru</a>.
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemWithoutCounter>
                                     Политика размещена по адресу:{' '}
-                                    <a href="https://dielcom-ec.ru/policy#privacyPolicy">
-                                        https://dielcom-ec.ru/policy#privacyPolicy
+                                    <a href="https://elctrade.ru/policy#privacyPolicy">
+                                        https://elctrade.ru/policy#privacyPolicy
                                     </a>
                                     .
                                 </PoliceListItemWithoutCounter>
@@ -283,43 +283,43 @@ export const PolicySection = ({ ...extraProps }) => {
                             <PoliceList>
                                 <PoliceListItemHeader>Как мы используем файлы cookie?</PoliceListItemHeader>
                                 <PoliceListItemWithoutCounter>
-                                    На веб-сайте <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>{' '}
-                                    используются файлы cookie и похожие технологии (в т.ч., пиксельные теги, веб-маяки,
-                                    прозрачные файлы GIF, JavaScript и локальное хранение данных) для вашего удобства,
-                                    обеспечения и повышения эффективности работы веб-сайта{' '}
-                                    <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> а также для получения
+                                    На веб-сайте <a href="https://elctrade.ru/">https://elctrade.ru/</a> используются
+                                    файлы cookie и похожие технологии (в т.ч., пиксельные теги, веб-маяки, прозрачные
+                                    файлы GIF, JavaScript и локальное хранение данных) для вашего удобства, обеспечения
+                                    и повышения эффективности работы веб-сайта{' '}
+                                    <a href="https://elctrade.ru/">https://elctrade.ru/</a> а также для получения
                                     аналитической информации. Далее в настоящем Уведомлении файлы cookie и похожие
                                     технологии именуются как файлы cookie. Ниже представлена более подробная информация
                                     о файлах cookie, их использовании и управлении ими. В случае несогласия с
                                     положениями настоящего Уведомления, вам необходимо произвести соответствующие
                                     настройки веб-браузера или прекратить пользование веб-сайтом{' '}
-                                    <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>.
+                                    <a href="https://elctrade.ru/">https://elctrade.ru/</a>.
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemHeader>Что такое файлы cookie?</PoliceListItemHeader>
                                 <PoliceListItemWithoutCounter>
                                     Файлы cookie представляют собой файлы, которые автоматически сохраняются на вашем
                                     устройстве (персональном компьютере, мобильном телефоне и т.п.) при посещении
-                                    веб-сайта <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>. При каждом
+                                    веб-сайта <a href="https://elctrade.ru/">https://elctrade.ru/</a>. При каждом
                                     последующем посещении файлы cookie отправляются на исходный веб-сайт{' '}
-                                    <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>.
+                                    <a href="https://elctrade.ru/">https://elctrade.ru/</a>.
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemHeader>Как используются файлы cookie?</PoliceListItemHeader>
                                 <PoliceListItemWithoutCounter>
-                                    На веб-сайте <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> могут
+                                    На веб-сайте <a href="https://elctrade.ru/">https://elctrade.ru/</a> могут
                                     использоваться следующие типы файлов cookie:
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemWithPoint>
                                     необходимые файлы cookie. Данные файлы cookie необходимы для обеспечения работы
-                                    веб-сайта <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> (в т.ч., для
-                                    входа в защищенные зоны веб-сайтов). Данные файлы cookie позволяют вам посещать
-                                    веб-сайт и использовать его функции. Отключение этих файлов cookie усложнит
-                                    функционирование веб-сайт
-                                    <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> и может сделать
-                                    недоступными некоторые функции и сервисы;
+                                    веб-сайта <a href="https://elctrade.ru/">https://elctrade.ru/</a> (в т.ч., для входа
+                                    в защищенные зоны веб-сайтов). Данные файлы cookie позволяют вам посещать веб-сайт и
+                                    использовать его функции. Отключение этих файлов cookie усложнит функционирование
+                                    веб-сайт
+                                    <a href="https://elctrade.ru/">https://elctrade.ru/</a> и может сделать недоступными
+                                    некоторые функции и сервисы;
                                 </PoliceListItemWithPoint>
                                 <PoliceListItemWithPoint>
                                     файлы cookie для аналитики и адаптации под пользователя. Данные файлы cookie
-                                    позволяют ООО «Диэлком-ЭК» анализировать ваши действия в целях совершенствования и
+                                    позволяют ООО «ЭлСи-Трейд» анализировать ваши действия в целях совершенствования и
                                     оптимизации работы веб-сайтов. Файлы cookie, относящиеся к аналитике, помогают нам
                                     оптимизировать содержание веб-сайтов для вашего удобства, также позволяют собирать
                                     техническую и навигационную информацию (тип веб-браузера, время пребывания на
@@ -329,23 +329,23 @@ export const PolicySection = ({ ...extraProps }) => {
                                 <PoliceListItemWithPoint>
                                     функциональные файлы cookie. Данные файлы cookie служат для вашей идентификации при
                                     повторном посещении веб-сайта{' '}
-                                    <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a>. Они позволяют нам
+                                    <a href="https://elctrade.ru/">https://elctrade.ru/</a>. Они позволяют нам
                                     индивидуально подбирать содержание веб-сайта для вас, запоминать ваши выбранные
                                     настройки (в т.ч. выбранный язык, настройки отображения контента веб-сайтов).
                                 </PoliceListItemWithPoint>
                                 <PoliceListItemHeader>Что такое файлы cookie?</PoliceListItemHeader>
                                 <PoliceListItemWithoutCounter>
                                     Некоторые файлы cookie действуют с момента вашего входа на веб-сайт
-                                    <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> до конца конкретной
-                                    сессии работы в веб-браузере. При закрытии веб-браузера срок действия этих файлов
-                                    истекает, и они автоматически удаляются. Такие файлы cookie называются «сеансовыми».
-                                    Некоторые файлы cookie не удаляются после прекращения работы вашего веб-браузера.
-                                    Такие файлы cookie называются «постоянными». Постоянные файлы cookie сохраняются на
-                                    вашем устройстве, пока не будут удалены или до указанной даты окончания срока
-                                    действия. Постоянные файлы cookie, сохраняемые на вашем устройстве в результате
-                                    использования веб-сайта
-                                    <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> не хранятся дольше 1
-                                    года с даты последнего посещения.
+                                    <a href="https://elctrade.ru/">https://elctrade.ru/</a> до конца конкретной сессии
+                                    работы в веб-браузере. При закрытии веб-браузера срок действия этих файлов истекает,
+                                    и они автоматически удаляются. Такие файлы cookie называются «сеансовыми». Некоторые
+                                    файлы cookie не удаляются после прекращения работы вашего веб-браузера. Такие файлы
+                                    cookie называются «постоянными». Постоянные файлы cookie сохраняются на вашем
+                                    устройстве, пока не будут удалены или до указанной даты окончания срока действия.
+                                    Постоянные файлы cookie, сохраняемые на вашем устройстве в результате использования
+                                    веб-сайта
+                                    <a href="https://elctrade.ru/">https://elctrade.ru/</a> не хранятся дольше 1 года с
+                                    даты последнего посещения.
                                 </PoliceListItemWithoutCounter>
                                 <PoliceListItemHeader>Как управлять файлами cookie?</PoliceListItemHeader>
                                 <PoliceListItemWithoutCounter>
@@ -354,7 +354,7 @@ export const PolicySection = ({ ...extraProps }) => {
                                     по настройке вам необходимо обратиться к справочной документации или официальному
                                     сайту разработчика веб-браузера. Вы должны учитывать, что при полном или частичном
                                     запрете использования файлов cookie в веб-браузере, определенная функциональность и
-                                    сервисы веб-сайта <a href="https://dielcom-ec.ru/">https://dielcom-ec.ru/</a> могут
+                                    сервисы веб-сайта <a href="https://elctrade.ru/">https://elctrade.ru/</a> могут
                                     работать некорректно. Дополнительную информацию об управлении файлами cookie вы
                                     можете получить по следующим ссылкам:
                                 </PoliceListItemWithoutCounter>

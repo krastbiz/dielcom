@@ -5,7 +5,7 @@ import { NavLink } from './NavLink'
 
 const NAV_ITEMS = [
     { href: '/', text: 'Главная' },
-    { href: '/catalog', text: 'Линейка поставок' },
+    // { href: '/catalog', text: 'Линейка поставок' },
     { href: '/brands', text: 'Бренды' },
     { href: '/contract-production', text: 'Контрактное производство' },
     { href: '/request', text: 'Заказ' },

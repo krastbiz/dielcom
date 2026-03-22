@@ -5,8 +5,8 @@ import { StyledLink } from '../../ui/Link'
 export const HeaderContacts = ({ ...extraProps }) => {
     return (
         <HeaderContactsWrapper {...extraProps}>
-            <MailLink href="mailto:spb@dielcom.ru">spb@dielcom.ru</MailLink>
-            <StyledLink href="tel:+78123394597">+7 (812) 339-45-97</StyledLink>
+            <MailLink href="mailto:sales@elctrade.ru">sales@elctrade.ru</MailLink>
+            <StyledLink href="tel:+78124393013">+7 (812) 439-30-13</StyledLink>
         </HeaderContactsWrapper>
     )
 }

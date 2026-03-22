@@ -47,10 +47,10 @@ const Home = ({ featuredNews, brands }) => {
                                     Широкий ассортимент качественных комплектующих от ведущих мировых брендов. Гарантия
                                     оригинальности, быстрая доставка и техническая поддержка на каждом этапе.
                                 </MainSectionText>
-                                <CatalogButton primary as="a" href="/catalog">
+                                {/* <CatalogButton primary as="a" href="/catalog">
                                     <ButtonText>Перейти в каталог </ButtonText>
                                     <ArrowIcon src="/static/icons/arrow-right.svg" alt="arrow" />
-                                </CatalogButton>
+                                </CatalogButton> */}
                             </MainSectionWrapper>
                         </MainSectionContent>
                     </MainSectionContainer>
@@ -67,7 +67,7 @@ const Home = ({ featuredNews, brands }) => {
                     </BrandsContainer>
                     <BrandsScrollContainer>
                         {brands.map((brand) => (
-                            <BrandCard {...brand} />
+                            <BrandCard name={brand.name} path={brand.logo} />
                         ))}
                     </BrandsScrollContainer>
                 </BrandBgContainer>
@@ -76,7 +76,7 @@ const Home = ({ featuredNews, brands }) => {
             <GoalSection>
                 <GoalContainer>
                     <H2>
-                        <GradientText>ООО «ДиЭлКом-ЭК»</GradientText> – один из лидеров на рынке поставок электронных
+                        <GradientText>ООО «ЭлСи-Трейд»</GradientText> – один из лидеров на рынке поставок электронных
                         компонентов для промышленных предприятий.
                     </H2>
                     <GoalText>
@@ -91,7 +91,7 @@ const Home = ({ featuredNews, brands }) => {
                         <GoalText>зарубежных партнеров</GoalText>
                     </GoalContentItem>
                     <GoalContentItem>
-                        <GoalGradient>12 лет</GoalGradient>
+                        <GoalGradient>3 года</GoalGradient>
                         <GoalText>успешной работы на рынке</GoalText>
                     </GoalContentItem>
                 </GoalContent>

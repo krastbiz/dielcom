@@ -51,7 +51,7 @@ const Company = ({ company }) => {
                                     Товары производителя
                                 </ProductButton>
                             </CompanyTextWrapper>
-                            {isDesk && <BrandCard id={company.id} name={company.name} />}
+                            {isDesk && <BrandCard name={company.name} path={company.logo} />}
                         </CompanyContentWrapper>
                         {displayCompanyProducts && (
                             <CompanyProductsSection>

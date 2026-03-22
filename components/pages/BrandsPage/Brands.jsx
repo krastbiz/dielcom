@@ -16,36 +16,17 @@ export const Brands = ({ companies }) => {
                 <MainSection showBreadcrumb breadcrumbs={[{ href: getBrandsPageUrl(), text: 'Бренды' }]}>
                     <DefaultMainContent large>
                         <H2 large>
-                            Бренды, официально <br /> представленные компанией <H2Gradient large>Диэлком-ЭК</H2Gradient>
+                            Бренды, официально <br /> представленные компанией <H2Gradient large>ЭлСи-Трейд</H2Gradient>
                         </H2>
                     </DefaultMainContent>
                     <DistributionSection>
                         <DistributionContainer>
                             {companies.map((company) => (
                                 <CatalogItem key={company.id}>
-                                    {isMobileOrTablet && <CatalogItemCategory>{company.category}</CatalogItemCategory>}
                                     <CatalogItemLogoWrapper>
-                                        <StyledBrandCard id={company.id} name={company.name} />
+                                        <StyledBrandCard name={company.name} path={company.logo} />
                                     </CatalogItemLogoWrapper>
-
-                                    <CatalogItemContainer>
-                                        <ItemWrapper>
-                                            {!isMobileOrTablet && (
-                                                <CatalogItemCategory>{company.category}</CatalogItemCategory>
-                                            )}
-                                            <CatalogItemName>{company.name}</CatalogItemName>
-                                            <CatalogItemDescription>{company.shortDescription}</CatalogItemDescription>
-                                        </ItemWrapper>
-
-                                        <ButtonWrapper>
-                                            <MoreButton primary as="a" href={getBrandPageUrl(company.id)}>
-                                                Подробнее
-                                            </MoreButton>
-                                            <ProductButton as="a" href={getSearchPageUrl(`q=${company.id}`)}>
-                                                Товары производителя
-                                            </ProductButton>
-                                        </ButtonWrapper>
-                                    </CatalogItemContainer>
+                                    <CatalogItemCategory>{`${company.category} ${company.name}`}</CatalogItemCategory>
                                 </CatalogItem>
                             ))}
                         </DistributionContainer>
@@ -73,15 +54,17 @@ const DistributionSection = styled.section`
 
 const DistributionContainer = styled(Container)`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 `
 
 const CatalogItem = styled.div`
     display: flex;
     margin-bottom: 30px;
-    ${breakpoint.tablet`
-        flex-direction: column;
-    `}
+    gap: 3px;
+    flex-direction: column;
 `
 
 const CatalogItemContainer = styled.div`
@@ -113,6 +96,8 @@ const ButtonWrapper = styled(ItemWrapper)`
 const CatalogItemCategory = styled.div`
     font-weight: bold;
     color: ${({ theme }) => theme.colors.text};
+    max-width: 300px;
+    margin-top: 5px;
     ${breakpoint.tablet`
         margin-bottom: 10px;
     `}

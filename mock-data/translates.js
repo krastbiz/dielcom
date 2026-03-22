@@ -57,4 +57,6 @@ export const translates = {
     temperatureSensor: 'Датчик температуры',
     dimensionsMm: 'Габариты (мм)',
     weightG: 'Вес, г',
+    year: 'Год',
+    price: 'Цена за ед, р',
 }

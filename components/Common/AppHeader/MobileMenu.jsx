@@ -29,11 +29,11 @@ export const MobileMenu = ({ isOpen, onClose }) => {
             <MobileMenuWrapper isOpen={isVisible} onClick={(e) => e.stopPropagation()}>
                 <NavigationStyled />
                 <ButtonWrapper>
-                    <EmailButton as="a" href="mailto:spb@dielcom.ru">
-                        spb@dielcom.ru
+                    <EmailButton as="a" href="mailto:sales@elctrade.ru">
+                        sales@elctrade.ru
                     </EmailButton>
-                    <TelButton primary as="a" href="tel:+78123394597">
-                        +7 (812) 339-45-97
+                    <TelButton primary as="a" href="tel:+78124393013">
+                        +7 (812) 439-30-13
                     </TelButton>
                     <SocialIcons>
                         <TelegramIcon small />
