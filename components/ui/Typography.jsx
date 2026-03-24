@@ -26,15 +26,16 @@ export const H1 = styled.h1`
 `
 
 export const H1Gradient = styled(H1)`
-    background: linear-gradient(89.81deg, #005ff9 0%, #97dbfc 50%, #c0e8ff 65%, #d4f1ff 82%, #ffffff 100%);
+    background: linear-gradient(89.81deg, #6fb6ff 0%, #97dbfc 40%, #bfe9ff 65%, #d9f3ff 82%, #ffffff 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
     text-shadow:
-        0px 0px 10px rgba(0, 95, 249, 0.6),
-        0px 0px 20px rgba(0, 95, 249, 0.5),
-        0px 0px 30px rgba(0, 95, 249, 0.4);
+        0px 0px 8px rgba(111, 182, 255, 0.6),
+        0px 0px 16px rgba(151, 219, 252, 0.5),
+        0px 0px 24px rgba(191, 233, 255, 0.4);
 `
 
 export const H2 = styled.h2`

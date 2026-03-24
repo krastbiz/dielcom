@@ -41,7 +41,7 @@ const Home = ({ featuredNews, brands }) => {
                 <MainSectionBgContainer>
                     <MainSectionContainer>
                         <MainSectionContent>
-                            <H1Gradient>электронные компоненты</H1Gradient>
+                            <H1Gradient>электронные компоненты и оборудование</H1Gradient>
                             <MainSectionWrapper>
                                 <MainSectionText>
                                     Широкий ассортимент качественных комплектующих от ведущих мировых брендов. Гарантия
@@ -75,10 +75,10 @@ const Home = ({ featuredNews, brands }) => {
 
             <GoalSection>
                 <GoalContainer>
-                    <H2>
+                    <StyledH2>
                         <GradientText>ООО «ЭлСи-Трейд»</GradientText> – один из лидеров на рынке поставок электронных
                         компонентов для промышленных предприятий.
-                    </H2>
+                    </StyledH2>
                     <GoalText>
                         Мы предоставляем комплексные решения, обеспечивая бесперебойные поставки комплектующих от
                         ведущих мировых брендов.
@@ -96,7 +96,7 @@ const Home = ({ featuredNews, brands }) => {
                     </GoalContentItem>
                 </GoalContent>
             </GoalSection>
-            <SupplySection>
+            {/* <SupplySection>
                 <SupplyContainer>
                     <H2>
                         Мы предлагаем комплексные поставки электронных компонентов, а также предоставляем{' '}
@@ -113,7 +113,7 @@ const Home = ({ featuredNews, brands }) => {
                         <ArrowIcon src="/static/icons/arrow-right.svg" alt="arrow" />
                     </SupplyButton>
                 </SupplyContainer>
-            </SupplySection>
+            </SupplySection> */}
             <AdvantageSection>
                 <AdvantageContainer>
                     <AdvantageTitle>
@@ -147,6 +147,10 @@ const MainSectionBgContainer = styled.div`
     justify-content: flex-end;
 `
 
+const StyledH2 = styled(H2)`
+    color: ${({ theme }) => theme.colors.textWhite};
+`
+
 const MainSectionContainer = styled(Container)`
     display: flex;
     flex-direction: column;
@@ -173,7 +177,7 @@ const MainSectionWrapper = styled.div`
 `
 
 const MainSectionText = styled.div`
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.textWhite};
     max-width: 700px;
     letter-spacing: -0.4px;
     ${breakpoint.laptop`

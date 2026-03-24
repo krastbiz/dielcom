@@ -31,7 +31,7 @@ export async function search(req, res) {
 
     let results = category ? data.filter((item) => item.category?.toLowerCase() === category.toLowerCase()) : [...data]
 
-    if (search) {
+    if (search && search !== 'all') {
         const options = {
             keys: ['partnumber', 'brand'],
             includeScore: true,

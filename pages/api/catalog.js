@@ -24,7 +24,7 @@ export async function search(req, res) {
 
     let results
 
-    if (!search) {
+    if (search === 'all') {
         results = [...data]
     } else {
         const options = {

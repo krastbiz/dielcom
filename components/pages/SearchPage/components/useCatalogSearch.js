@@ -4,14 +4,14 @@ import { search } from '../../../../lib/api'
 import debounce from 'lodash/debounce'
 
 export const useCatalogSearch = () => {
-    const { query } = useRouter()
+    const { query, pathname } = useRouter()
 
     const [data, setData] = useState([])
     const [page, setPage] = useState(1)
     const [hasMore, setHasMore] = useState(true)
     const [loading, setLoading] = useState(false)
     const [sortConfig, setSortConfig] = useState({ key: 'partnumber', direction: 'asc' })
-    const defaultSearchValue = query.q || ''
+    const defaultSearchValue = pathname === '/search' ? query.q : 'all'
     const category = query.category || ''
     const searchValueRef = useRef(defaultSearchValue)
 
