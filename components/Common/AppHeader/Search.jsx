@@ -75,7 +75,7 @@ const SearchInput = styled.input`
     width: 100%;
     padding: 14px;
     font-size: 16px;
-    color: ${({ theme }) => theme.colors.textGray};
+    color: ${({ theme }) => theme.colors.textWhite};
     box-sizing: border-box;
     outline: none;
     background-color: ${({ theme, altBg }) => (altBg ? theme.colors.altBackground : theme.colors.whiteBackground)};
