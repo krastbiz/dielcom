@@ -145,6 +145,20 @@ const MainSectionBgContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(10, 40, 70, 0.75) 0%,
+            rgba(10, 40, 70, 0.55) 35%,
+            rgba(10, 40, 70, 0.25) 60%,
+            rgba(10, 40, 70, 0) 100%
+        );
+    }
 `
 
 const StyledH2 = styled(H2)`
@@ -154,7 +168,12 @@ const StyledH2 = styled(H2)`
 const MainSectionContainer = styled(Container)`
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    ${breakpoint.desktop`
+        left: 5%;
+    `}
 `
 
 const MainSectionContent = styled.div`

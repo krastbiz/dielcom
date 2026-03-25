@@ -92,12 +92,12 @@ const SearchButton = styled.button`
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    background-color: ${({ theme }) => theme.colors.whiteBackground};
+    background-color: ${({ theme }) => theme.colors.cardBackground};
     display: flex;
     align-items: center;
     justify-content: center;
     &:hover {
-        background-color: ${({ theme }) => theme.colors.main};
+        background-color: ${({ theme }) => theme.colors.active};
     }
 `
 

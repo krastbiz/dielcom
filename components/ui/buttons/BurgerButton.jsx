@@ -23,7 +23,7 @@ const BurgerButtonWrapper = styled.div`
     height: 50px;
     width: 50px;
     position: relative;
-    background: ${({ theme }) => theme.colors.main};
+    background: ${({ theme }) => theme.colors.cardBackground};
     display: flex;
     justify-content: center;
     align-items: center;

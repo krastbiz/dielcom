@@ -7,7 +7,7 @@ export const Button = styled.button`
     border: none;
     text-decoration: none;
     cursor: pointer;
-    background: ${({ theme, primary }) => (primary ? theme.colors.main : 'transparent')};
+    background: ${({ theme, primary }) => (primary ? theme.colors.cardBackground : 'transparent')};
     color: ${({ theme }) => theme.colors.text};
     border: ${({ primary, theme }) => !primary && `1px solid ${theme.colors.text}`};
     border-radius: 10px;
